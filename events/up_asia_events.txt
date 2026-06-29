@@ -209,6 +209,21 @@ country_event = {
 }
 
 country_event = {
+	id = up_asia.130
+	title = up_asia.130.t
+	desc = up_asia.130.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.130.a
+		add_stability = -0.05
+		add_war_support = -0.02
+		add_political_power = -25
+	}
+}
+
+country_event = {
 	id = up_asia.100
 	title = up_asia.100.t
 	desc = up_asia.100.d

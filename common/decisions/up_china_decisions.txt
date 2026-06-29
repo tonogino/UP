@@ -4,20 +4,48 @@ UP_china_booklet_decisions = {
 		original_tag = CHI
 	}
 	visible = {
-		has_country_flag = UP_china_red_unification
+		has_country_flag = UP_china_revolutionary_league
 	}
 
 	UP_CHI_read_red_tide_booklet = {
 		icon = generic_political_discourse
 		cost = 0
 		available = {
-			has_country_flag = UP_china_red_unification
+			has_country_flag = UP_china_revolutionary_league
 		}
 		visible = {
-			has_country_flag = UP_china_red_unification
+			has_country_flag = UP_china_revolutionary_league
 		}
 		complete_effect = {
 			country_event = { id = up_asia.106 }
+		}
+	}
+}
+
+UP_china_foreign_revolution_decisions = {
+	icon = generic_communist_revolution
+	allowed = { original_tag = CHI }
+	visible = { has_country_flag = UP_CHI_foreign_revolution_decisions_unlocked }
+
+	UP_CHI_support_red_india = {
+		icon = generic_communist_revolution
+		cost = 25
+		available = { RIN = { exists = yes } }
+		visible = { RIN = { exists = yes } }
+		complete_effect = {
+			RIN = {
+				add_popularity = { ideology = communism popularity = 0.03 }
+				add_political_power = 25
+			}
+		}
+	}
+
+	UP_CHI_support_asian_cells = {
+		icon = generic_intelligence_exchange
+		cost = 25
+		complete_effect = {
+			add_war_support = 0.01
+			add_popularity = { ideology = communism popularity = 0.01 }
 		}
 	}
 }
