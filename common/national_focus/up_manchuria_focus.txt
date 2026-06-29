@@ -1,0 +1,67 @@
+focus_tree = {
+	id = UP_manchuria_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = MAN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1200 }
+
+	focus = {
+		id = UP_MAN_harbin_declaration
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 0
+		cost = 10
+		available = { has_country_flag = UP_manchuria_unleashed_puppet }
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = UP_MAN_restore_qing_claim
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = UP_MAN_harbin_declaration }
+		x = 8
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = 0.04
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = UP_MAN_manchu_nation
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = UP_MAN_harbin_declaration }
+		x = 12
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UP_MAN_red_manchuria
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = UP_MAN_harbin_declaration }
+		x = 10
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			add_stability = -0.04
+		}
+	}
+}

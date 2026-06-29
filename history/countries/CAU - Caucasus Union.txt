@@ -1,0 +1,19 @@
+capital = 231
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 40
+	neutrality = 35
+	communism = 15
+	fascism = 10
+}
+
+create_country_leader = {
+	name = "诺伊·佐尔达尼亚"
+	picture = "Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = { }
+}

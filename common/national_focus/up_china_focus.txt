@@ -1,0 +1,305 @@
+focus_tree = {
+	id = UP_china_focus
+	country = {
+		factor = 0
+		modifier = { add = 100 tag = CHI }
+	}
+	default = no
+	continuous_focus_position = { x = 26 y = 900 }
+
+	focus = {
+		id = UP_CHI_revolutionary_league_1933
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = UP_CHI_nanjing_revolutionary_government
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 1
+		cost = 10
+		prerequisite = { focus = UP_CHI_revolutionary_league_1933 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = UP_CHI_the_chongqing_question
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 2
+		cost = 10
+		prerequisite = { focus = UP_CHI_nanjing_revolutionary_government }
+		completion_reward = {
+			add_war_support = 0.03
+			add_named_threat = { threat = 1 name = UP_CHI_the_chongqing_question }
+		}
+	}
+
+	focus = {
+		id = UP_CHI_rebuild_the_revolutionary_army
+		icon = GFX_goal_generic_position_armies
+		x = 16
+		y = 2
+		cost = 10
+		prerequisite = { focus = UP_CHI_nanjing_revolutionary_government }
+		completion_reward = {
+			army_experience = 15
+			add_command_power = 20
+		}
+	}
+
+	focus = {
+		id = UP_CHI_rural_reform_bloc
+		icon = GFX_goal_generic_soviet_construction
+		x = 5
+		y = 4
+		cost = 10
+		prerequisite = { focus = UP_CHI_the_chongqing_question }
+		prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
+		mutually_exclusive = { focus = UP_CHI_militarist_bloc }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = UP_CHI_militarist_bloc
+		icon = GFX_goal_generic_major_war
+		x = 19
+		y = 4
+		cost = 10
+		prerequisite = { focus = UP_CHI_the_chongqing_question }
+		prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
+		mutually_exclusive = { focus = UP_CHI_rural_reform_bloc }
+		completion_reward = {
+			add_war_support = 0.08
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = UP_CHI_land_reformists
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 5
+		cost = 10
+		prerequisite = { focus = UP_CHI_rural_reform_bloc }
+		mutually_exclusive = { focus = UP_CHI_modernizing_diplomats }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = UP_CHI_redistribute_the_lower_yangtze
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_land_reformists }
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = -0.02
+		}
+	}
+
+	focus = {
+		id = UP_CHI_peasant_association_state
+		icon = GFX_goal_generic_propaganda
+		x = 3
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_land_reformists }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = UP_CHI_revolution_from_the_villages
+		icon = GFX_goal_generic_soviet_construction
+		x = 2
+		y = 7
+		cost = 10
+		prerequisite = { focus = UP_CHI_redistribute_the_lower_yangtze }
+		prerequisite = { focus = UP_CHI_peasant_association_state }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = UP_CHI_modernizing_diplomats
+		icon = GFX_goal_generic_improve_relations
+		x = 8
+		y = 5
+		cost = 10
+		prerequisite = { focus = UP_CHI_rural_reform_bloc }
+		mutually_exclusive = { focus = UP_CHI_land_reformists }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = UP_CHI_open_the_shanghai_channels
+		icon = GFX_goal_generic_trade
+		x = 7
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_modernizing_diplomats }
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UP_CHI_seek_foreign_recognition
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 9
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_modernizing_diplomats }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = UP_CHI_revolutionary_modernization
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 7
+		cost = 10
+		prerequisite = { focus = UP_CHI_open_the_shanghai_channels }
+		prerequisite = { focus = UP_CHI_seek_foreign_recognition }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = UP_CHI_whampoa_officer_corps
+		icon = GFX_goal_generic_army_doctrines
+		x = 16
+		y = 5
+		cost = 10
+		prerequisite = { focus = UP_CHI_militarist_bloc }
+		mutually_exclusive = { focus = UP_CHI_inherit_sun_yat_sen }
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+		}
+	}
+
+	focus = {
+		id = UP_CHI_absorb_defected_cadets
+		icon = GFX_goal_generic_position_armies
+		x = 15
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_whampoa_officer_corps }
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = UP_CHI_nanjing_general_staff
+		icon = GFX_goal_generic_army_artillery
+		x = 17
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_whampoa_officer_corps }
+		completion_reward = {
+			add_command_power = 30
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UP_CHI_revolutionary_military_state
+		icon = GFX_goal_generic_major_war
+		x = 16
+		y = 7
+		cost = 10
+		prerequisite = { focus = UP_CHI_absorb_defected_cadets }
+		prerequisite = { focus = UP_CHI_nanjing_general_staff }
+		completion_reward = {
+			add_war_support = 0.08
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = UP_CHI_inherit_sun_yat_sen
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 5
+		cost = 10
+		prerequisite = { focus = UP_CHI_militarist_bloc }
+		mutually_exclusive = { focus = UP_CHI_whampoa_officer_corps }
+		completion_reward = {
+			add_stability = 0.02
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = UP_CHI_second_northern_expedition
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 21
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UP_CHI_three_principles_under_red_banner
+		icon = GFX_goal_generic_national_unity
+		x = 23
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = UP_CHI_republican_revolutionary_claim
+		icon = GFX_goal_generic_forceful_treaty
+		x = 22
+		y = 7
+		cost = 10
+		prerequisite = { focus = UP_CHI_second_northern_expedition }
+		prerequisite = { focus = UP_CHI_three_principles_under_red_banner }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+		}
+	}
+}

@@ -1,0 +1,19 @@
+capital = 195
+set_politics = {
+	ruling_party = democratic
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 55
+	neutrality = 25
+	communism = 15
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "亚历山大·克伦斯基"
+	picture = "Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = { }
+}

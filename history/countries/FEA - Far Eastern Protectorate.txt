@@ -1,0 +1,19 @@
+capital = 408
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 50
+	fascism = 30
+	democratic = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "格里戈里·霍尔瓦特"
+	picture = "Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { }
+}

@@ -1,0 +1,19 @@
+capital = 571
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 55
+	democratic = 25
+	communism = 15
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "格里戈里·谢苗诺夫"
+	picture = "Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { }
+}

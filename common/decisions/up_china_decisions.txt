@@ -1,0 +1,23 @@
+UP_china_booklet_decisions = {
+	icon = generic_political_discourse
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		has_country_flag = UP_china_red_unification
+	}
+
+	UP_CHI_read_red_tide_booklet = {
+		icon = generic_political_discourse
+		cost = 0
+		available = {
+			has_country_flag = UP_china_red_unification
+		}
+		visible = {
+			has_country_flag = UP_china_red_unification
+		}
+		complete_effect = {
+			country_event = { id = up_asia.106 }
+		}
+	}
+}

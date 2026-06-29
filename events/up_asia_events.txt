@@ -1,0 +1,402 @@
+﻿add_namespace = up_asia
+
+country_event = {
+	id = up_asia.1
+	title = up_asia.1.t
+	desc = up_asia.1.d
+	picture = GFX_report_event_chinese_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.1.a
+		add_ideas = {
+			UP_revolutionary_reconstruction
+			UP_asian_red_center
+		}
+		set_country_flag = UP_china_revolutionary_league
+	}
+}
+
+country_event = {
+	id = up_asia.2
+	title = up_asia.2.t
+	desc = up_asia.2.d
+	picture = GFX_report_event_japanese_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.2.a
+		add_ideas = {
+			UP_imperial_overstretch
+			UP_kwantung_autonomy_crisis
+		}
+		set_country_flag = UP_japan_overstretched_empire
+	}
+}
+
+country_event = {
+	id = up_asia.3
+	title = up_asia.3.t
+	desc = up_asia.3.d
+	picture = GFX_report_event_japanese_troops
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.3.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "溥仪"
+			desc = "POLITICS_PU_YI_DESC"
+			picture = "Portrait_Manchukuo_Pu_Yi.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+		add_ideas = {
+			UP_unleashed_puppet
+			UP_imperial_claims_in_exile
+		}
+		set_country_flag = UP_manchuria_unleashed_puppet
+		JAP = {
+			country_event = { id = up_asia.11 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.4
+	title = up_asia.4.t
+	desc = up_asia.4.d
+	picture = GFX_report_event_india
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.4.a
+		add_ideas = UP_delhi_transfer_crisis
+		set_country_flag = UP_india_red_black_split
+	}
+}
+
+country_event = {
+	id = up_asia.5
+	title = up_asia.5.t
+	desc = up_asia.5.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.5.a
+		add_ideas = UP_russian_collapse
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		set_country_flag = UP_russian_collapse
+	}
+}
+
+country_event = {
+	id = up_asia.10
+	title = up_asia.10.t
+	desc = up_asia.10.d
+	picture = GFX_report_event_japanese_troops
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		has_country_flag = UP_japan_overstretched_empire
+		NOT = { has_country_flag = UP_harbin_declaration_resolved }
+	}
+
+	mean_time_to_happen = { days = 30 }
+
+	option = {
+		name = up_asia.10.a
+		add_political_power = -25
+		add_stability = -0.03
+	}
+	option = {
+		name = up_asia.10.b
+		add_war_support = 0.03
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = up_asia.11
+	title = up_asia.11.t
+	desc = up_asia.11.d
+	picture = GFX_report_event_japanese_troops
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.11.a
+		ai_chance = { factor = 100 }
+		set_country_flag = UP_harbin_declaration_resolved
+		add_stability = -0.02
+		add_political_power = -25
+		set_autonomy = {
+			target = MAN
+			autonomy_state = autonomy_free
+		}
+		if = {
+			limit = { MAN = { exists = yes } }
+			MAN = { set_country_flag = UP_manchuria_independence_recognized }
+		}
+	}
+
+	option = {
+		name = up_asia.11.b
+		ai_chance = { factor = 0 }
+		set_country_flag = UP_harbin_declaration_resolved
+		add_war_support = 0.05
+		if = {
+			limit = { MAN = { exists = yes } }
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.12
+	title = up_asia.12.t
+	desc = up_asia.12.d
+	picture = GFX_report_event_japanese_troops
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		has_country_flag = UP_harbin_declaration_resolved
+		has_war_with = MAN
+		MAN = { has_capitulated = yes }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = up_asia.12.a
+		puppet = MAN
+		MAN = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "汪精卫"
+				desc = "POLITICS_WANG_JINGWEI_DESC"
+				picture = "Portrait_China_Wang_Jingwei.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+			}
+			set_country_flag = UP_wang_jingwei_restored_manchuria
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.100
+	title = up_asia.100.t
+	desc = up_asia.100.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.100.a }
+}
+
+country_event = {
+	id = up_asia.101
+	title = up_asia.101.t
+	desc = up_asia.101.d
+	picture = GFX_report_event_japanese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.100.a }
+}
+
+country_event = {
+	id = up_asia.102
+	title = up_asia.102.t
+	desc = up_asia.102.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+	option = { name = up_asia.100.a }
+}
+
+country_event = {
+	id = up_asia.103
+	title = up_asia.103.t
+	desc = up_asia.103.d
+	picture = GFX_report_event_india
+	is_triggered_only = yes
+	option = { name = up_asia.100.a }
+}
+
+country_event = {
+	id = up_asia.104
+	title = up_asia.104.t
+	desc = up_asia.104.d
+	picture = GFX_report_event_soviet_tanks
+	is_triggered_only = yes
+	option = { name = up_asia.100.a }
+}
+
+country_event = {
+	id = up_asia.105
+	title = up_asia.105.t
+	desc = up_asia.105.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = { name = up_asia.100.a }
+}
+
+country_event = {
+	id = up_asia.106
+	title = up_asia.106.t
+	desc = up_asia.106.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.106.a
+		country_event = { id = up_asia.107 days = 1 }
+	}
+}
+
+country_event = {
+	id = up_asia.107
+	title = up_asia.107.t
+	desc = up_asia.107.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.107.a
+		country_event = { id = up_asia.108 days = 1 }
+	}
+}
+
+country_event = {
+	id = up_asia.108
+	title = up_asia.108.t
+	desc = up_asia.108.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.108.a
+		country_event = { id = up_asia.109 days = 1 }
+	}
+}
+
+country_event = {
+	id = up_asia.109
+	title = up_asia.109.t
+	desc = up_asia.109.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.109.a
+		country_event = { id = up_asia.110 days = 1 }
+	}
+}
+
+country_event = {
+	id = up_asia.110
+	title = up_asia.110.t
+	desc = up_asia.110.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.110.a }
+}
+
+country_event = {
+	id = up_asia.120
+	title = up_asia.120.t
+	desc = up_asia.120.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.120.a
+		add_ideas = UP_people_war_resistance
+	}
+}
+
+country_event = {
+	id = up_asia.121
+	title = up_asia.121.t
+	desc = up_asia.121.d
+	picture = GFX_report_event_japanese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.121.a
+		ai_chance = { factor = 90 }
+		add_ideas = UP_sino_japanese_research_pact
+		CHI = {
+			add_ideas = UP_sino_japanese_research_pact
+			set_country_flag = UP_sino_japanese_research_pact_signed
+		}
+	}
+	option = {
+		name = up_asia.121.b
+		ai_chance = { factor = 10 }
+		CHI = {
+			add_political_power = 50
+			set_country_flag = UP_japan_rejected_research_pact
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.122
+	title = up_asia.122.t
+	desc = up_asia.122.d
+	picture = GFX_report_event_japanese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.122.a
+		ai_chance = { factor = 80 }
+		join_faction = CHI
+		add_ideas = UP_sino_japanese_research_pact
+		CHI = {
+			add_ideas = UP_asian_cooperation_boom
+			set_country_flag = UP_sino_japanese_bloc_created
+		}
+	}
+	option = {
+		name = up_asia.122.b
+		ai_chance = { factor = 20 }
+		CHI = {
+			add_political_power = 75
+			set_country_flag = UP_japan_rejected_common_front
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.123
+	title = up_asia.123.t
+	desc = up_asia.123.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.123.a
+		ai_chance = { factor = 35 }
+		CHI = { add_political_power = 25 }
+	}
+	option = {
+		name = up_asia.123.b
+		ai_chance = { factor = 65 }
+		CHI = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}

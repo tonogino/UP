@@ -1,0 +1,19 @@
+capital = 4
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 55
+	democratic = 25
+	fascism = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "奥托·冯·哈布斯堡"
+	picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { }
+}

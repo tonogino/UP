@@ -1,0 +1,466 @@
+ideas = {
+	country = {
+		UP_revolutionary_reconstruction = {
+			picture = generic_communist_revolution
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		UP_asian_red_center = {
+			picture = generic_communist_revolution
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				communism_drift = 0.03
+				political_power_gain = 0.05
+			}
+		}
+
+		UP_china_history_booklet = {
+			picture = generic_political_discourse
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				political_power_gain = 0.02
+			}
+		}
+
+		UP_chinese_marxist_consolidation = {
+			picture = generic_communist_revolution
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				stability_factor = 0.08
+				consumer_goods_factor = -0.03
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		UP_people_war_resistance = {
+			picture = generic_army_reform
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				defence = 0.10
+				army_org_factor = 0.05
+				war_support_factor = 0.08
+			}
+		}
+
+		UP_civilian_mobilization_card = {
+			picture = generic_construct_civ_factory
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_military_mobilization_card = {
+			picture = generic_construct_mil_factory
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.12
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		UP_china_rising = {
+			picture = generic_communist_revolution
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.12
+				political_power_gain = 0.10
+				production_speed_industrial_complex_factor = 0.08
+				production_speed_arms_factory_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+
+		UP_liberation_offensive = {
+			picture = generic_attack_bonus
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				war_support_factor = 0.10
+				army_attack_factor = 0.08
+				army_speed_factor = 0.05
+				production_speed_arms_factory_factor = 0.08
+			}
+		}
+
+		UP_asian_liberation_claim = {
+			picture = generic_nationalism
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				justify_war_goal_time = -0.20
+				army_attack_factor = 0.05
+			}
+		}
+
+		UP_sino_japanese_research_pact = {
+			picture = generic_research
+			allowed = {
+				OR = {
+					original_tag = CHI
+					original_tag = JAP
+				}
+			}
+			modifier = {
+				research_speed_factor = 0.04
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		UP_asian_cooperation_boom = {
+			picture = generic_construct_civ_factory
+			allowed = {
+				original_tag = CHI
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				trade_opinion_factor = 0.15
+			}
+		}
+
+		UP_cadre_rectification = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		UP_revolutionary_planning_commission = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+				production_speed_infrastructure_factor = 0.06
+			}
+		}
+
+		UP_youth_cultural_workgroups = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.03
+				communism_drift = 0.02
+			}
+		}
+
+		UP_new_china_economic_miracle = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.08
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.12
+				industrial_capacity_factory = 0.08
+				research_speed_factor = 0.04
+			}
+		}
+
+		UP_border_liberation_staff = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_attack_factor = 0.05
+				planning_speed = 0.10
+				max_planning = 0.05
+			}
+		}
+
+		UP_forward_military_industry = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.06
+			}
+		}
+
+		UP_liberation_broadcast_network = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				war_support_factor = 0.06
+				justify_war_goal_time = -0.10
+			}
+		}
+
+		UP_liberated_asia_economic_miracle = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.18
+				consumer_goods_factor = -0.06
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.16
+				army_attack_factor = 0.08
+				army_org_factor = 0.06
+				justify_war_goal_time = -0.20
+			}
+		}
+
+		UP_sino_japanese_coordination_office = {
+			picture = generic_diplomacy
+			allowed = { original_tag = CHI }
+			modifier = {
+				research_speed_factor = 0.03
+				trade_opinion_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		UP_shared_asian_standards = {
+			picture = generic_research
+			allowed = { original_tag = CHI }
+			modifier = {
+				research_speed_factor = 0.04
+				industrial_capacity_factory = 0.05
+				production_speed_infrastructure_factor = 0.08
+			}
+		}
+
+		UP_tokyo_shanghai_media_current = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.04
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		UP_co_prosperity_economic_miracle = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.12
+				consumer_goods_factor = -0.10
+				production_speed_industrial_complex_factor = 0.18
+				production_speed_infrastructure_factor = 0.18
+				industrial_capacity_factory = 0.08
+				research_speed_factor = 0.06
+				trade_opinion_factor = 0.20
+			}
+		}
+
+		UP_imperial_overstretch = {
+			picture = generic_army_reform
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.08
+				division_recovery_rate = -0.05
+			}
+		}
+
+		UP_kwantung_autonomy_crisis = {
+			picture = generic_political_discourse
+			allowed = {
+				original_tag = JAP
+			}
+			modifier = {
+				political_power_gain = -0.10
+				war_support_factor = 0.04
+			}
+		}
+
+		UP_japan_overstretch_audit = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_japan_army_ascendant = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.06
+				army_org_factor = 0.05
+				war_support_factor = 0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_japan_siberian_buffer_plan = {
+			picture = generic_demand_territory
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.10
+				max_planning = 0.05
+				justify_war_goal_time = -0.10
+			}
+		}
+
+		UP_japan_navy_ascendant = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_speed_factor = 0.05
+				naval_coordination = 0.05
+				production_speed_dockyard_factor = 0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_japan_southern_resource_plan = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+				production_speed_infrastructure_factor = 0.08
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		UP_japan_showa_mobilization = {
+			picture = generic_dangerous_deal
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.15
+				political_power_gain = 0.12
+				stability_factor = -0.08
+				production_speed_arms_factory_factor = 0.12
+			}
+		}
+
+		UP_japan_purged_zaibatsu_state = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.08
+				stability_factor = -0.04
+			}
+		}
+
+		UP_japan_imperial_contraction_plan = {
+			picture = generic_defence
+			allowed = { original_tag = JAP }
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_factor = -0.04
+				production_speed_industrial_complex_factor = 0.08
+			}
+		}
+
+		UP_japan_pacific_defense_circle = {
+			picture = generic_construct_naval_dockyard
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				naval_invasion_defense = 0.10
+				stability_factor = 0.04
+			}
+		}
+
+		UP_japan_manchurian_reconquest_staff = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				war_support_factor = 0.06
+			}
+		}
+
+		UP_japan_restored_balance = {
+			picture = generic_national_unity
+			allowed = { original_tag = JAP }
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.08
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.06
+				production_speed_industrial_complex_factor = 0.08
+				production_speed_arms_factory_factor = 0.08
+			}
+		}
+
+		UP_unleashed_puppet = {
+			picture = generic_political_discourse
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+
+		UP_imperial_claims_in_exile = {
+			picture = generic_nationalism
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		UP_delhi_transfer_crisis = {
+			picture = generic_civil_war
+			allowed = {
+				original_tag = RAJ
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = 0.10
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_russian_collapse = {
+			picture = generic_civil_war
+			allowed = {
+				original_tag = SOV
+			}
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.10
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+}

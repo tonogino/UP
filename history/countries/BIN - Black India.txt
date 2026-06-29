@@ -1,0 +1,19 @@
+capital = 439
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 65
+	neutrality = 25
+	democratic = 5
+	communism = 5
+}
+
+create_country_leader = {
+	name = "马丹·莫汉·马拉维亚"
+	picture = "Portrait_Asia_Generic_fascism.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}

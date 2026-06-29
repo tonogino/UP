@@ -1,0 +1,19 @@
+capital = 431
+set_politics = {
+	ruling_party = communism
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 70
+	democratic = 10
+	neutrality = 15
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "穆扎法尔·艾哈迈德"
+	picture = "Portrait_Asia_Generic_communism.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}

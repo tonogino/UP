@@ -1,0 +1,47 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CHI = {
+				country_event = { id = up_asia.1 }
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = up_asia.100 days = 1 }
+				}
+			}
+			JAP = {
+				country_event = { id = up_asia.2 }
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = up_asia.101 days = 1 }
+				}
+			}
+			MAN = {
+				country_event = { id = up_asia.3 days = 3 }
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = up_asia.102 days = 1 }
+				}
+			}
+			RAJ = {
+				country_event = { id = up_asia.4 }
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = up_asia.103 days = 1 }
+				}
+			}
+			SOV = {
+				country_event = { id = up_asia.5 }
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = up_asia.104 days = 1 }
+				}
+			}
+			GER = {
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = up_asia.105 days = 1 }
+				}
+			}
+		}
+	}
+}
