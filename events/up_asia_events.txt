@@ -11,8 +11,10 @@ country_event = {
 	option = {
 		name = up_asia.1.a
 		add_ideas = {
-			UP_revolutionary_reconstruction
-			UP_asian_red_center
+			UP_long_march_myth
+			UP_reconstruction_ruins
+			UP_local_revolutionary_committees
+			UP_unfinished_revolution
 		}
 		set_country_flag = UP_china_revolutionary_league
 	}
@@ -30,7 +32,9 @@ country_event = {
 		name = up_asia.2.a
 		add_ideas = {
 			UP_imperial_overstretch
-			UP_kwantung_autonomy_crisis
+			UP_northern_mire
+			UP_zaibatsu_rule
+			UP_army_navy_rivalry
 		}
 		set_country_flag = UP_japan_overstretched_empire
 	}

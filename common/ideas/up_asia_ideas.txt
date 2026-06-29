@@ -33,6 +33,43 @@ ideas = {
 			}
 		}
 
+		UP_long_march_myth = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				experience_gain_army = 0.20
+			}
+		}
+
+		UP_reconstruction_ruins = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		UP_local_revolutionary_committees = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				conscription_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
+
+		UP_unfinished_revolution = {
+			picture = generic_nationalism
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_factor = 0.15
+				communism_drift = 0.01
+			}
+		}
+
 		UP_chinese_marxist_consolidation = {
 			picture = generic_communist_revolution
 			allowed = {
@@ -282,20 +319,38 @@ ideas = {
 				original_tag = JAP
 			}
 			modifier = {
+				supply_consumption_factor = 0.20
 				stability_factor = -0.10
-				consumer_goods_factor = 0.08
-				division_recovery_rate = -0.05
+				war_support_factor = 0.10
+				required_garrison_factor = 0.25
 			}
 		}
 
-		UP_kwantung_autonomy_crisis = {
-			picture = generic_political_discourse
-			allowed = {
-				original_tag = JAP
-			}
+		UP_northern_mire = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
 			modifier = {
-				political_power_gain = -0.10
-				war_support_factor = 0.04
+				experience_gain_army = 0.15
+				conscription_factor = -0.05
+			}
+		}
+
+		UP_zaibatsu_rule = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				political_power_gain = -0.20
+			}
+		}
+
+		UP_army_navy_rivalry = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_org_factor = 0.10
+				naval_coordination = 0.10
+				stability_factor = -0.15
 			}
 		}
 
