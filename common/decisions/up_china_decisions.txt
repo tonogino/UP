@@ -49,3 +49,149 @@ UP_china_foreign_revolution_decisions = {
 		}
 	}
 }
+
+UP_china_integrate_warlords_decisions = {
+	icon = generic_political_pressure
+	allowed = { original_tag = CHI }
+	visible = { has_country_flag = UP_CHI_integrate_warlords_decisions_unlocked }
+
+	UP_CHI_integrate_chongqing_government = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { CKG = { exists = yes } }
+		visible = { CKG = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = CKG }
+		}
+	}
+
+	UP_CHI_integrate_liangguang_clique = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { GXC = { exists = yes } }
+		visible = { GXC = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = GXC }
+		}
+	}
+
+	UP_CHI_integrate_yunnan = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { YUN = { exists = yes } }
+		visible = { YUN = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = YUN }
+		}
+	}
+
+	UP_CHI_integrate_northwest = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { XSM = { exists = yes } }
+		visible = { XSM = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = XSM }
+		}
+	}
+}
+
+UP_china_asian_sphere_decisions = {
+	icon = generic_major_alliance
+	allowed = { original_tag = CHI }
+	visible = { has_country_flag = UP_CHI_asian_sphere_decisions_unlocked }
+
+	UP_CHI_establish_chinese_sphere = {
+		icon = generic_major_alliance
+		cost = 50
+		complete_effect = {
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	UP_CHI_pressure_mongolia = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { MON = { exists = yes } }
+		visible = { MON = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = MON }
+		}
+	}
+
+	UP_CHI_pressure_far_east = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { FEA = { exists = yes } }
+		visible = { FEA = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = FEA }
+		}
+	}
+
+	UP_CHI_prepare_korean_satellite = {
+		icon = generic_demand_territory
+		cost = 50
+		available = { KOR = { exists = yes } }
+		visible = { KOR = { exists = yes } }
+		complete_effect = {
+			create_wargoal = { type = puppet_wargoal_focus target = KOR }
+		}
+	}
+}
+
+UP_china_pan_asian_liberation_decisions = {
+	icon = generic_intelligence_exchange
+	allowed = { original_tag = CHI }
+	visible = { has_country_flag = UP_CHI_pan_asian_liberation_decisions_unlocked }
+
+	UP_CHI_support_indian_revolution = {
+		icon = generic_communist_revolution
+		cost = 35
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = { RIN = { exists = yes } }
+				RIN = {
+					add_political_power = 50
+					add_popularity = { ideology = communism popularity = 0.03 }
+				}
+			}
+			add_political_power = -10
+		}
+	}
+
+	UP_CHI_support_indochina_independence = {
+		icon = generic_intelligence_exchange
+		cost = 35
+		fire_only_once = yes
+		complete_effect = {
+			FRA = { add_opinion_modifier = { target = ROOT modifier = anti_western_imperialism } }
+			add_named_threat = { threat = 1 name = UP_CHI_support_indochina_independence }
+			add_war_support = 0.01
+		}
+	}
+
+	UP_CHI_support_indonesian_nationalism = {
+		icon = generic_positive_trade_relations
+		cost = 35
+		fire_only_once = yes
+		complete_effect = {
+			HOL = { add_opinion_modifier = { target = ROOT modifier = anti_western_imperialism } }
+			add_named_threat = { threat = 1 name = UP_CHI_support_indonesian_nationalism }
+			add_political_power = 25
+		}
+	}
+
+	UP_CHI_support_burmese_independence = {
+		icon = generic_demand_territory
+		cost = 35
+		fire_only_once = yes
+		complete_effect = {
+			ENG = { add_opinion_modifier = { target = ROOT modifier = anti_western_imperialism } }
+			add_named_threat = { threat = 1 name = UP_CHI_support_burmese_independence }
+			add_stability = 0.01
+		}
+	}
+}

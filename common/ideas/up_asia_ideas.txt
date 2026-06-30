@@ -193,6 +193,169 @@ ideas = {
 			}
 		}
 
+		UP_army_above_parties = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.02
+				war_support_factor = 0.05
+				conscription_factor = 0.02
+			}
+		}
+
+		UP_purge_localism = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				non_core_manpower = 0.02
+				resistance_target = -0.10
+			}
+		}
+
+		UP_national_military_council = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+
+		UP_young_officer_mobilization = {
+			picture = generic_training
+			allowed = { original_tag = CHI }
+			modifier = {
+				conscription_factor = 0.03
+				training_time_factor = -0.05
+			}
+		}
+
+		UP_chinese_revivalism = {
+			picture = generic_nationalism
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.15
+			}
+		}
+
+		UP_juntong_expansion = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.05
+				resistance_target = -0.15
+				political_advisor_cost_factor = -0.05
+			}
+		}
+
+		UP_unified_thought = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				fascism_drift = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		UP_iron_blood_republic = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				industrial_capacity_factory = 0.10
+				conscription_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		UP_greater_asian_order = {
+			picture = generic_nationalism
+			allowed = { original_tag = CHI }
+			modifier = {
+				justify_war_goal_time = -0.50
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				autonomy_manpower_share_from_subjects = 0.10
+				subjects_autonomy_gain = -0.10
+			}
+		}
+
+		UP_anti_japanese_propaganda = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.03
+				trade_opinion_factor = -0.10
+			}
+		}
+
+		UP_sino_japanese_trade = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = CHI }
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		UP_sino_japanese_technical_exchange = {
+			picture = generic_research
+			allowed = {
+				OR = {
+					original_tag = CHI
+					original_tag = JAP
+				}
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		UP_unified_railway_standards = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = CHI }
+			modifier = {
+				supply_consumption_factor = -0.05
+				production_speed_infrastructure_factor = 0.08
+			}
+		}
+
+		UP_asian_development_bank = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		UP_joint_military_council = {
+			picture = generic_army_doctrines
+			allowed = {
+				OR = {
+					original_tag = CHI
+					original_tag = JAP
+				}
+			}
+			modifier = {
+				experience_gain_army_factor = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+
+		UP_new_asian_order = {
+			picture = generic_nationalism
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.15
+				research_speed_factor = 0.10
+				trade_opinion_factor = 0.20
+				war_support_factor = 0.05
+			}
+		}
+
 		UP_chinese_marxist_consolidation = {
 			picture = generic_communist_revolution
 			allowed = {

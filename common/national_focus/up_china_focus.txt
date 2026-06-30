@@ -5,7 +5,6 @@ focus_tree = {
         modifier = { add = 100 tag = CHI }
     }
     default = no
-    continuous_focus_position = { x = 34 y = 1500 }
 
     focus = {
         id = UP_CHI_revolutionary_league_1933
@@ -67,6 +66,7 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_the_chongqing_question }
         prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
         mutually_exclusive = { focus = UP_CHI_militarist_bloc }
+        mutually_exclusive = { focus = UP_CHI_pan_asianist_bloc }
         completion_reward = {
             add_political_power = 120
             add_stability = -0.05
@@ -86,9 +86,319 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_the_chongqing_question }
         prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
         mutually_exclusive = { focus = UP_CHI_rural_reform_bloc }
+        mutually_exclusive = { focus = UP_CHI_pan_asianist_bloc }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_war_support = 0.08
             army_experience = 20
+        }
+    }
+
+    focus = {
+        id = UP_CHI_pan_asianist_bloc
+        icon = GFX_goal_generic_diplomacy
+        x = 33
+        y = 4
+        cost = 10
+        prerequisite = { focus = UP_CHI_the_chongqing_question }
+        prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
+        mutually_exclusive = { focus = UP_CHI_rural_reform_bloc }
+        mutually_exclusive = { focus = UP_CHI_militarist_bloc }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = UP_CHI_reconsider_japan_policy
+        icon = GFX_goal_generic_dangerous_deal
+        x = 33
+        y = 5
+        cost = 10
+        prerequisite = { focus = UP_CHI_pan_asianist_bloc }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = UP_CHI_war_or_peace
+        icon = GFX_goal_generic_major_alliance
+        x = 33
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_reconsider_japan_policy }
+        completion_reward = {
+            if = {
+                limit = { JAP = { exists = yes } }
+                JAP = { country_event = { id = up_asia.140 days = 1 } }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_nanjing_tokyo_joint_declaration
+        icon = GFX_goal_generic_improve_relations
+        x = 33
+        y = 7
+        cost = 10
+        prerequisite = { focus = UP_CHI_war_or_peace }
+        available = {
+            OR = {
+                has_country_flag = CHI_japan_reconciled
+                has_country_flag = CHI_accepted_japanese_demands
+            }
+        }
+        completion_reward = {
+            add_stability = 0.05
+            if = {
+                limit = { JAP = { exists = yes } }
+                JAP = {
+                    add_opinion_modifier = {
+                        target = ROOT
+                        modifier = asian_reconciliation
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_stop_anti_japanese_propaganda
+        icon = GFX_goal_generic_propaganda
+        x = 31
+        y = 8
+        cost = 10
+        prerequisite = { focus = UP_CHI_nanjing_tokyo_joint_declaration }
+        completion_reward = {
+            add_stability = -0.05
+            remove_ideas = UP_anti_japanese_propaganda
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = UP_CHI_invite_japanese_observers
+        icon = GFX_goal_generic_army_doctrines
+        x = 33
+        y = 8
+        cost = 10
+        prerequisite = { focus = UP_CHI_nanjing_tokyo_joint_declaration }
+        completion_reward = {
+            army_experience = 25
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_open_sino_japanese_trade
+        icon = GFX_goal_generic_positive_trade_relations
+        x = 35
+        y = 8
+        cost = 10
+        prerequisite = { focus = UP_CHI_nanjing_tokyo_joint_declaration }
+        completion_reward = {
+            add_ideas = UP_sino_japanese_trade
+            add_political_power = 75
+        }
+    }
+
+    focus = {
+        id = UP_CHI_joint_development_of_manchuria
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 33
+        y = 9
+        cost = 10
+        prerequisite = { focus = UP_CHI_stop_anti_japanese_propaganda }
+        prerequisite = { focus = UP_CHI_invite_japanese_observers }
+        prerequisite = { focus = UP_CHI_open_sino_japanese_trade }
+        completion_reward = {
+            if = {
+                limit = { MAN = { exists = yes } }
+                MAN = {
+                    random_owned_controlled_state = {
+                        limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                        add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                    }
+                    random_owned_controlled_state = {
+                        limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                        add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                    }
+                    random_owned_controlled_state = {
+                        limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                        add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_sino_japanese_technical_exchange
+        icon = GFX_goal_generic_scientific_exchange
+        x = 31
+        y = 10
+        cost = 10
+        prerequisite = { focus = UP_CHI_joint_development_of_manchuria }
+        completion_reward = {
+            add_ideas = UP_sino_japanese_technical_exchange
+            if = {
+                limit = { JAP = { exists = yes } }
+                JAP = { add_ideas = UP_sino_japanese_technical_exchange }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_unify_railway_standards
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 33
+        y = 10
+        cost = 10
+        prerequisite = { focus = UP_CHI_joint_development_of_manchuria }
+        completion_reward = {
+            add_ideas = UP_unified_railway_standards
+        }
+    }
+
+    focus = {
+        id = UP_CHI_asian_development_bank
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 35
+        y = 10
+        cost = 10
+        prerequisite = { focus = UP_CHI_joint_development_of_manchuria }
+        completion_reward = {
+            add_ideas = UP_asian_development_bank
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = UP_CHI_pan_asianism
+        icon = GFX_goal_generic_national_unity
+        x = 33
+        y = 11
+        cost = 10
+        prerequisite = { focus = UP_CHI_sino_japanese_technical_exchange }
+        prerequisite = { focus = UP_CHI_unify_railway_standards }
+        prerequisite = { focus = UP_CHI_asian_development_bank }
+        completion_reward = {
+            add_popularity = { ideology = neutrality popularity = 0.10 }
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = UP_CHI_oppose_western_imperialism
+        icon = GFX_goal_generic_major_war
+        x = 31
+        y = 12
+        cost = 10
+        prerequisite = { focus = UP_CHI_pan_asianism }
+        completion_reward = {
+            add_named_threat = { threat = 5 name = UP_CHI_oppose_western_imperialism }
+            ENG = { add_opinion_modifier = { target = ROOT modifier = anti_western_imperialism } }
+            FRA = { add_opinion_modifier = { target = ROOT modifier = anti_western_imperialism } }
+            USA = { add_opinion_modifier = { target = ROOT modifier = anti_western_imperialism } }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_support_asian_liberation_movements
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 35
+        y = 12
+        cost = 10
+        prerequisite = { focus = UP_CHI_pan_asianism }
+        completion_reward = {
+            set_country_flag = UP_CHI_pan_asian_liberation_decisions_unlocked
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = UP_CHI_east_asian_cooperation_council
+        icon = GFX_goal_generic_major_alliance
+        x = 33
+        y = 13
+        cost = 10
+        prerequisite = { focus = UP_CHI_oppose_western_imperialism }
+        prerequisite = { focus = UP_CHI_support_asian_liberation_movements }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = UP_CHI_found_east_asian_community
+        icon = GFX_goal_generic_major_alliance
+        x = 33
+        y = 14
+        cost = 10
+        prerequisite = { focus = UP_CHI_east_asian_cooperation_council }
+        completion_reward = {
+            if = {
+                limit = { NOT = { is_in_faction = yes } }
+                create_faction = East_Asian_Community
+            }
+            if = {
+                limit = { JAP = { exists = yes NOT = { is_in_faction = yes } } }
+                add_to_faction = JAP
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_joint_military_council
+        icon = GFX_goal_generic_army_doctrines
+        x = 31
+        y = 15
+        cost = 10
+        prerequisite = { focus = UP_CHI_found_east_asian_community }
+        completion_reward = {
+            add_ideas = UP_joint_military_council
+            if = {
+                limit = { JAP = { exists = yes } }
+                JAP = { add_ideas = UP_joint_military_council }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_mutual_defense_treaty
+        icon = GFX_goal_generic_major_alliance
+        x = 35
+        y = 15
+        cost = 10
+        prerequisite = { focus = UP_CHI_found_east_asian_community }
+        completion_reward = {
+            if = {
+                limit = { JAP = { exists = yes } }
+                give_guarantee = JAP
+                JAP = { give_guarantee = ROOT }
+            }
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = UP_CHI_new_asian_order
+        icon = GFX_goal_generic_national_unity
+        x = 33
+        y = 16
+        cost = 10
+        prerequisite = { focus = UP_CHI_joint_military_council }
+        prerequisite = { focus = UP_CHI_mutual_defense_treaty }
+        completion_reward = {
+            add_ideas = UP_new_asian_order
         }
     }
 
@@ -304,155 +614,209 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = UP_CHI_whampoa_officer_corps
-        icon = GFX_goal_generic_army_doctrines
-        x = 16
-        y = 5
-        cost = 10
-        prerequisite = { focus = UP_CHI_militarist_bloc }
-        mutually_exclusive = { focus = UP_CHI_inherit_sun_yat_sen }
-        completion_reward = {
-            army_experience = 25
-            add_command_power = 25
-        }
-    }
+	focus = {
+		id = UP_CHI_army_above_parties
+		icon = GFX_goal_generic_position_armies
+		x = 19
+		y = 5
+		cost = 10
+		prerequisite = { focus = UP_CHI_militarist_bloc }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.10
+			add_political_power = 100
+			remove_ideas = UP_local_revolutionary_committees
+			add_ideas = UP_army_above_parties
+		}
+	}
 
-    focus = {
-        id = UP_CHI_absorb_defected_cadets
-        icon = GFX_goal_generic_position_armies
-        x = 15
-        y = 6
-        cost = 10
-        prerequisite = { focus = UP_CHI_whampoa_officer_corps }
-        completion_reward = {
-            army_experience = 15
-            add_war_support = 0.03
-        }
-    }
+	focus = {
+		id = UP_CHI_purge_localism
+		icon = GFX_goal_generic_political_pressure
+		x = 19
+		y = 6
+		cost = 10
+		prerequisite = { focus = UP_CHI_army_above_parties }
+		completion_reward = {
+			set_country_flag = UP_CHI_integrate_warlords_decisions_unlocked
+			add_ideas = UP_purge_localism
+		}
+	}
 
-    focus = {
-        id = UP_CHI_nanjing_general_staff
-        icon = GFX_goal_generic_army_artillery
-        x = 17
-        y = 6
-        cost = 10
-        prerequisite = { focus = UP_CHI_whampoa_officer_corps }
-        completion_reward = {
-            add_command_power = 30
-            add_political_power = 50
-        }
-    }
+	focus = {
+		id = UP_CHI_establish_national_military_council
+		icon = GFX_goal_generic_army_doctrines
+		x = 19
+		y = 7
+		cost = 10
+		prerequisite = { focus = UP_CHI_purge_localism }
+		completion_reward = {
+			add_ideas = UP_national_military_council
+		}
+	}
 
-    focus = {
-        id = UP_CHI_revolutionary_military_state
-        icon = GFX_goal_generic_major_war
-        x = 16
-        y = 7
-        cost = 10
-        prerequisite = { focus = UP_CHI_absorb_defected_cadets }
-        prerequisite = { focus = UP_CHI_nanjing_general_staff }
-        completion_reward = {
-            add_war_support = 0.08
-            army_experience = 25
-        }
-    }
+	focus = {
+		id = UP_CHI_young_officer_mobilization
+		icon = GFX_goal_generic_army_doctrines
+		x = 19
+		y = 8
+		cost = 10
+		prerequisite = { focus = UP_CHI_establish_national_military_council }
+		completion_reward = {
+			add_ideas = UP_young_officer_mobilization
+		}
+	}
 
-    focus = {
-        id = UP_CHI_inherit_sun_yat_sen
-        icon = GFX_goal_generic_demand_territory
-        x = 22
-        y = 5
-        cost = 10
-        prerequisite = { focus = UP_CHI_militarist_bloc }
-        mutually_exclusive = { focus = UP_CHI_whampoa_officer_corps }
-        completion_reward = {
-            add_stability = 0.02
-            add_war_support = 0.04
-        }
-    }
+	focus = {
+		id = UP_CHI_national_revival_movement
+		icon = GFX_goal_generic_national_unity
+		x = 19
+		y = 9
+		cost = 10
+		prerequisite = { focus = UP_CHI_young_officer_mobilization }
+		completion_reward = {
+			add_ideas = UP_chinese_revivalism
+		}
+	}
 
-    focus = {
-        id = UP_CHI_second_northern_expedition
-        icon = GFX_goal_generic_occupy_states_ongoing_war
-        x = 21
-        y = 6
-        cost = 10
-        prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
-        completion_reward = {
-            add_war_support = 0.05
-            add_political_power = 50
-        }
-    }
+	focus = {
+		id = UP_CHI_expand_the_juntong
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 15
+		y = 10
+		cost = 10
+		prerequisite = { focus = UP_CHI_national_revival_movement }
+		mutually_exclusive = { focus = UP_CHI_recover_the_northeast }
+		completion_reward = {
+			add_ideas = UP_juntong_expansion
+		}
+	}
 
-    focus = {
-        id = UP_CHI_three_principles_under_red_banner
-        icon = GFX_goal_generic_national_unity
-        x = 23
-        y = 6
-        cost = 10
-        prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
-        completion_reward = {
-            add_stability = 0.03
-            add_political_power = 75
-        }
-    }
+	focus = {
+		id = UP_CHI_unify_thought
+		icon = GFX_goal_generic_propaganda
+		x = 15
+		y = 11
+		cost = 10
+		prerequisite = { focus = UP_CHI_expand_the_juntong }
+		completion_reward = {
+			add_ideas = UP_unified_thought
+		}
+	}
 
-    focus = {
-        id = UP_CHI_republican_revolutionary_claim
-        icon = GFX_goal_generic_forceful_treaty
-        x = 22
-        y = 7
-        cost = 10
-        prerequisite = { focus = UP_CHI_second_northern_expedition }
-        prerequisite = { focus = UP_CHI_three_principles_under_red_banner }
-        completion_reward = {
-            add_war_support = 0.05
-            add_political_power = 100
-        }
-    }
+	focus = {
+		id = UP_CHI_party_state_unity
+		icon = GFX_goal_support_fascism
+		x = 15
+		y = 12
+		cost = 10
+		prerequisite = { focus = UP_CHI_unify_thought }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = { ideology = fascism popularity = 0.10 }
+			create_country_leader = {
+				name = "戴笠"
+				picture = "Portrait_Asia_Generic_fascism.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = { }
+			}
+		}
+	}
 
-    focus = {
-        id = CHI_focus
-        icon = GFX_goal_unknown
-        x = 16
-        y = 8
-        cost = 10
-        prerequisite = { focus = UP_CHI_revolutionary_military_state }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus CHI_focus completed"
-        }
-    }
+	focus = {
+		id = UP_CHI_iron_blood_republic
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 15
+		y = 13
+		cost = 10
+		prerequisite = { focus = UP_CHI_party_state_unity }
+		completion_reward = {
+			add_ideas = UP_iron_blood_republic
+		}
+	}
 
-    focus = {
-        id = CHI_focus_1
-        icon = GFX_goal_unknown
-        x = 16
-        y = 10
-        cost = 10
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus CHI_focus_1 completed"
-        }
-    }
+	focus = {
+		id = UP_CHI_recover_the_northeast
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 10
+		cost = 10
+		prerequisite = { focus = UP_CHI_national_revival_movement }
+		mutually_exclusive = { focus = UP_CHI_expand_the_juntong }
+		completion_reward = {
+			if = {
+				limit = { MAN = { exists = yes } }
+				create_wargoal = { type = annex_everything target = MAN }
+			}
+		}
+	}
 
-    focus = {
-        id = CHI_focus_2
-        icon = GFX_goal_unknown
-        x = 14
-        y = 9
-        cost = 10
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            log = "[GetDateText]: [Root.GetName]: Focus CHI_focus_2 completed"
-        }
-    }
+	focus = {
+		id = UP_CHI_revenge_against_japan
+		icon = GFX_goal_generic_major_war
+		x = 23
+		y = 11
+		cost = 10
+		prerequisite = { focus = UP_CHI_recover_the_northeast }
+		completion_reward = {
+			if = {
+				limit = { JAP = { exists = yes } }
+				create_wargoal = { type = annex_everything target = JAP }
+			}
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = UP_CHI_new_order_in_east_asia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 23
+		y = 12
+		cost = 10
+		prerequisite = { focus = UP_CHI_revenge_against_japan }
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = MAN
+						is_owned_by = MON
+						is_owned_by = MEN
+						is_owned_by = FEA
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = UP_CHI_greater_asian_expedition
+		icon = GFX_goal_generic_major_alliance
+		x = 23
+		y = 13
+		cost = 10
+		prerequisite = { focus = UP_CHI_new_order_in_east_asia }
+		completion_reward = {
+			set_country_flag = UP_CHI_asian_sphere_decisions_unlocked
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = UP_CHI_asia_for_asians
+		icon = GFX_goal_generic_national_unity
+		x = 19
+		y = 14
+		cost = 10
+		prerequisite = { focus = UP_CHI_iron_blood_republic }
+		prerequisite = { focus = UP_CHI_greater_asian_expedition }
+		completion_reward = {
+			add_ideas = UP_greater_asian_order
+		}
+	}
 
 }

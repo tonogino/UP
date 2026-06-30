@@ -1,0 +1,7 @@
+asian_reconciliation = {
+	value = 75
+}
+
+anti_western_imperialism = {
+	value = -50
+}
