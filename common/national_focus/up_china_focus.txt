@@ -455,6 +455,10 @@ focus_tree = {
         completion_reward = {
             every_subject_country = { add_opinion_modifier = { target = ROOT modifier = asian_reconciliation } }
             add_war_support = 0.02
+            if = {
+                limit = { NOT = { is_in_faction = yes } }
+                create_faction = Chinese_United_Front
+            }
         }
     }
 
@@ -490,6 +494,7 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_complete_national_unification }
         completion_reward = {
             country_event = { id = up_asia.210 days = 1 }
+            news_event = { id = up_asia_news.1 days = 1 }
         }
     }
 
@@ -511,6 +516,7 @@ focus_tree = {
                 limit = { NOT = { has_idea = UP_unfinished_revolution } }
                 add_ideas = UP_unfinished_revolution
             }
+            add_ideas = UP_mao_route_tensions
         }
     }
 
@@ -531,6 +537,7 @@ focus_tree = {
         completion_reward = {
             add_war_support = 0.08
             army_experience = 20
+            add_ideas = UP_militarist_route_tensions
         }
     }
 
@@ -548,6 +555,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 75
             add_stability = 0.02
+            add_ideas = UP_pan_asian_route_tensions
         }
     }
 
@@ -838,6 +846,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_mutual_defense_treaty }
         completion_reward = {
             add_ideas = UP_new_asian_order
+            remove_ideas = UP_pan_asian_route_tensions
+            add_ideas = UP_co_prosperity_economic_miracle
         }
     }
 
@@ -976,6 +986,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_spark_of_world_revolution }
         completion_reward = {
             add_ideas = UP_eastern_revolution_center
+            remove_ideas = UP_mao_route_tensions
+            add_ideas = UP_new_china_economic_miracle
         }
     }
 
@@ -1050,6 +1062,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_peoples_industrialization }
         completion_reward = {
             add_ideas = UP_chinese_socialism
+            remove_ideas = UP_mao_route_tensions
+            add_ideas = UP_new_china_economic_miracle
         }
     }
 
@@ -1077,8 +1091,8 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = UP_CHI_army_above_parties }
         completion_reward = {
-            set_country_flag = UP_CHI_integrate_warlords_decisions_unlocked
             add_ideas = UP_purge_localism
+            add_political_power = 25
         }
     }
 
@@ -1255,6 +1269,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_greater_asian_expedition }
         completion_reward = {
             add_ideas = UP_greater_asian_order
+            remove_ideas = UP_militarist_route_tensions
+            add_ideas = UP_liberated_asia_economic_miracle
         }
     }
 

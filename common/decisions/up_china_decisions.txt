@@ -165,7 +165,7 @@ UP_china_pan_asian_liberation_decisions = {
 }
 
 UP_china_unification_decisions = {
-	UP_CHI_contact_southwest_underground = {
+	UP_CHI_southwest_autonomy_offer = {
 		icon = generic_intelligence_exchange
 		cost = 50
 		days_remove = 21
@@ -174,24 +174,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_southwest_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_southwest_choice_made
-			CKG = { country_event = { id = up_asia.200 } }
+			add_political_power = -25
+			add_stability = -0.01
+			country_event = { id = up_asia.200 days = 1 }
 		}
 	}
 
-	UP_CHI_turn_sichuan_generals = {
-		icon = generic_army_reform
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_southwest_question NOT = { has_country_flag = UP_CHI_southwest_choice_made } }
-		visible = { has_completed_focus = UP_CHI_southwest_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_southwest_choice_made
-			CKG = { country_event = { id = up_asia.200 } }
-		}
-	}
-
-	UP_CHI_demand_chongqing_submission = {
+	UP_CHI_southwest_military_pressure = {
 		icon = generic_demand_territory
 		cost = 50
 		days_remove = 21
@@ -200,24 +189,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_southwest_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_southwest_choice_made
-			CKG = { country_event = { id = up_asia.200 } }
+			add_stability = -0.03
+			add_war_support = -0.01
+			country_event = { id = up_asia.200 days = 1 }
 		}
 	}
 
-	UP_CHI_launch_chongqing_campaign = {
-		icon = generic_major_war
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_southwest_question NOT = { has_country_flag = UP_CHI_southwest_choice_made } }
-		visible = { has_completed_focus = UP_CHI_southwest_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_southwest_choice_made
-			CKG = { country_event = { id = up_asia.200 } }
-		}
-	}
-
-	UP_CHI_contact_li_zongren = {
+	UP_CHI_south_china_autonomy_offer = {
 		icon = generic_improve_relations
 		cost = 50
 		days_remove = 21
@@ -226,24 +204,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_south_china_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_south_china_choice_made
-			GXC = { country_event = { id = up_asia.201 } }
+			add_political_power = -25
+			add_stability = -0.01
+			country_event = { id = up_asia.201 days = 1 }
 		}
 	}
 
-	UP_CHI_win_guangdong_merchant_corps = {
-		icon = generic_positive_trade_relations
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_south_china_question NOT = { has_country_flag = UP_CHI_south_china_choice_made } }
-		visible = { has_completed_focus = UP_CHI_south_china_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_south_china_choice_made
-			GXC = { country_event = { id = up_asia.201 } }
-		}
-	}
-
-	UP_CHI_demand_liangguang_unification = {
+	UP_CHI_south_china_military_pressure = {
 		icon = generic_demand_territory
 		cost = 50
 		days_remove = 21
@@ -252,24 +219,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_south_china_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_south_china_choice_made
-			GXC = { country_event = { id = up_asia.201 } }
+			add_stability = -0.03
+			add_war_support = -0.01
+			country_event = { id = up_asia.201 days = 1 }
 		}
 	}
 
-	UP_CHI_crush_guangxi_resistance = {
-		icon = generic_major_war
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_south_china_question NOT = { has_country_flag = UP_CHI_south_china_choice_made } }
-		visible = { has_completed_focus = UP_CHI_south_china_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_south_china_choice_made
-			GXC = { country_event = { id = up_asia.201 } }
-		}
-	}
-
-	UP_CHI_contact_feng_yuxiang_old_guard = {
+	UP_CHI_northwest_autonomy_offer = {
 		icon = generic_intelligence_exchange
 		cost = 50
 		days_remove = 21
@@ -278,37 +234,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_northwest_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_northwest_choice_made
-			XSM = { country_event = { id = up_asia.202 } }
+			add_political_power = -25
+			add_stability = -0.01
+			country_event = { id = up_asia.202 days = 1 }
 		}
 	}
 
-	UP_CHI_negotiate_with_ma_clique = {
-		icon = generic_improve_relations
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_northwest_question NOT = { has_country_flag = UP_CHI_northwest_choice_made } }
-		visible = { has_completed_focus = UP_CHI_northwest_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_northwest_choice_made
-			XSM = { country_event = { id = up_asia.202 } }
-		}
-	}
-
-	UP_CHI_recognize_islamic_autonomy = {
-		icon = generic_diplomacy
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_northwest_question NOT = { has_country_flag = UP_CHI_northwest_choice_made } }
-		visible = { has_completed_focus = UP_CHI_northwest_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_northwest_choice_made
-			XSM = { country_event = { id = up_asia.202 } }
-		}
-	}
-
-	UP_CHI_march_into_hexi_corridor = {
+	UP_CHI_northwest_military_pressure = {
 		icon = generic_major_war
 		cost = 50
 		days_remove = 21
@@ -317,11 +249,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_northwest_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_northwest_choice_made
-			XSM = { country_event = { id = up_asia.202 } }
+			add_stability = -0.03
+			add_war_support = -0.01
+			country_event = { id = up_asia.202 days = 1 }
 		}
 	}
 
-	UP_CHI_contact_xinjiang_local_forces = {
+	UP_CHI_xinjiang_autonomy_offer = {
 		icon = generic_intelligence_exchange
 		cost = 50
 		days_remove = 21
@@ -330,37 +264,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_xinjiang_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_xinjiang_choice_made
-			SIK = { country_event = { id = up_asia.203 } }
+			add_political_power = -25
+			add_stability = -0.01
+			country_event = { id = up_asia.203 days = 1 }
 		}
 	}
 
-	UP_CHI_support_pro_central_faction = {
-		icon = generic_political_pressure
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_xinjiang_question NOT = { has_country_flag = UP_CHI_xinjiang_choice_made } }
-		visible = { has_completed_focus = UP_CHI_xinjiang_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_xinjiang_choice_made
-			SIK = { country_event = { id = up_asia.203 } }
-		}
-	}
-
-	UP_CHI_remove_foreign_influence = {
-		icon = generic_intelligence_exchange
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_xinjiang_question NOT = { has_country_flag = UP_CHI_xinjiang_choice_made } }
-		visible = { has_completed_focus = UP_CHI_xinjiang_question }
-		complete_effect = {
-			set_country_flag = UP_CHI_xinjiang_choice_made
-			SIK = { country_event = { id = up_asia.203 } }
-		}
-	}
-
-	UP_CHI_recover_dihua = {
+	UP_CHI_xinjiang_military_pressure = {
 		icon = generic_demand_territory
 		cost = 50
 		days_remove = 21
@@ -369,11 +279,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_xinjiang_question }
 		complete_effect = {
 			set_country_flag = UP_CHI_xinjiang_choice_made
-			SIK = { country_event = { id = up_asia.203 } }
+			add_stability = -0.03
+			add_war_support = -0.01
+			country_event = { id = up_asia.203 days = 1 }
 		}
 	}
 
-	UP_CHI_send_central_mission_to_tibet = {
+	UP_CHI_tibet_autonomy_offer = {
 		icon = generic_improve_relations
 		cost = 50
 		days_remove = 21
@@ -381,55 +293,14 @@ UP_china_unification_decisions = {
 		available = { has_completed_focus = UP_CHI_tibet_question NOT = { has_country_flag = UP_CHI_tibet_second_decision_taken } }
 		visible = { has_completed_focus = UP_CHI_tibet_question }
 		complete_effect = {
-			if = { limit = { has_country_flag = UP_CHI_tibet_first_decision_taken } set_country_flag = UP_CHI_tibet_second_decision_taken }
-			if = { limit = { NOT = { has_country_flag = UP_CHI_tibet_first_decision_taken } } set_country_flag = UP_CHI_tibet_first_decision_taken }
-			TIB = { country_event = { id = up_asia.204 } }
+			set_country_flag = UP_CHI_tibet_second_decision_taken
+			add_political_power = -25
+			add_stability = -0.01
+			country_event = { id = up_asia.204 days = 1 }
 		}
 	}
 
-	UP_CHI_support_panchen_faction = {
-		icon = generic_political_pressure
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_tibet_question NOT = { has_country_flag = UP_CHI_tibet_second_decision_taken } }
-		visible = { has_completed_focus = UP_CHI_tibet_question }
-		complete_effect = {
-			if = { limit = { has_country_flag = UP_CHI_tibet_first_decision_taken } set_country_flag = UP_CHI_tibet_second_decision_taken }
-			if = { limit = { NOT = { has_country_flag = UP_CHI_tibet_first_decision_taken } } set_country_flag = UP_CHI_tibet_first_decision_taken }
-			TIB = { country_event = { id = up_asia.204 } }
-		}
-	}
-
-	UP_CHI_lhasa_negotiations = {
-		icon = generic_diplomacy
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_tibet_question NOT = { has_country_flag = UP_CHI_tibet_second_decision_taken } }
-		visible = { has_completed_focus = UP_CHI_tibet_question }
-		complete_effect = {
-			if = { limit = { has_country_flag = UP_CHI_tibet_first_decision_taken } set_country_flag = UP_CHI_tibet_second_decision_taken }
-			if = { limit = { NOT = { has_country_flag = UP_CHI_tibet_first_decision_taken } } set_country_flag = UP_CHI_tibet_first_decision_taken }
-			TIB = { country_event = { id = up_asia.204 } }
-		}
-	}
-
-	UP_CHI_tibet_peace_agreement = {
-		icon = generic_national_unity
-		cost = 50
-		days_remove = 21
-		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_tibet_question NOT = { has_country_flag = UP_CHI_tibet_second_decision_taken } }
-		visible = { has_completed_focus = UP_CHI_tibet_question }
-		complete_effect = {
-			if = { limit = { has_country_flag = UP_CHI_tibet_first_decision_taken } set_country_flag = UP_CHI_tibet_second_decision_taken }
-			if = { limit = { NOT = { has_country_flag = UP_CHI_tibet_first_decision_taken } } set_country_flag = UP_CHI_tibet_first_decision_taken }
-			TIB = { country_event = { id = up_asia.204 } }
-		}
-	}
-
-	UP_CHI_force_unify_tibet = {
+	UP_CHI_tibet_military_pressure = {
 		icon = generic_major_war
 		cost = 50
 		days_remove = 21
@@ -437,13 +308,14 @@ UP_china_unification_decisions = {
 		available = { has_completed_focus = UP_CHI_tibet_question NOT = { has_country_flag = UP_CHI_tibet_second_decision_taken } }
 		visible = { has_completed_focus = UP_CHI_tibet_question }
 		complete_effect = {
-			if = { limit = { has_country_flag = UP_CHI_tibet_first_decision_taken } set_country_flag = UP_CHI_tibet_second_decision_taken }
-			if = { limit = { NOT = { has_country_flag = UP_CHI_tibet_first_decision_taken } } set_country_flag = UP_CHI_tibet_first_decision_taken }
-			TIB = { country_event = { id = up_asia.204 } }
+			set_country_flag = UP_CHI_tibet_second_decision_taken
+			add_stability = -0.03
+			add_war_support = -0.01
+			country_event = { id = up_asia.204 days = 1 }
 		}
 	}
 
-	UP_CHI_negotiate_with_manchuria = {
+	UP_CHI_manchuria_autonomy_offer = {
 		icon = generic_improve_relations
 		cost = 50
 		days_remove = 21
@@ -452,11 +324,13 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_contact_anti_japanese_guerrillas }
 		complete_effect = {
 			set_country_flag = UP_CHI_manchuria_choice_made
-			MAN = { country_event = { id = up_asia.205 } }
+			add_political_power = -25
+			add_stability = -0.01
+			country_event = { id = up_asia.205 days = 1 }
 		}
 	}
 
-	UP_CHI_recover_lost_northeast = {
+	UP_CHI_manchuria_military_pressure = {
 		icon = generic_demand_territory
 		cost = 50
 		days_remove = 21
@@ -465,7 +339,9 @@ UP_china_unification_decisions = {
 		visible = { has_completed_focus = UP_CHI_contact_anti_japanese_guerrillas }
 		complete_effect = {
 			set_country_flag = UP_CHI_manchuria_choice_made
-			MAN = { country_event = { id = up_asia.205 } }
+			add_stability = -0.03
+			add_war_support = -0.01
+			country_event = { id = up_asia.205 days = 1 }
 		}
 	}
 }

@@ -62,6 +62,36 @@ ideas = {
 			}
 		}
 
+		UP_mao_route_tensions = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_militarist_route_tensions = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.08
+				consumer_goods_factor = 0.04
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+
+		UP_pan_asian_route_tensions = {
+			picture = generic_diplomacy
+			allowed = { original_tag = CHI }
+			modifier = {
+				war_support_factor = -0.05
+				political_power_gain = -0.05
+				trade_opinion_factor = -0.05
+			}
+		}
+
 		UP_long_march_myth = {
 			picture = generic_communist_revolution
 			allowed = { original_tag = CHI }
