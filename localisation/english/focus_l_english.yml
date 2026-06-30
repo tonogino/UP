@@ -1,5 +1,5 @@
 l_english:
- CHI_focus: "新土地改革"
+ CHI_focus: "军队至上"
  UP_CHI_new_land_reformists: "发动新土地改革"
  UP_CHI_new_land_reformists_desc: "农业州获得人口增长，但地主部门的不满也是个问题"
  CHI_focus_1: "深入乡村"
@@ -46,3 +46,6 @@ l_english:
  CHI_focus_14_desc: "社会主义的浪潮将席卷全球"
  UP_CHI_Final_2: "革命现代国家"
  UP_CHI_Final_2_desc: "红色的浪潮将席卷这片大地"
+ CHI_focus_desc: "革命必须由军队领导，而不是政客。"
+ UP_CHI_miletery_up: "军队高于党派"
+ UP_CHI_miletery_up_desc: "革命必须由军队领导，而不是政客。"

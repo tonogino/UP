@@ -1,414 +1,458 @@
 focus_tree = {
-	id = UP_china_focus
-	country = {
-		factor = 0
-		modifier = { add = 100 tag = CHI }
-	}
-	default = no
-	continuous_focus_position = { x = 34 y = 1500 }
+    id = UP_china_focus
+    country = {
+        factor = 0
+        modifier = { add = 100 tag = CHI }
+    }
+    default = no
+    continuous_focus_position = { x = 34 y = 1500 }
 
-	focus = {
-		id = UP_CHI_revolutionary_league_1933
-		icon = GFX_goal_generic_propaganda
-		x = 12
-		y = 0
-		cost = 10
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.03
-		}
-	}
+    focus = {
+        id = UP_CHI_revolutionary_league_1933
+        icon = GFX_goal_generic_propaganda
+        x = 12
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.03
+        }
+    }
 
-	focus = {
-		id = UP_CHI_nanjing_revolutionary_government
-		icon = GFX_goal_generic_political_pressure
-		x = 12
-		y = 1
-		cost = 10
-		prerequisite = { focus = UP_CHI_revolutionary_league_1933 }
-		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.03
-		}
-	}
+    focus = {
+        id = UP_CHI_nanjing_revolutionary_government
+        icon = GFX_goal_generic_political_pressure
+        x = 12
+        y = 1
+        cost = 10
+        prerequisite = { focus = UP_CHI_revolutionary_league_1933 }
+        completion_reward = {
+            add_political_power = 50
+            add_war_support = 0.03
+        }
+    }
 
-	focus = {
-		id = UP_CHI_the_chongqing_question
-		icon = GFX_goal_generic_demand_territory
-		x = 8
-		y = 2
-		cost = 10
-		prerequisite = { focus = UP_CHI_nanjing_revolutionary_government }
-		completion_reward = {
-			add_war_support = 0.03
-			add_named_threat = { threat = 1 name = UP_CHI_the_chongqing_question }
-		}
-	}
+    focus = {
+        id = UP_CHI_the_chongqing_question
+        icon = GFX_goal_generic_demand_territory
+        x = 8
+        y = 2
+        cost = 10
+        prerequisite = { focus = UP_CHI_nanjing_revolutionary_government }
+        completion_reward = {
+            add_war_support = 0.03
+            add_named_threat = { threat = 1 name = UP_CHI_the_chongqing_question }
+        }
+    }
 
-	focus = {
-		id = UP_CHI_rebuild_the_revolutionary_army
-		icon = GFX_goal_generic_position_armies
-		x = 16
-		y = 2
-		cost = 10
-		prerequisite = { focus = UP_CHI_nanjing_revolutionary_government }
-		completion_reward = {
-			army_experience = 15
-			add_command_power = 20
-		}
-	}
+    focus = {
+        id = UP_CHI_rebuild_the_revolutionary_army
+        icon = GFX_goal_generic_position_armies
+        x = 16
+        y = 2
+        cost = 10
+        prerequisite = { focus = UP_CHI_nanjing_revolutionary_government }
+        completion_reward = {
+            army_experience = 15
+            add_command_power = 20
+        }
+    }
 
-	focus = {
-		id = UP_CHI_rural_reform_bloc
-		icon = GFX_goal_generic_soviet_construction
-		x = 5
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_CHI_the_chongqing_question }
-		prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
-		mutually_exclusive = { focus = UP_CHI_militarist_bloc }
-		completion_reward = {
-			add_political_power = 120
-			add_stability = -0.05
-			if = {
-				limit = { NOT = { has_idea = UP_unfinished_revolution } }
-				add_ideas = UP_unfinished_revolution
-			}
-		}
-	}
+    focus = {
+        id = UP_CHI_rural_reform_bloc
+        icon = GFX_goal_generic_soviet_construction
+        x = 5
+        y = 4
+        cost = 10
+        prerequisite = { focus = UP_CHI_the_chongqing_question }
+        prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
+        mutually_exclusive = { focus = UP_CHI_militarist_bloc }
+        completion_reward = {
+            add_political_power = 120
+            add_stability = -0.05
+            if = {
+                limit = { NOT = { has_idea = UP_unfinished_revolution } }
+                add_ideas = UP_unfinished_revolution
+            }
+        }
+    }
 
-	focus = {
-		id = UP_CHI_militarist_bloc
-		icon = GFX_goal_generic_major_war
-		x = 19
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_CHI_the_chongqing_question }
-		prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
-		mutually_exclusive = { focus = UP_CHI_rural_reform_bloc }
-		completion_reward = {
-			add_war_support = 0.08
-			army_experience = 20
-		}
-	}
+    focus = {
+        id = UP_CHI_militarist_bloc
+        icon = GFX_goal_generic_major_war
+        x = 19
+        y = 4
+        cost = 10
+        prerequisite = { focus = UP_CHI_the_chongqing_question }
+        prerequisite = { focus = UP_CHI_rebuild_the_revolutionary_army }
+        mutually_exclusive = { focus = UP_CHI_rural_reform_bloc }
+        completion_reward = {
+            add_war_support = 0.08
+            army_experience = 20
+        }
+    }
 
-	focus = {
-		id = UP_CHI_launch_new_land_reform
-		icon = GFX_goal_generic_communist_revolution
-		x = 5
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_CHI_rural_reform_bloc }
-		completion_reward = {
-			add_ideas = UP_new_land_reform
-			add_ideas = UP_landlord_discontent
-			add_manpower = 40000
-		}
-	}
+    focus = {
+        id = UP_CHI_launch_new_land_reform
+        icon = GFX_goal_generic_communist_revolution
+        x = 5
+        y = 5
+        cost = 10
+        prerequisite = { focus = UP_CHI_rural_reform_bloc }
+        completion_reward = {
+            add_ideas = UP_new_land_reform
+            add_ideas = UP_landlord_discontent
+            add_manpower = 40000
+        }
+    }
 
-	focus = {
-		id = UP_CHI_deepen_the_countryside
-		icon = GFX_goal_generic_propaganda
-		x = 3
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_CHI_launch_new_land_reform }
-		completion_reward = {
-			add_ideas = UP_rural_grassroots_organization
-		}
-	}
+    focus = {
+        id = UP_CHI_deepen_the_countryside
+        icon = GFX_goal_generic_propaganda
+        x = 3
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_launch_new_land_reform }
+        completion_reward = {
+            add_ideas = UP_rural_grassroots_organization
+        }
+    }
 
-	focus = {
-		id = UP_CHI_establish_people_communes
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 5
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_CHI_launch_new_land_reform }
-		completion_reward = {
-			add_ideas = UP_people_communes
-		}
-	}
+    focus = {
+        id = UP_CHI_establish_people_communes
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 7
+        cost = 10
+        prerequisite = { focus = UP_CHI_launch_new_land_reform }
+        completion_reward = {
+            add_ideas = UP_people_communes
+        }
+    }
 
-	focus = {
-		id = UP_CHI_mass_line
-		icon = GFX_goal_generic_national_unity
-		x = 7
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_CHI_launch_new_land_reform }
-		completion_reward = {
-			add_ideas = UP_mass_line
-		}
-	}
+    focus = {
+        id = UP_CHI_mass_line
+        icon = GFX_goal_generic_national_unity
+        x = 7
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_launch_new_land_reform }
+        completion_reward = {
+            add_ideas = UP_mass_line
+        }
+    }
 
-	focus = {
-		id = UP_CHI_rectify_local_revolutionary_committees
-		icon = GFX_goal_generic_political_pressure
-		x = 5
-		y = 9
-		cost = 10
-		prerequisite = { focus = UP_CHI_deepen_the_countryside }
-		prerequisite = { focus = UP_CHI_establish_people_communes }
-		prerequisite = { focus = UP_CHI_mass_line }
-		completion_reward = {
-			remove_ideas = UP_local_revolutionary_committees
-			add_ideas = UP_centralization_reform
-			random_list = {
-				75 = { add_political_power = 25 }
-				25 = { country_event = { id = up_asia.130 days = 3 } }
-			}
-		}
-	}
+    focus = {
+        id = UP_CHI_rectify_local_revolutionary_committees
+        icon = GFX_goal_generic_political_pressure
+        x = 5
+        y = 9
+        cost = 10
+        prerequisite = { focus = UP_CHI_deepen_the_countryside }
+        prerequisite = { focus = UP_CHI_establish_people_communes }
+        prerequisite = { focus = UP_CHI_mass_line }
+        completion_reward = {
+            remove_ideas = UP_local_revolutionary_committees
+            add_ideas = UP_centralization_reform
+            random_list = {
+                75 = { add_political_power = 25 }
+                25 = { country_event = { id = up_asia.130 days = 3 } }
+            }
+        }
+    }
 
-	focus = {
-		id = UP_CHI_continue_land_revolution
-		icon = GFX_goal_generic_communist_revolution
-		x = 1
-		y = 10
-		cost = 10
-		prerequisite = { focus = UP_CHI_rectify_local_revolutionary_committees }
-		mutually_exclusive = { focus = UP_CHI_restore_national_economy }
-		completion_reward = {
-			add_ideas = UP_permanent_land_revolution
-			add_manpower = 120000
-		}
-	}
+    focus = {
+        id = UP_CHI_continue_land_revolution
+        icon = GFX_goal_generic_communist_revolution
+        x = 1
+        y = 10
+        cost = 10
+        prerequisite = { focus = UP_CHI_rectify_local_revolutionary_committees }
+        mutually_exclusive = { focus = UP_CHI_restore_national_economy }
+        completion_reward = {
+            add_ideas = UP_permanent_land_revolution
+            add_manpower = 120000
+        }
+    }
 
-	focus = {
-		id = UP_CHI_export_revolution
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 1
-		y = 11
-		cost = 10
-		prerequisite = { focus = UP_CHI_continue_land_revolution }
-		completion_reward = {
-			set_country_flag = UP_CHI_foreign_revolution_decisions_unlocked
-			add_political_power = 50
-		}
-	}
+    focus = {
+        id = UP_CHI_export_revolution
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 1
+        y = 11
+        cost = 10
+        prerequisite = { focus = UP_CHI_continue_land_revolution }
+        completion_reward = {
+            set_country_flag = UP_CHI_foreign_revolution_decisions_unlocked
+            add_political_power = 50
+        }
+    }
 
-	focus = {
-		id = UP_CHI_asian_revolution_center
-		icon = GFX_goal_generic_major_alliance
-		x = 1
-		y = 12
-		cost = 10
-		prerequisite = { focus = UP_CHI_export_revolution }
-		completion_reward = {
-			add_ideas = UP_asian_revolution_center
-			every_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-				}
-				add_popularity = { ideology = communism popularity = 0.03 }
-			}
-		}
-	}
+    focus = {
+        id = UP_CHI_asian_revolution_center
+        icon = GFX_goal_generic_major_alliance
+        x = 1
+        y = 12
+        cost = 10
+        prerequisite = { focus = UP_CHI_export_revolution }
+        completion_reward = {
+            add_ideas = UP_asian_revolution_center
+            every_other_country = {
+                limit = {
+                    is_in_faction_with = ROOT
+                }
+                add_popularity = { ideology = communism popularity = 0.03 }
+            }
+        }
+    }
 
-	focus = {
-		id = UP_CHI_spark_of_world_revolution
-		icon = GFX_goal_generic_demand_territory
-		x = 1
-		y = 13
-		cost = 10
-		prerequisite = { focus = UP_CHI_asian_revolution_center }
-		completion_reward = {
-			add_ideas = UP_spark_of_world_revolution
-		}
-	}
+    focus = {
+        id = UP_CHI_spark_of_world_revolution
+        icon = GFX_goal_generic_demand_territory
+        x = 1
+        y = 13
+        cost = 10
+        prerequisite = { focus = UP_CHI_asian_revolution_center }
+        completion_reward = {
+            add_ideas = UP_spark_of_world_revolution
+        }
+    }
 
-	focus = {
-		id = UP_CHI_east_is_red_over_asia
-		icon = GFX_goal_generic_communist_revolution
-		x = 1
-		y = 14
-		cost = 10
-		prerequisite = { focus = UP_CHI_spark_of_world_revolution }
-		completion_reward = {
-			add_ideas = UP_eastern_revolution_center
-		}
-	}
+    focus = {
+        id = UP_CHI_east_is_red_over_asia
+        icon = GFX_goal_generic_communist_revolution
+        x = 1
+        y = 14
+        cost = 10
+        prerequisite = { focus = UP_CHI_spark_of_world_revolution }
+        completion_reward = {
+            add_ideas = UP_eastern_revolution_center
+        }
+    }
 
-	focus = {
-		id = UP_CHI_restore_national_economy
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 9
-		y = 10
-		cost = 10
-		prerequisite = { focus = UP_CHI_rectify_local_revolutionary_committees }
-		mutually_exclusive = { focus = UP_CHI_continue_land_revolution }
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-			}
-			random_owned_controlled_state = {
-				limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-			}
-			random_owned_controlled_state = {
-				limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-			}
-		}
-	}
+    focus = {
+        id = UP_CHI_restore_national_economy
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = 10
+        cost = 10
+        prerequisite = { focus = UP_CHI_rectify_local_revolutionary_committees }
+        mutually_exclusive = { focus = UP_CHI_continue_land_revolution }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
 
-	focus = {
-		id = UP_CHI_first_five_year_plan
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 9
-		y = 11
-		cost = 10
-		prerequisite = { focus = UP_CHI_restore_national_economy }
-		completion_reward = {
-			add_ideas = UP_first_five_year_plan
-		}
-	}
+    focus = {
+        id = UP_CHI_first_five_year_plan
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = 11
+        cost = 10
+        prerequisite = { focus = UP_CHI_restore_national_economy }
+        completion_reward = {
+            add_ideas = UP_first_five_year_plan
+        }
+    }
 
-	focus = {
-		id = UP_CHI_agricultural_collectivization
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 9
-		y = 12
-		cost = 10
-		prerequisite = { focus = UP_CHI_first_five_year_plan }
-		completion_reward = {
-			add_ideas = UP_agricultural_collectivization
-			add_manpower = 60000
-		}
-	}
+    focus = {
+        id = UP_CHI_agricultural_collectivization
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 9
+        y = 12
+        cost = 10
+        prerequisite = { focus = UP_CHI_first_five_year_plan }
+        completion_reward = {
+            add_ideas = UP_agricultural_collectivization
+            add_manpower = 60000
+        }
+    }
 
-	focus = {
-		id = UP_CHI_peoples_industrialization
-		icon = GFX_goal_generic_scientific_exchange
-		x = 9
-		y = 13
-		cost = 10
-		prerequisite = { focus = UP_CHI_agricultural_collectivization }
-		completion_reward = {
-			add_research_slot = 1
-			add_research_slot = 1
-		}
-	}
+    focus = {
+        id = UP_CHI_peoples_industrialization
+        icon = GFX_goal_generic_scientific_exchange
+        x = 9
+        y = 13
+        cost = 10
+        prerequisite = { focus = UP_CHI_agricultural_collectivization }
+        completion_reward = {
+            add_research_slot = 1
+            add_research_slot = 1
+        }
+    }
 
-	focus = {
-		id = UP_CHI_revolutionary_modern_state
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 9
-		y = 14
-		cost = 10
-		prerequisite = { focus = UP_CHI_peoples_industrialization }
-		completion_reward = {
-			add_ideas = UP_chinese_socialism
-		}
-	}
+    focus = {
+        id = UP_CHI_revolutionary_modern_state
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 9
+        y = 14
+        cost = 10
+        prerequisite = { focus = UP_CHI_peoples_industrialization }
+        completion_reward = {
+            add_ideas = UP_chinese_socialism
+        }
+    }
 
-	focus = {
-		id = UP_CHI_whampoa_officer_corps
-		icon = GFX_goal_generic_army_doctrines
-		x = 16
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_CHI_militarist_bloc }
-		mutually_exclusive = { focus = UP_CHI_inherit_sun_yat_sen }
-		completion_reward = {
-			army_experience = 25
-			add_command_power = 25
-		}
-	}
+    focus = {
+        id = UP_CHI_whampoa_officer_corps
+        icon = GFX_goal_generic_army_doctrines
+        x = 16
+        y = 5
+        cost = 10
+        prerequisite = { focus = UP_CHI_militarist_bloc }
+        mutually_exclusive = { focus = UP_CHI_inherit_sun_yat_sen }
+        completion_reward = {
+            army_experience = 25
+            add_command_power = 25
+        }
+    }
 
-	focus = {
-		id = UP_CHI_absorb_defected_cadets
-		icon = GFX_goal_generic_position_armies
-		x = 15
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_CHI_whampoa_officer_corps }
-		completion_reward = {
-			army_experience = 15
-			add_war_support = 0.03
-		}
-	}
+    focus = {
+        id = UP_CHI_absorb_defected_cadets
+        icon = GFX_goal_generic_position_armies
+        x = 15
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_whampoa_officer_corps }
+        completion_reward = {
+            army_experience = 15
+            add_war_support = 0.03
+        }
+    }
 
-	focus = {
-		id = UP_CHI_nanjing_general_staff
-		icon = GFX_goal_generic_army_artillery
-		x = 17
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_CHI_whampoa_officer_corps }
-		completion_reward = {
-			add_command_power = 30
-			add_political_power = 50
-		}
-	}
+    focus = {
+        id = UP_CHI_nanjing_general_staff
+        icon = GFX_goal_generic_army_artillery
+        x = 17
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_whampoa_officer_corps }
+        completion_reward = {
+            add_command_power = 30
+            add_political_power = 50
+        }
+    }
 
-	focus = {
-		id = UP_CHI_revolutionary_military_state
-		icon = GFX_goal_generic_major_war
-		x = 16
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_CHI_absorb_defected_cadets }
-		prerequisite = { focus = UP_CHI_nanjing_general_staff }
-		completion_reward = {
-			add_war_support = 0.08
-			army_experience = 25
-		}
-	}
+    focus = {
+        id = UP_CHI_revolutionary_military_state
+        icon = GFX_goal_generic_major_war
+        x = 16
+        y = 7
+        cost = 10
+        prerequisite = { focus = UP_CHI_absorb_defected_cadets }
+        prerequisite = { focus = UP_CHI_nanjing_general_staff }
+        completion_reward = {
+            add_war_support = 0.08
+            army_experience = 25
+        }
+    }
 
-	focus = {
-		id = UP_CHI_inherit_sun_yat_sen
-		icon = GFX_goal_generic_demand_territory
-		x = 22
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_CHI_militarist_bloc }
-		mutually_exclusive = { focus = UP_CHI_whampoa_officer_corps }
-		completion_reward = {
-			add_stability = 0.02
-			add_war_support = 0.04
-		}
-	}
+    focus = {
+        id = UP_CHI_inherit_sun_yat_sen
+        icon = GFX_goal_generic_demand_territory
+        x = 22
+        y = 5
+        cost = 10
+        prerequisite = { focus = UP_CHI_militarist_bloc }
+        mutually_exclusive = { focus = UP_CHI_whampoa_officer_corps }
+        completion_reward = {
+            add_stability = 0.02
+            add_war_support = 0.04
+        }
+    }
 
-	focus = {
-		id = UP_CHI_second_northern_expedition
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 21
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
-		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 50
-		}
-	}
+    focus = {
+        id = UP_CHI_second_northern_expedition
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        x = 21
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
+        completion_reward = {
+            add_war_support = 0.05
+            add_political_power = 50
+        }
+    }
 
-	focus = {
-		id = UP_CHI_three_principles_under_red_banner
-		icon = GFX_goal_generic_national_unity
-		x = 23
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
-		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 75
-		}
-	}
+    focus = {
+        id = UP_CHI_three_principles_under_red_banner
+        icon = GFX_goal_generic_national_unity
+        x = 23
+        y = 6
+        cost = 10
+        prerequisite = { focus = UP_CHI_inherit_sun_yat_sen }
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 75
+        }
+    }
 
-	focus = {
-		id = UP_CHI_republican_revolutionary_claim
-		icon = GFX_goal_generic_forceful_treaty
-		x = 22
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_CHI_second_northern_expedition }
-		prerequisite = { focus = UP_CHI_three_principles_under_red_banner }
-		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 100
-		}
-	}
+    focus = {
+        id = UP_CHI_republican_revolutionary_claim
+        icon = GFX_goal_generic_forceful_treaty
+        x = 22
+        y = 7
+        cost = 10
+        prerequisite = { focus = UP_CHI_second_northern_expedition }
+        prerequisite = { focus = UP_CHI_three_principles_under_red_banner }
+        completion_reward = {
+            add_war_support = 0.05
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = CHI_focus
+        icon = GFX_goal_unknown
+        x = 16
+        y = 8
+        cost = 10
+        prerequisite = { focus = UP_CHI_revolutionary_military_state }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus CHI_focus completed"
+        }
+    }
+
+    focus = {
+        id = CHI_focus_1
+        icon = GFX_goal_unknown
+        x = 16
+        y = 10
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus CHI_focus_1 completed"
+        }
+    }
+
+    focus = {
+        id = CHI_focus_2
+        icon = GFX_goal_unknown
+        x = 14
+        y = 9
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus CHI_focus_2 completed"
+        }
+    }
+
 }
