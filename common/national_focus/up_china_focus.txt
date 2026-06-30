@@ -68,7 +68,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_southwest_question
         icon = GFX_goal_generic_political_pressure
-        x = 3
+        x = 12
         y = 5
         cost = 3
         prerequisite = { focus = UP_CHI_chinese_unification_war }
@@ -81,69 +81,24 @@ focus_tree = {
     }
 
     focus = {
-        id = UP_CHI_south_china_question
-        icon = GFX_goal_generic_positive_trade_relations
-        x = 9
-        y = 5
-        cost = 3
-        prerequisite = { focus = UP_CHI_chinese_unification_war }
-        completion_reward = {
-            custom_effect_tooltip = UP_CHI_unlock_south_china_decisions_tt
-            set_country_flag = UP_CHI_south_china_decisions_unlocked
-            add_political_power = 20
-            add_stability = -0.01
-        }
-    }
-
-    focus = {
-        id = UP_CHI_northwest_question
+        id = UP_CHI_remaining_warlords_question
         icon = GFX_goal_generic_diplomacy
-        x = 15
+        x = 18
         y = 5
         cost = 3
         prerequisite = { focus = UP_CHI_chinese_unification_war }
         completion_reward = {
-            custom_effect_tooltip = UP_CHI_unlock_northwest_decisions_tt
-            set_country_flag = UP_CHI_northwest_decisions_unlocked
+            custom_effect_tooltip = UP_CHI_unlock_remaining_warlords_decisions_tt
+            set_country_flag = UP_CHI_remaining_warlords_decisions_unlocked
             add_political_power = 20
-            add_stability = -0.01
-        }
-    }
-
-    focus = {
-        id = UP_CHI_xinjiang_question
-        icon = GFX_goal_generic_intelligence_exchange
-        x = 21
-        y = 5
-        cost = 3
-        prerequisite = { focus = UP_CHI_chinese_unification_war }
-        completion_reward = {
-            custom_effect_tooltip = UP_CHI_unlock_xinjiang_decisions_tt
-            set_country_flag = UP_CHI_xinjiang_decisions_unlocked
-            add_political_power = 20
-            add_stability = -0.01
-        }
-    }
-
-    focus = {
-        id = UP_CHI_tibet_question
-        icon = GFX_goal_generic_improve_relations
-        x = 27
-        y = 5
-        cost = 3
-        prerequisite = { focus = UP_CHI_chinese_unification_war }
-        completion_reward = {
-            custom_effect_tooltip = UP_CHI_unlock_tibet_decisions_tt
-            set_country_flag = UP_CHI_tibet_decisions_unlocked
-            add_political_power = 20
-            add_stability = -0.01
+            add_stability = -0.02
         }
     }
 
     focus = {
         id = UP_CHI_manchurian_question_unification
         icon = GFX_goal_generic_demand_territory
-        x = 33
+        x = 24
         y = 5
         cost = 3
         prerequisite = { focus = UP_CHI_chinese_unification_war }
@@ -224,7 +179,7 @@ focus_tree = {
         x = 9
         y = 8
         cost = 0
-        prerequisite = { focus = UP_CHI_south_china_question }
+        prerequisite = { focus = UP_CHI_remaining_warlords_question }
         available = {
             OR = {
                 controls_state = 592
@@ -245,7 +200,7 @@ focus_tree = {
         x = 15
         y = 8
         cost = 0
-        prerequisite = { focus = UP_CHI_northwest_question }
+        prerequisite = { focus = UP_CHI_remaining_warlords_question }
         available = {
             OR = {
                 controls_state = 616
@@ -266,7 +221,7 @@ focus_tree = {
         x = 21
         y = 8
         cost = 0
-        prerequisite = { focus = UP_CHI_xinjiang_question }
+        prerequisite = { focus = UP_CHI_remaining_warlords_question }
         available = {
             OR = {
                 controls_state = 617
@@ -287,7 +242,7 @@ focus_tree = {
         x = 27
         y = 8
         cost = 0
-        prerequisite = { focus = UP_CHI_tibet_question }
+        prerequisite = { focus = UP_CHI_remaining_warlords_question }
         available = {
             has_country_flag = UP_CHI_tibet_second_decision_taken
             OR = {
@@ -321,6 +276,541 @@ focus_tree = {
             set_country_flag = UP_CHI_northeast_unified
             add_political_power = 25
             add_war_support = 0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_military_reform
+        icon = GFX_goal_generic_army_doctrines
+        x = 38
+        y = 5
+        cost = 5
+        prerequisite = { focus = UP_CHI_chinese_unification_war }
+        completion_reward = {
+            army_experience = 15
+            add_political_power = -10
+        }
+    }
+
+    focus = {
+        id = UP_CHI_local_officers
+        icon = GFX_goal_generic_army_doctrines
+        x = 36
+        y = 6
+        cost = 5
+        prerequisite = { focus = UP_CHI_military_reform }
+        completion_reward = {
+            army_experience = 10
+            add_stability = -0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_local_units
+        icon = GFX_goal_generic_position_armies
+        x = 38
+        y = 6
+        cost = 5
+        prerequisite = { focus = UP_CHI_military_reform }
+        completion_reward = {
+            add_manpower = 35000
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_cavalry_company
+        icon = GFX_goal_generic_position_armies
+        x = 40
+        y = 6
+        cost = 5
+        prerequisite = { focus = UP_CHI_military_reform }
+        completion_reward = {
+            army_experience = 10
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_reorganize_revolutionary_army
+        icon = GFX_goal_generic_army_doctrines
+        x = 38
+        y = 7
+        cost = 5
+        prerequisite = { focus = UP_CHI_local_officers }
+        prerequisite = { focus = UP_CHI_local_units }
+        completion_reward = {
+            army_experience = 20
+            add_war_support = 0.02
+            add_stability = -0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_restore_gaokao
+        icon = GFX_goal_generic_scientific_exchange
+        x = 35
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        completion_reward = {
+            add_research_slot = 1
+            add_stability = -0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_motorization_tank_card
+        icon = GFX_goal_generic_army_motorized
+        x = 36
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = armor
+            }
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_infantry_equipment_card
+        icon = GFX_goal_generic_small_arms
+        x = 38
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = infantry_weapons
+            }
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_support_equipment_card
+        icon = GFX_goal_generic_army_artillery
+        x = 40
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = support_tech
+            }
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_motorization_and_tanks
+        icon = GFX_goal_generic_army_tanks
+        x = 36
+        y = 9
+        cost = 5
+        prerequisite = { focus = UP_CHI_motorization_tank_card }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = motorized_equipment
+            }
+            add_war_support = 0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_truck_and_train_card
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 40
+        y = 9
+        cost = 5
+        prerequisite = { focus = UP_CHI_support_equipment_card }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = motorized_equipment
+            }
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = UP_CHI_rifle_card
+        icon = GFX_goal_generic_small_arms
+        x = 37
+        y = 10
+        cost = 5
+        prerequisite = { focus = UP_CHI_infantry_equipment_card }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = infantry_weapons
+            }
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_artillery_card
+        icon = GFX_goal_generic_army_artillery
+        x = 39
+        y = 10
+        cost = 5
+        prerequisite = { focus = UP_CHI_infantry_equipment_card }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = artillery
+            }
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_restore_independent_research
+        icon = GFX_goal_generic_scientific_exchange
+        x = 38
+        y = 11
+        cost = 5
+        prerequisite = { focus = UP_CHI_infantry_equipment_card }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = electronics
+            }
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = UP_CHI_first_university
+        icon = GFX_goal_generic_scientific_exchange
+        x = 38
+        y = 12
+        cost = 5
+        prerequisite = { focus = UP_CHI_restore_independent_research }
+        completion_reward = {
+            add_research_slot = 1
+            add_stability = 0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_integrate_internal_industrial_forces
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 46
+        y = 5
+        cost = 5
+        prerequisite = { focus = UP_CHI_chinese_unification_war }
+        completion_reward = {
+            add_political_power = 25
+            add_stability = -0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_nationalize_means_of_production
+        icon = GFX_goal_generic_soviet_construction
+        x = 46
+        y = 6
+        cost = 5
+        prerequisite = { focus = UP_CHI_integrate_internal_industrial_forces }
+        completion_reward = {
+            add_ideas = UP_revolutionary_planning_commission
+            add_stability = -0.02
+        }
+    }
+
+    focus = {
+        id = UP_CHI_local_officer_talent
+        icon = GFX_goal_generic_army_doctrines
+        x = 48
+        y = 6
+        cost = 5
+        prerequisite = { focus = UP_CHI_integrate_internal_industrial_forces }
+        completion_reward = {
+            army_experience = 10
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = UP_CHI_military_industry
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 45
+        y = 7
+        cost = 5
+        prerequisite = { focus = UP_CHI_nationalize_means_of_production }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_civilian_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 47
+        y = 7
+        cost = 5
+        prerequisite = { focus = UP_CHI_nationalize_means_of_production }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_millet_and_rifles
+        icon = GFX_goal_generic_small_arms
+        x = 44
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_military_industry }
+        completion_reward = {
+            add_manpower = 25000
+            army_experience = 5
+        }
+    }
+
+    focus = {
+        id = UP_CHI_nanjing_arms_factory
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 45
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_military_industry }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+            add_war_support = 0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_nanjing_auto_factory
+        icon = GFX_goal_generic_army_motorized
+        x = 47
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_civilian_industry }
+        prerequisite = { focus = UP_CHI_nanjing_arms_factory }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = motorized_equipment
+            }
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = UP_CHI_repair_infrastructure
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 48
+        y = 8
+        cost = 5
+        prerequisite = { focus = UP_CHI_civilian_industry }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT }
+                add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_build_more_military_factories
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 45
+        y = 9
+        cost = 5
+        prerequisite = { focus = UP_CHI_millet_and_rifles }
+        prerequisite = { focus = UP_CHI_nanjing_arms_factory }
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_republic_civilian_entrepreneurs
+        icon = GFX_goal_generic_positive_trade_relations
+        x = 48
+        y = 9
+        cost = 5
+        prerequisite = { focus = UP_CHI_repair_infrastructure }
+        prerequisite = { focus = UP_CHI_nanjing_auto_factory }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_land_nationalization
+        icon = GFX_goal_generic_demand_territory
+        x = 45
+        y = 10
+        cost = 5
+        prerequisite = { focus = UP_CHI_build_more_military_factories }
+        completion_reward = {
+            add_stability = -0.02
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = UP_CHI_radical_entrepreneurs
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 47
+        y = 10
+        cost = 5
+        prerequisite = { focus = UP_CHI_republic_civilian_entrepreneurs }
+        mutually_exclusive = { focus = UP_CHI_moderate_entrepreneurs }
+        completion_reward = {
+            add_stability = -0.01
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_moderate_entrepreneurs
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 49
+        y = 10
+        cost = 5
+        prerequisite = { focus = UP_CHI_republic_civilian_entrepreneurs }
+        mutually_exclusive = { focus = UP_CHI_radical_entrepreneurs }
+        completion_reward = {
+            add_stability = 0.01
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_initial_planned_economy
+        icon = GFX_goal_generic_soviet_construction
+        x = 48
+        y = 11
+        cost = 5
+        prerequisite = { focus = UP_CHI_republic_civilian_entrepreneurs }
+        completion_reward = {
+            add_ideas = UP_revolutionary_planning_commission
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = UP_CHI_issue_grain_coupons
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 48
+        y = 12
+        cost = 5
+        prerequisite = { focus = UP_CHI_initial_planned_economy }
+        completion_reward = {
+            add_stability = -0.01
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = UP_CHI_republic_solving_food_problem
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 48
+        y = 13
+        cost = 5
+        prerequisite = { focus = UP_CHI_issue_grain_coupons }
+        completion_reward = {
+            add_stability = 0.03
+            add_manpower = 50000
+        }
+    }
+
+    focus = {
+        id = UP_CHI_suppress_local_bandits
+        icon = GFX_goal_generic_political_pressure
+        x = 44
+        y = 11
+        cost = 5
+        prerequisite = { focus = UP_CHI_land_nationalization }
+        completion_reward = {
+            add_stability = 0.01
+            army_experience = 10
+        }
+    }
+
+    focus = {
+        id = UP_CHI_register_local_bandits
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 46
+        y = 11
+        cost = 5
+        prerequisite = { focus = UP_CHI_land_nationalization }
+        completion_reward = {
+            add_manpower = 30000
+            add_stability = -0.01
+        }
+    }
+
+    focus = {
+        id = UP_CHI_develop_heavy_industry
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 45
+        y = 12
+        cost = 5
+        prerequisite = { focus = UP_CHI_land_nationalization }
+        completion_reward = {
+            add_ideas = UP_revolutionary_planning_commission
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    focus = {
+        id = UP_CHI_power_from_the_gun
+        icon = GFX_goal_generic_major_war
+        x = 45
+        y = 13
+        cost = 5
+        prerequisite = { focus = UP_CHI_develop_heavy_industry }
+        completion_reward = {
+            add_war_support = 0.05
+            army_experience = 20
         }
     }
 
