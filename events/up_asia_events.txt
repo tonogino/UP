@@ -1,4 +1,4 @@
-﻿add_namespace = up_asia
+add_namespace = up_asia
 
 country_event = {
 	id = up_asia.1
@@ -316,6 +316,405 @@ country_event = {
 }
 
 country_event = {
+	id = up_asia.200
+	title = up_asia.200.t
+	desc = up_asia.200.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.unification.a
+		ai_chance = { factor = 35 }
+		CHI = {
+			puppet = ROOT
+			set_country_flag = UP_CHI_southwest_unified
+			country_event = { id = up_asia.220 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.b
+		ai_chance = { factor = 25 }
+		CHI = {
+			annex_country = { target = ROOT transfer_troops = yes }
+			set_country_flag = UP_CHI_southwest_unified
+			country_event = { id = up_asia.221 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.c
+		ai_chance = { factor = 40 }
+		CHI = {
+			create_wargoal = { type = annex_everything target = ROOT }
+			add_war_support = 0.03
+			country_event = { id = up_asia.222 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.201
+	title = up_asia.201.t
+	desc = up_asia.201.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.unification.a
+		ai_chance = { factor = 35 }
+		CHI = {
+			puppet = ROOT
+			set_country_flag = UP_CHI_south_china_unified
+			country_event = { id = up_asia.223 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.b
+		ai_chance = { factor = 25 }
+		CHI = {
+			annex_country = { target = ROOT transfer_troops = yes }
+			set_country_flag = UP_CHI_south_china_unified
+			country_event = { id = up_asia.224 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.c
+		ai_chance = { factor = 40 }
+		CHI = {
+			create_wargoal = { type = annex_everything target = ROOT }
+			add_war_support = 0.03
+			country_event = { id = up_asia.225 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.202
+	title = up_asia.202.t
+	desc = up_asia.202.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.unification.a
+		ai_chance = { factor = 35 }
+		CHI = {
+			puppet = ROOT
+			set_country_flag = UP_CHI_northwest_unified
+			country_event = { id = up_asia.226 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.b
+		ai_chance = { factor = 25 }
+		CHI = {
+			annex_country = { target = ROOT transfer_troops = yes }
+			set_country_flag = UP_CHI_northwest_unified
+			country_event = { id = up_asia.227 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.c
+		ai_chance = { factor = 40 }
+		CHI = {
+			create_wargoal = { type = annex_everything target = ROOT }
+			add_war_support = 0.03
+			country_event = { id = up_asia.228 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.203
+	title = up_asia.203.t
+	desc = up_asia.203.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.unification.a
+		ai_chance = { factor = 35 }
+		CHI = {
+			puppet = ROOT
+			set_country_flag = UP_CHI_xinjiang_unified
+			country_event = { id = up_asia.229 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.b
+		ai_chance = { factor = 25 }
+		CHI = {
+			annex_country = { target = ROOT transfer_troops = yes }
+			set_country_flag = UP_CHI_xinjiang_unified
+			country_event = { id = up_asia.230 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.c
+		ai_chance = { factor = 40 }
+		CHI = {
+			create_wargoal = { type = annex_everything target = ROOT }
+			add_war_support = 0.03
+			country_event = { id = up_asia.231 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.204
+	title = up_asia.204.t
+	desc = up_asia.204.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.unification.a
+		ai_chance = { factor = 45 }
+		CHI = {
+			puppet = ROOT
+			set_country_flag = UP_CHI_tibet_unified
+			country_event = { id = up_asia.232 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.b
+		ai_chance = { factor = 30 }
+		CHI = {
+			annex_country = { target = ROOT transfer_troops = yes }
+			set_country_flag = UP_CHI_tibet_unified
+			country_event = { id = up_asia.233 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.c
+		ai_chance = { factor = 25 }
+		CHI = {
+			create_wargoal = { type = annex_everything target = ROOT }
+			add_war_support = 0.03
+			country_event = { id = up_asia.234 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.205
+	title = up_asia.205.t
+	desc = up_asia.205.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.unification.a
+		ai_chance = { factor = 25 }
+		CHI = {
+			puppet = ROOT
+			set_country_flag = UP_CHI_northeast_unified
+			country_event = { id = up_asia.235 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.b
+		ai_chance = { factor = 15 }
+		CHI = {
+			annex_country = { target = ROOT transfer_troops = yes }
+			set_country_flag = UP_CHI_northeast_unified
+			country_event = { id = up_asia.236 days = 1 }
+		}
+	}
+	option = {
+		name = up_asia.unification.c
+		ai_chance = { factor = 60 }
+		CHI = {
+			create_wargoal = { type = annex_everything target = ROOT }
+			add_war_support = 0.05
+			country_event = { id = up_asia.237 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = up_asia.220
+	title = up_asia.220.t
+	desc = up_asia.220.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 15 add_stability = 0.01 }
+}
+
+country_event = {
+	id = up_asia.221
+	title = up_asia.221.t
+	desc = up_asia.221.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 20 add_stability = -0.01 }
+}
+
+country_event = {
+	id = up_asia.222
+	title = up_asia.222.t
+	desc = up_asia.222.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_war_support = 0.02 add_political_power = -10 }
+}
+
+country_event = {
+	id = up_asia.223
+	title = up_asia.223.t
+	desc = up_asia.223.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 15 add_stability = 0.01 }
+}
+
+country_event = {
+	id = up_asia.224
+	title = up_asia.224.t
+	desc = up_asia.224.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 20 add_stability = -0.01 }
+}
+
+country_event = {
+	id = up_asia.225
+	title = up_asia.225.t
+	desc = up_asia.225.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_war_support = 0.02 add_political_power = -10 }
+}
+
+country_event = {
+	id = up_asia.226
+	title = up_asia.226.t
+	desc = up_asia.226.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 15 add_stability = 0.01 }
+}
+
+country_event = {
+	id = up_asia.227
+	title = up_asia.227.t
+	desc = up_asia.227.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 20 add_stability = -0.01 }
+}
+
+country_event = {
+	id = up_asia.228
+	title = up_asia.228.t
+	desc = up_asia.228.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_war_support = 0.02 add_political_power = -10 }
+}
+
+country_event = {
+	id = up_asia.229
+	title = up_asia.229.t
+	desc = up_asia.229.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 15 add_stability = 0.01 }
+}
+
+country_event = {
+	id = up_asia.230
+	title = up_asia.230.t
+	desc = up_asia.230.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 20 add_stability = -0.01 }
+}
+
+country_event = {
+	id = up_asia.231
+	title = up_asia.231.t
+	desc = up_asia.231.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_war_support = 0.02 add_political_power = -10 }
+}
+
+country_event = {
+	id = up_asia.232
+	title = up_asia.232.t
+	desc = up_asia.232.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 15 add_stability = 0.01 }
+}
+
+country_event = {
+	id = up_asia.233
+	title = up_asia.233.t
+	desc = up_asia.233.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 20 add_stability = -0.01 }
+}
+
+country_event = {
+	id = up_asia.234
+	title = up_asia.234.t
+	desc = up_asia.234.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_war_support = 0.02 add_political_power = -10 }
+}
+
+country_event = {
+	id = up_asia.235
+	title = up_asia.235.t
+	desc = up_asia.235.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 15 add_stability = 0.01 }
+}
+
+country_event = {
+	id = up_asia.236
+	title = up_asia.236.t
+	desc = up_asia.236.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_political_power = 20 add_stability = -0.01 }
+}
+
+country_event = {
+	id = up_asia.237
+	title = up_asia.237.t
+	desc = up_asia.237.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+	option = { name = up_asia.unification_notice.a add_war_support = 0.03 add_political_power = -15 }
+}
+
+country_event = {
+	id = up_asia.210
+	title = up_asia.210.t
+	desc = up_asia.210.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_asia.210.a
+		set_country_flag = UP_CHI_future_mao
+	}
+	option = {
+		name = up_asia.210.b
+		set_country_flag = UP_CHI_future_militarist
+	}
+	option = {
+		name = up_asia.210.c
+		set_country_flag = UP_CHI_future_pan_asianist
+	}
+}
+
+country_event = {
 	id = up_asia.100
 	title = up_asia.100.t
 	desc = up_asia.100.d
@@ -367,61 +766,4 @@ country_event = {
 	picture = GFX_report_event_german_troops
 	is_triggered_only = yes
 	option = { name = up_asia.100.a }
-}
-
-country_event = {
-	id = up_asia.106
-	title = up_asia.106.t
-	desc = up_asia.106.d
-	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only = yes
-	option = {
-		name = up_asia.106.a
-		country_event = { id = up_asia.107 days = 1 }
-	}
-}
-
-country_event = {
-	id = up_asia.107
-	title = up_asia.107.t
-	desc = up_asia.107.d
-	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only = yes
-	option = {
-		name = up_asia.107.a
-		country_event = { id = up_asia.108 days = 1 }
-	}
-}
-
-country_event = {
-	id = up_asia.108
-	title = up_asia.108.t
-	desc = up_asia.108.d
-	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only = yes
-	option = {
-		name = up_asia.108.a
-		country_event = { id = up_asia.109 days = 1 }
-	}
-}
-
-country_event = {
-	id = up_asia.109
-	title = up_asia.109.t
-	desc = up_asia.109.d
-	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only = yes
-	option = {
-		name = up_asia.109.a
-		country_event = { id = up_asia.110 days = 1 }
-	}
-}
-
-country_event = {
-	id = up_asia.110
-	title = up_asia.110.t
-	desc = up_asia.110.d
-	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only = yes
-	option = { name = up_asia.110.a }
 }

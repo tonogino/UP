@@ -23,13 +23,42 @@ ideas = {
 			}
 		}
 
-		UP_china_history_booklet = {
-			picture = generic_political_discourse
-			allowed = {
-				original_tag = CHI
-			}
+		UP_revolutionary_legitimacy = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
 			modifier = {
-				political_power_gain = 0.02
+				stability_factor = 0.03
+				political_power_gain = 0.03
+			}
+		}
+
+		UP_provisional_central_government = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_unification_campaign_preparations = {
+			picture = generic_demand_territory
+			allowed = { original_tag = CHI }
+			modifier = {
+				war_support_factor = 0.08
+				planning_speed = 0.05
+				stability_factor = -0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_unified_revolutionary_administration = {
+			picture = generic_national_unity
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.02
 			}
 		}
 
@@ -353,6 +382,28 @@ ideas = {
 				research_speed_factor = 0.10
 				trade_opinion_factor = 0.20
 				war_support_factor = 0.05
+			}
+		}
+
+		UP_centralized_unified_state = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+				army_org_factor = 0.03
+			}
+		}
+
+		UP_local_autonomy_subject_support = {
+			picture = generic_diplomacy
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.10
 			}
 		}
 
@@ -728,7 +779,6 @@ ideas = {
 			modifier = {
 				production_speed_bunker_factor = 0.15
 				production_speed_coastal_bunker_factor = 0.15
-				naval_invasion_defense = 0.10
 				stability_factor = 0.04
 			}
 		}

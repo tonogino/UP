@@ -1,7 +1,9 @@
-asian_reconciliation = {
-	value = 75
-}
+opinion_modifiers = {
+	asian_reconciliation = {
+		value = 75
+	}
 
-anti_western_imperialism = {
-	value = -50
+	anti_western_imperialism = {
+		value = -50
+	}
 }

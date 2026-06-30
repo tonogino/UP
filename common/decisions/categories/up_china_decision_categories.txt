@@ -1,0 +1,30 @@
+UP_china_foreign_revolution_decisions = {
+	icon = generic_communist_revolution
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_foreign_revolution_decisions_unlocked }
+}
+
+UP_china_revolutionary_government_decisions = {
+	icon = generic_political_pressure
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_china_revolutionary_league }
+}
+
+UP_china_asian_sphere_decisions = {
+	icon = generic_major_alliance
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_asian_sphere_decisions_unlocked }
+}
+
+UP_china_pan_asian_liberation_decisions = {
+	icon = generic_intelligence_exchange
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_pan_asian_liberation_decisions_unlocked }
+}
+
+UP_china_unification_decisions = {
+	icon = generic_demand_territory
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_completed_focus = UP_CHI_chinese_unification_war }
+	priority = 20
+}
