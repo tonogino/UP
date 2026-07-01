@@ -11,8 +11,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "穆扎法尔·艾哈迈德"
-	picture = "Portrait_Asia_Generic_communism.dds"
+	name = "Muzaffar Ahmed"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = { }

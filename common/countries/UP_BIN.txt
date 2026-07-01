@@ -1,3 +1,4 @@
 graphical_culture = asian_gfx
 graphical_culture_2d = asian_2d
+name_list = RAJ
 color = { 45 45 45 }

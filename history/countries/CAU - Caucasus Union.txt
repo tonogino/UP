@@ -11,8 +11,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "诺伊·佐尔达尼亚"
-	picture = "Portrait_Europe_Generic_3.dds"
+	name = "Noe Zhordania"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = { }
