@@ -1,16 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" agent="HOI4 Modding Tools">
   <diagram id="focus-tree" name="UP_china_focus">
-    <mxGraphModel dx="1956" dy="1127" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+    <mxGraphModel dx="2568" dy="1479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Victory of the Revolution [title]&lt;br&gt;35 [days]&lt;br&gt;UP_CHI_victory_of_revolution [id]&lt;br&gt;GFX_goal_generic_communist_revolution [icon]" vertex="1">
+        <mxCell id="2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="35天的革命胜利" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Consolidate the Central Government [title]&lt;br&gt;35 [days]&lt;br&gt;UP_CHI_consolidate_central_government [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中央政府" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The Revolution Is Not Finished [title]&lt;br&gt;35 [days]&lt;br&gt;UP_CHI_revolution_still_unfinished [id]&lt;br&gt;GFX_goal_generic_propaganda [icon]" vertex="1">
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="革命未结束" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="350" as="geometry" />
         </mxCell>
         <mxCell id="boxaOn5AShRq46eqn7xV-184" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="boxaOn5AShRq46eqn7xV-182">
@@ -19,25 +20,16 @@
         <mxCell id="boxaOn5AShRq46eqn7xV-231" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="boxaOn5AShRq46eqn7xV-230">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Chinese Unification War [title]&lt;br&gt;35 [days]&lt;br&gt;UP_CHI_chinese_unification_war [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重组革命军" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="500" as="geometry" />
         </mxCell>
-        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The Southwest Question [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_southwest_question [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="450" y="800" as="geometry" />
-        </mxCell>
-        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The South China Question [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_south_china_question [id]&lt;br&gt;GFX_goal_generic_positive_trade_relations [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="1650" y="800" as="geometry" />
-        </mxCell>
-        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The Northwest Question [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_northwest_question [id]&lt;br&gt;GFX_goal_generic_diplomacy [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="2850" y="800" as="geometry" />
-        </mxCell>
-        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The Xinjiang Question [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_xinjiang_question [id]&lt;br&gt;GFX_goal_generic_intelligence_exchange [icon]" vertex="1">
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="国民党问题" vertex="1">
           <mxGeometry height="120" width="180" x="4050" y="800" as="geometry" />
         </mxCell>
-        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The Tibet Question [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_tibet_question [id]&lt;br&gt;GFX_goal_generic_improve_relations [icon]" vertex="1">
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="地方军阀问题" vertex="1">
           <mxGeometry height="120" width="180" x="5250" y="800" as="geometry" />
         </mxCell>
-        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The Manchurian Question [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_manchurian_question_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="满洲问题" vertex="1">
           <mxGeometry height="120" width="180" x="6450" y="800" as="geometry" />
         </mxCell>
         <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Northeast Revolutionary Committee [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_northeast_revolutionary_committee [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
@@ -49,16 +41,7 @@
         <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Contact Anti-Japanese Guerrillas [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_contact_anti_japanese_guerrillas [id]&lt;br&gt;GFX_goal_generic_communist_revolution [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="6050" y="1250" as="geometry" />
         </mxCell>
-        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify the Southwest [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_southwest_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="450" y="1250" as="geometry" />
-        </mxCell>
-        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify South China [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_south_china_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="1650" y="1250" as="geometry" />
-        </mxCell>
-        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify the Northwest [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_northwest_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="2850" y="1250" as="geometry" />
-        </mxCell>
-        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify Xinjiang [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_xinjiang_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="统一国民党" vertex="1">
           <mxGeometry height="120" width="180" x="4050" y="1250" as="geometry" />
         </mxCell>
         <mxCell id="19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify Tibet [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_tibet_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
@@ -67,10 +50,10 @@
         <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify the Northeast [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_northeast_unification [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="6050" y="1400" as="geometry" />
         </mxCell>
-        <mxCell id="21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Deal with Localism [title]&lt;br&gt;21 [days]&lt;br&gt;UP_CHI_deal_with_localism [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
+        <mxCell id="21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="解决地方问题" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="2820" as="geometry" />
         </mxCell>
-        <mxCell id="22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Strengthen the Central Government [title]&lt;br&gt;14 [days]&lt;br&gt;UP_CHI_centralization_path [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
+        <mxCell id="22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="统一大中国" vertex="1">
           <mxGeometry height="120" width="180" x="2850" y="2970" as="geometry" />
         </mxCell>
         <mxCell id="23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Send Central Commissioners [title]&lt;br&gt;14 [days]&lt;br&gt;UP_CHI_send_central_commissioners [id]&lt;br&gt;GFX_goal_generic_intelligence_exchange [icon]" vertex="1">
@@ -82,7 +65,7 @@
         <mxCell id="25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="The State Above Localities [title]&lt;br&gt;14 [days]&lt;br&gt;UP_CHI_state_above_localities [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="2850" y="3420" as="geometry" />
         </mxCell>
-        <mxCell id="26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Permit Local Autonomy [title]&lt;br&gt;14 [days]&lt;br&gt;UP_CHI_local_autonomy_path [id]&lt;br&gt;GFX_goal_generic_improve_relations [icon]" vertex="1">
+        <mxCell id="26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="允许地方自治" vertex="1">
           <mxGeometry height="120" width="180" x="4050" y="2970" as="geometry" />
         </mxCell>
         <mxCell id="27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Preserve Local Governments [title]&lt;br&gt;14 [days]&lt;br&gt;UP_CHI_preserve_local_governments [id]&lt;br&gt;GFX_goal_generic_diplomacy [icon]" vertex="1">
@@ -94,74 +77,77 @@
         <mxCell id="29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Revolutionary United Front [title]&lt;br&gt;14 [days]&lt;br&gt;UP_CHI_revolutionary_united_front [id]&lt;br&gt;GFX_goal_generic_major_alliance [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="4050" y="3420" as="geometry" />
         </mxCell>
-        <mxCell id="30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Complete National Unification [title]&lt;br&gt;0 [days]&lt;br&gt;UP_CHI_complete_national_unification [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-245" edge="1" parent="1" source="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="解决中央问题" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="3720" as="geometry" />
         </mxCell>
-        <mxCell id="31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="First National Congress [title]&lt;br&gt;35 [days]&lt;br&gt;UP_CHI_first_national_congress [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
+        <mxCell id="31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="第一届全国代表大会" vertex="1">
           <mxGeometry height="120" width="180" x="3450" y="3870" as="geometry" />
         </mxCell>
         <mxCell id="32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="农村改革派 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_rural_reform_bloc [id]&lt;br&gt;GFX_goal_generic_soviet_construction [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="850" y="4320" as="geometry" />
         </mxCell>
         <mxCell id="33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重建黄埔军校 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_militarist_bloc [id]&lt;br&gt;GFX_goal_generic_major_war [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="4320" as="geometry" />
+          <mxGeometry height="120" width="180" x="4210" y="4320" as="geometry" />
         </mxCell>
-        <mxCell id="34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Pan-Asianist Faction [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_pan_asianist_bloc [id]&lt;br&gt;GFX_goal_generic_diplomacy [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="4320" as="geometry" />
+        <mxCell id="34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中日友好" vertex="1">
+          <mxGeometry height="120" width="180" x="2530" y="4360" as="geometry" />
         </mxCell>
         <mxCell id="35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Reconsider the Japan Question [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_reconsider_japan_policy [id]&lt;br&gt;GFX_goal_generic_dangerous_deal [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="4470" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="4510" as="geometry" />
         </mxCell>
         <mxCell id="36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="War or Peace? [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_war_or_peace [id]&lt;br&gt;GFX_goal_generic_major_alliance [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="4620" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="4660" as="geometry" />
         </mxCell>
         <mxCell id="37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Nanjing-Tokyo Joint Declaration [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_nanjing_tokyo_joint_declaration [id]&lt;br&gt;GFX_goal_generic_improve_relations [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="4770" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="4810" as="geometry" />
         </mxCell>
         <mxCell id="38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="End Anti-Japanese Propaganda [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_stop_anti_japanese_propaganda [id]&lt;br&gt;GFX_goal_generic_propaganda [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6050" y="4920" as="geometry" />
+          <mxGeometry height="120" width="180" x="2130" y="4960" as="geometry" />
         </mxCell>
         <mxCell id="39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Invite Japanese Observers [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_invite_japanese_observers [id]&lt;br&gt;GFX_goal_generic_army_doctrines [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="4920" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="4960" as="geometry" />
         </mxCell>
         <mxCell id="40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Open Sino-Japanese Trade [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_open_sino_japanese_trade [id]&lt;br&gt;GFX_goal_generic_positive_trade_relations [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6850" y="4920" as="geometry" />
+          <mxGeometry height="120" width="180" x="2930" y="4960" as="geometry" />
         </mxCell>
         <mxCell id="41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Joint Development of Manchuria [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_joint_development_of_manchuria [id]&lt;br&gt;GFX_goal_generic_construct_civ_factory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="5070" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="5110" as="geometry" />
         </mxCell>
         <mxCell id="42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Sino-Japanese Technical Exchange [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_sino_japanese_technical_exchange [id]&lt;br&gt;GFX_goal_generic_scientific_exchange [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6050" y="5220" as="geometry" />
+          <mxGeometry height="120" width="180" x="2130" y="5260" as="geometry" />
         </mxCell>
         <mxCell id="43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Unify Railway Standards [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_unify_railway_standards [id]&lt;br&gt;GFX_goal_generic_construct_infrastructure [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="5220" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="5260" as="geometry" />
         </mxCell>
         <mxCell id="44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Asian Development Bank [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_asian_development_bank [id]&lt;br&gt;GFX_goal_generic_construct_civ_factory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6850" y="5220" as="geometry" />
+          <mxGeometry height="120" width="180" x="2930" y="5260" as="geometry" />
         </mxCell>
         <mxCell id="45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Asia for Asians [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_pan_asianism [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="5370" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="5410" as="geometry" />
         </mxCell>
         <mxCell id="46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Oppose Western Imperialism [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_oppose_western_imperialism [id]&lt;br&gt;GFX_goal_generic_major_war [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6050" y="5520" as="geometry" />
+          <mxGeometry height="120" width="180" x="2130" y="5560" as="geometry" />
         </mxCell>
         <mxCell id="47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Support Asian Liberation Movements [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_support_asian_liberation_movements [id]&lt;br&gt;GFX_goal_generic_intelligence_exchange [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6850" y="5520" as="geometry" />
+          <mxGeometry height="120" width="180" x="2930" y="5560" as="geometry" />
         </mxCell>
         <mxCell id="48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="East Asian Cooperation Council [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_east_asian_cooperation_council [id]&lt;br&gt;GFX_goal_generic_major_alliance [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="5670" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="5710" as="geometry" />
         </mxCell>
         <mxCell id="49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Found the East Asian Community [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_found_east_asian_community [id]&lt;br&gt;GFX_goal_generic_major_alliance [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="5820" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="5860" as="geometry" />
         </mxCell>
         <mxCell id="50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Joint Military Council [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_joint_military_council [id]&lt;br&gt;GFX_goal_generic_army_doctrines [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6050" y="5970" as="geometry" />
+          <mxGeometry height="120" width="180" x="2130" y="6010" as="geometry" />
         </mxCell>
         <mxCell id="51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Mutual Defense Treaty [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_mutual_defense_treaty [id]&lt;br&gt;GFX_goal_generic_major_alliance [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6850" y="5970" as="geometry" />
+          <mxGeometry height="120" width="180" x="2930" y="6010" as="geometry" />
         </mxCell>
         <mxCell id="52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="New Asian Order [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_new_asian_order [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="6450" y="6120" as="geometry" />
+          <mxGeometry height="120" width="180" x="2530" y="6160" as="geometry" />
         </mxCell>
         <mxCell id="53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="发动新土改 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_launch_new_land_reform [id]&lt;br&gt;GFX_goal_generic_communist_revolution [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="850" y="4470" as="geometry" />
@@ -208,47 +194,29 @@
         <mxCell id="67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="革命现代国家 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_revolutionary_modern_state [id]&lt;br&gt;GFX_goal_generic_construct_mil_factory [icon]" vertex="1">
           <mxGeometry height="120" width="180" x="1650" y="5820" as="geometry" />
         </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-240" edge="1" parent="1" source="68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-239">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="军队高于党派 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_army_above_parties [id]&lt;br&gt;GFX_goal_generic_position_armies [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="4470" as="geometry" />
+          <mxGeometry height="120" width="180" x="4210" y="4470" as="geometry" />
         </mxCell>
         <mxCell id="69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="清洗地方主义 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_purge_localism [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="4620" as="geometry" />
+          <mxGeometry height="120" width="180" x="4210" y="4620" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-203" edge="1" parent="1" source="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-199">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-204" edge="1" parent="1" source="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-200">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-211" edge="1" parent="1" source="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-218" edge="1" parent="1" source="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-214">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="成立国家军事委员会 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_establish_national_military_council [id]&lt;br&gt;GFX_goal_generic_army_doctrines [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="4770" as="geometry" />
-        </mxCell>
-        <mxCell id="71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="青年军官动员 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_young_officer_mobilization [id]&lt;br&gt;GFX_goal_generic_army_doctrines [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="4920" as="geometry" />
-        </mxCell>
-        <mxCell id="72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="国家复兴运动 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_national_revival_movement [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="5070" as="geometry" />
-        </mxCell>
-        <mxCell id="73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="军统扩权 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_expand_the_juntong [id]&lt;br&gt;GFX_goal_generic_intelligence_exchange [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="2850" y="5220" as="geometry" />
-        </mxCell>
-        <mxCell id="74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="统一思想 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_unify_thought [id]&lt;br&gt;GFX_goal_generic_propaganda [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="2850" y="5370" as="geometry" />
-        </mxCell>
-        <mxCell id="75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="党国一体 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_party_state_unity [id]&lt;br&gt;GFX_goal_support_fascism [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="2850" y="5520" as="geometry" />
-        </mxCell>
-        <mxCell id="76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="铁血共和国 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_iron_blood_republic [id]&lt;br&gt;GFX_goal_generic_construct_mil_factory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="2850" y="5670" as="geometry" />
-        </mxCell>
-        <mxCell id="77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="收复东北 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_recover_the_northeast [id]&lt;br&gt;GFX_goal_generic_demand_territory [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="4450" y="5220" as="geometry" />
-        </mxCell>
-        <mxCell id="78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="对日复仇 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_revenge_against_japan [id]&lt;br&gt;GFX_goal_generic_major_war [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="4450" y="5370" as="geometry" />
-        </mxCell>
-        <mxCell id="79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东亚新秩序 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_new_order_in_east_asia [id]&lt;br&gt;GFX_goal_generic_occupy_states_ongoing_war [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="4450" y="5520" as="geometry" />
-        </mxCell>
-        <mxCell id="80" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="大亚细亚远征 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_greater_asian_expedition [id]&lt;br&gt;GFX_goal_generic_major_alliance [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="4450" y="5670" as="geometry" />
-        </mxCell>
-        <mxCell id="81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="亚洲属于亚洲人 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_CHI_asia_for_asians [id]&lt;br&gt;GFX_goal_generic_national_unity [icon]" vertex="1">
-          <mxGeometry height="120" width="180" x="3650" y="5820" as="geometry" />
+          <mxGeometry height="120" width="180" x="4210" y="4770" as="geometry" />
         </mxCell>
         <mxCell id="82" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3">
           <mxGeometry relative="1" as="geometry" />
@@ -257,15 +225,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="84" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="85" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="86" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="87" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="88" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9">
@@ -286,15 +245,6 @@
         <mxCell id="93" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="94" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="95" edge="1" parent="1" source="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="96" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="97" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -302,15 +252,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="99" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="100" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="21">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="101" edge="1" parent="1" source="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="21">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="102" edge="1" parent="1" source="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="103" edge="1" parent="1" source="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="21">
@@ -359,9 +300,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="118" edge="1" parent="1" source="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="32">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="119" edge="1" parent="1" source="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="120" edge="1" parent="1" source="33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 4;strokeColor=#FF0000;strokeWidth=2;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;" target="32">
@@ -509,45 +447,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="168" edge="1" parent="1" source="69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="70">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="169" edge="1" parent="1" source="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="71">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="170" edge="1" parent="1" source="71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="72">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="171" edge="1" parent="1" source="72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="73">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="172" edge="1" parent="1" source="73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 4;strokeColor=#FF0000;strokeWidth=2;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;" target="77">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="173" edge="1" parent="1" source="73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="74">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="174" edge="1" parent="1" source="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="75">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="175" edge="1" parent="1" source="75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="76">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="176" edge="1" parent="1" source="72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="77">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="177" edge="1" parent="1" source="77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="78">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="178" edge="1" parent="1" source="78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="79">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="179" edge="1" parent="1" source="79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="80">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="180" edge="1" parent="1" source="76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="81">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="181" edge="1" parent="1" source="80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="182" parent="1" style="text;html=1;strokeColor=#999999;fillColor=#ffffff;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=10;fontColor=#333333;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#0000FF&quot;&gt;---&lt;/font&gt; Prerequisite (AND)&lt;br&gt;&lt;font color=&quot;#4444FF&quot;&gt;...&lt;/font&gt; Prerequisite (OR)&lt;br&gt;&lt;font color=&quot;#FF0000&quot;&gt;- -&lt;/font&gt; Mutually Exclusive" vertex="1">
@@ -797,6 +696,470 @@
         </mxCell>
         <mxCell id="boxaOn5AShRq46eqn7xV-276" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="枪杆下的政权" vertex="1">
           <mxGeometry height="110" width="180" x="4450" y="1840" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-182" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2480" y="710" as="sourcePoint" />
+            <mxPoint x="3540" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-185" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2480" y="710" as="sourcePoint" />
+            <mxPoint x="2480" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-194" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-192">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-195" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-193">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-189" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="印度的问题" vertex="1">
+          <mxGeometry height="120" width="180" x="2390" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-192" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="支持红色印度（需要农村改革派）" vertex="1">
+          <mxGeometry height="120" width="180" x="2170" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-193" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="支持黑色印度（需要重建黄埔军校）" vertex="1">
+          <mxGeometry height="120" width="180" x="2600" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-196" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=-0.022;entryY=0.496;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF3333;" target="Ia8B847mb31vWkcdP_Dr-193" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="2470" y="1190" />
+            </Array>
+            <mxPoint x="2350" y="1190" as="sourcePoint" />
+            <mxPoint x="2400" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-205" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-199" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-202">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-207" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-199" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-206">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-199" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="密谋刺杀毛泽东（解锁决议）" vertex="1">
+          <mxGeometry height="120" width="180" x="3670" y="4960" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-227" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-225">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-229" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-226">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-238" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-237">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-200" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="直接武装夺权（直接开启内战）" vertex="1">
+          <mxGeometry height="120" width="180" x="4810" y="4960" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-202" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="刺杀行动失败" vertex="1">
+          <mxGeometry height="120" width="180" x="3490" y="5120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-212" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-210">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-206" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="刺杀行动圆满成功" vertex="1">
+          <mxGeometry height="120" width="180" x="3850" y="5120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-215" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-209">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-208" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重建蓝衣社" vertex="1">
+          <mxGeometry height="120" width="180" x="4070" y="4960" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-213" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-210">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-233" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-231">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-209" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩大招募" vertex="1">
+          <mxGeometry height="120" width="180" x="4070" y="5120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-224" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-210" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-223">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-210" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中央警卫团" vertex="1">
+          <mxGeometry height="120" width="180" x="3960" y="5280" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-220" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-216">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-214" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="军统系统" vertex="1">
+          <mxGeometry height="120" width="180" x="4380" y="4960" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-222" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-216" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-217">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-216" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="秘密监视（启用戴笠）" vertex="1">
+          <mxGeometry height="120" width="180" x="4380" y="5120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-236" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-235">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-217" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="地下通讯" vertex="1">
+          <mxGeometry height="120" width="180" x="4380" y="5280" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-223" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3D%23f5f5f5%3BstrokeColor%3D%23666666%3B%22%20value%3D%22%E4%B8%AD%E5%A4%AE%E8%AD%A6%E5%8D%AB%E5%9B%A2%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%22120%22%20width%3D%22180%22%20x%3D%223400%22%20y%3D%225280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;贺衷寒接管党中央" vertex="1">
+          <mxGeometry height="120" width="180" x="3960" y="5450" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-225" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="寻求德国支持" vertex="1">
+          <mxGeometry height="120" width="180" x="4630" y="5120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-226" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="寻求日本支持" vertex="1">
+          <mxGeometry height="120" width="180" x="4990" y="5120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-249" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-248">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-230" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="毛泽东的命运" vertex="1">
+          <mxGeometry height="120" width="180" x="4310" y="5690" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-234" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-231" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-232">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-231" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="地下印刷厂" vertex="1">
+          <mxGeometry height="120" width="180" x="4170" y="5280" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-232" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="清除意见人士" vertex="1">
+          <mxGeometry height="120" width="180" x="4170" y="5450" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-235" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="建立黑名单" vertex="1">
+          <mxGeometry height="120" width="180" x="4380" y="5450" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-237" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="武装夺权的胜利" vertex="1">
+          <mxGeometry height="120" width="180" x="4810" y="5280" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-251" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-250">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-277" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-276">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-279" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-278">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-239" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="黄埔优秀毕业生聚会（林彪成为法西斯政治顾问）" vertex="1">
+          <mxGeometry height="120" width="180" x="4470" y="4470" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-243" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4050" y="5760" as="sourcePoint" />
+            <mxPoint x="4049.5" y="5570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-244" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-230" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4050" y="5760" as="sourcePoint" />
+            <mxPoint x="4100" y="5710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-246" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4900" y="5760" as="sourcePoint" />
+            <mxPoint x="4900" y="5405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-247" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=1.009;entryY=0.573;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-230" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4900" y="5760" as="sourcePoint" />
+            <mxPoint x="4950" y="5710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-263" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-261">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-275" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-270">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-316" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-312">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-248" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中华人民复兴政府成立" vertex="1">
+          <mxGeometry height="120" width="180" x="4310" y="5850" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-254" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-252">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-255" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-250" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="天上的老虎" vertex="1">
+          <mxGeometry height="120" width="180" x="4740" y="4650" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-259" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-258">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-252" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="老虎中的战斗机" vertex="1">
+          <mxGeometry height="120" width="180" x="5030" y="4540" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-260" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-258">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-253" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="老虎中的支援机" vertex="1">
+          <mxGeometry height="120" width="180" x="5030" y="4740" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-257" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-252" style="endArrow=none;dashed=1;html=1;dashPattern=8 8;strokeWidth=2;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#FF3333;" target="Ia8B847mb31vWkcdP_Dr-253" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4990" y="4820" as="sourcePoint" />
+            <mxPoint x="5040" y="4770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-262" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-258" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-261">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-258" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="黄埔空军学院" vertex="1">
+          <mxGeometry height="120" width="180" x="5280" y="4650" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-267" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-264">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-268" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5550" y="6030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-269" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-261" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="建立皇家空军" vertex="1">
+          <mxGeometry height="120" width="180" x="5280" y="5850" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-264" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="提高门槛" vertex="1">
+          <mxGeometry height="120" width="180" x="5100" y="6030" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-265" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="降低门槛" vertex="1">
+          <mxGeometry height="120" width="180" x="5450" y="6030" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-266" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="亚洲的空中霸权" vertex="1">
+          <mxGeometry height="120" width="180" x="5280" y="6200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-274" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-270" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-273">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-325" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-270" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-324">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-270" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="来自日本的贺电" vertex="1">
+          <mxGeometry height="120" width="180" x="3760" y="5850" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-322" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-273" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-320">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-273" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中日共建的大东亚共荣圈" vertex="1">
+          <mxGeometry height="120" width="180" x="3580" y="6020" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-276" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="秘密接触张国焘" vertex="1">
+          <mxGeometry height="120" width="180" x="4470" y="4240" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-281" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-278" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-280">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-278" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="策反彭德怀" vertex="1">
+          <mxGeometry height="120" width="180" x="4740" y="3970" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-289" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-282">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-290" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-283">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-280" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重组黄埔陆军学院" vertex="1">
+          <mxGeometry height="120" width="180" x="4980" y="3970" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-294" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-291">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-295" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-284">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-299" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-287">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-300" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-282" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-288">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-282" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="建立标准化陆军" vertex="1">
+          <mxGeometry height="120" width="180" x="5200" y="3850" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-293" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-283" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-292">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-296" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-283" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-287">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-297" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-283" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-288">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-298" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-287" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-284">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-283" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="整编土匪" vertex="1">
+          <mxGeometry height="120" width="180" x="5190" y="4050" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-303" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-284" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-302">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-284" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中华的陆军军官" vertex="1">
+          <mxGeometry height="120" width="180" x="5470" y="3825" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-306" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-288" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-305">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-288" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中国坦克" vertex="1">
+          <mxGeometry height="120" width="180" x="5470" y="4130" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-291" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="新五军" vertex="1">
+          <mxGeometry height="120" width="180" x="5200" y="3630" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-292" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="敢死队" vertex="1">
+          <mxGeometry height="120" width="180" x="5190" y="4270" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-301" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-283" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-287" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5370" y="4110" as="sourcePoint" />
+            <mxPoint x="5560" y="3945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-304" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-287" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-302">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-307" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-287" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-305">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-287" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="指挥部重建" vertex="1">
+          <mxGeometry height="120" width="180" x="5470" y="3970" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-310" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-308">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-311" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-309">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-302" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="我们都是神枪手" vertex="1">
+          <mxGeometry height="120" width="180" x="5690" y="3900" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-305" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="自行火炮" vertex="1">
+          <mxGeometry height="120" width="180" x="5690" y="4050" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-308" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="山地师" vertex="1">
+          <mxGeometry height="120" width="180" x="5880" y="3720" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-309" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="海军陆战队" vertex="1">
+          <mxGeometry height="120" width="180" x="6060" y="3900" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-317" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-312" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-313">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-312" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="国家复兴运动" vertex="1">
+          <mxGeometry height="120" width="180" x="4310" y="6010" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-318" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-313" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-314">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-313" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="蓝衣军扩权&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3D%23f5f5f5%3BstrokeColor%3D%23666666%3B%22%20value%3D%22%E5%9B%BD%E5%AE%B6%E5%A4%8D%E5%85%B4%E8%BF%90%E5%8A%A8%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%22120%22%20width%3D%22180%22%20x%3D%224130%22%20y%3D%226020%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="4310" y="6210" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-319" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-314" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-315">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-314" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="国家至上" vertex="1">
+          <mxGeometry height="120" width="180" x="4310" y="6380" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-321" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-315" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-320">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-352" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-315" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Ia8B847mb31vWkcdP_Dr-351">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-315" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中华民族主义" vertex="1">
+          <mxGeometry height="120" width="180" x="4310" y="6540" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-330" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-320" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-323">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-320" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="瓜分东北（像日本发送事件之类的）" vertex="1">
+          <mxGeometry height="120" width="180" x="3580" y="6540" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-334" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-323" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-331">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-335" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-323" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-332">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-323" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东亚新秩序协定" vertex="1">
+          <mxGeometry height="120" width="180" x="3580" y="6750" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-329" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-324" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-327">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-324" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="反日条约" vertex="1">
+          <mxGeometry height="120" width="180" x="3940" y="6020" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-345" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-327" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-344">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-327" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="收复东北" vertex="1">
+          <mxGeometry height="120" width="180" x="3940" y="6700" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-337" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-331" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-333">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-331" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="南进" vertex="1">
+          <mxGeometry height="120" width="180" x="3400" y="7240" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-336" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-332" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-333">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-332" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="北上" vertex="1">
+          <mxGeometry height="120" width="180" x="3760" y="7240" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-333" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="大亚洲共荣圈" vertex="1">
+          <mxGeometry height="120" width="180" x="3580" y="7420" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-342" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4400" y="6760" as="sourcePoint" />
+            <mxPoint x="4400" y="6660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-343" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="Ia8B847mb31vWkcdP_Dr-327" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4400" y="6760" as="sourcePoint" />
+            <mxPoint x="4360" y="6800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-347" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-344" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-331">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-348" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-344" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-332">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-350" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-344" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="Ia8B847mb31vWkcdP_Dr-349">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-344" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="对日作战" vertex="1">
+          <mxGeometry height="120" width="180" x="3940" y="6920" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-349" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="中华治下的新亚洲" vertex="1">
+          <mxGeometry height="120" width="180" x="3940" y="7420" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-355" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-351" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-353">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-351" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="寻求中德友好" vertex="1">
+          <mxGeometry height="120" width="180" x="4600" y="6540" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-356" edge="1" parent="1" source="Ia8B847mb31vWkcdP_Dr-353" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ia8B847mb31vWkcdP_Dr-354">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-353" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="陈绍宽下西洋" vertex="1">
+          <mxGeometry height="120" width="180" x="4600" y="6710" as="geometry" />
+        </mxCell>
+        <mxCell id="Ia8B847mb31vWkcdP_Dr-354" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="剑指美洲" vertex="1">
+          <mxGeometry height="120" width="180" x="4600" y="6880" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
