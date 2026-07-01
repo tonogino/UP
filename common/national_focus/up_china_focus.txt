@@ -70,8 +70,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_southwest_question
         icon = GFX_goal_generic_political_pressure
-        x = 40
-        y = 4
+        x = 34
+        y = 5
         cost = 3
         prerequisite = { focus = UP_CHI_chinese_unification_war }
         ai_will_do = {
@@ -160,9 +160,9 @@ focus_tree = {
     focus = {
         id = UP_CHI_southwest_unification
         icon = GFX_goal_generic_demand_territory
-        x = 35
-        y = 6
-        cost = 0
+        x = 34
+        y = 8
+        cost = 10
         prerequisite = { focus = UP_CHI_southwest_question }
         available = {
             OR = {
@@ -170,6 +170,9 @@ focus_tree = {
                 CKG = { is_subject_of = ROOT }
                 NOT = { CKG = { exists = yes } }
             }
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
             set_country_flag = UP_CHI_southwest_unified
@@ -835,7 +838,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_local_autonomy_path
         icon = GFX_goal_generic_improve_relations
-        x = 40
+        x = 39
         y = 20
         cost = 2
         prerequisite = { focus = UP_CHI_deal_with_localism }
@@ -850,7 +853,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_preserve_local_governments
         icon = GFX_goal_generic_diplomacy
-        x = 40
+        x = 39
         y = 21
         cost = 2
         prerequisite = { focus = UP_CHI_local_autonomy_path }
@@ -863,7 +866,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_compromise_local_interests
         icon = GFX_goal_generic_positive_trade_relations
-        x = 40
+        x = 39
         y = 22
         cost = 2
         prerequisite = { focus = UP_CHI_preserve_local_governments }
@@ -876,7 +879,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_revolutionary_united_front
         icon = GFX_goal_generic_major_alliance
-        x = 40
+        x = 39
         y = 23
         cost = 2
         prerequisite = { focus = UP_CHI_compromise_local_interests }
@@ -1044,7 +1047,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_stop_anti_japanese_propaganda
         icon = GFX_goal_generic_propaganda
-        x = 22
+        x = 23
         y = 34
         cost = 10
         prerequisite = { focus = UP_CHI_nanjing_tokyo_joint_declaration }
@@ -1118,7 +1121,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_sino_japanese_technical_exchange
         icon = GFX_goal_generic_scientific_exchange
-        x = 22
+        x = 23
         y = 36
         cost = 10
         prerequisite = { focus = UP_CHI_joint_development_of_manchuria }
@@ -1174,7 +1177,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_oppose_western_imperialism
         icon = GFX_goal_generic_major_war
-        x = 22
+        x = 23
         y = 38
         cost = 10
         prerequisite = { focus = UP_CHI_pan_asianism }
@@ -1234,7 +1237,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_joint_military_council
         icon = GFX_goal_generic_army_doctrines
-        x = 22
+        x = 23
         y = 41
         cost = 10
         prerequisite = { focus = UP_CHI_found_east_asian_community }
@@ -1296,7 +1299,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_deepen_the_countryside
         icon = GFX_goal_generic_propaganda
-        x = 6
+        x = 7
         y = 32
         cost = 10
         prerequisite = { focus = UP_CHI_launch_new_land_reform }
@@ -1605,8 +1608,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_new_fifth_army
         icon = GFX_goal_generic_political_pressure
-        x = 51
-        y = 25
+        x = 62
+        y = 35
         cost = 10
         prerequisite = { focus = UP_CHI_standardized_army }
         completion_reward = {
@@ -1617,10 +1620,13 @@ focus_tree = {
     focus = {
         id = UP_CHI_mountain_divisions
         icon = GFX_goal_generic_army_doctrines
-        x = 58
-        y = 25
+        x = 59
+        y = 41
         cost = 10
         prerequisite = { focus = UP_CHI_all_sharpshooters }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             army_experience = 15
             add_war_support = 0.01
@@ -1630,8 +1636,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_standardized_army
         icon = GFX_goal_generic_army_doctrines
-        x = 51
-        y = 26
+        x = 61
+        y = 34
         cost = 10
         prerequisite = { focus = UP_CHI_reorganize_whampoa_army_academy }
         mutually_exclusive = { focus = UP_CHI_integrate_bandits }
@@ -1644,8 +1650,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_chinese_army_officers
         icon = GFX_goal_generic_army_doctrines
-        x = 54
-        y = 26
+        x = 61
+        y = 38
         cost = 10
         prerequisite = { focus = UP_CHI_standardized_army focus = UP_CHI_rebuild_command_headquarters }
         completion_reward = {
@@ -1657,8 +1663,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_turn_peng_dehuai
         icon = GFX_goal_generic_political_pressure
-        x = 47
-        y = 27
+        x = 58
+        y = 32
         cost = 10
         prerequisite = { focus = UP_CHI_whampoa_graduates_gathering }
         completion_reward = {
@@ -1670,8 +1676,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_reorganize_whampoa_army_academy
         icon = GFX_goal_generic_army_doctrines
-        x = 49
-        y = 27
+        x = 58
+        y = 33
         cost = 10
         prerequisite = { focus = UP_CHI_turn_peng_dehuai }
         completion_reward = {
@@ -1683,8 +1689,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_rebuild_command_headquarters
         icon = GFX_goal_generic_army_doctrines
-        x = 54
-        y = 27
+        x = 59
+        y = 36
         cost = 10
         prerequisite = { focus = UP_CHI_standardized_army focus = UP_CHI_integrate_bandits }
         completion_reward = {
@@ -1696,10 +1702,13 @@ focus_tree = {
     focus = {
         id = UP_CHI_all_sharpshooters
         icon = GFX_goal_generic_army_doctrines
-        x = 56
-        y = 26
+        x = 60
+        y = 40
         cost = 10
         prerequisite = { focus = UP_CHI_chinese_army_officers focus = UP_CHI_rebuild_command_headquarters }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             army_experience = 15
             add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
@@ -1709,8 +1718,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_marine_corps
         icon = GFX_goal_generic_army_doctrines
-        x = 58
-        y = 27
+        x = 61
+        y = 41
         cost = 10
         prerequisite = { focus = UP_CHI_all_sharpshooters }
         completion_reward = {
@@ -1722,8 +1731,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_integrate_bandits
         icon = GFX_goal_generic_political_pressure
-        x = 51
-        y = 28
+        x = 55
+        y = 34
         cost = 10
         prerequisite = { focus = UP_CHI_reorganize_whampoa_army_academy }
         mutually_exclusive = { focus = UP_CHI_standardized_army }
@@ -1736,8 +1745,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_chinese_tanks
         icon = GFX_goal_generic_army_tanks
-        x = 54
-        y = 28
+        x = 57
+        y = 36
         cost = 10
         prerequisite = { focus = UP_CHI_standardized_army focus = UP_CHI_integrate_bandits }
         completion_reward = {
@@ -1749,8 +1758,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_self_propelled_artillery
         icon = GFX_goal_generic_army_tanks
-        x = 56
-        y = 28
+        x = 57
+        y = 38
         cost = 10
         prerequisite = { focus = UP_CHI_chinese_tanks focus = UP_CHI_rebuild_command_headquarters }
         completion_reward = {
@@ -1762,8 +1771,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_secret_contact_zhang_guotao
         icon = GFX_goal_generic_intelligence_exchange
-        x = 44
-        y = 29
+        x = 45
+        y = 32
         cost = 10
         prerequisite = { focus = UP_CHI_whampoa_graduates_gathering }
         completion_reward = {
@@ -1775,8 +1784,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_dare_to_die_corps
         icon = GFX_goal_generic_army_doctrines
-        x = 51
-        y = 29
+        x = 54
+        y = 35
         cost = 10
         prerequisite = { focus = UP_CHI_integrate_bandits }
         completion_reward = {
@@ -1788,8 +1797,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_whampoa_graduates_gathering
         icon = GFX_goal_generic_army_doctrines
-        x = 44
-        y = 30
+        x = 47
+        y = 31
         cost = 10
         prerequisite = { focus = UP_CHI_army_above_parties }
         completion_reward = {
@@ -1801,8 +1810,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_fighters_among_tigers
         icon = GFX_goal_generic_air_fighter
-        x = 49
-        y = 31
+        x = 51
+        y = 33
         cost = 10
         prerequisite = { focus = UP_CHI_tigers_in_the_sky }
         mutually_exclusive = { focus = UP_CHI_support_planes_among_tigers }
@@ -1815,7 +1824,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_tigers_in_the_sky
         icon = GFX_goal_generic_air_fighter
-        x = 47
+        x = 52
         y = 32
         cost = 10
         prerequisite = { focus = UP_CHI_whampoa_graduates_gathering }
@@ -1828,8 +1837,8 @@ focus_tree = {
     focus = {
         id = UP_CHI_support_planes_among_tigers
         icon = GFX_goal_generic_air_fighter
-        x = 49
-        y = 32
+        x = 53
+        y = 33
         cost = 10
         prerequisite = { focus = UP_CHI_tigers_in_the_sky }
         mutually_exclusive = { focus = UP_CHI_fighters_among_tigers }
@@ -1843,7 +1852,7 @@ focus_tree = {
         id = UP_CHI_whampoa_air_force_academy
         icon = GFX_goal_generic_air_fighter
         x = 52
-        y = 32
+        y = 34
         cost = 10
         prerequisite = { focus = UP_CHI_fighters_among_tigers }
         prerequisite = { focus = UP_CHI_support_planes_among_tigers }
@@ -1856,7 +1865,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_plot_to_assassinate_mao
         icon = GFX_goal_generic_intelligence_exchange
-        x = 36
+        x = 35
         y = 34
         cost = 10
         prerequisite = { focus = UP_CHI_establish_national_military_council }
@@ -1907,7 +1916,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_assassination_failed
         icon = GFX_goal_generic_intelligence_exchange
-        x = 35
+        x = 34
         y = 35
         cost = 10
         prerequisite = { focus = UP_CHI_plot_to_assassinate_mao }
@@ -1921,7 +1930,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_assassination_success
         icon = GFX_goal_generic_intelligence_exchange
-        x = 38
+        x = 36
         y = 35
         cost = 10
         prerequisite = { focus = UP_CHI_plot_to_assassinate_mao }
@@ -1973,7 +1982,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_seek_japanese_support
         icon = GFX_goal_generic_major_alliance
-        x = 49
+        x = 48
         y = 35
         cost = 10
         prerequisite = { focus = UP_CHI_direct_armed_seizure }
@@ -1986,7 +1995,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_central_guard_regiment
         icon = GFX_goal_generic_political_pressure
-        x = 39
+        x = 38
         y = 36
         cost = 10
         prerequisite = { focus = UP_CHI_assassination_success focus = UP_CHI_expand_recruitment }
@@ -1998,7 +2007,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_underground_printing_house
         icon = GFX_goal_generic_intelligence_exchange
-        x = 41
+        x = 40
         y = 36
         cost = 10
         prerequisite = { focus = UP_CHI_expand_recruitment }
@@ -2025,7 +2034,7 @@ focus_tree = {
         id = UP_CHI_victory_of_armed_seizure
         icon = GFX_goal_generic_political_pressure
         x = 47
-        y = 36
+        y = 37
         cost = 10
         prerequisite = { focus = UP_CHI_direct_armed_seizure }
         completion_reward = {
@@ -2036,7 +2045,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_he_zhonghan_takes_party_center
         icon = GFX_goal_generic_political_pressure
-        x = 39
+        x = 38
         y = 37
         cost = 10
         prerequisite = { focus = UP_CHI_central_guard_regiment }
@@ -2048,7 +2057,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_eliminate_dissenters
         icon = GFX_goal_generic_political_pressure
-        x = 41
+        x = 40
         y = 37
         cost = 10
         prerequisite = { focus = UP_CHI_underground_printing_house }
@@ -2124,7 +2133,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_sino_japanese_co_prosperity_sphere
         icon = GFX_goal_generic_major_alliance
-        x = 36
+        x = 35
         y = 41
         cost = 10
         prerequisite = { focus = UP_CHI_japanese_congratulations }
@@ -2219,7 +2228,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_partition_manchuria
         icon = GFX_goal_generic_major_alliance
-        x = 36
+        x = 35
         y = 45
         cost = 10
         prerequisite = { focus = UP_CHI_sino_japanese_co_prosperity_sphere focus = UP_CHI_chinese_nationalism }
@@ -2247,7 +2256,7 @@ focus_tree = {
         id = UP_CHI_seek_sino_german_friendship
         icon = GFX_goal_generic_major_alliance
         x = 45
-        y = 45
+        y = 46
         cost = 10
         prerequisite = { focus = UP_CHI_chinese_nationalism }
         completion_reward = {
@@ -2260,7 +2269,7 @@ focus_tree = {
         id = UP_CHI_chen_shaokuan_oceanic_mission
         icon = GFX_goal_generic_political_pressure
         x = 45
-        y = 46
+        y = 47
         cost = 10
         prerequisite = { focus = UP_CHI_seek_sino_german_friendship }
         completion_reward = {
@@ -2271,7 +2280,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_east_asian_new_order_pact
         icon = GFX_goal_generic_political_pressure
-        x = 36
+        x = 35
         y = 46
         cost = 10
         prerequisite = { focus = UP_CHI_partition_manchuria }
@@ -2298,7 +2307,7 @@ focus_tree = {
         id = UP_CHI_aim_at_america
         icon = GFX_goal_generic_major_war
         x = 45
-        y = 47
+        y = 48
         cost = 10
         prerequisite = { focus = UP_CHI_chen_shaokuan_oceanic_mission }
         completion_reward = {
@@ -2324,7 +2333,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_northern_advance
         icon = GFX_goal_generic_major_war
-        x = 37
+        x = 36
         y = 50
         cost = 10
         prerequisite = { focus = UP_CHI_east_asian_new_order_pact focus = UP_CHI_war_against_japan }
@@ -2338,7 +2347,7 @@ focus_tree = {
     focus = {
         id = UP_CHI_greater_asian_co_prosperity_sphere
         icon = GFX_goal_generic_major_alliance
-        x = 36
+        x = 35
         y = 51
         cost = 10
         prerequisite = { focus = UP_CHI_southern_advance }
