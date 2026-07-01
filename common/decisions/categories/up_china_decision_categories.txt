@@ -28,3 +28,18 @@ UP_china_unification_decisions = {
 	visible = { has_completed_focus = UP_CHI_chinese_unification_war }
 	priority = 20
 }
+
+UP_china_assassination_decisions = {
+	icon = generic_intelligence_exchange
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_assassination_plot_active }
+	priority = 30
+}
+
+UP_china_mao_mechanic_decisions = {
+	icon = GFX_UP_CHI_mao_mechanic
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_mao_mechanic_active }
+	scripted_gui = UP_CHI_mao_mechanic_ui
+	priority = 35
+}

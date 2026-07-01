@@ -3,6 +3,14 @@ opinion_modifiers = {
 		value = 75
 	}
 
+	japanese_congratulations_to_nanjing = {
+		value = 50
+	}
+
+	sino_japanese_manchurian_settlement = {
+		value = 65
+	}
+
 	anti_western_imperialism = {
 		value = -50
 	}

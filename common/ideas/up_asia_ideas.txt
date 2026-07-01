@@ -883,5 +883,176 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
+
+		UP_whampoa_shadow_cabal = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.08
+				consumer_goods_factor = 0.04
+				production_speed_industrial_complex_factor = -0.05
+				army_org_factor = 0.02
+				war_support_factor = 0.04
+			}
+		}
+
+		UP_whampoa_command_state = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.08
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				army_org_factor = 0.04
+				planning_speed = 0.05
+				experience_gain_army_factor = 0.10
+			}
+		}
+
+		UP_blue_shirts_reborn = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.07
+				war_support_factor = 0.04
+				fascism_drift = 0.03
+				resistance_target = -0.05
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.04
+			}
+		}
+
+		UP_blue_shirts_mass_recruitment = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.06
+				fascism_drift = 0.04
+				resistance_target = -0.08
+				consumer_goods_factor = 0.04
+				training_time_army_factor = 0.05
+				conscription_factor = 0.03
+			}
+		}
+
+		UP_juntong_state = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.06
+				resistance_target = -0.10
+				political_power_gain = 0.05
+				foreign_subversive_activities = -0.10
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_juntong_surveillance_state = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.08
+				resistance_target = -0.15
+				political_power_gain = 0.08
+				foreign_subversive_activities = -0.15
+				enemy_operative_detection_chance_factor = 0.10
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_assassination_preparations = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.06
+				political_power_gain = -0.08
+			}
+		}
+
+		UP_assassination_failed_crackdown = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+
+		UP_lin_biao_interregnum = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = 0.08
+				experience_gain_air_factor = 0.10
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_he_zhonghan_party_center = {
+			picture = generic_national_unity
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.08
+				fascism_drift = 0.03
+			}
+		}
+
+		UP_revival_government_consolidated = {
+			picture = generic_nationalism
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.12
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.03
+				production_speed_arms_factory_factor = 0.08
+				production_speed_industrial_complex_factor = 0.05
+				army_org_factor = 0.03
+				research_speed_factor = 0.03
+			}
+		}
+
+		UP_sino_japanese_hardline_alignment = {
+			picture = generic_major_alliance
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.05
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_cultural_revolution_chaos = {
+			picture = GFX_UP_CHI_cultural_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.20
+				research_speed_factor = -0.05
+				army_org_factor = -0.05
+				consumer_goods_factor = 0.08
+				communism_drift = 0.05
+			}
+		}
+
+		UP_armed_seizure_disruption = {
+			picture = generic_civil_war
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = 0.08
+				consumer_goods_factor = 0.06
+			}
+		}
+
 	}
 }

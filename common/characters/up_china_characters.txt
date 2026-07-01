@@ -1,0 +1,33 @@
+characters = {
+	UP_CHI_lin_biao = {
+		name = UP_CHI_lin_biao
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_lin_biao_advisor
+			allowed = { original_tag = CHI }
+			available = { has_country_flag = UP_CHI_lin_biao_advisor_unlocked }
+			traits = { fascist_demagogue }
+			cost = 150
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = UP_CHI_lin_biao_air_chief
+			allowed = { original_tag = CHI }
+			available = { has_country_flag = UP_CHI_lin_biao_air_chief_unlocked }
+			traits = { air_chief_ground_support_2 }
+			cost = 150
+		}
+	}
+
+	UP_CHI_dai_li = {
+		name = UP_CHI_dai_li_advisor
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_dai_li_advisor
+			allowed = { original_tag = CHI }
+			available = { has_country_flag = UP_CHI_dai_li_advisor_unlocked }
+			traits = { illusive_gentleman }
+			cost = 150
+		}
+	}
+}

@@ -1,0 +1,140 @@
+guiTypes = {
+	containerWindowType = {
+		name = "UP_CHI_mao_mechanic_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 195 }
+		clipping = yes
+
+		instantTextboxType = {
+			name = "UP_CHI_mao_mechanic_title"
+			position = { x = 20 y = 8 }
+			font = "hoi_24header"
+			text = "UP_CHI_mao_mechanic_title"
+			maxWidth = 330
+			maxHeight = 28
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "UP_CHI_mao_mechanic_desc"
+			position = { x = 20 y = 36 }
+			font = "hoi_16mbs"
+			text = "UP_CHI_mao_mechanic_desc"
+			maxWidth = 330
+			maxHeight = 42
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "UP_CHI_mao_support_label"
+			position = { x = 95 y = 78 }
+			font = "hoi_18mbs"
+			text = "UP_CHI_mao_support_header"
+			maxWidth = 130
+			maxHeight = 24
+			format = center
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_support_value"
+			position = { x = 220 y = 78 }
+			font = "hoi_18mbs"
+			text = "UP_CHI_mao_support_value"
+			maxWidth = 60
+			maxHeight = 24
+			format = left
+		}
+		iconType = {
+			name = "UP_CHI_mao_support_bar_bg"
+			spriteType = "GFX_UP_CHI_mao_bar_background"
+			position = { x = 20 y = 103 }
+		}
+		iconType = {
+			name = "UP_CHI_mao_support_bar"
+			spriteType = "GFX_UP_CHI_mao_support_bar"
+			position = { x = 20 y = 103 }
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_support_zero"
+			position = { x = 2 y = 124 }
+			font = "hoi_12mbs"
+			text = "UP_CHI_mao_bar_zero"
+			maxWidth = 30
+			maxHeight = 18
+			format = center
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_support_hundred"
+			position = { x = 325 y = 124 }
+			font = "hoi_12mbs"
+			text = "UP_CHI_mao_bar_hundred"
+			maxWidth = 38
+			maxHeight = 18
+			format = center
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_support_pointer"
+			position = { x = 167 y = 119 }
+			font = "hoi_18mbs"
+			text = "UP_CHI_mao_pointer"
+			maxWidth = 24
+			maxHeight = 24
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "UP_CHI_mao_suspicion_label"
+			position = { x = 95 y = 132 }
+			font = "hoi_18mbs"
+			text = "UP_CHI_mao_suspicion_header"
+			maxWidth = 130
+			maxHeight = 24
+			format = center
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_suspicion_value"
+			position = { x = 220 y = 132 }
+			font = "hoi_18mbs"
+			text = "UP_CHI_mao_suspicion_value"
+			maxWidth = 60
+			maxHeight = 24
+			format = left
+		}
+		iconType = {
+			name = "UP_CHI_mao_suspicion_bar_bg"
+			spriteType = "GFX_UP_CHI_mao_bar_background"
+			position = { x = 20 y = 157 }
+		}
+		iconType = {
+			name = "UP_CHI_mao_suspicion_bar"
+			spriteType = "GFX_UP_CHI_mao_suspicion_bar"
+			position = { x = 20 y = 157 }
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_suspicion_zero"
+			position = { x = 2 y = 178 }
+			font = "hoi_12mbs"
+			text = "UP_CHI_mao_bar_zero"
+			maxWidth = 30
+			maxHeight = 18
+			format = center
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_suspicion_hundred"
+			position = { x = 325 y = 178 }
+			font = "hoi_12mbs"
+			text = "UP_CHI_mao_bar_hundred"
+			maxWidth = 38
+			maxHeight = 18
+			format = center
+		}
+		instantTextboxType = {
+			name = "UP_CHI_mao_suspicion_pointer"
+			position = { x = 40 y = 173 }
+			font = "hoi_18mbs"
+			text = "UP_CHI_mao_pointer"
+			maxWidth = 24
+			maxHeight = 24
+			format = center
+		}
+	}
+}

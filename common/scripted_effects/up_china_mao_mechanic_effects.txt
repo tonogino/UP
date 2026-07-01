@@ -1,0 +1,64 @@
+UP_CHI_update_mao_mechanic_gui = {
+	clamp_variable = {
+		var = UP_CHI_mao_support
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = UP_CHI_mao_suspicion
+		min = 0
+		max = 100
+	}
+
+	set_variable = { UP_CHI_mao_support_pointer_x = UP_CHI_mao_support }
+	multiply_variable = { UP_CHI_mao_support_pointer_x = 3.18 }
+	add_to_variable = { UP_CHI_mao_support_pointer_x = 8 }
+
+	set_variable = { UP_CHI_mao_suspicion_pointer_x = UP_CHI_mao_suspicion }
+	multiply_variable = { UP_CHI_mao_suspicion_pointer_x = 3.18 }
+	add_to_variable = { UP_CHI_mao_suspicion_pointer_x = 8 }
+
+	add_to_variable = { UP_CHI_mao_mechanic_dirty = 1 }
+
+	if = {
+		limit = {
+			check_variable = { UP_CHI_mao_suspicion > 99 }
+			has_country_flag = UP_CHI_mao_crisis_enabled
+			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
+		}
+		set_country_flag = UP_CHI_cultural_revolution_started
+		country_event = { id = up_asia.350 days = 1 }
+	}
+}
+
+UP_CHI_start_mao_mechanic = {
+	set_country_flag = UP_CHI_mao_mechanic_active
+	if = {
+		limit = { NOT = { has_country_flag = UP_CHI_mao_mechanic_initialized } }
+		set_country_flag = UP_CHI_mao_mechanic_initialized
+		set_variable = { UP_CHI_mao_support = 50 }
+		set_variable = { UP_CHI_mao_suspicion = 10 }
+	}
+	set_variable = { UP_CHI_mao_mechanic_dirty = 1 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_add_mao_support_small = {
+	add_to_variable = { UP_CHI_mao_support = 5 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_reduce_mao_support_small = {
+	add_to_variable = { UP_CHI_mao_support = -5 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_add_mao_suspicion_small = {
+	add_to_variable = { UP_CHI_mao_suspicion = 5 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_reduce_mao_suspicion_small = {
+	add_to_variable = { UP_CHI_mao_suspicion = -5 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}

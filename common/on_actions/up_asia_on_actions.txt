@@ -2,6 +2,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			CHI = {
+				UP_CHI_start_mao_mechanic = yes
 				country_event = { id = up_asia.1 }
 				if = {
 					limit = { is_ai = no }
@@ -40,6 +41,22 @@ on_actions = {
 				if = {
 					limit = { is_ai = no }
 					country_event = { id = up_asia.105 days = 1 }
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			CHI = {
+				if = {
+					limit = {
+						has_country_flag = UP_CHI_whampoa_civil_war_active
+						OR = {
+							NOT = { controls_state = 1035 }
+							NOT = { controls_state = 608 }
+						}
+					}
+					country_event = { id = up_asia.324 }
 				}
 			}
 		}

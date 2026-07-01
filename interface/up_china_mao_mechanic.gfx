@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_UP_CHI_mao_mechanic"
+		texturefile = "gfx/interface/mao_mechanic/GFX_UP_CHI_mao_mechanic.dds"
+	}
+	spriteType = {
+		name = "GFX_UP_CHI_mao_bar_background"
+		texturefile = "gfx/interface/mao_mechanic/GFX_UP_CHI_mao_bar_background.dds"
+	}
+	spriteType = {
+		name = "GFX_UP_CHI_mao_support_bar"
+		texturefile = "gfx/interface/mao_mechanic/GFX_UP_CHI_mao_support_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_UP_CHI_mao_suspicion_bar"
+		texturefile = "gfx/interface/mao_mechanic/GFX_UP_CHI_mao_suspicion_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_UP_CHI_cultural_revolution"
+		texturefile = "gfx/interface/mao_mechanic/GFX_UP_CHI_cultural_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mao_cultural_revolution"
+		texturefile = "gfx/interface/mao_mechanic/GFX_report_event_mao_cultural_revolution.dds"
+	}
+}

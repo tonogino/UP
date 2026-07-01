@@ -1,0 +1,21 @@
+scripted_gui = {
+	UP_CHI_mao_mechanic_ui = {
+		context_type = decision_category
+		window_name = "UP_CHI_mao_mechanic_window"
+
+		visible = {
+			has_country_flag = UP_CHI_mao_mechanic_active
+		}
+
+		properties = {
+			UP_CHI_mao_support_pointer = {
+				x = UP_CHI_mao_support_pointer_x
+			}
+			UP_CHI_mao_suspicion_pointer = {
+				x = UP_CHI_mao_suspicion_pointer_x
+			}
+		}
+
+		dirty = UP_CHI_mao_mechanic_dirty
+	}
+}
