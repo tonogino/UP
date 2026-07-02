@@ -197,6 +197,9 @@ recruit_character = UP_CHI_weng_wenhao
 recruit_character = UP_CHI_zhu_de
 recruit_character = UP_CHI_peng_dehuai
 recruit_character = UP_CHI_chen_shaokuan
+recruit_character = UP_CHI_lin_biao
+recruit_character = UP_CHI_dai_li
+recruit_character = UP_CHI_he_zhonghan
 
 if = {
 	limit = {

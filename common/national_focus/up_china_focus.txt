@@ -2416,7 +2416,6 @@ focus_tree = {
             add_war_support = 0.02
             set_country_flag = UP_CHI_lin_biao_advisor_unlocked
             set_country_flag = UP_CHI_lin_biao_air_chief_unlocked
-            recruit_character = UP_CHI_lin_biao
             UP_CHI_add_mao_suspicion_small = yes
             country_event = { id = up_asia.310 days = 1 }
         }
@@ -2432,8 +2431,8 @@ focus_tree = {
         mutually_exclusive = { focus = UP_CHI_support_planes_among_tigers }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_war_support = 0.02
         }
     }
@@ -2447,8 +2446,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_whampoa_graduates_gathering }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_war_support = 0.02
         }
     }
@@ -2463,8 +2462,8 @@ focus_tree = {
         mutually_exclusive = { focus = UP_CHI_fighters_among_tigers }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_war_support = 0.02
         }
     }
@@ -2479,8 +2478,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_support_planes_among_tigers }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             UP_CHI_add_two_military_factories = yes
         }
     }
@@ -2537,7 +2536,6 @@ focus_tree = {
         completion_reward = {
             add_ideas = UP_juntong_state
             set_country_flag = UP_CHI_dai_li_advisor_unlocked
-            recruit_character = UP_CHI_dai_li
             if = {
                 limit = { has_dlc = "La Resistance" }
                 create_intelligence_agency = yes
@@ -2779,7 +2777,6 @@ focus_tree = {
             add_war_support = 0.05
             UP_CHI_add_two_military_factories = yes
             set_country_flag = UP_CHI_he_zhonghan_advisor_unlocked
-            recruit_character = UP_CHI_he_zhonghan
             set_politics = { ruling_party = fascism elections_allowed = no }
             create_country_leader = {
                 name = "贺衷寒"
@@ -2924,8 +2921,8 @@ focus_tree = {
         }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_war_support = 0.03
         }
     }
@@ -2984,8 +2981,8 @@ focus_tree = {
         mutually_exclusive = { focus = UP_CHI_lower_air_standards }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_command_power = 25
         }
     }
@@ -3000,8 +2997,8 @@ focus_tree = {
         mutually_exclusive = { focus = UP_CHI_raise_air_standards }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_command_power = 25
         }
     }
@@ -3032,8 +3029,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_establish_royal_air_force }
         completion_reward = {
             air_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_tech }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
             add_war_support = 0.03
         }
     }
