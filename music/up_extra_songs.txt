@@ -1,0 +1,42 @@
+music_station = "base_music"
+
+music = {
+	song = "UP_music_prologue_when_madness_sets_in"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5000
+			original_tag = CHI
+			date < 1936.2.1
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { original_tag = CHI }
+		}
+	}
+}
+
+music = {
+	song = "UP_music_a_town_with_an_ocean_view"
+
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "UP_music_merry_go_round_of_life"
+
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "UP_music_the_sun_also_rises"
+
+	chance = {
+		factor = 1
+	}
+}
