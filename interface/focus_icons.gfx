@@ -1,0 +1,23 @@
+spriteTypes = {
+    spriteType = {
+        name = "CHI_TEST1"
+        texturefile = "gfx/interface/goals/chi_1_1.dds"
+    }
+    spriteType = {
+        name = "CHI_TEST1_shine"
+        texturefile = "gfx/interface/goals/chi_1_1.dds"  -- 基础图标作为纹理
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/chi_1_1.dds" -- 遮罩使用你的图标
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" -- 闪光叠加层
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 2.0 y = 1.0 }
+        }
+    }
+}
