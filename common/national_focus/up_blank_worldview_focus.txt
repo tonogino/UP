@@ -1,6 +1,6 @@
-focus_tree = {
+﻿focus_tree = {
 	id = UP_germany_focus
-	country = { factor = 0 modifier = { add = 100 tag = GER } }
+	country = { factor = 0 modifier = { add = 1000000 tag = GER } }
 	default = no
 	continuous_focus_position = { x = 20 y = 900 }
 
@@ -270,49 +270,49 @@ focus_tree = {
 
 focus_tree = {
 	id = UP_blank_france_focus
-	country = { factor = 0 modifier = { add = 100 tag = FRA } }
+	country = { factor = 0 modifier = { add = 1000000 tag = FRA } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_britain_focus
-	country = { factor = 0 modifier = { add = 100 tag = ENG } }
+	country = { factor = 0 modifier = { add = 1000000 tag = ENG } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_soviet_focus
-	country = { factor = 0 modifier = { add = 100 tag = SOV } }
+	country = { factor = 0 modifier = { add = 1000000 tag = SOV } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_ottoman_focus
-	country = { factor = 0 modifier = { add = 100 tag = TUR } }
+	country = { factor = 0 modifier = { add = 1000000 tag = TUR } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_italy_focus
-	country = { factor = 0 modifier = { add = 100 tag = ITA } }
+	country = { factor = 0 modifier = { add = 1000000 tag = ITA } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_poland_focus
-	country = { factor = 0 modifier = { add = 100 tag = POL } }
+	country = { factor = 0 modifier = { add = 1000000 tag = POL } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_ukraine_focus
-	country = { factor = 0 modifier = { add = 100 tag = UKR } }
+	country = { factor = 0 modifier = { add = 1000000 tag = UKR } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
@@ -321,9 +321,9 @@ focus_tree = {
 	id = UP_blank_baltic_focus
 	country = {
 		factor = 0
-		modifier = { add = 100 tag = LIT }
-		modifier = { add = 100 tag = LAT }
-		modifier = { add = 100 tag = EST }
+		modifier = { add = 1000000 tag = LIT }
+		modifier = { add = 1000000 tag = LAT }
+		modifier = { add = 1000000 tag = EST }
 	}
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
@@ -333,10 +333,10 @@ focus_tree = {
 	id = UP_blank_danubian_focus
 	country = {
 		factor = 0
-		modifier = { add = 100 tag = DAN }
-		modifier = { add = 100 tag = AUS }
-		modifier = { add = 100 tag = HUN }
-		modifier = { add = 100 tag = CZE }
+		modifier = { add = 1000000 tag = DAN }
+		modifier = { add = 1000000 tag = AUS }
+		modifier = { add = 1000000 tag = HUN }
+		modifier = { add = 1000000 tag = CZE }
 	}
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
@@ -346,10 +346,10 @@ focus_tree = {
 	id = UP_blank_balkans_focus
 	country = {
 		factor = 0
-		modifier = { add = 100 tag = YUG }
-		modifier = { add = 100 tag = ROM }
-		modifier = { add = 100 tag = BUL }
-		modifier = { add = 100 tag = GRE }
+		modifier = { add = 1000000 tag = YUG }
+		modifier = { add = 1000000 tag = ROM }
+		modifier = { add = 1000000 tag = BUL }
+		modifier = { add = 1000000 tag = GRE }
 	}
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
@@ -359,9 +359,9 @@ focus_tree = {
 	id = UP_blank_russian_successors_focus
 	country = {
 		factor = 0
-		modifier = { add = 100 tag = PET }
-		modifier = { add = 100 tag = SIB }
-		modifier = { add = 100 tag = CAU }
+		modifier = { add = 1000000 tag = PET }
+		modifier = { add = 1000000 tag = SIB }
+		modifier = { add = 1000000 tag = CAU }
 	}
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
@@ -369,14 +369,14 @@ focus_tree = {
 
 focus_tree = {
 	id = UP_blank_british_india_remnant_focus
-	country = { factor = 0 modifier = { add = 100 tag = RAJ } }
+	country = { factor = 0 modifier = { add = 1000000 tag = RAJ } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }
 
 focus_tree = {
 	id = UP_blank_chongqing_focus
-	country = { factor = 0 modifier = { add = 100 tag = CKG } }
+	country = { factor = 0 modifier = { add = 1000000 tag = CKG } }
 	default = no
 	continuous_focus_position = { x = 0 y = 0 }
 }

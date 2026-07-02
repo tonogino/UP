@@ -1,8 +1,8 @@
-focus_tree = {
+﻿focus_tree = {
     id = UP_china_focus
     country = {
         factor = 0
-        modifier = { add = 100 tag = CHI }
+        modifier = { add = 1000000 tag = CHI }
     }
     default = no
     continuous_focus_position = { x = 0 y = 0 }
@@ -209,11 +209,8 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = UP_CHI_pressure_sichuan_cliques }
         available = {
-            OR = {
-                controls_state = 1037
-                CKG = { is_subject_of = ROOT }
-                NOT = { CKG = { exists = yes } }
-            }
+            OR = { controls_state = 1037 CKG = { is_subject_of = ROOT } NOT = { CKG = { exists = yes } } }
+            OR = { controls_state = 1041 SIC = { is_subject_of = ROOT } NOT = { SIC = { exists = yes } } }
         }
         ai_will_do = {
             factor = 1
@@ -233,12 +230,19 @@ focus_tree = {
         cost = 0
         prerequisite = { focus = UP_CHI_remaining_warlords_question }
         available = {
-            OR = { has_country_flag = UP_CHI_south_china_unified controls_state = 592 GXC = { is_subject_of = ROOT } NOT = { GXC = { exists = yes } } }
-            OR = { has_country_flag = UP_CHI_northwest_unified controls_state = 616 XSM = { is_subject_of = ROOT } NOT = { XSM = { exists = yes } } }
-            OR = { has_country_flag = UP_CHI_xinjiang_unified controls_state = 617 SIK = { is_subject_of = ROOT } NOT = { SIK = { exists = yes } } }
-            OR = { has_country_flag = UP_CHI_tibet_unified controls_state = 322 TIB = { is_subject_of = ROOT } NOT = { TIB = { exists = yes } } }
+            OR = { controls_state = 592 GXC = { is_subject_of = ROOT } NOT = { GXC = { exists = yes } } }
+            OR = { controls_state = 616 XSM = { is_subject_of = ROOT } NOT = { XSM = { exists = yes } } }
+            OR = { controls_state = 1044 GSM = { is_subject_of = ROOT } NOT = { GSM = { exists = yes } } }
+            OR = { controls_state = 621 NXM = { is_subject_of = ROOT } NOT = { NXM = { exists = yes } } }
+            OR = { controls_state = 617 SIK = { is_subject_of = ROOT } NOT = { SIK = { exists = yes } } }
+            OR = { controls_state = 1042 KHM = { is_subject_of = ROOT } NOT = { KHM = { exists = yes } } }
+            OR = { controls_state = 322 TIB = { is_subject_of = ROOT } NOT = { TIB = { exists = yes } } }
         }
         completion_reward = {
+            set_country_flag = UP_CHI_south_china_unified
+            set_country_flag = UP_CHI_northwest_unified
+            set_country_flag = UP_CHI_xinjiang_unified
+            set_country_flag = UP_CHI_tibet_unified
             add_political_power = 50
             add_stability = 0.02
         }
@@ -252,11 +256,8 @@ focus_tree = {
         cost = 0
         prerequisite = { focus = UP_CHI_contact_anti_japanese_guerrillas }
         available = {
-            OR = {
-                controls_state = 715
-                MAN = { is_subject_of = ROOT }
-                NOT = { MAN = { exists = yes } }
-            }
+            OR = { controls_state = 715 MAN = { is_subject_of = ROOT } NOT = { MAN = { exists = yes } } }
+            OR = { controls_state = 328 MEN = { is_subject_of = ROOT } NOT = { MEN = { exists = yes } } }
         }
         completion_reward = {
             set_country_flag = UP_CHI_northeast_unified
@@ -2779,7 +2780,7 @@ focus_tree = {
             set_country_flag = UP_CHI_he_zhonghan_advisor_unlocked
             set_politics = { ruling_party = fascism elections_allowed = no }
             create_country_leader = {
-                name = "贺衷寒"
+                name = "璐鸿》瀵?
                 desc = "UP_POLITICS_HE_ZHONGHAN_DESC"
                 expire = "1965.1.1"
                 ideology = fascism_ideology

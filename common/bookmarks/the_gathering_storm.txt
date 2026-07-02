@@ -1,0 +1,112 @@
+bookmarks = {
+	bookmark = {
+		name = "UP_1936_BOOKMARK_NAME"
+		desc = "UP_1936_BOOKMARK_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CHI"
+		default = yes
+
+		filters = { new_content continent }
+
+		CHI = {
+			history = "UP_CHI_BOOKMARK_DESC"
+			ideology = communism
+			focuses = {
+				UP_CHI_victory_of_revolution
+				UP_CHI_southwest_question
+				UP_CHI_continue_socialist_path
+			}
+		}
+
+		JAP = {
+			history = "UP_JAP_BOOKMARK_DESC"
+			ideology = fascism
+			focuses = {
+				UP_JAP_empire_at_the_limit
+				UP_JAP_preserve_the_old_system
+				UP_JAP_young_officers_coup
+			}
+		}
+
+		MAN = {
+			history = "UP_MAN_BOOKMARK_DESC"
+			ideology = neutrality
+			focuses = {
+				UP_MAN_harbin_declaration
+			}
+		}
+
+		GER = {
+			history = "UP_GER_BOOKMARK_DESC"
+			ideology = neutrality
+			focuses = {
+				UP_GER_the_incomplete_victory
+				UP_GER_imperial_conservative_reform
+				UP_GER_national_radical_agitation
+			}
+		}
+
+		ENG = {
+			history = "UP_ENG_BOOKMARK_DESC"
+			ideology = democratic
+		}
+
+		FRA = {
+			history = "UP_FRA_BOOKMARK_DESC"
+			ideology = democratic
+		}
+
+		ITA = {
+			history = "UP_ITA_BOOKMARK_DESC"
+			ideology = fascism
+		}
+
+		TUR = {
+			history = "UP_TUR_BOOKMARK_DESC"
+			ideology = neutrality
+		}
+
+		PET = {
+			history = "UP_PET_BOOKMARK_DESC"
+			ideology = democratic
+			minor = yes
+		}
+
+		SIB = {
+			history = "UP_SIB_BOOKMARK_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+
+		CAU = {
+			history = "UP_CAU_BOOKMARK_DESC"
+			ideology = democratic
+			minor = yes
+		}
+
+		FEA = {
+			history = "UP_FEA_BOOKMARK_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+
+		CKG = {
+			history = "UP_CKG_BOOKMARK_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+
+		RIN = {
+			history = "UP_RIN_BOOKMARK_DESC"
+			ideology = communism
+			minor = yes
+		}
+
+		BIN = {
+			history = "UP_BIN_BOOKMARK_DESC"
+			ideology = fascism
+			minor = yes
+		}
+	}
+}

@@ -18,11 +18,16 @@ country_event = {
 			UP_unfinished_revolution
 		}
 		if = { limit = { CKG = { exists = yes } } CKG = { every_owned_state = { add_core_of = CHI } } }
+		if = { limit = { SIC = { exists = yes } } SIC = { every_owned_state = { add_core_of = CHI } } }
 		if = { limit = { GXC = { exists = yes } } GXC = { every_owned_state = { add_core_of = CHI } } }
 		if = { limit = { XSM = { exists = yes } } XSM = { every_owned_state = { add_core_of = CHI } } }
+		if = { limit = { GSM = { exists = yes } } GSM = { every_owned_state = { add_core_of = CHI } } }
+		if = { limit = { NXM = { exists = yes } } NXM = { every_owned_state = { add_core_of = CHI } } }
 		if = { limit = { SIK = { exists = yes } } SIK = { every_owned_state = { add_core_of = CHI } } }
+		if = { limit = { KHM = { exists = yes } } KHM = { every_owned_state = { add_core_of = CHI } } }
 		if = { limit = { TIB = { exists = yes } } TIB = { every_owned_state = { add_core_of = CHI } } }
 		if = { limit = { MAN = { exists = yes } } MAN = { every_owned_state = { add_core_of = CHI } } }
+		if = { limit = { MEN = { exists = yes } } MEN = { every_owned_state = { add_core_of = CHI } } }
 		set_country_flag = UP_china_revolutionary_league
 	}
 }
@@ -64,7 +69,7 @@ country_event = {
 		create_country_leader = {
 			name = "溥仪"
 			desc = "POLITICS_PU_YI_DESC"
-			picture = "Portrait_Manchukuo_Pu_Yi.dds"
+			picture = "Portrait_Asia_Generic_warlord1.dds"
 			expire = "1965.1.1"
 			ideology = despotism
 		}
@@ -332,12 +337,14 @@ country_event = {
 	option = {
 		name = up_asia.unification_annex.a
 		set_country_flag = UP_CHI_southwest_annex_offer
-		CKG = { country_event = { id = up_asia.240 days = 1 } }
+		if = { limit = { CKG = { exists = yes } } CKG = { country_event = { id = up_asia.240 days = 1 } } }
+		if = { limit = { SIC = { exists = yes } } SIC = { country_event = { id = up_asia.240 days = 1 } } }
 	}
 	option = {
 		name = up_asia.unification_puppet.a
 		set_country_flag = UP_CHI_southwest_puppet_offer
-		CKG = { country_event = { id = up_asia.240 days = 1 } }
+		if = { limit = { CKG = { exists = yes } } CKG = { country_event = { id = up_asia.240 days = 1 } } }
+		if = { limit = { SIC = { exists = yes } } SIC = { country_event = { id = up_asia.240 days = 1 } } }
 	}
 }
 
@@ -351,12 +358,12 @@ country_event = {
 	option = {
 		name = up_asia.unification_annex.a
 		set_country_flag = UP_CHI_south_china_annex_offer
-		GXC = { country_event = { id = up_asia.241 days = 1 } }
+		if = { limit = { GXC = { exists = yes } } GXC = { country_event = { id = up_asia.241 days = 1 } } }
 	}
 	option = {
 		name = up_asia.unification_puppet.a
 		set_country_flag = UP_CHI_south_china_puppet_offer
-		GXC = { country_event = { id = up_asia.241 days = 1 } }
+		if = { limit = { GXC = { exists = yes } } GXC = { country_event = { id = up_asia.241 days = 1 } } }
 	}
 }
 
@@ -370,12 +377,16 @@ country_event = {
 	option = {
 		name = up_asia.unification_annex.a
 		set_country_flag = UP_CHI_northwest_annex_offer
-		XSM = { country_event = { id = up_asia.242 days = 1 } }
+		if = { limit = { XSM = { exists = yes } } XSM = { country_event = { id = up_asia.242 days = 1 } } }
+		if = { limit = { GSM = { exists = yes } } GSM = { country_event = { id = up_asia.242 days = 1 } } }
+		if = { limit = { NXM = { exists = yes } } NXM = { country_event = { id = up_asia.242 days = 1 } } }
 	}
 	option = {
 		name = up_asia.unification_puppet.a
 		set_country_flag = UP_CHI_northwest_puppet_offer
-		XSM = { country_event = { id = up_asia.242 days = 1 } }
+		if = { limit = { XSM = { exists = yes } } XSM = { country_event = { id = up_asia.242 days = 1 } } }
+		if = { limit = { GSM = { exists = yes } } GSM = { country_event = { id = up_asia.242 days = 1 } } }
+		if = { limit = { NXM = { exists = yes } } NXM = { country_event = { id = up_asia.242 days = 1 } } }
 	}
 }
 
@@ -389,12 +400,14 @@ country_event = {
 	option = {
 		name = up_asia.unification_annex.a
 		set_country_flag = UP_CHI_xinjiang_annex_offer
-		SIK = { country_event = { id = up_asia.243 days = 1 } }
+		if = { limit = { SIK = { exists = yes } } SIK = { country_event = { id = up_asia.243 days = 1 } } }
+		if = { limit = { KHM = { exists = yes } } KHM = { country_event = { id = up_asia.243 days = 1 } } }
 	}
 	option = {
 		name = up_asia.unification_puppet.a
 		set_country_flag = UP_CHI_xinjiang_puppet_offer
-		SIK = { country_event = { id = up_asia.243 days = 1 } }
+		if = { limit = { SIK = { exists = yes } } SIK = { country_event = { id = up_asia.243 days = 1 } } }
+		if = { limit = { KHM = { exists = yes } } KHM = { country_event = { id = up_asia.243 days = 1 } } }
 	}
 }
 
@@ -408,12 +421,12 @@ country_event = {
 	option = {
 		name = up_asia.unification_annex.a
 		set_country_flag = UP_CHI_tibet_annex_offer
-		TIB = { country_event = { id = up_asia.244 days = 1 } }
+		if = { limit = { TIB = { exists = yes } } TIB = { country_event = { id = up_asia.244 days = 1 } } }
 	}
 	option = {
 		name = up_asia.unification_puppet.a
 		set_country_flag = UP_CHI_tibet_puppet_offer
-		TIB = { country_event = { id = up_asia.244 days = 1 } }
+		if = { limit = { TIB = { exists = yes } } TIB = { country_event = { id = up_asia.244 days = 1 } } }
 	}
 }
 
@@ -427,12 +440,14 @@ country_event = {
 	option = {
 		name = up_asia.unification_annex.a
 		set_country_flag = UP_CHI_northeast_annex_offer
-		MAN = { country_event = { id = up_asia.245 days = 1 } }
+		if = { limit = { MAN = { exists = yes } } MAN = { country_event = { id = up_asia.245 days = 1 } } }
+		if = { limit = { MEN = { exists = yes } } MEN = { country_event = { id = up_asia.245 days = 1 } } }
 	}
 	option = {
 		name = up_asia.unification_puppet.a
 		set_country_flag = UP_CHI_northeast_puppet_offer
-		MAN = { country_event = { id = up_asia.245 days = 1 } }
+		if = { limit = { MAN = { exists = yes } } MAN = { country_event = { id = up_asia.245 days = 1 } } }
+		if = { limit = { MEN = { exists = yes } } MEN = { country_event = { id = up_asia.245 days = 1 } } }
 	}
 }
 
@@ -607,8 +622,8 @@ country_event = {
 	option = {
 		name = up_asia.warlord_agree.a
 		ai_chance = { factor = 45 }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_southwest_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = UP_CHI_southwest_unified country_event = { id = up_asia.221 days = 1 } } }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_southwest_puppet_offer } } CHI = { puppet = ROOT set_country_flag = UP_CHI_southwest_unified country_event = { id = up_asia.220 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_southwest_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } country_event = { id = up_asia.221 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_southwest_puppet_offer } } CHI = { puppet = ROOT country_event = { id = up_asia.220 days = 1 } } }
 	}
 	option = {
 		name = up_asia.warlord_refuse.a
@@ -626,8 +641,8 @@ country_event = {
 	option = {
 		name = up_asia.warlord_agree.a
 		ai_chance = { factor = 45 }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_south_china_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = UP_CHI_south_china_unified country_event = { id = up_asia.224 days = 1 } } }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_south_china_puppet_offer } } CHI = { puppet = ROOT set_country_flag = UP_CHI_south_china_unified country_event = { id = up_asia.223 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_south_china_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } country_event = { id = up_asia.224 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_south_china_puppet_offer } } CHI = { puppet = ROOT country_event = { id = up_asia.223 days = 1 } } }
 	}
 	option = {
 		name = up_asia.warlord_refuse.a
@@ -645,8 +660,8 @@ country_event = {
 	option = {
 		name = up_asia.warlord_agree.a
 		ai_chance = { factor = 45 }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_northwest_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = UP_CHI_northwest_unified country_event = { id = up_asia.227 days = 1 } } }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_northwest_puppet_offer } } CHI = { puppet = ROOT set_country_flag = UP_CHI_northwest_unified country_event = { id = up_asia.226 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_northwest_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } country_event = { id = up_asia.227 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_northwest_puppet_offer } } CHI = { puppet = ROOT country_event = { id = up_asia.226 days = 1 } } }
 	}
 	option = {
 		name = up_asia.warlord_refuse.a
@@ -664,8 +679,8 @@ country_event = {
 	option = {
 		name = up_asia.warlord_agree.a
 		ai_chance = { factor = 45 }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_xinjiang_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = UP_CHI_xinjiang_unified country_event = { id = up_asia.230 days = 1 } } }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_xinjiang_puppet_offer } } CHI = { puppet = ROOT set_country_flag = UP_CHI_xinjiang_unified country_event = { id = up_asia.229 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_xinjiang_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } country_event = { id = up_asia.230 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_xinjiang_puppet_offer } } CHI = { puppet = ROOT country_event = { id = up_asia.229 days = 1 } } }
 	}
 	option = {
 		name = up_asia.warlord_refuse.a
@@ -683,8 +698,8 @@ country_event = {
 	option = {
 		name = up_asia.warlord_agree.a
 		ai_chance = { factor = 45 }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_tibet_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = UP_CHI_tibet_unified country_event = { id = up_asia.233 days = 1 } } }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_tibet_puppet_offer } } CHI = { puppet = ROOT set_country_flag = UP_CHI_tibet_unified country_event = { id = up_asia.232 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_tibet_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } country_event = { id = up_asia.233 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_tibet_puppet_offer } } CHI = { puppet = ROOT country_event = { id = up_asia.232 days = 1 } } }
 	}
 	option = {
 		name = up_asia.warlord_refuse.a
@@ -702,8 +717,8 @@ country_event = {
 	option = {
 		name = up_asia.warlord_agree.a
 		ai_chance = { factor = 25 }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_northeast_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = UP_CHI_northeast_unified country_event = { id = up_asia.236 days = 1 } } }
-		if = { limit = { CHI = { has_country_flag = UP_CHI_northeast_puppet_offer } } CHI = { puppet = ROOT set_country_flag = UP_CHI_northeast_unified country_event = { id = up_asia.235 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_northeast_annex_offer } } CHI = { annex_country = { target = ROOT transfer_troops = yes } country_event = { id = up_asia.236 days = 1 } } }
+		if = { limit = { CHI = { has_country_flag = UP_CHI_northeast_puppet_offer } } CHI = { puppet = ROOT country_event = { id = up_asia.235 days = 1 } } }
 	}
 	option = {
 		name = up_asia.warlord_refuse.a

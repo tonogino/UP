@@ -12,6 +12,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Madan Mohan Malaviya"
+	picture = "Portrait_Asia_Generic_fascism.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = { }

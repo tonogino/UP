@@ -1,8 +1,8 @@
-focus_tree = {
+﻿focus_tree = {
 	id = UP_japan_focus
 	country = {
 		factor = 0
-		modifier = { add = 100 tag = JAP }
+		modifier = { add = 1000000 tag = JAP }
 	}
 	default = no
 	continuous_focus_position = { x = 32 y = 900 }

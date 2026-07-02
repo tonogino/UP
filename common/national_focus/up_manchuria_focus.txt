@@ -1,9 +1,9 @@
-focus_tree = {
+﻿focus_tree = {
 	id = UP_manchuria_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 1000000
 			tag = MAN
 		}
 	}
