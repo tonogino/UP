@@ -76,9 +76,12 @@ ideas = {
 			picture = generic_army_reform
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.08
-				consumer_goods_factor = 0.04
-				production_speed_industrial_complex_factor = -0.05
+				stability_factor = -0.12
+				war_support_factor = 0.04
+				political_power_gain = -0.08
+				consumer_goods_factor = 0.06
+				production_speed_industrial_complex_factor = -0.08
+				research_speed_factor = -0.03
 			}
 		}
 
@@ -252,13 +255,85 @@ ideas = {
 			}
 		}
 
+		UP_mao_support_high = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.04
+				war_support_factor = 0.02
+			}
+		}
+
+		UP_mao_support_above_average = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.02
+				political_power_gain = 0.02
+			}
+		}
+
+		UP_mao_support_below_average = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.02
+				political_power_gain = -0.02
+			}
+		}
+
+		UP_mao_support_low = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.04
+				political_power_gain = -0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_revolutionary_army_production_drive = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				production_speed_arms_factory_factor = 0.08
+				industrial_capacity_factory = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+
+		UP_standardized_army_production = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.08
+				army_org_factor = 0.04
+				experience_gain_army_factor = 0.08
+			}
+		}
+
+		UP_whampoa_modernization_board = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = CHI }
+			modifier = {
+				research_speed_factor = 0.03
+				industrial_capacity_factory = 0.06
+				production_speed_arms_factory_factor = 0.08
+				planning_speed = 0.08
+			}
+		}
+
 		UP_army_above_parties = {
 			picture = generic_army_reform
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.02
-				war_support_factor = 0.05
-				conscription_factor = 0.02
+				stability_factor = -0.08
+				war_support_factor = 0.08
+				political_power_gain = -0.05
+				conscription_factor = 0.03
+				army_org_factor = 0.03
 			}
 		}
 
@@ -275,8 +350,10 @@ ideas = {
 			picture = generic_army_doctrines
 			allowed = { original_tag = CHI }
 			modifier = {
-				army_org_factor = 0.05
-				planning_speed = 0.10
+				stability_factor = -0.04
+				army_org_factor = 0.06
+				planning_speed = 0.12
+				political_power_gain = -0.03
 			}
 		}
 
@@ -888,10 +965,11 @@ ideas = {
 			picture = generic_army_reform
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.08
-				political_power_gain = -0.08
-				consumer_goods_factor = 0.04
-				production_speed_industrial_complex_factor = -0.05
+				stability_factor = -0.12
+				political_power_gain = -0.12
+				consumer_goods_factor = 0.06
+				production_speed_industrial_complex_factor = -0.08
+				research_speed_factor = -0.04
 				army_org_factor = 0.02
 				war_support_factor = 0.04
 			}
@@ -901,14 +979,15 @@ ideas = {
 			picture = generic_army_reform
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.10
-				war_support_factor = 0.08
-				political_power_gain = -0.10
-				consumer_goods_factor = 0.05
-				production_speed_arms_factory_factor = -0.05
-				army_org_factor = 0.04
-				planning_speed = 0.05
-				experience_gain_army_factor = 0.10
+				stability_factor = -0.15
+				war_support_factor = 0.10
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.08
+				production_speed_arms_factory_factor = -0.08
+				production_speed_industrial_complex_factor = -0.05
+				army_org_factor = 0.06
+				planning_speed = 0.08
+				experience_gain_army_factor = 0.12
 			}
 		}
 
@@ -916,12 +995,13 @@ ideas = {
 			picture = generic_intelligence_exchange
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.07
-				war_support_factor = 0.04
-				fascism_drift = 0.03
+				stability_factor = -0.10
+				war_support_factor = 0.05
+				fascism_drift = 0.04
 				resistance_target = -0.05
-				consumer_goods_factor = 0.03
-				political_power_gain = -0.04
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.08
+				production_speed_industrial_complex_factor = -0.04
 			}
 		}
 
@@ -929,13 +1009,14 @@ ideas = {
 			picture = generic_intelligence_exchange
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.10
-				war_support_factor = 0.06
-				fascism_drift = 0.04
+				stability_factor = -0.14
+				war_support_factor = 0.08
+				fascism_drift = 0.05
 				resistance_target = -0.08
-				consumer_goods_factor = 0.04
-				training_time_army_factor = 0.05
-				conscription_factor = 0.03
+				consumer_goods_factor = 0.06
+				political_power_gain = -0.06
+				training_time_army_factor = 0.08
+				conscription_factor = 0.05
 			}
 		}
 
@@ -943,11 +1024,12 @@ ideas = {
 			picture = generic_intelligence_exchange
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.06
-				resistance_target = -0.10
-				political_power_gain = 0.05
-				foreign_subversive_activities = -0.10
-				consumer_goods_factor = 0.02
+				stability_factor = -0.09
+				resistance_target = -0.12
+				political_power_gain = -0.02
+				foreign_subversive_activities = -0.15
+				consumer_goods_factor = 0.04
+				enemy_operative_detection_chance_factor = 0.08
 			}
 		}
 
@@ -955,12 +1037,12 @@ ideas = {
 			picture = generic_intelligence_exchange
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.08
-				resistance_target = -0.15
-				political_power_gain = 0.08
-				foreign_subversive_activities = -0.15
-				enemy_operative_detection_chance_factor = 0.10
-				consumer_goods_factor = 0.03
+				stability_factor = -0.12
+				resistance_target = -0.18
+				political_power_gain = 0.02
+				foreign_subversive_activities = -0.20
+				enemy_operative_detection_chance_factor = 0.15
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -968,8 +1050,10 @@ ideas = {
 			picture = generic_intelligence_exchange
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.06
-				political_power_gain = -0.08
+				stability_factor = -0.12
+				war_support_factor = -0.04
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.04
 			}
 		}
 
@@ -977,9 +1061,11 @@ ideas = {
 			picture = generic_political_discourse
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.10
-				war_support_factor = -0.05
-				political_power_gain = -0.10
+				stability_factor = -0.18
+				war_support_factor = -0.08
+				political_power_gain = -0.18
+				consumer_goods_factor = 0.06
+				army_org_factor = -0.05
 			}
 		}
 
@@ -987,11 +1073,13 @@ ideas = {
 			picture = generic_army_reform
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.08
-				war_support_factor = 0.08
-				experience_gain_air_factor = 0.10
-				political_power_gain = -0.05
-				consumer_goods_factor = 0.03
+				stability_factor = -0.04
+				war_support_factor = 0.10
+				experience_gain_air_factor = 0.12
+				experience_gain_army_factor = 0.08
+				political_power_gain = 0.02
+				consumer_goods_factor = 0.01
+				army_org_factor = 0.03
 			}
 		}
 
@@ -999,9 +1087,12 @@ ideas = {
 			picture = generic_national_unity
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = 0.06
-				political_power_gain = 0.08
-				fascism_drift = 0.03
+				stability_factor = 0.10
+				war_support_factor = 0.06
+				political_power_gain = 0.12
+				consumer_goods_factor = -0.03
+				fascism_drift = 0.04
+				resistance_target = -0.08
 			}
 		}
 
@@ -1009,14 +1100,17 @@ ideas = {
 			picture = generic_nationalism
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.12
-				political_power_gain = 0.10
-				consumer_goods_factor = -0.03
-				production_speed_arms_factory_factor = 0.08
-				production_speed_industrial_complex_factor = 0.05
-				army_org_factor = 0.03
-				research_speed_factor = 0.03
+				stability_factor = 0.16
+				war_support_factor = 0.16
+				political_power_gain = 0.16
+				consumer_goods_factor = -0.06
+				production_speed_arms_factory_factor = 0.12
+				production_speed_industrial_complex_factor = 0.08
+				industrial_capacity_factory = 0.08
+				army_org_factor = 0.06
+				army_attack_factor = 0.04
+				planning_speed = 0.10
+				research_speed_factor = 0.04
 			}
 		}
 
@@ -1047,6 +1141,118 @@ ideas = {
 				production_speed_arms_factory_factor = -0.12
 				consumer_goods_factor = 0.15
 				communism_drift = 0.08
+			}
+		}
+
+		UP_cultural_revolution_aftermath = {
+			picture = GFX_UP_CHI_cultural_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.08
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.06
+				production_speed_industrial_complex_factor = -0.06
+				army_org_factor = -0.04
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		UP_cultural_revolution_revolutionary_legacy = {
+			picture = GFX_UP_CHI_cultural_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.04
+				war_support_factor = 0.10
+				political_power_gain = 0.05
+				conscription_factor = 0.03
+				justify_war_goal_time = -0.10
+				industrial_capacity_factory = -0.04
+				research_speed_factor = -0.02
+			}
+		}
+
+		UP_maoist_mass_line_state = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.06
+				conscription_factor = 0.04
+			}
+		}
+
+		UP_second_five_year_plan_spirit = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				consumer_goods_factor = -0.04
+				production_speed_industrial_complex_factor = 0.12
+				production_speed_infrastructure_factor = 0.12
+				industrial_capacity_factory = 0.06
+				research_speed_factor = 0.03
+			}
+		}
+
+		UP_great_leap_mobilization = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				war_support_factor = 0.08
+				consumer_goods_factor = -0.03
+				production_speed_arms_factory_factor = 0.14
+				production_speed_industrial_complex_factor = 0.08
+				industrial_capacity_factory = -0.04
+				stability_factor = -0.06
+			}
+		}
+
+		UP_pragmatic_revolutionary_system = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.08
+				consumer_goods_factor = -0.04
+				research_speed_factor = 0.03
+			}
+		}
+
+		UP_zhou_enlai_restored_authority = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		UP_world_commonwealth_socialism = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.12
+				consumer_goods_factor = -0.08
+				research_speed_factor = 0.08
+				production_speed_industrial_complex_factor = 0.12
+				trade_opinion_factor = 0.20
+			}
+		}
+
+		UP_people_victory_state = {
+			picture = generic_national_unity
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.14
+				war_support_factor = 0.08
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.06
+				production_speed_industrial_complex_factor = 0.10
+				research_speed_factor = 0.05
 			}
 		}
 

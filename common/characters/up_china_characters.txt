@@ -1,4 +1,93 @@
 characters = {
+	UP_CHI_zhou_enlai = {
+		name = UP_CHI_zhou_enlai
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_zhou_enlai_advisor
+			allowed = { original_tag = CHI }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	UP_CHI_soong_ching_ling = {
+		name = UP_CHI_soong_ching_ling
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_soong_ching_ling_advisor
+			allowed = { original_tag = CHI }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	UP_CHI_weng_wenhao = {
+		name = UP_CHI_weng_wenhao
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_weng_wenhao_advisor
+			allowed = { original_tag = CHI }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+	UP_CHI_zhu_de = {
+		name = UP_CHI_zhu_de
+		advisor = {
+			slot = army_chief
+			idea_token = UP_CHI_zhu_de_army_chief
+			allowed = { original_tag = CHI }
+			traits = { army_chief_defensive_2 }
+			cost = 150
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_officer organizer }
+		}
+	}
+
+	UP_CHI_peng_dehuai = {
+		name = UP_CHI_peng_dehuai
+		advisor = {
+			slot = army_chief
+			idea_token = UP_CHI_peng_dehuai_army_chief
+			allowed = { original_tag = CHI }
+			traits = { army_chief_offensive_2 }
+			cost = 150
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_officer offensive_doctrine }
+		}
+	}
+
+	UP_CHI_chen_shaokuan = {
+		name = UP_CHI_chen_shaokuan
+		advisor = {
+			slot = navy_chief
+			idea_token = UP_CHI_chen_shaokuan_navy_chief
+			allowed = { original_tag = CHI }
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 150
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+
 	UP_CHI_lin_biao = {
 		name = UP_CHI_lin_biao
 		advisor = {
@@ -27,6 +116,18 @@ characters = {
 			allowed = { original_tag = CHI }
 			available = { has_country_flag = UP_CHI_dai_li_advisor_unlocked }
 			traits = { illusive_gentleman }
+			cost = 150
+		}
+	}
+
+	UP_CHI_he_zhonghan = {
+		name = UP_CHI_he_zhonghan
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_he_zhonghan_advisor
+			allowed = { original_tag = CHI }
+			available = { has_country_flag = UP_CHI_he_zhonghan_advisor_unlocked }
+			traits = { fascist_demagogue }
 			cost = 150
 		}
 	}

@@ -49,6 +49,10 @@ on_actions = {
 		effect = {
 			CHI = {
 				if = {
+					limit = { has_country_flag = UP_CHI_mao_mechanic_active }
+					UP_CHI_mao_daily_balance_effect = yes
+				}
+				if = {
 					limit = {
 						has_country_flag = UP_CHI_whampoa_civil_war_active
 						OR = {

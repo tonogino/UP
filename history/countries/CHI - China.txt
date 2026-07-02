@@ -191,6 +191,12 @@ recruit_character = CHI_t_v_soong # Shared
 recruit_character = CHI_alexander_von_falkenhausen # Shared 
 recruit_character = CHI_claire_lee_chennault # Shared 
 recruit_character = CHI_kwong_jiang # Shared 
+recruit_character = UP_CHI_zhou_enlai
+recruit_character = UP_CHI_soong_ching_ling
+recruit_character = UP_CHI_weng_wenhao
+recruit_character = UP_CHI_zhu_de
+recruit_character = UP_CHI_peng_dehuai
+recruit_character = UP_CHI_chen_shaokuan
 
 if = {
 	limit = {

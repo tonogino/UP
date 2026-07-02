@@ -215,8 +215,8 @@ UP_china_unification_decisions = {
 		cost = 50
 		days_remove = 21
 		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_southwest_question NOT = { has_country_flag = UP_CHI_southwest_choice_made } }
-		visible = { has_completed_focus = UP_CHI_southwest_question }
+		available = { has_country_flag = UP_CHI_southwest_decisions_unlocked NOT = { has_country_flag = UP_CHI_southwest_choice_made } }
+		visible = { has_country_flag = UP_CHI_southwest_decisions_unlocked }
 		complete_effect = {
 			set_country_flag = UP_CHI_southwest_choice_made
 			add_political_power = -25
@@ -230,8 +230,8 @@ UP_china_unification_decisions = {
 		cost = 50
 		days_remove = 21
 		fire_only_once = yes
-		available = { has_completed_focus = UP_CHI_southwest_question NOT = { has_country_flag = UP_CHI_southwest_choice_made } }
-		visible = { has_completed_focus = UP_CHI_southwest_question }
+		available = { has_country_flag = UP_CHI_southwest_decisions_unlocked NOT = { has_country_flag = UP_CHI_southwest_choice_made } }
+		visible = { has_country_flag = UP_CHI_southwest_decisions_unlocked }
 		complete_effect = {
 			set_country_flag = UP_CHI_southwest_choice_made
 			add_stability = -0.03

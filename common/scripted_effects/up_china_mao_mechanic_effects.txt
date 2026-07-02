@@ -58,6 +58,92 @@ UP_CHI_update_mao_mechanic_gui = {
 	}
 }
 
+UP_CHI_mao_daily_balance_effect = {
+	if = {
+		limit = {
+			has_country_flag = UP_CHI_mao_mechanic_active
+			has_country_flag = UP_CHI_mao_crisis_enabled
+			NOT = { has_country_flag = UP_CHI_assassination_resolved }
+			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
+		}
+		if = {
+			limit = { check_variable = { UP_CHI_mao_support > 69 } }
+			add_to_variable = { UP_CHI_mao_suspicion = -0.03 }
+		}
+		if = {
+			limit = {
+				check_variable = { UP_CHI_mao_support > 49 }
+				check_variable = { UP_CHI_mao_support < 70 }
+			}
+			add_to_variable = { UP_CHI_mao_suspicion = -0.01 }
+		}
+		if = {
+			limit = {
+				check_variable = { UP_CHI_mao_support > 29 }
+				check_variable = { UP_CHI_mao_support < 50 }
+			}
+			add_to_variable = { UP_CHI_mao_suspicion = 0.01 }
+		}
+		if = {
+			limit = { check_variable = { UP_CHI_mao_support < 30 } }
+			add_to_variable = { UP_CHI_mao_suspicion = 0.03 }
+		}
+	}
+
+	if = {
+		limit = {
+			has_country_flag = UP_CHI_mao_crisis_enabled
+			NOT = { has_country_flag = UP_CHI_assassination_resolved }
+			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
+			check_variable = { UP_CHI_mao_support > 69 }
+		}
+		if = { limit = { NOT = { has_idea = UP_mao_support_high } } add_ideas = UP_mao_support_high }
+		remove_ideas = UP_mao_support_above_average
+		remove_ideas = UP_mao_support_below_average
+		remove_ideas = UP_mao_support_low
+	}
+	if = {
+		limit = {
+			has_country_flag = UP_CHI_mao_crisis_enabled
+			NOT = { has_country_flag = UP_CHI_assassination_resolved }
+			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
+			check_variable = { UP_CHI_mao_support > 49 }
+			check_variable = { UP_CHI_mao_support < 70 }
+		}
+		if = { limit = { NOT = { has_idea = UP_mao_support_above_average } } add_ideas = UP_mao_support_above_average }
+		remove_ideas = UP_mao_support_high
+		remove_ideas = UP_mao_support_below_average
+		remove_ideas = UP_mao_support_low
+	}
+	if = {
+		limit = {
+			has_country_flag = UP_CHI_mao_crisis_enabled
+			NOT = { has_country_flag = UP_CHI_assassination_resolved }
+			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
+			check_variable = { UP_CHI_mao_support > 29 }
+			check_variable = { UP_CHI_mao_support < 50 }
+		}
+		if = { limit = { NOT = { has_idea = UP_mao_support_below_average } } add_ideas = UP_mao_support_below_average }
+		remove_ideas = UP_mao_support_high
+		remove_ideas = UP_mao_support_above_average
+		remove_ideas = UP_mao_support_low
+	}
+	if = {
+		limit = {
+			has_country_flag = UP_CHI_mao_crisis_enabled
+			NOT = { has_country_flag = UP_CHI_assassination_resolved }
+			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
+			check_variable = { UP_CHI_mao_support < 30 }
+		}
+		if = { limit = { NOT = { has_idea = UP_mao_support_low } } add_ideas = UP_mao_support_low }
+		remove_ideas = UP_mao_support_high
+		remove_ideas = UP_mao_support_above_average
+		remove_ideas = UP_mao_support_below_average
+	}
+
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
 UP_CHI_cultural_revolution_monthly_effect = {
 	add_manpower = -75000
 	add_stability = -0.005
@@ -65,15 +151,108 @@ UP_CHI_cultural_revolution_monthly_effect = {
 	if = {
 		limit = {
 			check_variable = { UP_CHI_cultural_revolution_months > 2 }
-			check_variable = { UP_CHI_cultural_revolution_events_fired < 5 }
 		}
 		set_variable = { UP_CHI_cultural_revolution_months = 0 }
-		add_to_variable = { UP_CHI_cultural_revolution_events_fired = 1 }
-		if = { limit = { check_variable = { UP_CHI_cultural_revolution_events_fired = 1 } } country_event = { id = up_asia.360 days = 1 } }
-		if = { limit = { check_variable = { UP_CHI_cultural_revolution_events_fired = 2 } } country_event = { id = up_asia.361 days = 1 } }
-		if = { limit = { check_variable = { UP_CHI_cultural_revolution_events_fired = 3 } } country_event = { id = up_asia.362 days = 1 } }
-		if = { limit = { check_variable = { UP_CHI_cultural_revolution_events_fired = 4 } } country_event = { id = up_asia.363 days = 1 } }
-		if = { limit = { check_variable = { UP_CHI_cultural_revolution_events_fired = 5 } } country_event = { id = up_asia.364 days = 1 } }
+		if = {
+			limit = {
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_1_fired }
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_chain_locked }
+			}
+			set_country_flag = UP_CHI_cultural_revolution_event_chain_locked
+			set_country_flag = UP_CHI_cultural_revolution_event_1_fired
+			country_event = { id = up_asia.360 days = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = UP_CHI_cultural_revolution_event_1_fired
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_2_fired }
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_chain_locked }
+			}
+			set_country_flag = UP_CHI_cultural_revolution_event_chain_locked
+			set_country_flag = UP_CHI_cultural_revolution_event_2_fired
+			country_event = { id = up_asia.361 days = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = UP_CHI_cultural_revolution_event_2_fired
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_3_fired }
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_chain_locked }
+			}
+			set_country_flag = UP_CHI_cultural_revolution_event_chain_locked
+			set_country_flag = UP_CHI_cultural_revolution_event_3_fired
+			country_event = { id = up_asia.362 days = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = UP_CHI_cultural_revolution_event_3_fired
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_4_fired }
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_chain_locked }
+			}
+			set_country_flag = UP_CHI_cultural_revolution_event_chain_locked
+			set_country_flag = UP_CHI_cultural_revolution_event_4_fired
+			country_event = { id = up_asia.363 days = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = UP_CHI_cultural_revolution_event_4_fired
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_5_fired }
+				NOT = { has_country_flag = UP_CHI_cultural_revolution_event_chain_locked }
+			}
+			set_country_flag = UP_CHI_cultural_revolution_event_chain_locked
+			set_country_flag = UP_CHI_cultural_revolution_event_5_fired
+			country_event = { id = up_asia.364 days = 1 }
+		}
+	}
+	clr_country_flag = UP_CHI_cultural_revolution_event_chain_locked
+}
+
+UP_CHI_end_cultural_revolution_standard = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = UP_CHI_cultural_revolution_started
+				has_idea = UP_cultural_revolution_chaos
+			}
+		}
+		clr_country_flag = UP_CHI_cultural_revolution_started
+		clr_country_flag = UP_CHI_mao_crisis_enabled
+		remove_ideas = UP_cultural_revolution_chaos
+		remove_ideas = UP_cr_red_guard_turbulence
+		remove_ideas = UP_cr_industrial_disruption
+		remove_ideas = UP_cr_army_politicization
+		if = {
+			limit = {
+				NOT = { has_idea = UP_cultural_revolution_aftermath }
+				NOT = { has_idea = UP_cultural_revolution_revolutionary_legacy }
+			}
+			add_ideas = UP_cultural_revolution_aftermath
+		}
+		set_country_flag = UP_CHI_cultural_revolution_resolved
+		country_event = { id = up_asia.365 days = 1 }
+	}
+}
+
+UP_CHI_end_cultural_revolution_continuing = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = UP_CHI_cultural_revolution_started
+				has_idea = UP_cultural_revolution_chaos
+			}
+		}
+		clr_country_flag = UP_CHI_cultural_revolution_started
+		clr_country_flag = UP_CHI_mao_crisis_enabled
+		remove_ideas = UP_cultural_revolution_chaos
+		remove_ideas = UP_cr_red_guard_turbulence
+		remove_ideas = UP_cr_industrial_disruption
+		remove_ideas = UP_cr_army_politicization
+		remove_ideas = UP_cultural_revolution_aftermath
+		if = {
+			limit = { NOT = { has_idea = UP_cultural_revolution_revolutionary_legacy } }
+			add_ideas = UP_cultural_revolution_revolutionary_legacy
+		}
+		set_country_flag = UP_CHI_cultural_revolution_resolved
+		country_event = { id = up_asia.366 days = 1 }
 	}
 }
 
@@ -87,6 +266,7 @@ UP_CHI_start_mao_mechanic = {
 	}
 	set_variable = { UP_CHI_mao_mechanic_dirty = 1 }
 	UP_CHI_update_mao_mechanic_gui = yes
+	UP_CHI_mao_daily_balance_effect = yes
 }
 
 UP_CHI_add_mao_support_small = {
