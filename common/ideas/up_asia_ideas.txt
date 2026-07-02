@@ -1035,12 +1035,83 @@ ideas = {
 			picture = GFX_UP_CHI_cultural_revolution
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.15
-				political_power_gain = -0.20
-				research_speed_factor = -0.05
+				stability_factor = -0.30
+				war_support_factor = -0.15
+				political_power_gain = -0.35
+				research_speed_factor = -0.15
+				army_org_factor = -0.12
+				army_morale_factor = -0.10
+				industrial_capacity_factory = -0.12
+				industrial_capacity_dockyard = -0.10
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.12
+				consumer_goods_factor = 0.15
+				communism_drift = 0.08
+			}
+		}
+
+		UP_mao_suspicion_cadre_fear = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_mao_suspicion_political_paralysis = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.10
+				research_speed_factor = -0.03
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+
+		UP_mao_suspicion_purge_panic = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = -0.06
+				political_power_gain = -0.15
 				army_org_factor = -0.05
-				consumer_goods_factor = 0.08
-				communism_drift = 0.05
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		UP_cr_red_guard_turbulence = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+				required_garrison_factor = 0.10
+			}
+		}
+
+		UP_cr_industrial_disruption = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = CHI }
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.08
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		UP_cr_army_politicization = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_org_factor = -0.10
+				planning_speed = -0.15
+				max_planning = -0.10
+				experience_gain_army_factor = -0.10
 			}
 		}
 

@@ -32,7 +32,7 @@ UP_china_unification_decisions = {
 UP_china_assassination_decisions = {
 	icon = generic_intelligence_exchange
 	allowed = { OR = { original_tag = CHI tag = CHI } }
-	visible = { has_country_flag = UP_CHI_assassination_plot_active }
+	visible = { has_country_flag = UP_CHI_assassination_plot_active NOT = { has_country_flag = UP_CHI_cultural_revolution_started } }
 	priority = 30
 }
 

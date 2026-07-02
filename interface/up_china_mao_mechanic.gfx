@@ -21,6 +21,26 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_event_mao_cultural_revolution"
-		texturefile = "gfx/interface/mao_mechanic/GFX_report_event_mao_cultural_revolution.dds"
+		texturefile = "gfx/interface/cultural_revolution_event/GFX_report_event_mao_cultural_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mao_cultural_revolution_1"
+		texturefile = "gfx/interface/cultural_revolution_event/GFX_report_event_mao_cultural_revolution_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mao_cultural_revolution_2"
+		texturefile = "gfx/interface/cultural_revolution_event/GFX_report_event_mao_cultural_revolution_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mao_cultural_revolution_3"
+		texturefile = "gfx/interface/cultural_revolution_event/GFX_report_event_mao_cultural_revolution_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mao_cultural_revolution_4"
+		texturefile = "gfx/interface/cultural_revolution_event/GFX_report_event_mao_cultural_revolution_4.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mao_cultural_revolution_5"
+		texturefile = "gfx/interface/cultural_revolution_event/GFX_report_event_mao_cultural_revolution_5.dds"
 	}
 }

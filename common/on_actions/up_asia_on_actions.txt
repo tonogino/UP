@@ -61,4 +61,14 @@ on_actions = {
 			}
 		}
 	}
+	on_monthly = {
+		effect = {
+			CHI = {
+				if = {
+					limit = { has_country_flag = UP_CHI_cultural_revolution_started }
+					UP_CHI_cultural_revolution_monthly_effect = yes
+				}
+			}
+		}
+	}
 }
