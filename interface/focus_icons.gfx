@@ -5,11 +5,11 @@ spriteTypes = {
     }
     spriteType = {
         name = "CHI_TEST1_shine"
-        texturefile = "gfx/interface/goals/chi_1_1.dds"  -- 基础图标作为纹理
+        texturefile = "gfx/interface/goals/chi_1_1.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/chi_1_1.dds" -- 遮罩使用你的图标
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" -- 闪光叠加层
+            animationmaskfile = "gfx/interface/goals/chi_1_1.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75

@@ -1,4 +1,4 @@
-focus_tree = {
+focus_tree =  {
     id = UP_china_focus
     country = {
         factor = 0
@@ -2786,7 +2786,7 @@ focus_tree = {
             set_country_flag = UP_CHI_he_zhonghan_advisor_unlocked
             set_politics = { ruling_party = fascism elections_allowed = no }
             create_country_leader = {
-                name = "璐鸿》瀵?
+                name = "He Zhonghan"
                 desc = "UP_POLITICS_HE_ZHONGHAN_DESC"
                 expire = "1965.1.1"
                 ideology = fascism_ideology
