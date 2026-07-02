@@ -1,4 +1,16 @@
 characters = {
+	UP_CHI_mao_zedong = {
+		name = UP_CHI_mao_zedong
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_mao_zedong_advisor
+			allowed = { original_tag = CHI }
+			available = { has_country_flag = UP_CHI_mao_advisor_unlocked }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
 	UP_CHI_zhou_enlai = {
 		name = UP_CHI_zhou_enlai
 		advisor = {
@@ -67,6 +79,18 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			traits = { infantry_officer offensive_doctrine }
+		}
+	}
+
+	UP_CHI_zhang_guotao = {
+		name = UP_CHI_zhang_guotao
+		advisor = {
+			slot = political_advisor
+			idea_token = UP_CHI_zhang_guotao_advisor
+			allowed = { original_tag = CHI }
+			available = { has_country_flag = UP_CHI_zhang_guotao_advisor_unlocked }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 

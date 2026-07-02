@@ -259,9 +259,11 @@ ideas = {
 			picture = generic_communist_revolution
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = 0.04
-				political_power_gain = 0.04
-				war_support_factor = 0.02
+				stability_factor = 0.06
+				political_power_gain = 0.06
+				war_support_factor = 0.04
+				consumer_goods_factor = 0.03
+				research_speed_factor = -0.03
 			}
 		}
 
@@ -269,8 +271,10 @@ ideas = {
 			picture = generic_communist_revolution
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = 0.02
-				political_power_gain = 0.02
+				stability_factor = 0.03
+				political_power_gain = 0.03
+				war_support_factor = 0.01
+				research_speed_factor = -0.01
 			}
 		}
 
@@ -278,8 +282,10 @@ ideas = {
 			picture = generic_political_discourse
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.02
-				political_power_gain = -0.02
+				stability_factor = -0.03
+				political_power_gain = -0.03
+				consumer_goods_factor = -0.02
+				research_speed_factor = 0.02
 			}
 		}
 
@@ -287,9 +293,30 @@ ideas = {
 			picture = generic_political_discourse
 			allowed = { original_tag = CHI }
 			modifier = {
-				stability_factor = -0.04
-				political_power_gain = -0.04
-				consumer_goods_factor = 0.02
+				stability_factor = -0.07
+				war_support_factor = -0.04
+				political_power_gain = -0.06
+				consumer_goods_factor = -0.04
+				research_speed_factor = 0.04
+			}
+		}
+
+		UP_army_command_purged = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_org_factor = -0.03
+				planning_speed = -0.05
+				command_power_gain_mult = 0.05
+			}
+		}
+
+		UP_zhang_guotao_contacts = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = -0.02
 			}
 		}
 

@@ -92,7 +92,7 @@ UP_CHI_mao_daily_balance_effect = {
 
 	if = {
 		limit = {
-			has_country_flag = UP_CHI_mao_crisis_enabled
+			has_country_flag = UP_CHI_mao_mechanic_active
 			NOT = { has_country_flag = UP_CHI_assassination_resolved }
 			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
 			check_variable = { UP_CHI_mao_support > 69 }
@@ -104,7 +104,7 @@ UP_CHI_mao_daily_balance_effect = {
 	}
 	if = {
 		limit = {
-			has_country_flag = UP_CHI_mao_crisis_enabled
+			has_country_flag = UP_CHI_mao_mechanic_active
 			NOT = { has_country_flag = UP_CHI_assassination_resolved }
 			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
 			check_variable = { UP_CHI_mao_support > 49 }
@@ -117,7 +117,7 @@ UP_CHI_mao_daily_balance_effect = {
 	}
 	if = {
 		limit = {
-			has_country_flag = UP_CHI_mao_crisis_enabled
+			has_country_flag = UP_CHI_mao_mechanic_active
 			NOT = { has_country_flag = UP_CHI_assassination_resolved }
 			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
 			check_variable = { UP_CHI_mao_support > 29 }
@@ -130,7 +130,7 @@ UP_CHI_mao_daily_balance_effect = {
 	}
 	if = {
 		limit = {
-			has_country_flag = UP_CHI_mao_crisis_enabled
+			has_country_flag = UP_CHI_mao_mechanic_active
 			NOT = { has_country_flag = UP_CHI_assassination_resolved }
 			NOT = { has_country_flag = UP_CHI_cultural_revolution_started }
 			check_variable = { UP_CHI_mao_support < 30 }
@@ -142,6 +142,23 @@ UP_CHI_mao_daily_balance_effect = {
 	}
 
 	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_create_zhou_leader = {
+	set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+	}
+	create_country_leader = {
+		name = "Zhou Enlai"
+		desc = "UP_POLITICS_ZHOU_ENLAI_DESC"
+		picture = "GFX_Portrait_Asia_Generic_land_3"
+		expire = "1976.1.8"
+		ideology = marxism
+		traits = {
+		}
+	}
+	set_country_flag = UP_CHI_zhou_enlai_leader
 }
 
 UP_CHI_cultural_revolution_monthly_effect = {

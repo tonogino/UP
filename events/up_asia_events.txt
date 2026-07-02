@@ -209,10 +209,12 @@ country_event = {
 				elections_allowed = no
 			}
 			create_country_leader = {
-				name = "汪精卫"
-				picture = "Portrait_Asia_Generic_2.dds"
+				name = "Wang Jingwei"
+				picture = "GFX_Portrait_Asia_Generic_land_2"
 				expire = "1965.1.1"
 				ideology = despotism
+				traits = {
+				}
 			}
 			set_country_flag = UP_wang_jingwei_restored_manchuria
 		}
@@ -1278,6 +1280,56 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers
 	is_triggered_only = yes
 	option = { name = up_asia.376.a }
+}
+
+country_event = {
+	id = up_asia.377
+	title = up_asia.377.t
+	desc = up_asia.377.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = up_asia.377.a
+		ai_chance = { factor = 75 }
+		add_political_power = 25
+		FROM = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3500 producer = GER }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 240 producer = GER }
+			add_equipment_to_stockpile = { type = support_equipment amount = 300 producer = GER }
+			add_opinion_modifier = { target = ROOT modifier = asian_reconciliation }
+		}
+	}
+	option = {
+		name = up_asia.377.b
+		ai_chance = { factor = 25 }
+		add_political_power = 50
+		FROM = { add_stability = -0.01 }
+	}
+}
+
+country_event = {
+	id = up_asia.378
+	title = up_asia.378.t
+	desc = up_asia.378.d
+	picture = GFX_report_event_japanese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = up_asia.378.a
+		ai_chance = { factor = 70 }
+		add_political_power = 25
+		FROM = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = JAP }
+			add_equipment_to_stockpile = { type = support_equipment amount = 350 producer = JAP }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 120 producer = JAP }
+			add_opinion_modifier = { target = ROOT modifier = asian_reconciliation }
+		}
+	}
+	option = {
+		name = up_asia.378.b
+		ai_chance = { factor = 30 }
+		add_war_support = 0.02
+		FROM = { add_stability = -0.01 }
+	}
 }
 
 news_event = {

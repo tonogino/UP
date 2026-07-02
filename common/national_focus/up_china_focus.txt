@@ -995,10 +995,13 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = UP_CHI_continue_socialist_path }
         mutually_exclusive = { focus = UP_CHI_chairman_mao }
+        available = {
+            check_variable = { UP_CHI_mao_support < 40 }
+        }
         completion_reward = {
             add_political_power = 100
             add_stability = 0.04
-            UP_CHI_add_mao_support_small = yes
+            UP_CHI_reduce_mao_support_small = yes
             UP_CHI_reduce_mao_suspicion_small = yes
         }
     }
@@ -1276,6 +1279,11 @@ focus_tree = {
             army_experience = 40
             add_stability = -0.03
             add_command_power = 30
+            if = { limit = { has_character = CHI_he_yingqin } retire_character = CHI_he_yingqin }
+            if = { limit = { has_character = CHI_hu_zongnan } retire_character = CHI_hu_zongnan }
+            if = { limit = { has_character = CHI_chen_cheng } retire_character = CHI_chen_cheng }
+            if = { limit = { has_character = CHI_bai_chongxi } retire_character = CHI_bai_chongxi }
+            add_ideas = UP_army_command_purged
             UP_CHI_add_mao_suspicion_medium = yes
         }
     }
@@ -1971,6 +1979,7 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_new_technology_new_life }
         completion_reward = {
             UP_CHI_end_cultural_revolution_standard = yes
+            UP_CHI_create_zhou_leader = yes
             add_ideas = UP_world_commonwealth_socialism
             add_political_power = 150
             add_stability = 0.08
@@ -2007,6 +2016,8 @@ focus_tree = {
         completion_reward = {
             add_political_power = 100
             add_stability = 0.08
+            set_country_flag = UP_CHI_mao_advisor_unlocked
+            UP_CHI_create_zhou_leader = yes
             set_variable = { UP_CHI_mao_suspicion = 20 }
             UP_CHI_update_mao_mechanic_gui = yes
             country_event = { id = up_asia.372 days = 1 }
@@ -2032,6 +2043,7 @@ focus_tree = {
             remove_ideas = UP_mao_suspicion_cadre_fear
             remove_ideas = UP_mao_suspicion_political_paralysis
             remove_ideas = UP_mao_suspicion_purge_panic
+            UP_CHI_create_zhou_leader = yes
             country_event = { id = up_asia.373 days = 1 }
         }
     }
@@ -2240,6 +2252,8 @@ focus_tree = {
             army_experience = 25
             add_war_support = 0.02
             add_command_power = 25
+            promote_character = UP_CHI_peng_dehuai
+            set_country_flag = UP_CHI_peng_dehuai_army_chief_unlocked
             UP_CHI_add_mao_suspicion_small = yes
         }
     }
@@ -2368,6 +2382,8 @@ focus_tree = {
         completion_reward = {
             add_political_power = 35
             add_stability = -0.01
+            set_country_flag = UP_CHI_zhang_guotao_advisor_unlocked
+            add_ideas = UP_zhang_guotao_contacts
             UP_CHI_add_mao_suspicion_small = yes
         }
     }
@@ -2662,6 +2678,15 @@ focus_tree = {
         completion_reward = {
             add_political_power = 35
             add_stability = 0.01
+            if = {
+                limit = { GER = { exists = yes } }
+                GER = { country_event = { id = up_asia.377 days = 1 } }
+            }
+            if = {
+                limit = { NOT = { GER = { exists = yes } } }
+                add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3000 producer = GER }
+                add_equipment_to_stockpile = { type = artillery_equipment amount = 180 producer = GER }
+            }
         }
     }
 
@@ -2675,6 +2700,15 @@ focus_tree = {
         completion_reward = {
             add_political_power = 35
             add_stability = 0.01
+            if = {
+                limit = { JAP = { exists = yes } }
+                JAP = { country_event = { id = up_asia.378 days = 1 } }
+            }
+            if = {
+                limit = { NOT = { JAP = { exists = yes } } }
+                add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = JAP }
+                add_equipment_to_stockpile = { type = support_equipment amount = 250 producer = JAP }
+            }
         }
     }
 

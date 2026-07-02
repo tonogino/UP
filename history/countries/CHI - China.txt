@@ -191,6 +191,7 @@ recruit_character = CHI_t_v_soong # Shared
 recruit_character = CHI_alexander_von_falkenhausen # Shared 
 recruit_character = CHI_claire_lee_chennault # Shared 
 recruit_character = CHI_kwong_jiang # Shared 
+recruit_character = UP_CHI_mao_zedong
 recruit_character = UP_CHI_zhou_enlai
 recruit_character = UP_CHI_soong_ching_ling
 recruit_character = UP_CHI_weng_wenhao
@@ -200,6 +201,7 @@ recruit_character = UP_CHI_chen_shaokuan
 recruit_character = UP_CHI_lin_biao
 recruit_character = UP_CHI_dai_li
 recruit_character = UP_CHI_he_zhonghan
+recruit_character = UP_CHI_zhang_guotao
 
 if = {
 	limit = {
@@ -215,6 +217,10 @@ if = {
 
 set_stability = 0.2
 set_war_support = 0.32
+add_ideas = UP_long_march_myth
+add_ideas = UP_reconstruction_ruins
+add_ideas = UP_local_revolutionary_committees
+add_ideas = UP_unfinished_revolution
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -369,22 +375,10 @@ IF = {
 	#	autonomous_state = autonomy_sea_warlord_subject
 	#}
 
-	add_dynamic_modifier = { modifier = CHI_corruption_in_the_administration }
-	add_dynamic_modifier = { modifier = CHI_inefficient_economy }
-	add_dynamic_modifier = { modifier = CHI_corruption_in_the_armed_forces }
-	add_dynamic_modifier = { modifier = CHI_illicit_trade }
-	#add_dynamic_modifier = { modifier = CHI_unstructured_logistics } 
-	add_dynamic_modifier = { modifier = CHI_ROCAF } 
-	add_dynamic_modifier = { modifier = CHI_neglected_countryside }
-	
 	#Tech
 	set_technology = {
 		tech_support = 1
 		tech_trucks = 1 
-	}
-
-	add_dynamic_modifier = {
-		modifier = CHI_nine_power_treaty_sea
 	}
 
 	IF = {
@@ -587,10 +581,6 @@ IF = {
 
 	set_variable = { CHI_economic_support_cic_amount = 100 } #CiC to Subject Warlords
 
-	613 = { #Shanghai
-		add_dynamic_modifier = { modifier = CHI_shanghai_international_settlement }
-	}
-
 	set_variable = { CHI_holding_state_mission_time_var = 90 }
 
 	### END ###
@@ -704,30 +694,6 @@ set_convoys = 40
 		}
 		set_oob = "CHI_1939_sea"
 		
-		complete_national_focus = CHI_dang_guo 							
-		complete_national_focus = CHI_promote_the_national_currency 		
-		complete_national_focus = CHI_denounce_feudalism 					
-		complete_national_focus = CHI_decree_the_end_to_corruption 		
-		complete_national_focus = CHI_arrest_the_seven_gentlemen 			
-		complete_national_focus = CHI_military_affairs_commission_sea 	
-		complete_national_focus = CHI_protracted_warfare 					
-		complete_national_focus = CHI_defence_in_depth 
-		complete_national_focus = CHI_initiate_the_gung_ho_movement 		
-		complete_national_focus = CHI_one_nation_undivided 				
-		#complete_national_focus = CHI_the_three_year_plan 				
-		complete_national_focus = CHI_the_4_defence_areas					
-		complete_national_focus = CHI_finance_cooperatives				
-		complete_national_focus = CHI_guerrilla_warfare
-		complete_national_focus = CHI_relocate_factories_from_the_coast	
-		complete_national_focus = CHI_expand_the_cooperatives				
-		complete_national_focus = CHI_formalize_field_promotions			
-		complete_national_focus = CHI_demonstrate_our_resolve 			
-		complete_national_focus = CHI_send_the_first_lady_abroad			
-		complete_national_focus = CHI_administer_cooperatives
-		complete_national_focus = CHI_secure_the_soviet_border			
-		complete_national_focus = CHI_crackdown_on_corruption_in_recruitment
-		complete_national_focus = CHI_facilitate_operation_zet
-
 		add_dynamic_modifier = { modifier = CHI_american_support }
 		add_dynamic_modifier = { modifier = CHI_soviet_support }
 
@@ -735,25 +701,6 @@ set_convoys = 40
 		set_variable = { nine_power_min_export = 0.14 } 
 		set_variable = { nine_power_treaty_cg = 0.14 }
 		else = {
-			complete_national_focus = CHI_unified_industrial_planning
-			complete_national_focus = CHI_mission_to_germany
-			complete_national_focus = CHI_rural_reconstruction_movement
-			complete_national_focus = CHI_invite_foreign_investors
-			complete_national_focus = CHI_british_cooperation
-			unlock_national_focus = CHI_fighter_purchases
-			complete_national_focus = CHI_mission_to_the_us
-			complete_national_focus = CHI_mission_to_the_soviet_union
-			complete_national_focus = CHI_hire_chennault
-			complete_national_focus = CHI_rapprochement_with_soviet_union
-			complete_national_focus = CHI_invite_soviet_advisers
-			complete_national_focus = CHI_military_affairs_commission
-			complete_national_focus = CHI_burma_road
-			unlock_national_focus = CHI_the_soviet_volunteer_group
-			complete_national_focus = CHI_bureau_of_investigation_and_statistics
-			complete_national_focus = CHI_camco
-			complete_national_focus = CHI_three_principles_of_the_people
-			complete_national_focus = CHI_army_reform
-			complete_national_focus = CHI_nationalism
 		}
 	}
 
@@ -951,9 +898,11 @@ set_popularities = {
 	fascism = 10
 }
 create_country_leader = {
-	name = "毛泽东"
-	picture = "Portrait_China_Mao_Zedong.dds"
-	expire = "1965.1.1"
+	name = "Mao Zedong"
+	picture = "GFX_portrait_prc_mao_zedong"
+	expire = "1976.9.9"
 	ideology = marxism
 	traits = { }
 }
+
+UP_CHI_start_mao_mechanic = yes
