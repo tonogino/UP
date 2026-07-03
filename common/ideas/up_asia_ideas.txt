@@ -943,7 +943,7 @@ ideas = {
 		UP_unleashed_puppet = {
 			picture = generic_political_discourse
 			allowed = {
-				original_tag = MAN
+				original_tag = XIC
 			}
 			modifier = {
 				stability_factor = -0.05
@@ -955,7 +955,7 @@ ideas = {
 		UP_imperial_claims_in_exile = {
 			picture = generic_nationalism
 			allowed = {
-				original_tag = MAN
+				original_tag = XIC
 			}
 			modifier = {
 				stability_factor = 0.05

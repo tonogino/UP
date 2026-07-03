@@ -229,7 +229,7 @@ focus_tree = {
         cost = 0
         prerequisite = { focus = UP_CHI_contact_anti_japanese_guerrillas }
         available = {
-            OR = { controls_state = 715 MAN = { is_subject_of = ROOT } NOT = { MAN = { exists = yes } } }
+            OR = { controls_state = 715 XIC = { is_subject_of = ROOT } NOT = { XIC = { exists = yes } } }
             OR = { controls_state = 328 MEN = { is_subject_of = ROOT } NOT = { MEN = { exists = yes } } }
         }
         completion_reward = {
@@ -933,7 +933,7 @@ focus_tree = {
             OR = { controls_state = 616 XSM = { is_subject_of = ROOT } NOT = { XSM = { exists = yes } } }
             OR = { controls_state = 617 SIK = { is_subject_of = ROOT } NOT = { SIK = { exists = yes } } }
             OR = { controls_state = 322 TIB = { is_subject_of = ROOT } NOT = { TIB = { exists = yes } } }
-            OR = { controls_state = 715 MAN = { is_subject_of = ROOT } NOT = { MAN = { exists = yes } } }
+            OR = { controls_state = 715 XIC = { is_subject_of = ROOT } NOT = { XIC = { exists = yes } } }
         }
         completion_reward = {
             add_stability = 0.05
@@ -2134,8 +2134,8 @@ focus_tree = {
         prerequisite = { focus = UP_CHI_anti_japanese_treaty }
         completion_reward = {
             if = {
-                limit = { MAN = { exists = yes } }
-                create_wargoal = { type = annex_everything target = MAN }
+                limit = { XIC = { exists = yes } }
+                create_wargoal = { type = annex_everything target = XIC }
             }
         }
     }
@@ -2994,7 +2994,7 @@ focus_tree = {
             add_ideas = UP_border_liberation_staff
             UP_CHI_add_two_military_factories = yes
             if = { limit = { JAP = { exists = yes } } create_wargoal = { type = annex_everything target = JAP } }
-            if = { limit = { MAN = { exists = yes } } create_wargoal = { type = annex_everything target = MAN } }
+            if = { limit = { XIC = { exists = yes } } create_wargoal = { type = annex_everything target = XIC } }
         }
     }
 
@@ -3093,7 +3093,7 @@ focus_tree = {
             add_stability = 0.03
             add_war_support = -0.01
             add_ideas = UP_sino_japanese_coordination_office
-            if = { limit = { MAN = { exists = yes } } add_state_claim = 328 }
+            if = { limit = { XIC = { exists = yes } } add_state_claim = 328 }
             if = {
                 limit = { JAP = { exists = yes } }
                 JAP = { country_event = { id = up_asia.331 days = 1 } }

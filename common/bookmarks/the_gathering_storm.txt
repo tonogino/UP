@@ -29,7 +29,7 @@ bookmarks = {
 			}
 		}
 
-		MAN = {
+		XIC = {
 			history = "UP_MAN_BOOKMARK_DESC"
 			ideology = neutrality
 			focuses = {

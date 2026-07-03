@@ -1,0 +1,31 @@
+state = {
+	id = 761
+	name = "STATE_761" # Hulunbeier
+	
+	state_category = pastoral
+
+	history = {
+
+		owner = XIC
+		add_core_of = CHI
+		add_core_of = XIC
+		add_core_of = PRC
+
+		victory_points = {
+			1776 1 # genhe
+		}
+
+		buildings = { 
+			infrastructure = 2
+		}
+
+	}
+
+	provinces = {
+		10541 12537 7697 1776 4852 10567 10638 13150 4745 7743 10612 12690
+	}
+	manpower = 30000
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

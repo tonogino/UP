@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			UP_setup_northeastern_army = yes
 			CHI = {
 				UP_CHI_start_mao_mechanic = yes
 				country_event = { id = up_asia.1 }
@@ -17,7 +18,7 @@ on_actions = {
 					country_event = { id = up_asia.101 days = 1 }
 				}
 			}
-			MAN = {
+			XIC = {
 				if = {
 					limit = { is_ai = no }
 					country_event = { id = up_asia.102 days = 1 }
