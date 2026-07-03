@@ -1,4 +1,5 @@
 version="1"
+replace_path = "gfx/loadingscreens"
 tags={
 	"Alternative History"
 	"Events"
@@ -17,4 +18,7 @@ replace_path = "gfx/loadingscreens"
 # name="Unburied Piece"
 # supported_version="1.19.2.0"
 # remote_file_id="3755922850"
+<<<<<<< HEAD
 
+=======
+>>>>>>> c87e77e807006bc8dde720df6441fc098dbb9cc3
