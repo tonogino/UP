@@ -43,3 +43,11 @@ UP_china_mao_mechanic_decisions = {
 	scripted_gui = UP_CHI_mao_mechanic_ui
 	priority = 35
 }
+
+UP_japan_imperial_conference_decisions = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = JAP tag = JAP } }
+	visible = { OR = { original_tag = JAP tag = JAP } }
+	scripted_gui = UP_JAP_imperial_conference_ui
+	priority = 35
+}

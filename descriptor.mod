@@ -12,8 +12,9 @@ tags={
 }
 name="Unburied Piece Locale"
 supported_version="1.19.2.0"
+replace_path = "gfx/loadingscreens"
 
 # name="Unburied Piece"
 # supported_version="1.19.2.0"
 # remote_file_id="3755922850"
-replace_path = "gfx/loadingscreens"
+

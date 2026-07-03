@@ -1,0 +1,205 @@
+guiTypes = {
+	containerWindowType = {
+		name = "UP_JAP_imperial_conference_window"
+		position = { x = 0 y = 0 }
+		size = { width = 420 height = 720 }
+		clipping = no
+
+		iconType = {
+			name = "UP_JAP_conference_background"
+			spriteType = "GFX_japan_imperial_conference_window_vertical"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "UP_JAP_conference_header"
+			spriteType = "GFX_japan_imperial_conference_header_vertical"
+			position = { x = 0 y = 0 }
+		}
+		instantTextboxType = {
+			name = "UP_JAP_conference_title"
+			position = { x = 32 y = 18 }
+			font = "hoi_24header"
+			text = "UP_JAP_imperial_conference_title"
+			maxWidth = 356
+			maxHeight = 32
+			format = center
+		}
+
+		iconType = {
+			name = "UP_JAP_kodoha_section"
+			spriteType = "GFX_japan_faction_section_bg"
+			position = { x = 30 y = 92 }
+		}
+		iconType = {
+			name = "UP_JAP_kodoha_icon"
+			spriteType = "GFX_japan_faction_kodoha_vertical"
+			position = { x = 45 y = 112 }
+		}
+		instantTextboxType = {
+			name = "UP_JAP_kodoha_label"
+			position = { x = 132 y = 112 }
+			font = "hoi_20b"
+			text = "UP_JAP_kodoha_prestige_header"
+			maxWidth = 210
+			maxHeight = 26
+			format = left
+		}
+		instantTextboxType = {
+			name = "UP_JAP_kodoha_value"
+			position = { x = 132 y = 142 }
+			font = "hoi_22b"
+			text = "UP_JAP_kodoha_prestige_value"
+			maxWidth = 210
+			maxHeight = 30
+			format = left
+		}
+		iconType = {
+			name = "UP_JAP_kodoha_bar_bg"
+			spriteType = "GFX_japan_prestige_bar_bg_vertical"
+			position = { x = 132 y = 176 }
+		}
+		iconType = {
+			name = "UP_JAP_kodoha_bar_fill"
+			spriteType = "GFX_japan_prestige_bar_fill_kodoha_vertical"
+			position = { x = 132 y = 176 }
+		}
+
+		iconType = {
+			name = "UP_JAP_toseiha_section"
+			spriteType = "GFX_japan_faction_section_bg"
+			position = { x = 30 y = 218 }
+		}
+		iconType = {
+			name = "UP_JAP_toseiha_icon"
+			spriteType = "GFX_japan_faction_toseiha_vertical"
+			position = { x = 45 y = 241 }
+		}
+		instantTextboxType = {
+			name = "UP_JAP_toseiha_label"
+			position = { x = 132 y = 238 }
+			font = "hoi_20b"
+			text = "UP_JAP_toseiha_prestige_header"
+			maxWidth = 210
+			maxHeight = 26
+			format = left
+		}
+		instantTextboxType = {
+			name = "UP_JAP_toseiha_value"
+			position = { x = 132 y = 268 }
+			font = "hoi_22b"
+			text = "UP_JAP_toseiha_prestige_value"
+			maxWidth = 210
+			maxHeight = 30
+			format = left
+		}
+		iconType = {
+			name = "UP_JAP_toseiha_bar_bg"
+			spriteType = "GFX_japan_prestige_bar_bg_vertical"
+			position = { x = 132 y = 302 }
+		}
+		iconType = {
+			name = "UP_JAP_toseiha_bar_fill"
+			spriteType = "GFX_japan_prestige_bar_fill_toseiha_vertical"
+			position = { x = 132 y = 302 }
+		}
+
+		iconType = {
+			name = "UP_JAP_navy_section"
+			spriteType = "GFX_japan_faction_section_bg"
+			position = { x = 30 y = 344 }
+		}
+		iconType = {
+			name = "UP_JAP_navy_icon"
+			spriteType = "GFX_japan_faction_navy_vertical"
+			position = { x = 45 y = 367 }
+		}
+		instantTextboxType = {
+			name = "UP_JAP_navy_label"
+			position = { x = 132 y = 364 }
+			font = "hoi_20b"
+			text = "UP_JAP_navy_prestige_header"
+			maxWidth = 210
+			maxHeight = 26
+			format = left
+		}
+		instantTextboxType = {
+			name = "UP_JAP_navy_value"
+			position = { x = 132 y = 394 }
+			font = "hoi_22b"
+			text = "UP_JAP_navy_prestige_value"
+			maxWidth = 210
+			maxHeight = 30
+			format = left
+		}
+		iconType = {
+			name = "UP_JAP_navy_bar_bg"
+			spriteType = "GFX_japan_prestige_bar_bg_vertical"
+			position = { x = 132 y = 428 }
+		}
+		iconType = {
+			name = "UP_JAP_navy_bar_fill"
+			spriteType = "GFX_japan_prestige_bar_fill_navy_vertical"
+			position = { x = 132 y = 428 }
+		}
+
+		iconType = {
+			name = "UP_JAP_fiscal_icon"
+			spriteType = "GFX_japan_fiscal_financial_vertical"
+			position = { x = 56 y = 495 }
+			tooltip = "UP_JAP_fiscal_pressure_tooltip"
+		}
+		instantTextboxType = {
+			name = "UP_JAP_fiscal_label"
+			position = { x = 132 y = 490 }
+			font = "hoi_20b"
+			text = "UP_JAP_fiscal_pressure_header"
+			maxWidth = 210
+			maxHeight = 26
+			format = left
+		}
+		instantTextboxType = {
+			name = "UP_JAP_fiscal_value"
+			position = { x = 132 y = 526 }
+			font = "hoi_22b"
+			text = "UP_JAP_fiscal_pressure_value"
+			maxWidth = 210
+			maxHeight = 30
+			format = left
+		}
+
+		iconType = {
+			name = "UP_JAP_dominant_deadlock"
+			spriteType = "GFX_japan_dominant_deadlock_vertical"
+			position = { x = 154 y = 584 }
+		}
+		iconType = {
+			name = "UP_JAP_dominant_kodoha"
+			spriteType = "GFX_japan_dominant_kodoha_vertical"
+			position = { x = 154 y = 584 }
+		}
+		iconType = {
+			name = "UP_JAP_dominant_toseiha"
+			spriteType = "GFX_japan_dominant_toseiha_vertical"
+			position = { x = 154 y = 584 }
+		}
+		iconType = {
+			name = "UP_JAP_dominant_navy"
+			spriteType = "GFX_japan_dominant_navy_vertical"
+			position = { x = 154 y = 584 }
+		}
+		iconType = {
+			name = "UP_JAP_dominant_empire"
+			spriteType = "GFX_japan_dominant_empire_vertical"
+			position = { x = 154 y = 584 }
+		}
+		instantTextboxType = {
+			name = "UP_JAP_dominant_label"
+			position = { x = 60 y = 556 }
+			font = "hoi_18mbs"
+			text = "UP_JAP_current_dominant_value"
+			maxWidth = 300
+			maxHeight = 24
+			format = center
+		}
+	}
+}

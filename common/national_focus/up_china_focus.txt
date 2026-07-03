@@ -1010,7 +1010,7 @@ focus_tree = {
         id = UP_CHI_deepen_countryside
         icon = GFX_goal_generic_communist_revolution
         x = 12
-        y = 28
+        y = 29
         cost = 10
         prerequisite = { focus = UP_CHI_chairman_mao }
         completion_reward = {

@@ -67,17 +67,17 @@ country_event = {
 			elections_allowed = no
 		}
 		create_country_leader = {
-			name = "溥仪"
-			desc = "POLITICS_PU_YI_DESC"
-			picture = "Portrait_Asia_Generic_warlord1.dds"
+			name = "Zhang Zuolin"
+			desc = "POLITICS_ZHANG_ZUOLIN_DESC"
+			picture = "GFX_Portrait_Asia_Generic_land_2"
 			expire = "1965.1.1"
 			ideology = despotism
 		}
 		add_ideas = {
 			UP_unleashed_puppet
-			UP_imperial_claims_in_exile
 		}
 		set_country_flag = UP_manchuria_unleashed_puppet
+		set_country_flag = UP_manchuria_independence_recognized
 		JAP = {
 			country_event = { id = up_asia.11 days = 1 }
 		}
@@ -157,8 +157,7 @@ country_event = {
 		name = up_asia.11.a
 		ai_chance = { factor = 100 }
 		set_country_flag = UP_harbin_declaration_resolved
-		add_stability = -0.02
-		add_political_power = -25
+		add_stability = -0.01
 		set_autonomy = {
 			target = MAN
 			autonomy_state = autonomy_free

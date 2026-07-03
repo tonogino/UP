@@ -1,319 +1,103 @@
-﻿focus_tree = {
+focus_tree = {
 	id = UP_japan_focus
 	country = {
 		factor = 0
 		modifier = { add = 1000000 tag = JAP }
 	}
 	default = no
-	continuous_focus_position = { x = 32 y = 900 }
+	continuous_focus_position = { x = 10 y = 900 }
 
 	focus = {
-		id = UP_JAP_empire_at_the_limit
+		id = UP_JAP_imperial_conference
 		icon = GFX_goal_generic_political_pressure
-		x = 14
+		x = 10
 		y = 0
 		cost = 10
 		completion_reward = {
-			add_political_power = 75
-			add_war_support = 0.03
+			UP_JAP_start_imperial_conference = yes
+			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = UP_JAP_harbin_shock
-		icon = GFX_goal_generic_demand_territory
-		x = 14
+		id = UP_JAP_kodoha_budget
+		icon = GFX_goal_generic_position_armies
+		x = 4
 		y = 1
 		cost = 10
-		prerequisite = { focus = UP_JAP_empire_at_the_limit }
+		prerequisite = { focus = UP_JAP_imperial_conference }
+		available = {
+			num_of_civilian_factories > 14
+		}
 		completion_reward = {
-			add_stability = -0.02
-			add_war_support = 0.04
+			UP_JAP_add_kodoha_prestige_medium = yes
+			UP_JAP_add_fiscal_pressure_small = yes
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
 		}
 	}
 
 	focus = {
-		id = UP_JAP_young_officers_coup
-		icon = GFX_goal_generic_dangerous_deal
-		x = 5
-		y = 3
+		id = UP_JAP_toseiha_budget
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 10
+		y = 1
 		cost = 10
-		prerequisite = { focus = UP_JAP_harbin_shock }
-		mutually_exclusive = { focus = UP_JAP_preserve_the_old_system }
+		prerequisite = { focus = UP_JAP_imperial_conference }
+		available = {
+			num_of_civilian_factories > 14
+		}
 		completion_reward = {
-			add_ideas = UP_japan_showa_mobilization
-			add_popularity = { ideology = fascism popularity = 0.08 }
-			add_stability = -0.05
+			UP_JAP_add_toseiha_prestige_medium = yes
+			UP_JAP_add_fiscal_pressure_small = yes
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
 		}
 	}
 
 	focus = {
-		id = UP_JAP_showa_restoration
-		icon = GFX_goal_support_fascism
-		x = 5
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_JAP_young_officers_coup }
-		completion_reward = {
-			add_political_power = 100
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = UP_JAP_purge_the_zaibatsu
-		icon = GFX_goal_generic_political_pressure
-		x = 3
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_JAP_showa_restoration }
-		completion_reward = {
-			remove_ideas = UP_zaibatsu_rule
-			add_ideas = UP_japan_purged_zaibatsu_state
-			add_stability = -0.03
-		}
-	}
-
-	focus = {
-		id = UP_JAP_military_dictatorship
-		icon = GFX_goal_generic_position_armies
-		x = 5
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_JAP_showa_restoration }
-		completion_reward = {
-			army_experience = 25
-			add_command_power = 30
-		}
-	}
-
-	focus = {
-		id = UP_JAP_rule_in_the_emperors_name
-		icon = GFX_goal_generic_national_unity
-		x = 7
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_JAP_showa_restoration }
-		completion_reward = {
-			add_war_support = 0.06
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = UP_JAP_reconquer_manchuria
-		icon = GFX_goal_generic_attack_allies
-		x = 5
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_JAP_purge_the_zaibatsu }
-		prerequisite = { focus = UP_JAP_military_dictatorship }
-		prerequisite = { focus = UP_JAP_rule_in_the_emperors_name }
-		completion_reward = {
-			add_ideas = UP_japan_manchurian_reconquest_staff
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = UP_JAP_holy_war_against_china
-		icon = GFX_goal_generic_major_war
-		x = 4
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_JAP_reconquer_manchuria }
-		completion_reward = {
-			create_wargoal = { type = annex_everything target = CHI }
-			add_war_support = 0.08
-		}
-	}
-
-	focus = {
-		id = UP_JAP_strike_siberia
-		icon = GFX_goal_generic_demand_territory
-		x = 6
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_JAP_reconquer_manchuria }
-		completion_reward = {
-			add_ideas = UP_japan_siberian_buffer_plan
-			army_experience = 20
-		}
-	}
-
-	focus = {
-		id = UP_JAP_preserve_the_old_system
-		icon = GFX_goal_generic_neutrality_focus
-		x = 20
-		y = 3
-		cost = 10
-		prerequisite = { focus = UP_JAP_harbin_shock }
-		mutually_exclusive = { focus = UP_JAP_young_officers_coup }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = UP_JAP_army_northern_faction
-		icon = GFX_goal_generic_position_armies
-		x = 14
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_JAP_preserve_the_old_system }
-		mutually_exclusive = { focus = UP_JAP_navy_southern_faction }
-		mutually_exclusive = { focus = UP_JAP_zaibatsu_civilian_faction }
-		completion_reward = {
-			add_ideas = UP_japan_army_ascendant
-			army_experience = 25
-		}
-	}
-
-	focus = {
-		id = UP_JAP_control_manchuria
-		icon = GFX_goal_generic_demand_territory
-		x = 13
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_JAP_army_northern_faction }
-		completion_reward = {
-			add_ideas = UP_japan_manchurian_reconquest_staff
-			add_war_support = 0.04
-		}
-	}
-
-	focus = {
-		id = UP_JAP_far_eastern_war
-		icon = GFX_goal_generic_major_war
-		x = 13
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_JAP_control_manchuria }
-		completion_reward = {
-			add_ideas = UP_northern_mire
-			army_experience = 20
-		}
-	}
-
-	focus = {
-		id = UP_JAP_strike_chinese_revolution
-		icon = GFX_goal_generic_attack_allies
-		x = 13
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_JAP_far_eastern_war }
-		completion_reward = {
-			create_wargoal = { type = annex_everything target = CHI }
-			add_war_support = 0.06
-		}
-	}
-
-	focus = {
-		id = UP_JAP_navy_southern_faction
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 20
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_JAP_preserve_the_old_system }
-		mutually_exclusive = { focus = UP_JAP_army_northern_faction }
-		mutually_exclusive = { focus = UP_JAP_zaibatsu_civilian_faction }
-		completion_reward = {
-			add_ideas = UP_japan_navy_ascendant
-			navy_experience = 25
-		}
-	}
-
-	focus = {
-		id = UP_JAP_abandon_the_continental_mire
-		icon = GFX_goal_generic_defence
-		x = 20
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_JAP_navy_southern_faction }
-		completion_reward = {
-			add_stability = 0.04
-			add_war_support = -0.02
-		}
-	}
-
-	focus = {
-		id = UP_JAP_southern_resource_sphere
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 20
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_JAP_abandon_the_continental_mire }
-		completion_reward = {
-			add_ideas = UP_japan_southern_resource_plan
-			add_political_power = 75
-		}
-	}
-
-	focus = {
-		id = UP_JAP_expand_the_pacific_fleet
+		id = UP_JAP_navy_budget
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 20
-		y = 7
+		x = 16
+		y = 1
 		cost = 10
-		prerequisite = { focus = UP_JAP_southern_resource_sphere }
+		prerequisite = { focus = UP_JAP_imperial_conference }
+		available = {
+			num_of_civilian_factories > 14
+		}
 		completion_reward = {
-			navy_experience = 35
-			add_ideas = UP_japan_pacific_defense_circle
+			UP_JAP_add_navy_prestige_medium = yes
+			UP_JAP_add_fiscal_pressure_small = yes
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
 		}
 	}
 
 	focus = {
-		id = UP_JAP_zaibatsu_civilian_faction
+		id = UP_JAP_fiscal_compromise
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 26
-		y = 4
+		x = 10
+		y = 2
 		cost = 10
-		prerequisite = { focus = UP_JAP_preserve_the_old_system }
-		mutually_exclusive = { focus = UP_JAP_army_northern_faction }
-		mutually_exclusive = { focus = UP_JAP_navy_southern_faction }
+		prerequisite = { focus = UP_JAP_kodoha_budget }
+		prerequisite = { focus = UP_JAP_toseiha_budget }
+		prerequisite = { focus = UP_JAP_navy_budget }
 		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = UP_JAP_stabilize_the_empire
-		icon = GFX_goal_generic_national_unity
-		x = 26
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_JAP_zaibatsu_civilian_faction }
-		completion_reward = {
-			add_stability = 0.08
-			add_war_support = -0.02
-		}
-	}
-
-	focus = {
-		id = UP_JAP_compromise_with_anglo_america
-		icon = GFX_goal_generic_improve_relations
-		x = 26
-		y = 6
-		cost = 10
-		prerequisite = { focus = UP_JAP_stabilize_the_empire }
-		completion_reward = {
-			add_political_power = 75
+			UP_JAP_reduce_fiscal_pressure_small = yes
 			add_stability = 0.03
-		}
-	}
-
-	focus = {
-		id = UP_JAP_economic_colonial_system
-		icon = GFX_goal_generic_trade
-		x = 26
-		y = 7
-		cost = 10
-		prerequisite = { focus = UP_JAP_compromise_with_anglo_america }
-		completion_reward = {
-			add_ideas = UP_japan_imperial_contraction_plan
-			add_political_power = 100
+			add_political_power = 50
 		}
 	}
 }

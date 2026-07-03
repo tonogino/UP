@@ -1,0 +1,66 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_japan_imperial_conference_window_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_imperial_conference_window_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_imperial_conference_header_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_imperial_conference_header_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_faction_section_bg"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_faction_section_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_faction_kodoha_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_faction_kodoha_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_faction_toseiha_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_faction_toseiha_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_faction_navy_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_faction_navy_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_fiscal_financial_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_fiscal_financial_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_prestige_bar_bg_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_prestige_bar_bg_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_prestige_bar_fill_kodoha_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_prestige_bar_fill_kodoha_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_prestige_bar_fill_toseiha_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_prestige_bar_fill_toseiha_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_prestige_bar_fill_navy_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_prestige_bar_fill_navy_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_dominant_kodoha_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_dominant_kodoha_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_dominant_toseiha_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_dominant_toseiha_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_dominant_navy_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_dominant_navy_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_dominant_empire_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_dominant_empire_vertical.dds"
+	}
+	spriteType = {
+		name = "GFX_japan_dominant_deadlock_vertical"
+		texturefile = "gfx/interface/japan_imperial_conference/GFX_japan_dominant_deadlock_vertical.dds"
+	}
+}

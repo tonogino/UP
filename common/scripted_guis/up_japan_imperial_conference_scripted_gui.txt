@@ -1,0 +1,36 @@
+scripted_gui = {
+	UP_JAP_imperial_conference_ui = {
+		context_type = decision_category
+		window_name = "UP_JAP_imperial_conference_window"
+
+		visible = {
+			OR = {
+				original_tag = JAP
+				tag = JAP
+			}
+		}
+
+		visible_triggers = {
+			UP_JAP_dominant_deadlock = {
+				NOT = { has_country_flag = UP_JAP_dominant_kodoha }
+				NOT = { has_country_flag = UP_JAP_dominant_toseiha }
+				NOT = { has_country_flag = UP_JAP_dominant_navy }
+				NOT = { has_country_flag = UP_JAP_dominant_empire }
+			}
+			UP_JAP_dominant_kodoha = {
+				has_country_flag = UP_JAP_dominant_kodoha
+			}
+			UP_JAP_dominant_toseiha = {
+				has_country_flag = UP_JAP_dominant_toseiha
+			}
+			UP_JAP_dominant_navy = {
+				has_country_flag = UP_JAP_dominant_navy
+			}
+			UP_JAP_dominant_empire = {
+				has_country_flag = UP_JAP_dominant_empire
+			}
+		}
+
+		dirty = UP_JAP_imperial_conference_dirty
+	}
+}
