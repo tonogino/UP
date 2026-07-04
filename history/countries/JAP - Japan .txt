@@ -1,0 +1,9 @@
+capital = 282 # tokyo
+
+create_country_leader = {
+	name = "keisuke_okada"
+    picture = "JAP_keisuke_okada"
+    expire = "1965.1.1"
+ 	ideology = despotism
+    traits = { }
+}
