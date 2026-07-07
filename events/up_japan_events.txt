@@ -1,0 +1,361 @@
+add_namespace = up_japan
+
+country_event = {
+	id = up_japan.1
+	title = up_japan.1.t
+	desc = up_japan.1.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.1.a
+		UP_JAP_add_kodoha_prestige_small = yes
+		UP_JAP_add_fiscal_pressure_small = yes
+	}
+	option = {
+		name = up_japan.1.b
+		UP_JAP_add_toseiha_prestige_small = yes
+		add_to_variable = { UP_JAP_kodoha_prestige = -3 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+	option = {
+		name = up_japan.1.c
+		UP_JAP_add_navy_prestige_small = yes
+		UP_JAP_reduce_kodoha_prestige_small = yes
+	}
+}
+
+country_event = {
+	id = up_japan.2
+	title = up_japan.2.t
+	desc = up_japan.2.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.2.a
+		add_to_variable = { UP_JAP_toseiha_prestige = 8 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+	option = {
+		name = up_japan.2.b
+		add_to_variable = { UP_JAP_kodoha_prestige = 4 }
+		add_to_variable = { UP_JAP_toseiha_prestige = 2 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+	option = {
+		name = up_japan.2.c
+		add_to_variable = { UP_JAP_navy_prestige = 3 }
+		add_to_variable = { UP_JAP_toseiha_prestige = -3 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+}
+
+country_event = {
+	id = up_japan.3
+	title = up_japan.3.t
+	desc = up_japan.3.d
+	picture = GFX_report_event_japanese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.3.a
+		add_to_variable = { UP_JAP_navy_prestige = 8 }
+		add_to_variable = { UP_JAP_fiscal_pressure = 8 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+	option = {
+		name = up_japan.3.b
+		UP_JAP_add_toseiha_prestige_small = yes
+		UP_JAP_reduce_navy_prestige_small = yes
+	}
+	option = {
+		name = up_japan.3.c
+		UP_JAP_reduce_fiscal_pressure_small = yes
+		add_to_variable = { UP_JAP_zaibatsu_influence = 10 }
+		add_to_variable = { UP_JAP_navy_prestige = 3 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+}
+
+country_event = {
+	id = up_japan.4
+	title = up_japan.4.t
+	desc = up_japan.4.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = UP_JAP_young_officer_petition_happened
+	}
+
+	option = {
+		name = up_japan.4.a
+		UP_JAP_add_kodoha_prestige_small = yes
+		add_stability = -0.05
+	}
+	option = {
+		name = up_japan.4.b
+		UP_JAP_reduce_kodoha_prestige_medium = yes
+		UP_JAP_add_toseiha_prestige_small = yes
+	}
+	option = {
+		name = up_japan.4.c
+		add_ideas = UP_JAP_far_east_officer_exile
+		add_to_variable = { UP_JAP_kodoha_prestige = -3 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+}
+
+country_event = {
+	id = up_japan.5
+	title = up_japan.5.t
+	desc = up_japan.5.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = UP_JAP_zaibatsu_terms_raised
+	}
+
+	option = {
+		name = up_japan.5.a
+		UP_JAP_reduce_fiscal_pressure_large = yes
+		add_to_variable = { UP_JAP_zaibatsu_influence = 10 }
+		add_ideas = UP_JAP_zaibatsu_terms_accepted
+		add_stability = -0.05
+	}
+	option = {
+		name = up_japan.5.b
+		UP_JAP_add_fiscal_pressure_medium = yes
+		add_stability = 0.03
+		add_timed_idea = {
+			idea = UP_JAP_zaibatsu_terms_refused
+			days = 180
+		}
+	}
+	option = {
+		name = up_japan.5.c
+		UP_JAP_add_toseiha_prestige_small = yes
+		add_to_variable = { UP_JAP_zaibatsu_influence = -10 }
+		add_political_power = -100
+		add_ideas = UP_JAP_state_economic_control_committee
+	}
+}
+
+country_event = {
+	id = up_japan.6
+	title = up_japan.6.t
+	desc = up_japan.6.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = UP_JAP_march_fiscal_crisis_happened
+	}
+
+	option = {
+		name = up_japan.6.a
+		add_to_variable = { UP_JAP_fiscal_pressure = -20 }
+		UP_JAP_reduce_kodoha_prestige_large = yes
+		add_to_variable = { UP_JAP_far_east_resistance = 10 }
+		UP_JAP_update_imperial_conference_gui = yes
+	}
+	option = {
+		name = up_japan.6.b
+		UP_JAP_reduce_fiscal_pressure_large = yes
+		UP_JAP_reduce_navy_prestige_large = yes
+		add_timed_idea = {
+			idea = UP_JAP_naval_budget_frozen
+			days = 365
+		}
+	}
+	option = {
+		name = up_japan.6.c
+		UP_JAP_reduce_fiscal_pressure_large = yes
+		UP_JAP_reduce_toseiha_prestige_large = yes
+		XIC = {
+			add_ideas = UP_unleashed_puppet
+		}
+	}
+	option = {
+		name = up_japan.6.e
+		UP_JAP_reduce_fiscal_pressure_massive = yes
+		add_ideas = UP_JAP_zaibatsu_controlled_economy
+		add_stability = -0.10
+	}
+	option = {
+		name = up_japan.6.f
+		add_stability = -0.15
+		if = {
+			limit = { has_country_flag = UP_JAP_dominant_kodoha }
+			set_country_flag = UP_JAP_route_kodoha_crisis
+		}
+		else_if = {
+			limit = { has_country_flag = UP_JAP_dominant_toseiha }
+			set_country_flag = UP_JAP_route_toseiha_crisis
+		}
+		else_if = {
+			limit = { has_country_flag = UP_JAP_dominant_navy }
+			set_country_flag = UP_JAP_route_navy_crisis
+		}
+		else = {
+			set_country_flag = UP_JAP_showa_integration_failed
+		}
+	}
+}
+
+country_event = {
+	id = up_japan.20
+	title = up_japan.20.t
+	desc = up_japan.20.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.20.a
+		ai_chance = { factor = 55 }
+		UP_JAP_add_toseiha_prestige_small = yes
+		UP_JAP_add_fiscal_pressure_small = yes
+		if = {
+			limit = {
+				XIC = {
+					exists = yes
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+			create_wargoal = { type = annex_everything target = XIC }
+		}
+	}
+
+	option = {
+		name = up_japan.20.b
+		ai_chance = { factor = 20 }
+		add_stability = 0.03
+		UP_JAP_reduce_fiscal_pressure_small = yes
+		UP_JAP_reduce_toseiha_prestige_small = yes
+	}
+
+	option = {
+		name = up_japan.20.c
+		ai_chance = { factor = 25 }
+		add_political_power = -50
+		add_ideas = UP_JAP_fengtian_intelligence_network
+		if = {
+			limit = { XIC = { exists = yes } }
+			XIC = { add_ideas = UP_XIC_japanese_infiltration }
+		}
+	}
+}
+
+country_event = {
+	id = up_japan.21
+	title = up_japan.21.t
+	desc = up_japan.21.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.21.a
+		add_army_experience = 25
+		add_war_support = 0.05
+		if = {
+			limit = {
+				XIC = {
+					exists = yes
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+			create_wargoal = { type = annex_everything target = XIC }
+		}
+	}
+}
+
+country_event = {
+	id = up_japan.22
+	title = up_japan.22.t
+	desc = up_japan.22.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.22.a
+		ai_chance = { factor = 35 }
+		set_country_flag = UP_JAP_manchuria_military_administration
+		add_ideas = UP_JAP_manchurian_military_administration
+		UP_JAP_add_toseiha_prestige_small = yes
+		UP_JAP_add_fiscal_pressure_medium = yes
+		if = {
+			limit = { XIC = { exists = yes } }
+			annex_country = { target = XIC transfer_troops = yes }
+		}
+	}
+
+	option = {
+		name = up_japan.22.b
+		ai_chance = { factor = 40 }
+		set_country_flag = UP_JAP_new_manchurian_state
+		add_ideas = UP_JAP_new_manchurian_state_clients
+		UP_JAP_add_fiscal_pressure_small = yes
+		UP_JAP_reduce_kodoha_prestige_small = yes
+		if = {
+			limit = { XIC = { exists = yes } }
+			puppet = XIC
+			XIC = { add_ideas = UP_XIC_japanese_client_state }
+		}
+	}
+
+	option = {
+		name = up_japan.22.c
+		ai_chance = { factor = 25 }
+		set_country_flag = UP_JAP_mantetsu_trusteeship
+		add_ideas = UP_JAP_mantetsu_economic_trusteeship
+		add_to_variable = { UP_JAP_zaibatsu_influence = 15 }
+		UP_JAP_reduce_fiscal_pressure_small = yes
+		if = {
+			limit = { XIC = { exists = yes } }
+			puppet = XIC
+			XIC = { add_ideas = UP_XIC_mantetsu_trusteeship }
+		}
+	}
+}
+
+country_event = {
+	id = up_japan.23
+	title = up_japan.23.t
+	desc = up_japan.23.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.23.a
+		ai_chance = { factor = 35 }
+		UP_JAP_add_toseiha_prestige_small = yes
+		UP_JAP_add_fiscal_pressure_medium = yes
+		if = {
+			limit = { CHI = { exists = yes } }
+			create_wargoal = { type = annex_everything target = CHI }
+		}
+	}
+
+	option = {
+		name = up_japan.23.b
+		ai_chance = { factor = 35 }
+		add_stability = 0.03
+		UP_JAP_reduce_fiscal_pressure_small = yes
+		if = {
+			limit = { CHI = { exists = yes } }
+			add_opinion_modifier = { target = CHI modifier = sino_japanese_manchurian_settlement }
+			CHI = { add_opinion_modifier = { target = ROOT modifier = sino_japanese_manchurian_settlement } }
+		}
+	}
+
+	option = {
+		name = up_japan.23.c
+		ai_chance = { factor = 30 }
+		add_political_power = -75
+		add_war_support = 0.05
+		add_ideas = UP_JAP_continental_supply_system
+		UP_JAP_add_toseiha_prestige_small = yes
+	}
+}

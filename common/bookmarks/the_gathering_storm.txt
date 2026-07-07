@@ -21,11 +21,11 @@ bookmarks = {
 
 		JAP = {
 			history = "UP_JAP_BOOKMARK_DESC"
-			ideology = fascism
+			ideology = neutrality
 			focuses = {
-				UP_JAP_empire_at_the_limit
-				UP_JAP_preserve_the_old_system
-				UP_JAP_young_officers_coup
+				UP_JAP_convene_imperial_conference
+				UP_JAP_audit_far_eastern_army_costs
+				UP_JAP_imperial_strategy_ruling
 			}
 		}
 

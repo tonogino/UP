@@ -1,19 +1,24 @@
 capital = 439
+
 set_politics = {
 	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	fascism = 65
-	neutrality = 25
-	democratic = 5
-	communism = 5
+	neutrality = 10
+	democratic = 3
+	fascism = 85
+	communism = 2
 }
 
 create_country_leader = {
 	name = "Madan Mohan Malaviya"
 	picture = "Portrait_Asia_Generic_fascism.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = { }
+	ideology = despotism
+	traits = {
+	}
 }

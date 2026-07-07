@@ -1,13 +1,17 @@
 capital = 408
+
 set_politics = {
 	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	neutrality = 50
-	fascism = 30
+	neutrality = 75
 	democratic = 10
-	communism = 10
+	fascism = 10
+	communism = 5
 }
 
 create_country_leader = {
@@ -15,5 +19,6 @@ create_country_leader = {
 	picture = "Portrait_Asia_Generic_warlord2.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = { }
+	traits = {
+	}
 }

@@ -43,10 +43,9 @@ country_event = {
 	option = {
 		name = up_asia.2.a
 		add_ideas = {
-			UP_imperial_overstretch
-			UP_northern_mire
-			UP_zaibatsu_rule
-			UP_army_navy_rivalry
+			UP_JAP_imperial_overload
+			UP_JAP_far_eastern_security_war
+			UP_JAP_zaibatsu_creditors
 		}
 		set_country_flag = UP_japan_overstretched_empire
 	}

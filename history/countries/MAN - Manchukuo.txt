@@ -1,22 +1,22 @@
-capital = 431
+capital = 715
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 5
-	democratic = 5
-	fascism = 5
-	communism = 85
+	neutrality = 100
+	democratic = 0
+	fascism = 0
+	communism = 0
 }
 
 create_country_leader = {
-	name = "Muzaffar Ahmed"
-	picture = "Portrait_Asia_Generic_communism.dds"
+	name = "Empty Manchukuo Administration"
+	picture = "GFX_Portrait_Asia_Generic_land_2"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

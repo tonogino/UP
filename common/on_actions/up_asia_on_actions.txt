@@ -74,6 +74,37 @@ on_actions = {
 					UP_CHI_cultural_revolution_monthly_effect = yes
 				}
 			}
+			JAP = {
+				if = {
+					limit = { has_country_flag = UP_JAP_imperial_conference_active }
+					UP_JAP_update_imperial_conference_gui = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = UP_JAP_imperial_conference_active
+						check_variable = { UP_JAP_fiscal_pressure > 99 }
+						NOT = { has_country_flag = UP_JAP_march_fiscal_crisis_happened }
+					}
+					country_event = { id = up_japan.6 }
+				}
+				if = {
+					limit = {
+						has_country_flag = UP_JAP_imperial_conference_active
+						check_variable = { UP_JAP_kodoha_prestige > 70 }
+						check_variable = { UP_JAP_fiscal_pressure > 60 }
+						NOT = { has_country_flag = UP_JAP_young_officer_petition_happened }
+					}
+					country_event = { id = up_japan.4 }
+				}
+				if = {
+					limit = {
+						has_country_flag = UP_JAP_imperial_conference_active
+						check_variable = { UP_JAP_fiscal_pressure > 70 }
+						NOT = { has_country_flag = UP_JAP_zaibatsu_terms_raised }
+					}
+					country_event = { id = up_japan.5 }
+				}
+			}
 		}
 	}
 }

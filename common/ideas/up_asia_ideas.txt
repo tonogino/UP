@@ -784,6 +784,405 @@ ideas = {
 			}
 		}
 
+		UP_JAP_imperial_overload = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = 0.08
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
+				supply_consumption_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_JAP_imperial_conference_spirit = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_gain = 0.03
+			}
+		}
+
+		UP_JAP_far_eastern_security_war = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = 0.10
+				resistance_target = 0.10
+				experience_gain_army_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		UP_JAP_zaibatsu_creditors = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.03
+				stability_factor = -0.03
+			}
+		}
+
+		UP_JAP_fiscal_plenty = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		UP_JAP_fiscal_controlled_deficit = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				political_power_gain = -0.02
+			}
+		}
+
+		UP_JAP_fiscal_tension = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		UP_JAP_fiscal_crisis = {
+			picture = generic_dangerous_deal
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		UP_JAP_fiscal_collapse = {
+			picture = generic_civil_war
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.20
+				stability_factor = -0.15
+			}
+		}
+
+		UP_JAP_imperial_construction_bonds = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		UP_JAP_expanded_zaibatsu_credit = {
+			picture = generic_dangerous_deal
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.02
+				stability_factor = -0.03
+				production_speed_industrial_complex_factor = 0.04
+			}
+		}
+
+		UP_JAP_manchurian_border_intelligence = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.05
+				max_planning = 0.03
+			}
+		}
+
+		UP_JAP_zaibatsu_controlled_economy = {
+			picture = generic_dangerous_deal
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.08
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_JAP_naval_budget_frozen = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_dockyard_factor = -0.10
+				experience_gain_navy_factor = -0.10
+			}
+		}
+
+		UP_JAP_zaibatsu_terms_accepted = {
+			picture = generic_dangerous_deal
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = -0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		UP_JAP_zaibatsu_terms_refused = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		UP_JAP_state_economic_control_committee = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_arms_factory_factor = 0.05
+				political_power_gain = -0.03
+			}
+		}
+
+		UP_JAP_far_east_officer_exile = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = -0.05
+				resistance_target = -0.05
+				experience_gain_army_factor = 0.03
+			}
+		}
+
+		UP_JAP_total_war_research_council = {
+			picture = generic_research
+			allowed = { original_tag = JAP }
+			modifier = {
+				research_speed_factor = 0.03
+				political_power_gain = -0.03
+				consumer_goods_factor = 0.01
+			}
+		}
+
+		UP_JAP_manchurian_operation_plan_idea = {
+			picture = generic_demand_territory
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.08
+				max_planning = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		UP_JAP_kwantung_reorganized = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_org_factor = 0.03
+				planning_speed = 0.05
+				stability_factor = -0.02
+			}
+		}
+
+		UP_JAP_general_staff_supremacy_idea = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.08
+				max_planning = 0.05
+				command_power_gain_mult = 0.05
+				political_power_gain = -0.03
+			}
+		}
+
+		UP_JAP_standard_division_tables_idea = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_org_factor = 0.03
+				training_time_army_factor = -0.04
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		UP_JAP_integrated_artillery_schools_idea = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.03
+				army_org_factor = 0.02
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		UP_JAP_motorized_logistics_experiments_idea = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = JAP }
+			modifier = {
+				supply_consumption_factor = -0.04
+				army_speed_factor = 0.03
+				production_speed_infrastructure_factor = 0.04
+			}
+		}
+
+		UP_JAP_continental_breakthrough_doctrine_idea = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+				army_speed_factor = 0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_JAP_total_war_officer_corps_idea = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.08
+				experience_gain_army_factor = 0.08
+				stability_factor = -0.02
+			}
+		}
+
+		UP_JAP_army_ministry_industrial_committee_idea = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_arms_factory_factor = 0.08
+				industrial_capacity_factory = 0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_JAP_mantetsu_revival = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				supply_consumption_factor = -0.03
+				local_resources_factor = 0.03
+			}
+		}
+
+		UP_JAP_fengtian_intelligence_network = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = JAP }
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.10
+				resistance_target = -0.05
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_manchurian_operation_momentum = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		UP_JAP_manchurian_military_administration = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = 0.05
+				required_garrison_factor = 0.15
+				local_resources_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		UP_JAP_new_manchurian_state_clients = {
+			picture = generic_diplomacy
+			allowed = { original_tag = JAP }
+			modifier = {
+				autonomy_manpower_share_from_subjects = 0.05
+				subjects_autonomy_gain = -0.05
+				political_power_gain = 0.03
+			}
+		}
+
+		UP_JAP_mantetsu_economic_trusteeship = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.03
+				local_resources_factor = 0.10
+				political_power_gain = -0.03
+			}
+		}
+
+		UP_JAP_manchurian_industrial_plan = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_arms_factory_factor = 0.08
+				production_speed_industrial_complex_factor = 0.06
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_JAP_continental_supply_system = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = JAP }
+			modifier = {
+				supply_consumption_factor = -0.05
+				production_speed_infrastructure_factor = 0.10
+				planning_speed = 0.04
+			}
+		}
+
+		UP_JAP_continental_total_war_state_idea = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				army_org_factor = 0.05
+				research_speed_factor = 0.04
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_XIC_japanese_infiltration = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = XIC }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_XIC_japanese_client_state = {
+			picture = generic_diplomacy
+			allowed = { original_tag = XIC }
+			modifier = {
+				stability_factor = -0.03
+				political_power_gain = 0.03
+				trade_opinion_factor = 0.05
+			}
+		}
+
+		UP_XIC_mantetsu_trusteeship = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = XIC }
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.03
+				stability_factor = -0.05
+			}
+		}
+
 		UP_imperial_overstretch = {
 			picture = generic_army_reform
 			allowed = {
