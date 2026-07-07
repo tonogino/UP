@@ -1,0 +1,36 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+
+	spriteType = {
+		name = "GFX_portrait_operative_unknown"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+    ### CHI
+    spriteType = {
+		name = "CKG_wangjingwei"
+		texturefile = "gfx/leaders/CHI/Portrait_China_wang_jingwei.dds"
+	}
+
+	spriteType = {
+		name = "XIC_zhangzuolin"
+		texturefile = "gfx/leaders/CHI/Portrait_China_zhang_zuolin.dds"
+	}
+	
+	spriteType = {
+		name = "XSM_mabufang"
+		texturefile = "gfx/leaders/CHI/Portrait_China_ma_bufang.dds"
+	}
+	
+	###JAP
+	spriteType = {
+		name = "JAP_keisuke_okada"
+		texturefile = "gfx/leaders/JAP/portrait_JAP_keisuke_okada.dds"
+	}
+	
+	spriteType = {
+		name = "CHI_maozedong"
+		texturefile = "gfx/leaders/CHI/portrait_prc_mao_zedong.dds"
+	}
+}
