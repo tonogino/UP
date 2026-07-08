@@ -9,10 +9,11 @@ state = {
 		steel=18 # was: 24
 	}
 
-	history={
-		owner = SIB
-	controller = SIB
-	add_core_of = SIB
+	history = {
+		owner = FEA
+		controller = FEA
+		add_core_of = FEA
+		add_core_of = SIB
 		buildings = {
 			infrastructure = 2
 		}

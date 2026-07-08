@@ -59,12 +59,12 @@ UP_JAP_establish_northern_general_staff_effect = {
 	add_timed_idea = { idea = UP_JAP_northern_operation_planning days = 180 }
 	UP_JAP_add_kodoha_prestige_8 = yes
 	UP_JAP_add_fiscal_pressure_small = yes
-	add_army_experience = 25
+	army_experience = 25
 }
 
 UP_JAP_purge_white_remnants_effect = {
 	UP_JAP_add_kodoha_prestige_small = yes
-	add_army_experience = 20
+	army_experience = 20
 	UP_JAP_apply_far_east_resistance_reduction_10 = yes
 	add_timed_idea = { idea = UP_JAP_white_remnants_purged days = 365 }
 	if = {
@@ -175,7 +175,7 @@ UP_JAP_establish_mongolian_military_government_effect = {
 }
 
 UP_JAP_strategic_offensive_effect = {
-	add_army_experience = 25
+	army_experience = 25
 	set_country_flag = UP_JAP_continental_offensive_decisions_unlocked
 	add_timed_idea = { idea = UP_JAP_continental_strategic_offensive days = 180 }
 	UP_JAP_add_fiscal_pressure_small = yes
@@ -192,7 +192,7 @@ UP_JAP_develop_chinese_resources_effect = {
 }
 
 UP_JAP_purge_remaining_chinese_opposition_effect = {
-	add_army_experience = 20
+	army_experience = 20
 	add_war_support = 0.05
 	if = { limit = { CHI = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = CHI } }
 	if = { limit = { CKG = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = CKG } }
@@ -204,7 +204,7 @@ UP_JAP_purge_remaining_chinese_opposition_effect = {
 }
 
 UP_JAP_march_into_tibet_effect = {
-	add_army_experience = 15
+	army_experience = 15
 	add_timed_idea = { idea = UP_JAP_tibetan_mountain_campaign days = 180 }
 	if = { limit = { TIB = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = TIB } }
 	UP_JAP_add_fiscal_pressure_3 = yes

@@ -24,8 +24,8 @@ bookmarks = {
 			ideology = neutrality
 			focuses = {
 				UP_JAP_convene_imperial_conference
-				UP_JAP_audit_far_eastern_army_costs
-				UP_JAP_imperial_strategy_ruling
+				UP_JAP_southern_resource_survey
+				UP_JAP_reassess_continental_strategy
 			}
 		}
 

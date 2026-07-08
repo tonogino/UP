@@ -459,7 +459,7 @@ country_event = {
 
 	option = {
 		name = up_japan.21.a
-		add_army_experience = 25
+		army_experience = 25
 		add_war_support = 0.05
 		if = {
 			limit = {

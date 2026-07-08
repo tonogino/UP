@@ -10,7 +10,7 @@ scripted_gui = {
 			}
 		}
 
-		visible_triggers = {
+		triggers = {
 			UP_JAP_dominant_deadlock = {
 				NOT = { has_country_flag = UP_JAP_dominant_kodoha }
 				NOT = { has_country_flag = UP_JAP_dominant_toseiha }

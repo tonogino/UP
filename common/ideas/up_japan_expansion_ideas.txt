@@ -5,7 +5,6 @@ ideas = {
 			allowed = { original_tag = JAP }
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				production_efficiency_cap_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				consumer_goods_factor = 0.02
 				political_power_gain = -0.03
@@ -185,7 +184,7 @@ ideas = {
 			allowed = { original_tag = JAP }
 			modifier = {
 				planning_speed = 0.10
-				breakthrough = 0.05
+				breakthrough_factor = 0.05
 			}
 		}
 

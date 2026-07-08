@@ -1,0 +1,7 @@
+positive_trade_relations = {
+	value = 25
+}
+
+negative_trade_relations = {
+	value = -25
+}

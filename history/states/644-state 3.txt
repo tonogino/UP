@@ -3,9 +3,10 @@ state = {
 	name = "STATE_644" # Kolyma
 
 	history = {
-		owner = SIB
-	controller = SIB
-	add_core_of = SIB
+		owner = FEA
+		controller = FEA
+		add_core_of = FEA
+		add_core_of = SIB
 		victory_points = {
 			1819 1 
 		}
@@ -14,7 +15,6 @@ state = {
 		}
 		add_core_of = SOV
 		add_core_of = YAK
-
 	}
 
 	provinces = {
