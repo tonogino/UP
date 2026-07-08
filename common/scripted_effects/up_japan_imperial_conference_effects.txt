@@ -6,62 +6,64 @@ UP_JAP_clear_imperial_conference_dominance = {
 }
 
 UP_JAP_update_imperial_conference_gui = {
-	clamp_variable = {
-		var = UP_JAP_kodoha_prestige
-		min = 0
-		max = 999
-	}
-	clamp_variable = {
-		var = UP_JAP_toseiha_prestige
-		min = 0
-		max = 999
-	}
-	clamp_variable = {
-		var = UP_JAP_navy_prestige
-		min = 0
-		max = 999
-	}
-	clamp_variable = {
-		var = UP_JAP_fiscal_pressure
-		min = 0
-		max = 100
-	}
-
-	UP_JAP_update_fiscal_pressure_spirit = yes
-
-	UP_JAP_clear_imperial_conference_dominance = yes
-
-	if = {
-		limit = {
-			check_variable = { UP_JAP_kodoha_prestige > 69 }
-			check_variable = { UP_JAP_toseiha_prestige > 69 }
-			check_variable = { UP_JAP_navy_prestige > 69 }
+	hidden_effect = {
+		clamp_variable = {
+			var = UP_JAP_kodoha_prestige
+			min = 0
+			max = 999
 		}
-		set_country_flag = UP_JAP_dominant_empire
-	}
-	else_if = {
-		limit = {
-			check_variable = { UP_JAP_kodoha_prestige > UP_JAP_toseiha_prestige }
-			check_variable = { UP_JAP_kodoha_prestige > UP_JAP_navy_prestige }
+		clamp_variable = {
+			var = UP_JAP_toseiha_prestige
+			min = 0
+			max = 999
 		}
-		set_country_flag = UP_JAP_dominant_kodoha
-	}
-	else_if = {
-		limit = {
-			check_variable = { UP_JAP_toseiha_prestige > UP_JAP_kodoha_prestige }
-			check_variable = { UP_JAP_toseiha_prestige > UP_JAP_navy_prestige }
+		clamp_variable = {
+			var = UP_JAP_navy_prestige
+			min = 0
+			max = 999
 		}
-		set_country_flag = UP_JAP_dominant_toseiha
-	}
-	else_if = {
-		limit = {
-			check_variable = { UP_JAP_navy_prestige > UP_JAP_kodoha_prestige }
-			check_variable = { UP_JAP_navy_prestige > UP_JAP_toseiha_prestige }
+		clamp_variable = {
+			var = UP_JAP_fiscal_pressure
+			min = 0
+			max = 100
 		}
-		set_country_flag = UP_JAP_dominant_navy
-	}
 
-	add_to_variable = { UP_JAP_imperial_conference_dirty = 1 }
+		UP_JAP_update_fiscal_pressure_spirit = yes
+
+		UP_JAP_clear_imperial_conference_dominance = yes
+
+		if = {
+			limit = {
+				check_variable = { UP_JAP_kodoha_prestige > 69 }
+				check_variable = { UP_JAP_toseiha_prestige > 69 }
+				check_variable = { UP_JAP_navy_prestige > 69 }
+			}
+			set_country_flag = UP_JAP_dominant_empire
+		}
+		else_if = {
+			limit = {
+				check_variable = { UP_JAP_kodoha_prestige > UP_JAP_toseiha_prestige }
+				check_variable = { UP_JAP_kodoha_prestige > UP_JAP_navy_prestige }
+			}
+			set_country_flag = UP_JAP_dominant_kodoha
+		}
+		else_if = {
+			limit = {
+				check_variable = { UP_JAP_toseiha_prestige > UP_JAP_kodoha_prestige }
+				check_variable = { UP_JAP_toseiha_prestige > UP_JAP_navy_prestige }
+			}
+			set_country_flag = UP_JAP_dominant_toseiha
+		}
+		else_if = {
+			limit = {
+				check_variable = { UP_JAP_navy_prestige > UP_JAP_kodoha_prestige }
+				check_variable = { UP_JAP_navy_prestige > UP_JAP_toseiha_prestige }
+			}
+			set_country_flag = UP_JAP_dominant_navy
+		}
+
+		add_to_variable = { UP_JAP_imperial_conference_dirty = 1 }
+	}
 }
 
 UP_JAP_start_imperial_conference = {
@@ -69,10 +71,10 @@ UP_JAP_start_imperial_conference = {
 	if = {
 		limit = { NOT = { has_country_flag = UP_JAP_imperial_conference_initialized } }
 		set_country_flag = UP_JAP_imperial_conference_initialized
-		set_variable = { UP_JAP_kodoha_prestige = 45 }
-		set_variable = { UP_JAP_toseiha_prestige = 35 }
-		set_variable = { UP_JAP_navy_prestige = 30 }
-		set_variable = { UP_JAP_fiscal_pressure = 55 }
+		set_variable = { UP_JAP_kodoha_prestige = 0 }
+		set_variable = { UP_JAP_toseiha_prestige = 0 }
+		set_variable = { UP_JAP_navy_prestige = 0 }
+		set_variable = { UP_JAP_fiscal_pressure = 35 }
 		add_ideas = {
 			UP_JAP_imperial_overload
 			UP_JAP_far_eastern_security_war
@@ -117,6 +119,18 @@ UP_JAP_add_kodoha_prestige_small = {
 	UP_JAP_update_imperial_conference_gui = yes
 }
 
+UP_JAP_add_kodoha_prestige_3 = {
+	custom_effect_tooltip = UP_JAP_kodoha_prestige_plus_3_tt
+	add_to_variable = { UP_JAP_kodoha_prestige = 3 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_kodoha_prestige_8 = {
+	custom_effect_tooltip = UP_JAP_kodoha_prestige_plus_8_tt
+	add_to_variable = { UP_JAP_kodoha_prestige = 8 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
 UP_JAP_add_kodoha_prestige_medium = {
 	custom_effect_tooltip = UP_JAP_kodoha_prestige_plus_10_tt
 	add_to_variable = { UP_JAP_kodoha_prestige = 10 }
@@ -144,6 +158,18 @@ UP_JAP_reduce_kodoha_prestige_large = {
 UP_JAP_add_toseiha_prestige_small = {
 	custom_effect_tooltip = UP_JAP_toseiha_prestige_plus_5_tt
 	add_to_variable = { UP_JAP_toseiha_prestige = 5 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_toseiha_prestige_3 = {
+	custom_effect_tooltip = UP_JAP_toseiha_prestige_plus_3_tt
+	add_to_variable = { UP_JAP_toseiha_prestige = 3 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_toseiha_prestige_8 = {
+	custom_effect_tooltip = UP_JAP_toseiha_prestige_plus_8_tt
+	add_to_variable = { UP_JAP_toseiha_prestige = 8 }
 	UP_JAP_update_imperial_conference_gui = yes
 }
 
@@ -177,6 +203,18 @@ UP_JAP_add_navy_prestige_small = {
 	UP_JAP_update_imperial_conference_gui = yes
 }
 
+UP_JAP_add_navy_prestige_3 = {
+	custom_effect_tooltip = UP_JAP_navy_prestige_plus_3_tt
+	add_to_variable = { UP_JAP_navy_prestige = 3 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_navy_prestige_8 = {
+	custom_effect_tooltip = UP_JAP_navy_prestige_plus_8_tt
+	add_to_variable = { UP_JAP_navy_prestige = 8 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
 UP_JAP_add_navy_prestige_medium = {
 	custom_effect_tooltip = UP_JAP_navy_prestige_plus_10_tt
 	add_to_variable = { UP_JAP_navy_prestige = 10 }
@@ -207,6 +245,30 @@ UP_JAP_add_fiscal_pressure_small = {
 	UP_JAP_update_imperial_conference_gui = yes
 }
 
+UP_JAP_add_fiscal_pressure_2 = {
+	custom_effect_tooltip = UP_JAP_fiscal_pressure_plus_2_tt
+	add_to_variable = { UP_JAP_fiscal_pressure = 2 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_fiscal_pressure_3 = {
+	custom_effect_tooltip = UP_JAP_fiscal_pressure_plus_3_tt
+	add_to_variable = { UP_JAP_fiscal_pressure = 3 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_fiscal_pressure_4 = {
+	custom_effect_tooltip = UP_JAP_fiscal_pressure_plus_4_tt
+	add_to_variable = { UP_JAP_fiscal_pressure = 4 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_add_fiscal_pressure_8 = {
+	custom_effect_tooltip = UP_JAP_fiscal_pressure_plus_8_tt
+	add_to_variable = { UP_JAP_fiscal_pressure = 8 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
 UP_JAP_add_fiscal_pressure_medium = {
 	custom_effect_tooltip = UP_JAP_fiscal_pressure_plus_10_tt
 	add_to_variable = { UP_JAP_fiscal_pressure = 10 }
@@ -216,6 +278,18 @@ UP_JAP_add_fiscal_pressure_medium = {
 UP_JAP_reduce_fiscal_pressure_small = {
 	custom_effect_tooltip = UP_JAP_fiscal_pressure_minus_5_tt
 	add_to_variable = { UP_JAP_fiscal_pressure = -5 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_reduce_fiscal_pressure_2 = {
+	custom_effect_tooltip = UP_JAP_fiscal_pressure_minus_2_tt
+	add_to_variable = { UP_JAP_fiscal_pressure = -2 }
+	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_reduce_fiscal_pressure_3 = {
+	custom_effect_tooltip = UP_JAP_fiscal_pressure_minus_3_tt
+	add_to_variable = { UP_JAP_fiscal_pressure = -3 }
 	UP_JAP_update_imperial_conference_gui = yes
 }
 
@@ -235,4 +309,46 @@ UP_JAP_reduce_fiscal_pressure_massive = {
 	custom_effect_tooltip = UP_JAP_fiscal_pressure_minus_25_tt
 	add_to_variable = { UP_JAP_fiscal_pressure = -25 }
 	UP_JAP_update_imperial_conference_gui = yes
+}
+
+UP_JAP_monthly_fiscal_balance_effect = {
+	hidden_effect = {
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_north }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_south }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_southern_resources }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.3 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_manchuria }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_china }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_greater_east_asia }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.3 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_caucasus }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_frozen_frontier }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		if = {
+			limit = { has_country_flag = UP_JAP_monthly_fiscal_relief_northern_self_support }
+			add_to_variable = { UP_JAP_fiscal_pressure = -0.2 }
+		}
+		UP_JAP_update_imperial_conference_gui = yes
+	}
 }

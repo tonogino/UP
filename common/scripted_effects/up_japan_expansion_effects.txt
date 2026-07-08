@@ -1,0 +1,324 @@
+UP_JAP_apply_manchurian_resistance_reduction_5 = {
+	if = { limit = { controls_state = 328 } 328 = { add_resistance = -5 } }
+	if = { limit = { controls_state = 610 } 610 = { add_resistance = -5 } }
+	if = { limit = { controls_state = 714 } 714 = { add_resistance = -5 } }
+	if = { limit = { controls_state = 715 } 715 = { add_resistance = -5 } }
+	if = { limit = { controls_state = 716 } 716 = { add_resistance = -5 } }
+	if = { limit = { controls_state = 717 } 717 = { add_resistance = -5 } }
+	if = { limit = { controls_state = 761 } 761 = { add_resistance = -5 } }
+}
+
+UP_JAP_apply_manchurian_compliance_10 = {
+	if = { limit = { controls_state = 328 } 328 = { add_compliance = 10 } }
+	if = { limit = { controls_state = 610 } 610 = { add_compliance = 10 } }
+	if = { limit = { controls_state = 714 } 714 = { add_compliance = 10 } }
+	if = { limit = { controls_state = 715 } 715 = { add_compliance = 10 } }
+	if = { limit = { controls_state = 716 } 716 = { add_compliance = 10 } }
+	if = { limit = { controls_state = 717 } 717 = { add_compliance = 10 } }
+	if = { limit = { controls_state = 761 } 761 = { add_compliance = 10 } }
+}
+
+UP_JAP_apply_manchurian_compliance_20 = {
+	if = { limit = { controls_state = 328 } 328 = { add_compliance = 20 } }
+	if = { limit = { controls_state = 610 } 610 = { add_compliance = 20 } }
+	if = { limit = { controls_state = 714 } 714 = { add_compliance = 20 } }
+	if = { limit = { controls_state = 715 } 715 = { add_compliance = 20 } }
+	if = { limit = { controls_state = 716 } 716 = { add_compliance = 20 } }
+	if = { limit = { controls_state = 717 } 717 = { add_compliance = 20 } }
+	if = { limit = { controls_state = 761 } 761 = { add_compliance = 20 } }
+}
+
+UP_JAP_apply_far_east_resistance_reduction_10 = {
+	if = { limit = { controls_state = 408 } 408 = { add_resistance = -10 } }
+	if = { limit = { controls_state = 409 } 409 = { add_resistance = -10 } }
+	if = { limit = { controls_state = 657 } 657 = { add_resistance = -10 } }
+	if = { limit = { controls_state = 560 } 560 = { add_resistance = -10 } }
+	if = { limit = { controls_state = 561 } 561 = { add_resistance = -10 } }
+	if = { limit = { controls_state = 563 } 563 = { add_resistance = -10 } }
+	if = { limit = { controls_state = 657 } 657 = { add_resistance = -10 } }
+}
+
+UP_JAP_total_war_state_system_effect = {
+	add_ideas = UP_JAP_total_war_state_system_idea
+	UP_JAP_add_toseiha_prestige_medium = yes
+	UP_JAP_add_fiscal_pressure_small = yes
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+	set_country_flag = UP_JAP_total_mobilization_decisions_unlocked
+}
+
+UP_JAP_contact_puyi_effect = {
+	UP_JAP_add_toseiha_prestige_3 = yes
+	UP_JAP_add_kodoha_prestige_3 = yes
+	country_event = { id = up_japan.50 days = 1 }
+}
+
+UP_JAP_establish_northern_general_staff_effect = {
+	set_country_flag = UP_JAP_northern_policy_unlocked
+	set_country_flag = UP_JAP_northern_theater_decisions_unlocked
+	add_ideas = UP_JAP_northern_general_staff_idea
+	add_timed_idea = { idea = UP_JAP_northern_operation_planning days = 180 }
+	UP_JAP_add_kodoha_prestige_8 = yes
+	UP_JAP_add_fiscal_pressure_small = yes
+	add_army_experience = 25
+}
+
+UP_JAP_purge_white_remnants_effect = {
+	UP_JAP_add_kodoha_prestige_small = yes
+	add_army_experience = 20
+	UP_JAP_apply_far_east_resistance_reduction_10 = yes
+	add_timed_idea = { idea = UP_JAP_white_remnants_purged days = 365 }
+	if = {
+		limit = { check_variable = { UP_JAP_fiscal_pressure > 70 } }
+		country_event = { id = up_japan.51 days = 1 }
+	}
+}
+
+UP_JAP_cossack_submission_act_effect = {
+	UP_JAP_add_kodoha_prestige_3 = yes
+	add_stability = -0.02
+	add_ideas = UP_JAP_cossack_security_settlement
+	division_template = {
+		name = "Cossack Security Cavalry"
+		is_locked = no
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+		}
+	}
+	if = {
+		limit = { controls_state = 408 }
+		408 = {
+			create_unit = {
+				division = "name = \"Cossack Security Cavalry\" division_template = \"Cossack Security Cavalry\" start_experience_factor = 0.3 start_equipment_factor = 0.7 start_manpower_factor = 1"
+				owner = ROOT
+				count = 7
+			}
+		}
+	}
+}
+
+UP_JAP_support_northeast_infrastructure_effect = {
+	UP_JAP_add_toseiha_prestige_small = yes
+	UP_JAP_add_fiscal_pressure_4 = yes
+	if = { limit = { controls_state = 328 } 328 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	if = { limit = { controls_state = 610 } 610 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	if = { limit = { controls_state = 715 } 715 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	if = { limit = { XIC = { exists = yes is_subject_of = ROOT } } set_autonomy = { target = XIC autonomy_state = autonomy_integrated_puppet } }
+}
+
+UP_JAP_japan_manchuria_intermarriage_policy_effect = {
+	add_stability = -0.01
+	add_timed_idea = { idea = UP_JAP_japan_manchuria_harmony_propaganda days = 730 }
+	add_ideas = UP_JAP_japan_manchuria_intermarriage_settlement
+	UP_JAP_add_kodoha_prestige_3 = yes
+	UP_JAP_add_toseiha_prestige_3 = yes
+}
+
+UP_JAP_northeast_pacification_strategy_effect = {
+	set_country_flag = UP_JAP_northeast_pacification_decisions_unlocked
+	set_country_flag = UP_JAP_northeast_pacification_mechanism
+	UP_JAP_apply_manchurian_resistance_reduction_5 = yes
+	UP_JAP_apply_manchurian_compliance_10 = yes
+	add_timed_idea = { idea = UP_JAP_northeast_pacification_idea days = 365 }
+	UP_JAP_add_toseiha_prestige_small = yes
+	UP_JAP_add_fiscal_pressure_3 = yes
+	set_occupation_law_where_available = UP_JAP_northeast_pacification_law
+}
+
+UP_JAP_black_soil_under_emperor_effect = {
+	UP_JAP_create_manchukuo_subject = yes
+	set_country_flag = UP_JAP_black_soil_manchuria_completed
+	set_country_flag = UP_JAP_monthly_fiscal_relief_manchuria
+	add_ideas = UP_JAP_black_soil_under_emperor_idea
+	add_stability = 0.05
+	UP_JAP_reduce_fiscal_pressure_2 = yes
+	if = { limit = { has_country_flag = UP_JAP_northeast_pacification_mechanism } UP_JAP_apply_manchurian_compliance_10 = yes }
+	if = { limit = { controls_state = 328 } 328 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	if = { limit = { controls_state = 610 } 610 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	if = { limit = { controls_state = 715 } 715 = { add_compliance = 10 } }
+}
+
+UP_JAP_establish_mongolian_military_government_effect = {
+	UP_JAP_add_kodoha_prestige_3 = yes
+	UP_JAP_add_toseiha_prestige_3 = yes
+	UP_JAP_reduce_fiscal_pressure_3 = yes
+	add_ideas = UP_JAP_mongolian_border_garrisons
+	if = {
+		limit = { MEN = { exists = yes } }
+		puppet = MEN
+		MEN = { add_ideas = UP_MEN_mongolian_frontier_military_government }
+	}
+	if = {
+		limit = { MON = { exists = yes NOT = { is_subject_of = ROOT } } }
+		MON = { country_event = { id = up_japan.52 days = 1 } }
+	}
+	division_template = {
+		name = "Mongolian Frontier Cavalry"
+		is_locked = no
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+		}
+	}
+	if = {
+		limit = { controls_state = 611 }
+		611 = {
+			create_unit = {
+				division = "name = \"Mongolian Frontier Cavalry\" division_template = \"Mongolian Frontier Cavalry\" start_experience_factor = 0.3 start_equipment_factor = 0.7 start_manpower_factor = 1"
+				owner = ROOT
+				count = 3
+			}
+		}
+	}
+}
+
+UP_JAP_strategic_offensive_effect = {
+	add_army_experience = 25
+	set_country_flag = UP_JAP_continental_offensive_decisions_unlocked
+	add_timed_idea = { idea = UP_JAP_continental_strategic_offensive days = 180 }
+	UP_JAP_add_fiscal_pressure_small = yes
+}
+
+UP_JAP_develop_chinese_resources_effect = {
+	add_ideas = UP_JAP_chinese_resource_development
+	set_country_flag = UP_JAP_monthly_fiscal_relief_china
+	UP_JAP_reduce_fiscal_pressure_2 = yes
+	if = { limit = { controls_state = 615 } 615 = { add_resource = { type = steel amount = 16 } } }
+	if = { limit = { controls_state = 608 } 608 = { add_resource = { type = steel amount = 8 } add_resource = { type = aluminium amount = 6 } } }
+	if = { limit = { controls_state = 600 } 600 = { add_resource = { type = tungsten amount = 8 } add_resource = { type = aluminium amount = 4 } } }
+	if = { limit = { controls_state = 325 } 325 = { add_resource = { type = tungsten amount = 12 } add_resource = { type = chromium amount = 4 } } }
+}
+
+UP_JAP_purge_remaining_chinese_opposition_effect = {
+	add_army_experience = 20
+	add_war_support = 0.05
+	if = { limit = { CHI = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = CHI } }
+	if = { limit = { CKG = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = CKG } }
+	if = { limit = { XIC = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = XIC } }
+	if = { limit = { PRC = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = PRC } }
+	if = { limit = { GXC = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = GXC } }
+	if = { limit = { SHX = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = SHX } }
+	UP_JAP_add_fiscal_pressure_small = yes
+}
+
+UP_JAP_march_into_tibet_effect = {
+	add_army_experience = 15
+	add_timed_idea = { idea = UP_JAP_tibetan_mountain_campaign days = 180 }
+	if = { limit = { TIB = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = TIB } }
+	UP_JAP_add_fiscal_pressure_3 = yes
+}
+
+UP_JAP_integrate_tibetan_occupied_zones_effect = {
+	add_ideas = UP_JAP_tibetan_occupation_integration
+	if = { limit = { controls_state = 322 } 322 = { add_resistance = -10 add_compliance = 10 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	if = { limit = { controls_state = 757 } 757 = { add_resistance = -10 add_compliance = 10 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	if = { limit = { controls_state = 322 } add_stability = 0.02 }
+}
+
+UP_JAP_unify_greater_east_asia_effect = {
+	add_ideas = UP_JAP_greater_east_asia_unified_order
+	set_country_flag = UP_JAP_greater_east_asia_integration_decisions_unlocked
+	set_country_flag = UP_JAP_monthly_fiscal_relief_greater_east_asia
+	add_war_support = 0.10
+	add_stability = 0.05
+	UP_JAP_reduce_fiscal_pressure_large = yes
+	every_subject_country = {
+		limit = { capital_scope = { is_on_continent = asia } }
+		add_opinion_modifier = { target = ROOT modifier = positive_trade_relations }
+		add_ideas = UP_JAP_asian_subject_integration
+	}
+}
+
+UP_JAP_develop_southern_resources_effect = {
+	add_ideas = UP_JAP_southern_resource_zone
+	set_country_flag = UP_JAP_monthly_fiscal_relief_southern_resources
+	UP_JAP_reduce_fiscal_pressure_3 = yes
+	if = { limit = { controls_state = 334 } 334 = { add_resource = { type = oil amount = 24 } } }
+	if = { limit = { controls_state = 672 } 672 = { add_resource = { type = oil amount = 20 } } }
+	if = { limit = { controls_state = 335 } 335 = { add_resource = { type = rubber amount = 20 } add_resource = { type = oil amount = 8 } } }
+	if = { limit = { controls_state = 336 } 336 = { add_resource = { type = rubber amount = 32 } add_resource = { type = aluminium amount = 8 } } }
+	if = { limit = { controls_state = 336 } 336 = { add_building_construction = { type = naval_base level = 1 instant_build = yes province = 12299 } } }
+}
+
+UP_JAP_unify_the_blue_seas_effect = {
+	country_event = { id = up_japan.53 days = 1 }
+	set_country_flag = UP_JAP_monthly_fiscal_relief_south
+	UP_JAP_add_navy_prestige_medium = yes
+	UP_JAP_add_navy_prestige_small = yes
+	add_war_support = 0.05
+}
+
+UP_JAP_cooperate_with_manchurian_government_effect = {
+	set_country_flag = UP_JAP_manchu_cooperation_government_unlocked
+	UP_JAP_apply_manchurian_resistance_reduction_5 = yes
+	UP_JAP_apply_manchurian_resistance_reduction_5 = yes
+	UP_JAP_apply_manchurian_compliance_20 = yes
+	UP_JAP_reduce_fiscal_pressure_small = yes
+	UP_JAP_add_toseiha_prestige_small = yes
+	UP_JAP_add_kodoha_prestige_3 = yes
+	set_occupation_law_where_available = UP_JAP_manchu_cooperation_government_law
+	if = {
+		limit = { XIC = { exists = yes } }
+		puppet = XIC
+		XIC = { add_ideas = UP_XIC_manchu_cooperation_government }
+	}
+}
+
+UP_JAP_enemy_of_my_enemy_effect = {
+	add_political_power = 50
+	if = {
+		limit = { GER = { exists = yes has_government = fascism } }
+		add_opinion_modifier = { target = GER modifier = positive_trade_relations }
+		GER = { add_opinion_modifier = { target = ROOT modifier = positive_trade_relations } }
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	if = { limit = { ENG = { exists = yes } } ENG = { add_opinion_modifier = { target = ROOT modifier = negative_trade_relations } } }
+	if = { limit = { USA = { exists = yes } } USA = { add_opinion_modifier = { target = ROOT modifier = negative_trade_relations } } }
+	if = { limit = { FRA = { exists = yes } } FRA = { add_opinion_modifier = { target = ROOT modifier = negative_trade_relations } } }
+}
+
+UP_JAP_march_toward_europe_effect = {
+	set_country_flag = UP_JAP_european_expedition_decisions_unlocked
+	add_ideas = UP_JAP_european_expedition_plan
+	add_war_support = 0.05
+	UP_JAP_add_fiscal_pressure_medium = yes
+}
+
+UP_JAP_from_vladivostok_to_caucasus_effect = {
+	set_country_flag = UP_JAP_eurasian_corridor_decisions_unlocked
+	add_ideas = UP_JAP_eurasian_corridor_plan
+	UP_JAP_add_kodoha_prestige_8 = yes
+	UP_JAP_add_fiscal_pressure_8 = yes
+}
+
+UP_JAP_march_to_caucasus_effect = {
+	if = { limit = { CAU = { exists = yes NOT = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = CAU } }
+	add_timed_idea = { idea = UP_JAP_caucasus_mountain_campaign days = 180 }
+	add_ideas = UP_JAP_caucasus_oil_drive
+	UP_JAP_add_fiscal_pressure_8 = yes
+	if = { limit = { controls_state = 229 } 229 = { add_resource = { type = oil amount = 24 } } }
+	if = { limit = { controls_state = 229 } set_country_flag = UP_JAP_monthly_fiscal_relief_caucasus }
+	country_event = { id = up_japan.54 days = 1 }
+}
+
+UP_JAP_emperors_frozen_frontier_effect = {
+	add_stability = 0.03
+	add_ideas = UP_JAP_frozen_frontier
+	UP_JAP_apply_far_east_resistance_reduction_10 = yes
+	set_country_flag = UP_JAP_monthly_fiscal_relief_frozen_frontier
+}
+
+UP_JAP_hakko_northern_frontier_effect = {
+	country_event = { id = up_japan.55 days = 1 }
+	add_ideas = UP_JAP_hakko_northern_frontier_idea
+	set_country_flag = UP_JAP_monthly_fiscal_relief_north
+	UP_JAP_add_kodoha_prestige_medium = yes
+	UP_JAP_add_kodoha_prestige_small = yes
+	add_war_support = 0.10
+}

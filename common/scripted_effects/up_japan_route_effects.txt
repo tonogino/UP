@@ -1,0 +1,93 @@
+UP_JAP_add_manchukuo_cores = {
+	328 = { add_core_of = MAN }
+	610 = { add_core_of = MAN }
+	714 = { add_core_of = MAN }
+	715 = { add_core_of = MAN }
+	716 = { add_core_of = MAN }
+	717 = { add_core_of = MAN }
+	761 = { add_core_of = MAN }
+}
+
+UP_JAP_transfer_manchuria_to_MAN = {
+	328 = { transfer_state_to = MAN }
+	610 = { transfer_state_to = MAN }
+	714 = { transfer_state_to = MAN }
+	715 = { transfer_state_to = MAN }
+	716 = { transfer_state_to = MAN }
+	717 = { transfer_state_to = MAN }
+	761 = { transfer_state_to = MAN }
+}
+
+UP_JAP_create_manchukuo_subject = {
+	custom_effect_tooltip = UP_JAP_manchukuo_created_tt
+	hidden_effect = {
+		UP_JAP_add_manchukuo_cores = yes
+		if = {
+			limit = { XIC = { exists = yes } }
+			annex_country = { target = XIC transfer_troops = yes }
+		}
+		if = {
+			limit = { NOT = { MAN = { exists = yes } } }
+			release = MAN
+		}
+		if = {
+			limit = { MAN = { exists = yes } }
+			puppet = MAN
+			UP_JAP_transfer_manchuria_to_MAN = yes
+		}
+	}
+}
+
+UP_JAP_prepare_reorganized_china_cores = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				is_core_of = CHI
+				is_core_of = CKG
+				is_core_of = PRC
+				is_core_of = SHX
+				is_core_of = GXC
+				is_core_of = YUN
+				is_core_of = SIK
+				is_core_of = TIB
+				is_core_of = XSM
+			}
+		}
+		add_core_of = RGC
+	}
+}
+
+UP_JAP_transfer_china_to_reorganized_government = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				is_core_of = CHI
+				is_core_of = CKG
+				is_core_of = PRC
+				is_core_of = SHX
+				is_core_of = GXC
+				is_core_of = YUN
+				is_core_of = SIK
+				is_core_of = TIB
+				is_core_of = XSM
+			}
+		}
+		transfer_state_to = RGC
+	}
+}
+
+UP_JAP_create_reorganized_china = {
+	custom_effect_tooltip = UP_JAP_reorganized_china_created_tt
+	hidden_effect = {
+		UP_JAP_prepare_reorganized_china_cores = yes
+		if = {
+			limit = { NOT = { RGC = { exists = yes } } }
+			release = RGC
+		}
+		if = {
+			limit = { RGC = { exists = yes } }
+			puppet = RGC
+			UP_JAP_transfer_china_to_reorganized_government = yes
+		}
+	}
+}

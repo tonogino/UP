@@ -11,7 +11,6 @@ on_actions = {
 				}
 			}
 			JAP = {
-				UP_JAP_start_imperial_conference = yes
 				country_event = { id = up_asia.2 }
 				if = {
 					limit = { is_ai = no }
@@ -77,6 +76,7 @@ on_actions = {
 			JAP = {
 				if = {
 					limit = { has_country_flag = UP_JAP_imperial_conference_active }
+					UP_JAP_monthly_fiscal_balance_effect = yes
 					UP_JAP_update_imperial_conference_gui = yes
 				}
 				if = {

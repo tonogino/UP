@@ -1149,8 +1149,445 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.10
 				army_org_factor = 0.05
-				research_speed_factor = 0.04
+				research_speed_factor = 0.10
+				production_speed_supply_node_factor = 0.15
 				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_JAP_northern_governorate = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = -0.05
+				non_core_manpower = 0.003
+			}
+		}
+
+		UP_JAP_imperial_spiritual_education = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.05
+				army_org_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
+
+		UP_JAP_second_northern_advance_idea = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_siberian_railway_military_control = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		UP_JAP_chita_operation_plan = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.10
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_irkutsk_winter_campaign = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.10
+				army_org_factor = 0.03
+			}
+		}
+
+		UP_JAP_northern_imperial_defense = {
+			picture = generic_defence
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = -0.05
+				production_speed_bunker_factor = 0.10
+				production_speed_anti_air_building_factor = 0.10
+			}
+		}
+
+		UP_JAP_hakko_northern_frontier_idea = {
+			picture = generic_national_unity
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_org_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.15
+				required_garrison_factor = -0.10
+			}
+		}
+
+		UP_JAP_combined_fleet_budget_idea = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				experience_gain_navy_factor = 0.05
+			}
+		}
+
+		UP_JAP_navy_special_budget_bureau = {
+			picture = generic_construct_naval_dockyard
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_dockyard_factor = 0.10
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_JAP_southern_map_recompiled = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.05
+				naval_coordination = 0.03
+			}
+		}
+
+		UP_JAP_imperial_resource_priority_order = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		UP_JAP_malacca_strategy_idea = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				army_attack_factor = 0.03
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_singapore_fortress_studies = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_pacific_first_strike = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.10
+				industrial_capacity_dockyard = 0.10
+				planning_speed = 0.10
+			}
+		}
+
+		UP_JAP_imperial_sea_lifeline = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				local_resources_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+			}
+		}
+
+		UP_JAP_manpower_first = {
+			picture = generic_manpower
+			allowed = { original_tag = JAP }
+			modifier = {
+				conscription_factor = 0.01
+				training_time_army_factor = -0.05
+				army_org_factor = 0.03
+				industrial_capacity_factory = -0.03
+			}
+		}
+
+		UP_JAP_equipment_first = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.03
+				conscription_factor = -0.005
+			}
+		}
+
+		UP_JAP_modern_armor_program = {
+			picture = generic_tank_production
+			allowed = { original_tag = JAP }
+			modifier = {
+				armor_research_speed = 0.10
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		UP_JAP_amphibious_armor_program = {
+			picture = generic_tank_production
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.03
+				naval_coordination = 0.03
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_infantry_equipment_drive = {
+			picture = generic_infantry_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		UP_JAP_superior_firepower_drive = {
+			picture = generic_artillery
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		UP_JAP_chosen_warriors = {
+			picture = generic_special_forces
+			allowed = { original_tag = JAP }
+			modifier = {
+				special_forces_cap = 0.02
+				army_attack_factor = 0.03
+				war_support_factor = 0.03
+			}
+		}
+
+		UP_JAP_will_supremacy = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_org_regain = 0.05
+				supply_consumption_factor = 0.03
+			}
+		}
+
+		UP_JAP_banzai_spirit = {
+			picture = generic_national_unity
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.10
+				surrender_limit = 0.10
+				army_attack_factor = 0.03
+				stability_factor = -0.03
+			}
+		}
+
+		UP_JAP_showa_air_company_idea = {
+			picture = generic_air
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_factory = 0.03
+				experience_gain_air_factor = 0.05
+			}
+		}
+
+		UP_JAP_fighter_program = {
+			picture = generic_air_fighter
+			allowed = { original_tag = JAP }
+			modifier = {
+				air_superiority_efficiency = 0.05
+			}
+		}
+
+		UP_JAP_modern_bomber_program = {
+			picture = generic_air_bomber
+			allowed = { original_tag = JAP }
+			modifier = {
+				air_bombing_targetting = 0.05
+			}
+		}
+
+		UP_JAP_imported_flight_instructors = {
+			picture = generic_air
+			allowed = { original_tag = JAP }
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+				air_training_xp_gain_factor = 0.05
+			}
+		}
+
+		UP_JAP_range_first = {
+			picture = generic_air
+			allowed = { original_tag = JAP }
+			modifier = {
+				air_range_factor = 0.10
+				air_accidents_factor = 0.03
+			}
+		}
+
+		UP_JAP_air_power_first = {
+			picture = generic_air_fighter
+			allowed = { original_tag = JAP }
+			modifier = {
+				air_attack_factor = 0.05
+				air_range_factor = -0.05
+			}
+		}
+
+		UP_JAP_new_air_doctrine = {
+			picture = generic_air
+			allowed = { original_tag = JAP }
+			modifier = {
+				experience_gain_air_factor = 0.08
+			}
+		}
+
+		UP_JAP_kamikaze_concept = {
+			picture = generic_air
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.05
+				air_accidents_factor = 0.05
+				naval_strike_attack_factor = 0.10
+			}
+		}
+
+		UP_JAP_nationalized_air_system = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.03
+			}
+		}
+
+		UP_JAP_naval_technical_bureau = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		UP_JAP_carrier_emphasis = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+				naval_coordination = 0.05
+			}
+		}
+
+		UP_JAP_battleship_plan_idea = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_dockyard = 0.08
+				naval_coordination = 0.03
+			}
+		}
+
+		UP_JAP_surface_firepower = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				shore_bombardment_bonus = 0.10
+			}
+		}
+
+		UP_JAP_undersea_threat = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.10
+				naval_speed_factor = 0.03
+			}
+		}
+
+		UP_JAP_akizuki_destroyers = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				navy_anti_air_attack_factor = 0.05
+			}
+		}
+
+		UP_JAP_carrier_air_integration = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				naval_strike_attack_factor = 0.05
+			}
+		}
+
+		UP_JAP_true_maritime_hegemony_idea = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				naval_morale_factor = 0.05
+			}
+		}
+
+		UP_JAP_navy_dominates_conference = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				production_speed_dockyard_factor = 0.10
+				stability_factor = -0.03
+			}
+		}
+
+		UP_JAP_china_infiltration = {
+			picture = generic_intelligence_exchange
+			allowed = { original_tag = JAP }
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.10
+				resistance_target = -0.05
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_tokyo_nanjing_axis_idea = {
+			picture = generic_diplomacy
+			allowed = { original_tag = JAP }
+			modifier = {
+				subjects_autonomy_gain = -0.10
+				trade_opinion_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		UP_JAP_china_resource_exploitation = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_resources_factor = 0.10
+				resistance_target = 0.05
+			}
+		}
+
+		UP_JAP_greater_east_asia_order = {
+			picture = generic_national_unity
+			allowed = { original_tag = JAP }
+			modifier = {
+				subjects_autonomy_gain = -0.10
+				war_support_factor = 0.05
+				political_power_gain = 0.05
 			}
 		}
 

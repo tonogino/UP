@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="HOI4 Modding Tools">
+  <diagram id="focus-tree" name="UP_japan_focus">
+    <mxGraphModel dx="6847" dy="3943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-328" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="召开御前会议 [title]&lt;br&gt;70 [days]&lt;br&gt;UP_JAP_convene_imperial_conference [id]&lt;br&gt;GFX_goal_generic_political_pressure [icon]" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="124" parent="1" style="text;html=1;strokeColor=#999999;fillColor=#ffffff;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=10;fontColor=#333333;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#0000FF&quot;&gt;---&lt;/font&gt; Prerequisite (AND)&lt;br&gt;&lt;font color=&quot;#4444FF&quot;&gt;...&lt;/font&gt; Prerequisite (OR)&lt;br&gt;&lt;font color=&quot;#FF0000&quot;&gt;- -&lt;/font&gt; Mutually Exclusive" vertex="1">
+          <mxGeometry height="70" width="150" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-324" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-323">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-354" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-327">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-432" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-431">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-132" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;北方胜利的继承人&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-142" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-136" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="整肃远东军纪" vertex="1">
+          <mxGeometry height="120" width="180" x="4640" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-204" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-199">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-205" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-202">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-210" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-209">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-137" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重估大陆战略" vertex="1">
+          <mxGeometry height="120" width="180" x="6660" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-247" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-244">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-248" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-245">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-138" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="南阳资源调查" vertex="1">
+          <mxGeometry height="120" width="180" x="8530" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-143" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-144" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-139" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="设立北方总督府" vertex="1">
+          <mxGeometry height="120" width="180" x="4640" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-148" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-150" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-201" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-200">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-140" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="强化皇军精神教育" vertex="1">
+          <mxGeometry height="120" width="180" x="4460" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-149" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-151" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-141" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩编关东军残部" vertex="1">
+          <mxGeometry height="120" width="180" x="4800" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-168" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-167">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-145" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="面对西伯利亚的威胁" vertex="1">
+          <mxGeometry height="120" width="180" x="4640" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-162" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-163" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-161">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-146" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="人力至上" vertex="1">
+          <mxGeometry height="120" width="180" x="4210" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-154" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-155" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-153">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-147" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="装备至上" vertex="1">
+          <mxGeometry height="120" width="180" x="5050" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-157" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-152" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="现代化装甲" vertex="1">
+          <mxGeometry height="120" width="180" x="4870" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-158" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-159" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;strokeColor=#FF3333;" target="aZ7-KLMzefHFHwC1U1um-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-153" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="海陆一体化装甲" vertex="1">
+          <mxGeometry height="120" width="180" x="5230" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-156" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="机动战士高达" vertex="1">
+          <mxGeometry height="120" width="180" x="5050" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-165" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-160" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="步兵装备" vertex="1">
+          <mxGeometry height="120" width="180" x="4030" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-166" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-161" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="优势火力" vertex="1">
+          <mxGeometry height="120" width="180" x="4390" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-164" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="天皇钦点战士" vertex="1">
+          <mxGeometry height="120" width="180" x="4210" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-173" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-174" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-170">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-268" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-167" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;伊邪那岐大神&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="4640" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-196" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-195">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-169" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;适应西伯利亚极寒天气&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="4450" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-197" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-195">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-198" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;strokeColor=#FF3333;" target="aZ7-KLMzefHFHwC1U1um-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-170" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;日产哥萨克骑兵&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="4840" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-181" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-183">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-182" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;西伯利亚铁路线&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="5350" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-193" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-192">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-183" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;扩建远东基础设施&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="5350" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-186" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-185" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4820" y="330" as="sourcePoint" />
+            <mxPoint x="5550" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-190" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-187">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-191" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-182">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-185" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;扩建远东殖民省&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="5530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-189" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-188">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-187" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;大力扶持远东重工业&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="5690" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-194" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-188" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-192">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-188" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;远东资源开发&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="5690" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-192" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;西伯利亚制造厂&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="5520" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-195" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;西伯利亚陆军&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="4640" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-211" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-199" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-203">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-213" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-199" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-207">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-199" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北工业开发" vertex="1">
+          <mxGeometry height="120" width="180" x="6150" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-200" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="远东科技大学" vertex="1">
+          <mxGeometry height="120" width="180" x="4420" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-220" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-218">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-221" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-224" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-202" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="朝鲜工业线" vertex="1">
+          <mxGeometry height="120" width="180" x="7160" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-212" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-206">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-203" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北军工" vertex="1">
+          <mxGeometry height="120" width="180" x="5970" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-216" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-215">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-206" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北民工" vertex="1">
+          <mxGeometry height="120" width="180" x="5970" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-214" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-207" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北铁路" vertex="1">
+          <mxGeometry height="120" width="180" x="6320" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-217" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-208" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-215">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-208" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北基建" vertex="1">
+          <mxGeometry height="120" width="180" x="6320" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-228" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-226">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-229" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-227">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-209" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="加强东北驻军" vertex="1">
+          <mxGeometry height="120" width="180" x="6660" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-215" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北殖民株式会社" vertex="1">
+          <mxGeometry height="120" width="180" x="6150" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-218" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="增加农业出口" vertex="1">
+          <mxGeometry height="120" width="180" x="6980" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-219" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="水力发电大坝" vertex="1">
+          <mxGeometry height="120" width="180" x="7340" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-225" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-222" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-223">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-222" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="为半岛战争做准备" vertex="1">
+          <mxGeometry height="120" width="180" x="7160" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-223" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩编朝鲜军" vertex="1">
+          <mxGeometry height="120" width="180" x="7160" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-231" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-230">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-226" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="国家总力战研究会" vertex="1">
+          <mxGeometry height="120" width="180" x="6520" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-232" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-230">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-227" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="陆军省工业委员会" vertex="1">
+          <mxGeometry height="120" width="180" x="6790" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-236" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-233">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-230" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="哈尔滨工业大学" vertex="1">
+          <mxGeometry height="120" width="180" x="6660" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-239" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-233" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-238">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-240" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-233" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-237">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-233" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="大力开发东北资源" vertex="1">
+          <mxGeometry height="120" width="180" x="6660" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-237" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东北东京合作政府" vertex="1">
+          <mxGeometry height="120" width="180" x="6660" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-238" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="去你妈的皇道派" vertex="1">
+          <mxGeometry height="120" width="180" x="6350" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-251" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-249">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-252" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-250">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-275" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-274">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-244" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="昭和航空会社" vertex="1">
+          <mxGeometry height="120" width="180" x="7870" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-287" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-276">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-288" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-277">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-245" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="平家海军会社" vertex="1">
+          <mxGeometry height="120" width="180" x="9140" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-254" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-249" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="强大的战斗机" vertex="1">
+          <mxGeometry height="120" width="180" x="7650" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-255" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-250" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="现代化轰炸机" vertex="1">
+          <mxGeometry height="120" width="180" x="8110" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-258" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-256">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-259" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-257">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-261" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-260">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-253" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="引进人才飞行员" vertex="1">
+          <mxGeometry height="120" width="180" x="7870" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-256" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="航程至上" vertex="1">
+          <mxGeometry height="120" width="180" x="7690" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-262" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;dashed=1;dashPattern=8 8;" target="aZ7-KLMzefHFHwC1U1um-256">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-257" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="战力至上" vertex="1">
+          <mxGeometry height="120" width="180" x="8050" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-271" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-263">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-272" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-264">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-260" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="新型空军学说" vertex="1">
+          <mxGeometry height="120" width="180" x="7870" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-267" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-263" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-322" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-263" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;strokeColor=#FF3333;" target="aZ7-KLMzefHFHwC1U1um-264">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-263" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="神风会保护我们" vertex="1">
+          <mxGeometry height="120" width="180" x="7660" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-320" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-264" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-319">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-264" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="空军体系国有化" vertex="1">
+          <mxGeometry height="120" width="180" x="8120" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-270" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-266" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-269">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-266" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;意志至上&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="6190" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-269" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#474747&quot; face=&quot;Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;天皇万岁！&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="6190" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-316" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-274" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-310">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-274" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="海陆轰炸机" vertex="1">
+          <mxGeometry height="120" width="180" x="8340" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-281" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-278">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-282" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-279">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-276" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩大海军技术部" vertex="1">
+          <mxGeometry height="120" width="180" x="8960" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-283" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-277" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-279">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-284" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-277" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-280">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-277" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="备战南方战线" vertex="1">
+          <mxGeometry height="120" width="180" x="9320" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-285" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-278" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;strokeColor=#FF3333;" target="aZ7-KLMzefHFHwC1U1um-279">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-290" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-278" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-289">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-278" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重视航母" vertex="1">
+          <mxGeometry height="120" width="180" x="8780" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-286" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;dashed=1;dashPattern=8 8;" target="aZ7-KLMzefHFHwC1U1um-280">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-295" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-293">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-296" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-294">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-299" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-297">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-279" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="均匀海军发展" vertex="1">
+          <mxGeometry height="120" width="180" x="9140" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-292" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-291">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-280" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="战列舰计划" vertex="1">
+          <mxGeometry height="120" width="180" x="9490" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-289" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="赤诚与加贺号" vertex="1">
+          <mxGeometry height="120" width="180" x="8530" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-291" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="大和与三笠号" vertex="1">
+          <mxGeometry height="120" width="180" x="9720" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-303" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-300">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-293" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="海面上的火力" vertex="1">
+          <mxGeometry height="120" width="180" x="8910" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-306" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-294" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-302">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-294" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="海绵下的威胁" vertex="1">
+          <mxGeometry height="120" width="180" x="9370" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-297" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="秋月驱逐舰" vertex="1">
+          <mxGeometry height="120" width="180" x="9140" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-311" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-300" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-308">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-300" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩建广岛吴海军工厂" vertex="1">
+          <mxGeometry height="120" width="180" x="8770" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-312" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-308">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-313" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-309">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-301" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩建横滨贺海军工厂" vertex="1">
+          <mxGeometry height="120" width="180" x="9140" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-314" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-309">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-302" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩建佐世保海军工厂" vertex="1">
+          <mxGeometry height="120" width="180" x="9490" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-305" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="9000" y="970" as="sourcePoint" />
+            <mxPoint x="9560" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-307" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="aZ7-KLMzefHFHwC1U1um-301" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="9230" y="910" as="sourcePoint" />
+            <mxPoint x="9280" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-315" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-308" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-310">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-308" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="海空一体化" vertex="1">
+          <mxGeometry height="120" width="180" x="8950" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-318" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-309" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-317">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-309" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扩充舰艇" vertex="1">
+          <mxGeometry height="120" width="180" x="9320" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-321" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-310" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-319">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-310" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="真正的海上霸权" vertex="1">
+          <mxGeometry height="120" width="180" x="8630" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-317" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="啊，海军" vertex="1">
+          <mxGeometry height="120" width="180" x="9320" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-319" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="实现海陆全面现代化" vertex="1">
+          <mxGeometry height="120" width="180" x="8170" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-330" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-323" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-329">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-332" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-323" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-331">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-323" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;北方总军部成立&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="3150" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-357" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-327" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-356">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-371" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-327" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-369">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-372" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-327" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-370">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-327" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;国家总力站体制&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-334" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-329" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-333">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-329" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;肃清白军残党&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2970" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-335" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-331" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-333">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-331" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;哥萨克归顺法案&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="3330" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-337" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-333" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-336">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-382" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-333" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-380">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-485" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-333" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-484">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-333" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;西伯利亚铁路归军&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="3150" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-339" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-336" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-338">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-341" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-336" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-340">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-343" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-336" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-342">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-336" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;第二次北进&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="3150" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-346" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-338" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-344">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-338" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;赤塔作战&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2900" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-349" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-340" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-345">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-340" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;伊尔库茨克会战&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="3410" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-347" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-342" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-344">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-348" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-342" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-345">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-342" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="向高加索进军" vertex="1">
+          <mxGeometry height="120" width="180" x="3150" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-351" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-344" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-350">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-344" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="北方皇国防线" vertex="1">
+          <mxGeometry height="120" width="180" x="3010" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-352" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-345" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="aZ7-KLMzefHFHwC1U1um-350">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-345" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="天皇的冻土边疆" vertex="1">
+          <mxGeometry height="120" width="180" x="3280" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-350" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="八纮北境" vertex="1">
+          <mxGeometry height="120" width="180" x="3150" y="1690" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-361" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-356" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-360">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-356" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="密谋炸死张作霖" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-364" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-360" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-363">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-360" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="918在显" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-376" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-363" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-366">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-377" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-363" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-367">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-379" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-363" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-378">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-363" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="新京入城" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-385" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-366" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-384">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-366" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="扶持东北基建" vertex="1">
+          <mxGeometry height="120" width="180" x="1960" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-387" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-367" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-384">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-367" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="在东北实行宣扶策略" vertex="1">
+          <mxGeometry height="120" width="180" x="2450" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-374" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-368" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-356">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-368" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="深入东北地下" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-373" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-369" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-356">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-369" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="摸清东北底细" vertex="1">
+          <mxGeometry height="120" width="180" x="1950" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-375" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-370" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-356">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-370" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="接触爱新觉罗溥仪" vertex="1">
+          <mxGeometry height="120" width="180" x="2460" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-386" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-378" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-384">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-378" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="日满通婚策略" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-383" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-380" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-381">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-380" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="与满洲政府合作" vertex="1">
+          <mxGeometry height="120" width="180" x="3740" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-381" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="从海参崴到高加索" vertex="1">
+          <mxGeometry height="120" width="180" x="3740" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-390" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-384" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-389">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-391" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-384" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-388">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-393" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-384" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-392">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-384" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="天皇脚下的黑土地" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-415" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-388" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-413">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-388" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="建立蒙古军政府" vertex="1">
+          <mxGeometry height="120" width="180" x="1870" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-417" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-389" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-413">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-418" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-389" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-412">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-389" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="21条约" vertex="1">
+          <mxGeometry height="120" width="180" x="2210" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-416" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-392" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-412">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-392" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="渗透中华苏维埃政府" vertex="1">
+          <mxGeometry height="120" width="180" x="2570" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-405" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-399" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-401">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-406" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-399" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-402">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-422" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-399" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-407">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-423" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-399" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-403">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-399" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="重组国民政府" vertex="1">
+          <mxGeometry height="120" width="180" x="2020" y="2280" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-469" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-401" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-467">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-401" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="肃清剩余中华反对势力" vertex="1">
+          <mxGeometry height="120" width="180" x="1840" y="2520" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-468" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-402" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-467">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-402" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="开发中华资源" vertex="1">
+          <mxGeometry height="120" width="180" x="2200" y="2520" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-403" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="战略攻势" vertex="1">
+          <mxGeometry height="120" width="180" x="1770" y="2280" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-410" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-407" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-409">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-407" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="进军西藏" vertex="1">
+          <mxGeometry height="120" width="180" x="2420" y="2330" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-409" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="整合藏族占领区" vertex="1">
+          <mxGeometry height="120" width="180" x="2420" y="2520" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-425" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-412" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-424">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-412" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="合力清剿剩余势力" vertex="1">
+          <mxGeometry height="120" width="180" x="2410" y="1990" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-419" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-413" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;" target="aZ7-KLMzefHFHwC1U1um-412">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-420" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-413" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-399">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-413" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="卢沟桥事变" vertex="1">
+          <mxGeometry height="120" width="180" x="2020" y="1990" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-430" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-424" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-426">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-424" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="东京-南京轴心" vertex="1">
+          <mxGeometry height="120" width="180" x="2660" y="2840" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-426" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="一统大东亚" vertex="1">
+          <mxGeometry height="120" width="180" x="2020" y="2940" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-434" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-431" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-433">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-431" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;南洋生命线&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1030" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-438" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-433" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-435">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-439" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-433" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-436">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-440" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-433" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-437">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-433" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;联合舰队预算案&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1030" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-446" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-435" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-445">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-435" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;削减北方舰队护航任务&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="750" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-447" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-436" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-445">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-436" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;海军省特别预算局&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1030" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-448" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-437" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-445">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-437" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;财阀造船合同&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1270" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-441" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-443">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4830" y="1220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-443" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="去你妈的财阀" vertex="1">
+          <mxGeometry height="120" width="180" x="5080" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-450" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-445" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-449">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-464" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-445" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-463">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-445" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;南洋地图重编&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1030" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-452" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-449" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-451">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-449" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;对荷属东印度施压&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="610" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-454" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-451" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-453">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-451" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="索要法属东南亚" vertex="1">
+          <mxGeometry height="120" width="180" x="610" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-459" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-453" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-455">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-460" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-453" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-456">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-461" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-453" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-457">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-462" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-453" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-458">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-472" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-453" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-471">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-475" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-453" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-474">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-453" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="马六甲战略" vertex="1">
+          <mxGeometry height="120" width="180" x="610" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-455" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="巴达维亚作战草案" vertex="1">
+          <mxGeometry height="120" width="180" x="230" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-456" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="马来亚橡胶封锁计划" vertex="1">
+          <mxGeometry height="120" width="180" x="460" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-457" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="关岛与威克岛压制" vertex="1">
+          <mxGeometry height="120" width="180" x="750" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-458" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="菲律宾孤立计划" vertex="1">
+          <mxGeometry height="120" width="180" x="960" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-466" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-463" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-465">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-463" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;帕奈号事件&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1380" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-473" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-465" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-471">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-465" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;珍珠港事件&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1380" y="1835" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-470" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-467" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-426">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-467" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="向印度进军" vertex="1">
+          <mxGeometry height="120" width="180" x="2020" y="2720" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-477" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-471" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-476">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-471" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="帝国第一击" vertex="1">
+          <mxGeometry height="120" width="180" x="790" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-474" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="开发南方资源" vertex="1">
+          <mxGeometry height="120" width="180" x="460" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-476" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="沧海一统" vertex="1">
+          <mxGeometry height="120" width="180" x="790" y="2340" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-487" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-484" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-486">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-484" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;敌人的敌人&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2700" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-489" edge="1" parent="1" source="aZ7-KLMzefHFHwC1U1um-486" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aZ7-KLMzefHFHwC1U1um-488">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-486" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="&lt;div&gt;东京-柏林条约&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2700" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="aZ7-KLMzefHFHwC1U1um-488" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="向欧洲进军" vertex="1">
+          <mxGeometry height="120" width="180" x="2700" y="1260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

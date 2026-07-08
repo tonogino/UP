@@ -6,4 +6,259 @@ UP_japan_imperial_conference_decisions = {
 		visible = { OR = { original_tag = JAP tag = JAP } }
 		complete_effect = { }
 	}
+
+	UP_JAP_requisition_civilian_steel = {
+		icon = generic_construct_mil_factory
+		cost = 35
+		days_remove = 180
+		visible = { has_country_flag = UP_JAP_total_mobilization_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_total_mobilization_steel_requisition days = 180 }
+			add_stability = -0.02
+		}
+	}
+
+	UP_JAP_prioritize_military_orders = {
+		icon = generic_construct_mil_factory
+		cost = 45
+		days_remove = 180
+		visible = { has_country_flag = UP_JAP_total_mobilization_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_total_mobilization_military_orders days = 180 }
+		}
+	}
+
+	UP_JAP_unify_army_procurement = {
+		icon = generic_army_reform
+		cost = 50
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_total_mobilization_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_total_mobilization_unified_procurement days = 180 }
+			UP_JAP_add_fiscal_pressure_3 = yes
+		}
+	}
+
+	UP_JAP_winter_supply_exercises = {
+		icon = generic_attack_bonus
+		cost = 35
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_northern_theater_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_winter_supply_exercises days = 120 }
+			UP_JAP_add_fiscal_pressure_2 = yes
+		}
+	}
+
+	UP_JAP_expand_railway_guard_units = {
+		icon = generic_defence
+		cost = 35
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_northern_theater_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_railway_guard_expansion days = 180 }
+			add_to_variable = { UP_JAP_far_east_resistance = -5 }
+			UP_JAP_add_fiscal_pressure_2 = yes
+			UP_JAP_update_imperial_conference_gui = yes
+		}
+	}
+
+	UP_JAP_northern_air_reconnaissance = {
+		icon = generic_air
+		cost = 30
+		days_remove = 90
+		visible = { has_country_flag = UP_JAP_northern_theater_decisions_unlocked }
+		complete_effect = {
+			add_air_experience = 10
+			add_timed_idea = { idea = UP_JAP_northern_operation_planning days = 90 }
+		}
+	}
+
+	UP_JAP_pacify_mukden = {
+		icon = generic_political_pressure
+		cost = 35
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_northeast_pacification_decisions_unlocked }
+		available = { controls_state = 715 }
+		complete_effect = { 715 = { add_resistance = -5 add_compliance = 10 } }
+	}
+
+	UP_JAP_pacify_harbin = {
+		icon = generic_political_pressure
+		cost = 35
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_northeast_pacification_decisions_unlocked }
+		available = { controls_state = 610 }
+		complete_effect = { 610 = { add_resistance = -5 add_compliance = 10 } }
+	}
+
+	UP_JAP_apply_northeast_pacification_law = {
+		icon = generic_political_pressure
+		cost = 25
+		days_remove = 60
+		visible = { has_country_flag = UP_JAP_northeast_pacification_decisions_unlocked }
+		complete_effect = { set_occupation_law_where_available = UP_JAP_northeast_pacification_law }
+	}
+
+	UP_JAP_north_china_breakthrough = {
+		icon = generic_attack_bonus
+		cost = 40
+		days_remove = 90
+		visible = { has_country_flag = UP_JAP_continental_offensive_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_north_china_breakthrough days = 90 }
+			UP_JAP_add_fiscal_pressure_2 = yes
+		}
+	}
+
+	UP_JAP_yangtze_offensive = {
+		icon = generic_attack_bonus
+		cost = 50
+		days_remove = 90
+		visible = { has_country_flag = UP_JAP_continental_offensive_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_yangtze_offensive days = 90 }
+			UP_JAP_add_fiscal_pressure_3 = yes
+		}
+	}
+
+	UP_JAP_railway_supply_priority = {
+		icon = generic_construct_infrastructure
+		cost = 45
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_continental_offensive_decisions_unlocked }
+		complete_effect = { add_timed_idea = { idea = UP_JAP_railway_supply_priority days = 120 } }
+	}
+
+	UP_JAP_air_ground_coordination = {
+		icon = generic_air
+		cost = 40
+		days_remove = 90
+		visible = { has_country_flag = UP_JAP_continental_offensive_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_JAP_air_ground_coordination days = 90 }
+			add_air_experience = -10
+		}
+	}
+
+	UP_JAP_puppet_coordinated_offensive = {
+		icon = generic_major_alliance
+		cost = 45
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_continental_offensive_decisions_unlocked }
+		available = { any_subject_country = { capital_scope = { is_on_continent = asia } } }
+		complete_effect = {
+			every_subject_country = {
+				limit = { capital_scope = { is_on_continent = asia } }
+				add_timed_idea = { idea = UP_JAP_puppet_coordinated_offensive days = 120 }
+			}
+		}
+	}
+
+	UP_JAP_integrate_north_china_industry = {
+		icon = generic_construct_mil_factory
+		cost = 50
+		days_remove = 180
+		visible = { has_country_flag = UP_JAP_greater_east_asia_integration_decisions_unlocked }
+		available = { controls_state = 608 }
+		complete_effect = {
+			608 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } add_resource = { type = steel amount = 5 } }
+			UP_JAP_reduce_fiscal_pressure_2 = yes
+		}
+	}
+
+	UP_JAP_integrate_central_china_grain_tax = {
+		icon = generic_construct_civ_factory
+		cost = 45
+		days_remove = 180
+		visible = { has_country_flag = UP_JAP_greater_east_asia_integration_decisions_unlocked }
+		complete_effect = {
+			add_stability = 0.02
+			UP_JAP_reduce_fiscal_pressure_3 = yes
+		}
+	}
+
+	UP_JAP_recruit_cooperation_army = {
+		icon = generic_army_reform
+		cost = 50
+		days_remove = 180
+		visible = { has_country_flag = UP_JAP_greater_east_asia_integration_decisions_unlocked }
+		complete_effect = {
+			add_manpower = 50000
+			UP_JAP_apply_manchurian_compliance_10 = yes
+		}
+	}
+
+	UP_JAP_convene_greater_east_asia_conference = {
+		icon = generic_national_unity
+		cost = 75
+		days_remove = 365
+		visible = { has_country_flag = UP_JAP_greater_east_asia_integration_decisions_unlocked }
+		complete_effect = {
+			add_political_power = 50
+			every_subject_country = {
+				limit = { capital_scope = { is_on_continent = asia } }
+				add_opinion_modifier = { target = ROOT modifier = positive_trade_relations }
+			}
+		}
+	}
+
+	UP_JAP_expedition_to_black_sea = {
+		icon = generic_major_war
+		cost = 75
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_european_expedition_decisions_unlocked }
+		complete_effect = { if = { limit = { CAU = { exists = yes } } create_wargoal = { type = annex_everything target = CAU } } }
+	}
+
+	UP_JAP_expedition_to_ukraine = {
+		icon = generic_major_war
+		cost = 75
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_european_expedition_decisions_unlocked }
+		complete_effect = { if = { limit = { UKR = { exists = yes } } create_wargoal = { type = annex_everything target = UKR } } }
+	}
+
+	UP_JAP_expedition_to_belarus = {
+		icon = generic_major_war
+		cost = 75
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_european_expedition_decisions_unlocked }
+		complete_effect = { if = { limit = { BLR = { exists = yes } } create_wargoal = { type = annex_everything target = BLR } } }
+	}
+
+	UP_JAP_expedition_to_moscow = {
+		icon = generic_major_war
+		cost = 100
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_european_expedition_decisions_unlocked }
+		complete_effect = { if = { limit = { SOV = { exists = yes } } create_wargoal = { type = annex_everything target = SOV } } }
+	}
+
+	UP_JAP_repair_siberian_railway = {
+		icon = generic_construct_infrastructure
+		cost = 45
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_eurasian_corridor_decisions_unlocked }
+		complete_effect = {
+			if = { limit = { controls_state = 408 } 408 = { add_building_construction = { type = rail_way level = 1 instant_build = yes province = 6961 } } }
+			UP_JAP_add_fiscal_pressure_3 = yes
+		}
+	}
+
+	UP_JAP_establish_corridor_military_stations = {
+		icon = generic_construct_infrastructure
+		cost = 45
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_eurasian_corridor_decisions_unlocked }
+		complete_effect = { add_timed_idea = { idea = UP_JAP_railway_supply_priority days = 120 } }
+	}
+
+	UP_JAP_recruit_white_russian_guides = {
+		icon = generic_intelligence_exchange
+		cost = 40
+		days_remove = 120
+		visible = { has_country_flag = UP_JAP_eurasian_corridor_decisions_unlocked }
+		complete_effect = { add_timed_idea = { idea = UP_JAP_northern_sword days = 120 } }
+	}
 }

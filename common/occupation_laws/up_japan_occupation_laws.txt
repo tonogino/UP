@@ -1,0 +1,74 @@
+UP_JAP_northeast_pacification_law = {
+	tooltip = "UP_JAP_northeast_pacification_law_tt"
+	icon = 16
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+	fallback_law = foreign_civilian_oversight
+
+	visible = {
+		original_tag = JAP
+		has_country_flag = UP_JAP_northeast_pacification_decisions_unlocked
+		FROM = {
+			OR = {
+				original_tag = XIC
+				original_tag = MAN
+				original_tag = MEN
+				original_tag = MON
+				original_tag = KOR
+				original_tag = TIB
+				is_literally_china = yes
+			}
+		}
+	}
+
+	state_modifier = {
+		resistance_target = -0.20
+		compliance_gain = 0.01
+		required_garrison_factor = 0.05
+		resistance_damage_to_garrison = -0.35
+		local_factories = -0.10
+		local_resources = -0.10
+	}
+
+	ai_will_do = {
+		base = 250
+		modifier = {
+			check_variable = { resistance_target_without_law > 0.3 }
+			add = 200
+		}
+	}
+}
+
+UP_JAP_manchu_cooperation_government_law = {
+	tooltip = "UP_JAP_manchu_cooperation_government_law_tt"
+	icon = 13
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+	fallback_law = foreign_civilian_oversight
+
+	visible = {
+		original_tag = JAP
+		has_country_flag = UP_JAP_manchu_cooperation_government_unlocked
+		FROM = {
+			OR = {
+				original_tag = XIC
+				original_tag = MAN
+			}
+		}
+	}
+
+	state_modifier = {
+		resistance_target = -0.25
+		compliance_gain = 0.025
+		required_garrison_factor = -0.25
+		resistance_damage_to_garrison = -0.40
+		local_factories = -0.05
+		local_resources = 0.15
+	}
+
+	ai_will_do = {
+		base = 450
+		modifier = {
+			check_variable = { resistance_target_without_law > 0.2 }
+			add = 200
+		}
+	}
+}

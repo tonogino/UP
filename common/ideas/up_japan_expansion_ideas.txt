@@ -1,0 +1,412 @@
+ideas = {
+	country = {
+		UP_JAP_total_war_state_system_idea = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_efficiency_cap_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = 0.02
+				political_power_gain = -0.03
+			}
+		}
+
+		UP_JAP_total_mobilization_steel_requisition = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_resources_factor = 0.10
+				stability_factor = -0.02
+			}
+		}
+
+		UP_JAP_total_mobilization_military_orders = {
+			picture = generic_construct_mil_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		UP_JAP_total_mobilization_unified_procurement = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		UP_JAP_puyi_symbolic_manchuria = {
+			picture = generic_diplomacy
+			allowed = { original_tag = JAP }
+			modifier = {
+				compliance_gain = 0.10
+				resistance_target = -0.05
+			}
+		}
+
+		UP_JAP_puyi_propaganda_tool = {
+			picture = generic_propaganda
+			allowed = { original_tag = JAP }
+			modifier = {
+				war_support_factor = 0.03
+				justify_war_goal_time = -0.25
+			}
+		}
+
+		UP_JAP_northern_general_staff_idea = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.05
+				supply_consumption_factor = -0.03
+				experience_gain_army_factor = 0.05
+				consumer_goods_factor = 0.01
+			}
+		}
+
+		UP_JAP_northern_operation_planning = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.10
+			}
+		}
+
+		UP_JAP_winter_supply_exercises = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+
+		UP_JAP_railway_guard_expansion = {
+			picture = generic_defence
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = -0.05
+			}
+		}
+
+		UP_JAP_white_remnants_purged = {
+			picture = generic_army_reform
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = -0.05
+				resistance_target = -0.10
+			}
+		}
+
+		UP_JAP_white_remnant_budget_shortfall = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				stability_factor = -0.03
+				required_garrison_factor = 0.05
+			}
+		}
+
+		UP_JAP_cossack_security_settlement = {
+			picture = generic_cavalry
+			allowed = { original_tag = JAP }
+			modifier = {
+				resistance_target = -0.05
+				non_core_manpower = 0.003
+			}
+		}
+
+		UP_JAP_japan_manchuria_harmony_propaganda = {
+			picture = generic_propaganda
+			allowed = { original_tag = JAP }
+			modifier = {
+				compliance_gain = 0.05
+				enemy_operative_detection_chance_factor = 0.05
+				stability_factor = -0.01
+			}
+		}
+
+		UP_JAP_japan_manchuria_intermarriage_settlement = {
+			picture = generic_diplomacy
+			allowed = { original_tag = JAP }
+			modifier = {
+				compliance_gain = 0.05
+				resistance_target = -0.03
+				non_core_manpower = 0.002
+			}
+		}
+
+		UP_JAP_northeast_pacification_idea = {
+			picture = generic_political_pressure
+			allowed = { original_tag = JAP }
+			modifier = {
+				compliance_gain = 0.10
+				resistance_target = -0.05
+			}
+		}
+
+		UP_JAP_black_soil_under_emperor_idea = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				supply_consumption_factor = -0.03
+				non_core_manpower = 0.005
+			}
+		}
+
+		UP_JAP_mongolian_border_garrisons = {
+			picture = generic_cavalry
+			allowed = { original_tag = JAP }
+			modifier = {
+				required_garrison_factor = -0.05
+			}
+		}
+
+		UP_MEN_mongolian_frontier_military_government = {
+			picture = generic_cavalry
+			allowed = {
+				OR = {
+					original_tag = MEN
+					original_tag = MON
+				}
+			}
+			modifier = {
+				cavalry_attack_factor = 0.10
+				conscription_factor = 0.01
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		UP_JAP_continental_strategic_offensive = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				planning_speed = 0.10
+				breakthrough = 0.05
+			}
+		}
+
+		UP_JAP_north_china_breakthrough = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.10
+			}
+		}
+
+		UP_JAP_yangtze_offensive = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				river_crossing_factor = 0.10
+				planning_speed = 0.05
+			}
+		}
+
+		UP_JAP_railway_supply_priority = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = JAP }
+			modifier = {
+				supply_consumption_factor = -0.05
+				repair_speed_rail_way_factor = 0.15
+			}
+		}
+
+		UP_JAP_air_ground_coordination = {
+			picture = generic_air
+			allowed = { original_tag = JAP }
+			modifier = {
+				air_close_air_support_org_damage_factor = 0.10
+			}
+		}
+
+		UP_JAP_puppet_coordinated_offensive = {
+			picture = generic_major_alliance
+			allowed = { always = yes }
+			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+
+		UP_JAP_chinese_resource_development = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_resources_factor = 0.10
+				resistance_target = 0.03
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_JAP_tibetan_mountain_campaign = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		UP_JAP_tibetan_occupation_integration = {
+			picture = generic_political_discourse
+			allowed = { original_tag = JAP }
+			modifier = {
+				compliance_gain = 0.10
+				resistance_target = -0.10
+				training_time_army_factor = -0.05
+				non_core_manpower = 0.001
+			}
+		}
+
+		UP_JAP_greater_east_asia_unified_order = {
+			picture = generic_national_unity
+			allowed = { original_tag = JAP }
+			modifier = {
+				autonomy_manpower_share_from_subjects = 0.10
+				non_core_manpower = 0.01
+				compliance_gain = 0.10
+				justify_war_goal_time = -0.15
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		UP_JAP_asian_subject_integration = {
+			picture = generic_major_alliance
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.03
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		UP_JAP_southern_resource_zone = {
+			picture = generic_oil_refinery
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_resources_factor = 0.15
+				fuel_gain_factor = 0.10
+				production_speed_naval_base_factor = 0.10
+				resistance_target = 0.05
+			}
+		}
+
+		UP_JAP_hakko_ichiu_ocean = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_coordination = 0.05
+				naval_invasion_prep_speed = 0.10
+				local_resources_factor = 0.20
+				production_speed_naval_base_factor = 0.15
+			}
+		}
+
+		UP_JAP_southern_military_governorate = {
+			picture = generic_navy_doctrines_tactics
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_factories = 0.05
+				local_resources_factor = 0.20
+				resistance_target = 0.05
+				stability_factor = -0.03
+			}
+		}
+
+		UP_JAP_southern_development_company = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		UP_XIC_manchu_cooperation_government = {
+			picture = generic_diplomacy
+			allowed = { original_tag = XIC }
+			modifier = {
+				stability_factor = 0.10
+				industrial_capacity_factory = -0.05
+				trade_opinion_factor = 0.25
+			}
+		}
+
+		UP_JAP_european_expedition_plan = {
+			picture = generic_major_war
+			allowed = { original_tag = JAP }
+			modifier = {
+				naval_invasion_capacity = 5
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+
+		UP_JAP_eurasian_corridor_plan = {
+			picture = generic_construct_infrastructure
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_supply_node_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				army_org_factor = 0.03
+			}
+		}
+
+		UP_JAP_caucasus_mountain_campaign = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.10
+			}
+		}
+
+		UP_JAP_caucasus_oil_drive = {
+			picture = generic_oil_refinery
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+
+		UP_JAP_frozen_frontier = {
+			picture = generic_defence
+			allowed = { original_tag = JAP }
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.10
+				army_attack_factor = 0.05
+				required_garrison_factor = -0.05
+				supply_consumption_factor = -0.03
+				non_core_manpower = 0.005
+			}
+		}
+
+		UP_JAP_northern_wall = {
+			picture = generic_defence
+			allowed = { original_tag = JAP }
+			modifier = {
+				production_speed_bunker_factor = 0.20
+				required_garrison_factor = -0.10
+			}
+		}
+
+		UP_JAP_northern_sword = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = JAP }
+			modifier = {
+				army_attack_factor = 0.05
+				justify_war_goal_time = -0.25
+			}
+		}
+
+		UP_JAP_northern_self_support = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = JAP }
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+	}
+}
