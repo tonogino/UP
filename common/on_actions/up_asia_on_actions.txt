@@ -63,6 +63,38 @@ on_actions = {
 					country_event = { id = up_asia.324 }
 				}
 			}
+			XIC = {
+				if = {
+					limit = {
+						has_war_with = JAP
+						NOT = { has_country_flag = UP_XIC_route_choice_event_done }
+						NOT = { has_completed_focus = UP_XIC_focus_143 }
+						NOT = { has_completed_focus = UP_XIC_focus_171 }
+						NOT = { has_completed_focus = UP_XIC_focus_186 }
+					}
+					country_event = { id = up_xic.17 }
+				}
+				if = {
+					limit = {
+						has_country_flag = UP_XIC_tokyo_surrender_operation_unlocked
+						has_idea = UP_XIC_counterattack_japan_hq_spirit
+						controls_state = 282
+						NOT = { has_country_flag = UP_XIC_tokyo_drive_success }
+					}
+					set_country_flag = UP_XIC_tokyo_drive_success
+				}
+				if = {
+					limit = {
+						has_country_flag = UP_XIC_tokyo_drive_success
+						NOT = { has_country_flag = UP_XIC_postwar_tokyo_settlement_done }
+						OR = {
+							JAP = { has_capitulated = yes }
+							NOT = { has_war_with = JAP }
+						}
+					}
+					country_event = { id = up_xic.18 }
+				}
+			}
 		}
 	}
 	on_monthly = {

@@ -13,6 +13,69 @@ UP_XIC_fengtian_mechanic_decisions = {
 		complete_effect = { }
 	}
 
+	UP_XIC_integrate_local_taxation = {
+		icon = generic_political_discourse
+		cost = 35
+		days_remove = 1
+		days_re_enable = 180
+		visible = {
+			OR = {
+				has_completed_focus = UP_XIC_focus_236
+				has_completed_focus = UP_XIC_focus_240
+				has_idea = UP_XIC_northeast_military_government
+				has_idea = UP_XIC_guanwai_military_government_system
+			}
+		}
+		complete_effect = {
+			add_political_power = 75
+			add_stability = -0.01
+		}
+	}
+
+	UP_XIC_unify_railway_guard = {
+		icon = generic_construct_infrastructure
+		cost = 40
+		days_remove = 1
+		days_re_enable = 120
+		visible = {
+			OR = {
+				has_completed_focus = UP_XIC_focus_236
+				has_completed_focus = UP_XIC_focus_240
+				has_idea = UP_XIC_northeast_military_government
+				has_idea = UP_XIC_guanwai_military_government_system
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = UP_XIC_unified_railway_guard_timed days = 120 }
+		}
+	}
+
+	UP_XIC_send_fengtian_military_commissioners = {
+		icon = generic_manpower
+		cost = 50
+		days_remove = 1
+		days_re_enable = 120
+		visible = {
+			OR = {
+				has_completed_focus = UP_XIC_focus_236
+				has_completed_focus = UP_XIC_focus_240
+				has_idea = UP_XIC_northeast_military_government
+				has_idea = UP_XIC_guanwai_military_government_system
+			}
+		}
+		complete_effect = {
+			if = { limit = { controls_state = 328 } 328 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 610 } 610 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 714 } 714 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 715 } 715 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 716 } 716 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 717 } 717 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 745 } 745 = { add_resistance = -5 add_compliance = 5 } }
+			if = { limit = { controls_state = 761 } 761 = { add_resistance = -5 add_compliance = 5 } }
+			add_manpower = 50000
+		}
+	}
+
 	UP_XIC_asset_survey_fengtian_industry = {
 		icon = generic_construct_civ_factory
 		cost = 35

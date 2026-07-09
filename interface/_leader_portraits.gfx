@@ -25,6 +25,21 @@ spriteTypes = {
 	
 	###JAP
 	spriteType = {
+		name = "GFX_portrait_JAP_emperor_hirohito"
+		texturefile = "gfx/leaders/JAP/portrait_JAP_emperor_hirohito.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_JAP_emperor_hirohito_civilian_small"
+		texturefile = "gfx/interface/ideas/portrait_JAP_emperor_hirohito_civilian_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_JAP_emperor_hirohito_military_small"
+		texturefile = "gfx/interface/ideas/portrait_JAP_emperor_hirohito_military_small.dds"
+	}
+
+	spriteType = {
 		name = "JAP_keisuke_okada"
 		texturefile = "gfx/leaders/JAP/portrait_JAP_keisuke_okada.dds"
 	}

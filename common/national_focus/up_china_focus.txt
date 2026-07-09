@@ -174,78 +174,16 @@ focus = {
         }
     }
 
-focus = {
-        id = UP_CHI_southwest_unification
-        icon = GFX_goal_generic_demand_territory
-        x = 34
-        y = 8
-        cost = 10
-        prerequisite = { focus = UP_CHI_pressure_sichuan_cliques }
-        available = {
-            OR = { controls_state = 1037 CKG = { is_subject_of = ROOT } NOT = { CKG = { exists = yes } } }
-            OR = { controls_state = 1041 SIC = { is_subject_of = ROOT } NOT = { SIC = { exists = yes } } }
-        }
-        ai_will_do = {
-            factor = 1
-        }
-        completion_reward = {
-            set_country_flag = UP_CHI_southwest_unified
-            add_political_power = 25
-            add_stability = 0.01
-        }
-    }
-
-focus = {
-        id = UP_CHI_tibet_unification
-        icon = GFX_goal_generic_demand_territory
-        x = 36
-        y = 8
-        cost = 0
-        prerequisite = { focus = UP_CHI_remaining_warlords_question }
-        available = {
-            OR = { controls_state = 592 GXC = { is_subject_of = ROOT } NOT = { GXC = { exists = yes } } }
-            OR = { controls_state = 616 XSM = { is_subject_of = ROOT } NOT = { XSM = { exists = yes } } }
-            OR = { controls_state = 1044 GSM = { is_subject_of = ROOT } NOT = { GSM = { exists = yes } } }
-            OR = { controls_state = 621 NXM = { is_subject_of = ROOT } NOT = { NXM = { exists = yes } } }
-            OR = { controls_state = 617 SIK = { is_subject_of = ROOT } NOT = { SIK = { exists = yes } } }
-            OR = { controls_state = 1042 KHM = { is_subject_of = ROOT } NOT = { KHM = { exists = yes } } }
-            OR = { controls_state = 322 TIB = { is_subject_of = ROOT } NOT = { TIB = { exists = yes } } }
-        }
-        completion_reward = {
-            set_country_flag = UP_CHI_south_china_unified
-            set_country_flag = UP_CHI_northwest_unified
-            set_country_flag = UP_CHI_xinjiang_unified
-            set_country_flag = UP_CHI_tibet_unified
-            add_political_power = 50
-            add_stability = 0.02
-        }
-    }
-
-focus = {
-        id = UP_CHI_northeast_unification
-        icon = GFX_goal_generic_demand_territory
-        x = 32
-        y = 8
-        cost = 0
-        prerequisite = { focus = UP_CHI_contact_anti_japanese_guerrillas }
-        available = {
-            OR = { controls_state = 715 XIC = { is_subject_of = ROOT } NOT = { XIC = { exists = yes } } }
-            OR = { controls_state = 328 MEN = { is_subject_of = ROOT } NOT = { MEN = { exists = yes } } }
-        }
-        completion_reward = {
-            set_country_flag = UP_CHI_northeast_unified
-            add_political_power = 25
-            add_war_support = 0.01
-        }
-    }
-
-focus = {
+    focus = {
         id = UP_CHI_military_reform
         icon = GFX_goal_generic_army_doctrines
         x = 27
         y = 5
-        cost = 5
+        cost = 10
         prerequisite = { focus = UP_CHI_chinese_unification_war }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             army_experience = 25
             add_political_power = -10
@@ -300,14 +238,17 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_reorganize_revolutionary_army
         icon = GFX_goal_generic_army_doctrines
         x = 27
         y = 7
-        cost = 5
+        cost = 10
         prerequisite = { focus = UP_CHI_local_officers }
         prerequisite = { focus = UP_CHI_local_units }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             army_experience = 35
             add_war_support = 0.04
@@ -332,13 +273,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_motorization_tank_card
         icon = GFX_goal_generic_army_motorized
         x = 24
         y = 8
-        cost = 5
+        cost = 10
         prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_tech_bonus = {
                 bonus = 0.5
@@ -350,13 +294,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_infantry_equipment_card
         icon = GFX_goal_generic_small_arms
         x = 27
         y = 8
-        cost = 5
+        cost = 10
         prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_tech_bonus = {
                 bonus = 0.5
@@ -367,13 +314,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_support_equipment_card
         icon = GFX_goal_generic_army_artillery
         x = 30
         y = 8
-        cost = 5
+        cost = 10
         prerequisite = { focus = UP_CHI_reorganize_revolutionary_army }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_tech_bonus = {
                 bonus = 0.5
@@ -458,13 +408,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_restore_independent_research
         icon = GFX_goal_generic_scientific_exchange
         x = 27
         y = 10
-        cost = 5
+        cost = 10
         prerequisite = { focus = UP_CHI_infantry_equipment_card }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_tech_bonus = {
                 bonus = 0.5
@@ -794,9 +747,9 @@ focus = {
         x = 34
         y = 11
         cost = 3
-        prerequisite = { focus = UP_CHI_southwest_unification }
-        prerequisite = { focus = UP_CHI_tibet_unification }
-        prerequisite = { focus = UP_CHI_northeast_unification }
+        prerequisite = { focus = UP_CHI_pressure_sichuan_cliques }
+        prerequisite = { focus = UP_CHI_remaining_warlords_question }
+        prerequisite = { focus = UP_CHI_contact_anti_japanese_guerrillas }
         completion_reward = {
             add_political_power = 50
             add_stability = 0.02
@@ -928,23 +881,36 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_complete_national_unification
         icon = GFX_goal_generic_national_unity
         x = 34
         y = 16
-        cost = 0
+        cost = 5
         prerequisite = { focus = UP_CHI_state_above_localities focus = UP_CHI_revolutionary_united_front }
         available = {
             OR = { has_completed_focus = UP_CHI_state_above_localities has_completed_focus = UP_CHI_revolutionary_united_front }
-            OR = { controls_state = 1037 CKG = { is_subject_of = ROOT } NOT = { CKG = { exists = yes } } }
-            OR = { controls_state = 592 GXC = { is_subject_of = ROOT } NOT = { GXC = { exists = yes } } }
-            OR = { controls_state = 616 XSM = { is_subject_of = ROOT } NOT = { XSM = { exists = yes } } }
-            OR = { controls_state = 617 SIK = { is_subject_of = ROOT } NOT = { SIK = { exists = yes } } }
-            OR = { controls_state = 322 TIB = { is_subject_of = ROOT } NOT = { TIB = { exists = yes } } }
-            OR = { controls_state = 715 XIC = { is_subject_of = ROOT } NOT = { XIC = { exists = yes } } }
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
+            322 = { add_core_of = ROOT }
+            328 = { add_core_of = ROOT }
+            592 = { add_core_of = ROOT }
+            616 = { add_core_of = ROOT }
+            617 = { add_core_of = ROOT }
+            621 = { add_core_of = ROOT }
+            714 = { add_core_of = ROOT }
+            715 = { add_core_of = ROOT }
+            716 = { add_core_of = ROOT }
+            717 = { add_core_of = ROOT }
+            745 = { add_core_of = ROOT }
+            761 = { add_core_of = ROOT }
+            1037 = { add_core_of = ROOT }
+            1041 = { add_core_of = ROOT }
+            1042 = { add_core_of = ROOT }
+            1044 = { add_core_of = ROOT }
             add_stability = 0.05
             add_political_power = 100
             add_ideas = UP_unified_revolutionary_administration
@@ -2403,12 +2369,12 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_CHI_secret_contact_zhang_guotao
         icon = GFX_goal_generic_intelligence_exchange
         x = 49
         y = 22
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_CHI_whampoa_graduates_gathering }
         ai_will_do = {
             factor = 1

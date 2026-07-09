@@ -170,3 +170,85 @@ UP_XIC_spawn_volunteer_units = {
 		}
 	}
 }
+
+UP_XIC_spawn_elite_division = {
+	division_template = {
+		name = "Northeast Elite Division"
+		is_locked = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+			artillery_brigade = { x = 3 y = 2 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		}
+	}
+	if = {
+		limit = { controls_state = 715 }
+		715 = {
+			create_unit = {
+				division = "name = \"Northeast Elite Division\" division_template = \"Northeast Elite Division\" start_experience_factor = 0.45 start_equipment_factor = 0.85 start_manpower_factor = 1"
+				owner = ROOT
+				count = 1
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { controls_state = 715 } }
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			create_unit = {
+				division = "name = \"Northeast Elite Division\" division_template = \"Northeast Elite Division\" start_experience_factor = 0.45 start_equipment_factor = 0.85 start_manpower_factor = 1"
+				owner = ROOT
+				count = 1
+			}
+		}
+	}
+}
+
+UP_XIC_spawn_marine_battalion = {
+	division_template = {
+		name = "Northeast Marine Battalion"
+		is_locked = no
+		regiments = {
+			marine = { x = 0 y = 0 }
+			marine = { x = 0 y = 1 }
+			marine = { x = 0 y = 2 }
+			marine = { x = 1 y = 0 }
+			marine = { x = 1 y = 1 }
+			marine = { x = 1 y = 2 }
+		}
+	}
+	if = {
+		limit = { controls_state = 745 }
+		745 = {
+			create_unit = {
+				division = "name = \"Northeast Marine Battalion\" division_template = \"Northeast Marine Battalion\" start_experience_factor = 0.35 start_equipment_factor = 0.75 start_manpower_factor = 1"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { controls_state = 745 } }
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			create_unit = {
+				division = "name = \"Northeast Marine Battalion\" division_template = \"Northeast Marine Battalion\" start_experience_factor = 0.35 start_equipment_factor = 0.75 start_manpower_factor = 1"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+}

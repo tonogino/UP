@@ -7,12 +7,15 @@ focus_tree = {
     default = no
     continuous_focus_position = { x = 0 y = 3000 }
 
-focus = {
+    focus = {
         id = UP_JAP_convene_imperial_conference
         icon = GFX_goal_generic_political_pressure
         x = 12
         y = 0
         cost = 10
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_start_imperial_conference = yes
             add_ideas = UP_JAP_imperial_conference_spirit
@@ -24,12 +27,12 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_southern_resource_survey
         icon = GFX_goal_generic_construct_civ_factory
         x = 51
         y = 0
-        cost = 10
+        cost = 5
         ai_will_do = {
             factor = 1
         }
@@ -42,12 +45,15 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_136
         icon = GFX_goal_generic_political_pressure
         x = 29
         y = 0
-        cost = 10
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_to_variable = { UP_JAP_far_east_resistance = -10 }
             army_experience = 20
@@ -165,13 +171,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_heirs_of_northern_victory
         icon = GFX_goal_generic_political_pressure
         x = 12
         y = 1
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_convene_imperial_conference }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_add_kodoha_prestige_medium = yes
             army_experience = 25
@@ -376,15 +385,18 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_southern_lifeline
         icon = GFX_goal_generic_navy_cruiser
         x = 5
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_heirs_of_northern_victory }
         available = {
             custom_trigger_tooltip = { tooltip = UP_JAP_navy_prestige_60_required_tt check_variable = { UP_JAP_navy_prestige > 59 } }
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
             set_country_flag = UP_JAP_southern_policy_unlocked
@@ -394,12 +406,12 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_total_war_state_system
         icon = GFX_goal_generic_political_pressure
         x = 12
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_heirs_of_northern_victory }
         ai_will_do = {
             factor = 1
@@ -436,13 +448,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_146
         icon = GFX_goal_generic_political_pressure
         x = 22
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_140 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_manpower_first
             UP_JAP_add_kodoha_prestige_small = yes
@@ -462,15 +477,18 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_establish_northern_general_staff
         icon = GFX_goal_generic_political_pressure
         x = 18
         y = 2
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_heirs_of_northern_victory }
         available = {
             custom_trigger_tooltip = { tooltip = UP_JAP_kodoha_prestige_60_required_tt check_variable = { UP_JAP_kodoha_prestige > 59 } }
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
             UP_JAP_establish_northern_general_staff_effect = yes
@@ -570,14 +588,17 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_278
         icon = GFX_goal_generic_navy_cruiser
         x = 52
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_276 }
         mutually_exclusive = { focus = UP_JAP_focus_279 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_carrier_emphasis
             add_tech_bonus = { bonus = 0.5 uses = 2 category = mio_cat_tech_all_carrier_and_modules }
@@ -585,27 +606,33 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_279
         icon = GFX_goal_generic_navy_cruiser
         x = 54
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_276 focus = UP_JAP_focus_277 }
         mutually_exclusive = { focus = UP_JAP_focus_280 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             navy_experience = 20
             UP_JAP_add_navy_prestige_small = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_280
         icon = GFX_goal_generic_navy_cruiser
         x = 56
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_277 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_battleship_plan_idea
             add_tech_bonus = { bonus = 0.5 uses = 2 category = mio_cat_tech_all_capital_ship_and_modules }
@@ -613,13 +640,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_combined_fleet_budget
         icon = GFX_goal_generic_navy_cruiser
         x = 5
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_southern_lifeline }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_combined_fleet_budget_idea
             navy_experience = 25
@@ -628,12 +658,15 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_deep_manchurian_underground
         icon = GFX_goal_generic_political_pressure
         x = 12
         y = 3
-        cost = 10
+        cost = 4
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_fengtian_intelligence_network
             if = { limit = { XIC = { exists = yes } } XIC = { add_ideas = UP_XIC_japanese_infiltration add_stability = -0.03 } }
@@ -641,13 +674,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_map_northeastern_reality
         icon = GFX_goal_generic_political_pressure
         x = 10
         y = 3
-        cost = 10
+        cost = 4
         prerequisite = { focus = UP_JAP_total_war_state_system }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_manchurian_border_intelligence
             army_experience = 15
@@ -655,13 +691,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_contact_puyi
         icon = GFX_goal_generic_political_pressure
         x = 14
         y = 3
-        cost = 10
+        cost = 4
         prerequisite = { focus = UP_JAP_total_war_state_system }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_contact_puyi_effect = yes
         }
@@ -680,13 +719,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_160
         icon = GFX_goal_generic_political_pressure
         x = 21
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_146 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_infantry_equipment_drive
             add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
@@ -694,13 +736,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_161
         icon = GFX_goal_generic_political_pressure
         x = 23
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_146 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_superior_firepower_drive
             add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
@@ -738,12 +783,12 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_289
         icon = GFX_goal_generic_navy_cruiser
         x = 51
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_278 }
         ai_will_do = {
             factor = 1
@@ -755,13 +800,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_291
         icon = GFX_goal_generic_navy_cruiser
         x = 57
         y = 4
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_280 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_timed_idea = { idea = UP_JAP_battleship_plan_idea days = 365 }
             navy_experience = 25
@@ -814,25 +862,31 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_purge_white_remnants
         icon = GFX_goal_generic_major_war
         x = 17
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_establish_northern_general_staff }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_purge_white_remnants_effect = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_cossack_submission_act
         icon = GFX_goal_generic_political_pressure
         x = 19
         y = 3
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_establish_northern_general_staff }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_cossack_submission_act_effect = yes
         }
@@ -914,13 +968,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_435
         icon = GFX_goal_generic_navy_cruiser
         x = 4
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_combined_fleet_budget }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_reduce_fiscal_pressure_small = yes
             UP_JAP_reduce_kodoha_prestige_small = yes
@@ -944,13 +1001,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_437
         icon = GFX_goal_generic_construct_civ_factory
         x = 6
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_combined_fleet_budget }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             random_owned_controlled_state = { limit = { is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
             random_owned_controlled_state = { limit = { is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
@@ -983,7 +1043,13 @@ focus = {
         prerequisite = { focus = UP_JAP_map_northeastern_reality }
         prerequisite = { focus = UP_JAP_contact_puyi }
         completion_reward = {
-            country_event = { id = up_japan.20 days = 1 }
+            if = {
+                limit = { XIC = { exists = yes } }
+                XIC = { country_event = { id = up_xic.9 days = 1 } }
+            }
+            else = {
+                country_event = { id = up_japan.20 days = 1 }
+            }
             add_war_support = 0.03
             UP_JAP_add_toseiha_prestige_small = yes
         }
@@ -1032,13 +1098,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_enemy_of_my_enemy
         icon = GFX_goal_generic_major_alliance
         x = 20
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_militarize_siberian_railway }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_enemy_of_my_enemy_effect = yes
         }
@@ -1149,15 +1218,18 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_tokyo_berlin_treaty
         icon = GFX_goal_generic_major_alliance
         x = 20
         y = 6
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_enemy_of_my_enemy }
         available = {
             GER = { exists = yes is_faction_leader = yes }
+        }
+        ai_will_do = {
+            factor = 1
         }
         completion_reward = {
             if = { limit = { GER = { exists = yes is_faction_leader = yes } } GER = { add_to_faction = ROOT } }
@@ -1181,13 +1253,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_cooperate_with_manchurian_government
         icon = GFX_goal_generic_major_alliance
         x = 16
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_militarize_siberian_railway }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_cooperate_with_manchurian_government_effect = yes
         }
@@ -1235,40 +1310,49 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_pressure_dutch_east_indies
         icon = GFX_goal_generic_major_war
         x = 3
         y = 7
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_redraw_southern_maps }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             if = { limit = { INS = { exists = yes } } create_wargoal = { type = annex_everything target = INS } }
             UP_JAP_add_navy_prestige_small = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_panay_incident
         icon = GFX_goal_generic_political_pressure
         x = 8
         y = 7
-        cost = 10
+        cost = 3
         prerequisite = { focus = UP_JAP_redraw_southern_maps }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             country_event = { id = up_japan.40 days = 1 }
             UP_JAP_add_fiscal_pressure_2 = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_309
         icon = GFX_goal_generic_navy_cruiser
         x = 54
         y = 7
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_301 }
         prerequisite = { focus = UP_JAP_focus_302 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             navy_experience = 20
             UP_JAP_add_navy_prestige_small = yes
@@ -1301,14 +1385,17 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_308
         icon = GFX_goal_generic_navy_cruiser
         x = 52
         y = 7
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_300 }
         prerequisite = { focus = UP_JAP_focus_301 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_carrier_air_integration
             navy_experience = 20
@@ -1329,13 +1416,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_chita_operation
         icon = GFX_goal_generic_major_war
         x = 20
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_second_northern_advance }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_timed_idea = { idea = UP_JAP_chita_operation_plan days = 180 }
             army_experience = 20
@@ -1343,25 +1433,31 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_march_to_caucasus
         icon = GFX_goal_generic_major_war
         x = 16
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_second_northern_advance }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_march_to_caucasus_effect = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_irkutsk_campaign
         icon = GFX_goal_generic_major_war
         x = 18
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_second_northern_advance }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_irkutsk_winter_campaign
             army_experience = 20
@@ -1408,77 +1504,95 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_443
         icon = GFX_goal_generic_political_pressure
         x = 28
         y = 8
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_167 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_reduce_fiscal_pressure_small = yes
             add_political_power = 25
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_focus_266
         icon = GFX_goal_generic_political_pressure
         x = 34
         y = 8
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_focus_167 }
         prerequisite = { focus = UP_JAP_focus_263 }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_will_supremacy
             UP_JAP_add_kodoha_prestige_small = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_demand_french_indochina
         icon = GFX_goal_generic_political_pressure
         x = 3
         y = 8
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_pressure_dutch_east_indies }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_political_power = 35
             UP_JAP_add_fiscal_pressure_2 = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_support_northeast_infrastructure
         icon = GFX_goal_generic_construct_civ_factory
         x = 10
         y = 7
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_enter_xinjing }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_support_northeast_infrastructure_effect = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_japan_manchuria_intermarriage_policy
         icon = GFX_goal_generic_political_pressure
         x = 12
         y = 7
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_enter_xinjing }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_japan_manchuria_intermarriage_policy_effect = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_northeast_pacification_strategy
         icon = GFX_goal_generic_political_pressure
         x = 14
         y = 7
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_enter_xinjing }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_northeast_pacification_strategy_effect = yes
         }
@@ -1511,13 +1625,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_northern_imperial_defense_line
         icon = GFX_goal_generic_political_pressure
         x = 17
         y = 10
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_chita_operation focus = UP_JAP_march_to_caucasus }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_northern_imperial_defense
             if = { limit = { controls_state = 408 } 408 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
@@ -1526,25 +1643,31 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_emperors_frozen_frontier
         icon = GFX_goal_generic_political_pressure
         x = 19
         y = 10
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_irkutsk_campaign focus = UP_JAP_march_to_caucasus }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_emperors_frozen_frontier_effect = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_malacca_strategy
         icon = GFX_goal_generic_navy_cruiser
         x = 3
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_demand_french_indochina }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_malacca_strategy_idea
             UP_JAP_add_navy_prestige_small = yes
@@ -1626,12 +1749,12 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_batavia_operation_draft
         icon = GFX_goal_generic_navy_cruiser
         x = 0
         y = 10
-        cost = 9
+        cost = 3
         prerequisite = { focus = UP_JAP_malacca_strategy }
         ai_will_do = {
             factor = 1
@@ -1643,13 +1766,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_malaya_rubber_blockade_plan
         icon = GFX_goal_generic_navy_cruiser
         x = 2
         y = 10
-        cost = 10
+        cost = 3
         prerequisite = { focus = UP_JAP_malacca_strategy }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             if = { limit = { MAL = { exists = yes } } create_wargoal = { type = annex_everything target = MAL } }
             add_ideas = UP_JAP_imperial_resource_priority_order
@@ -1657,26 +1783,32 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_suppress_guam_and_wake
         icon = GFX_goal_generic_navy_cruiser
         x = 4
         y = 10
-        cost = 10
+        cost = 3
         prerequisite = { focus = UP_JAP_malacca_strategy }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_timed_idea = { idea = UP_JAP_pacific_first_strike days = 120 }
             UP_JAP_add_navy_prestige_small = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_isolate_the_philippines
         icon = GFX_goal_generic_navy_cruiser
         x = 6
         y = 10
-        cost = 10
+        cost = 3
         prerequisite = { focus = UP_JAP_malacca_strategy }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             if = { limit = { PHI = { exists = yes } } create_wargoal = { type = annex_everything target = PHI } }
             if = { limit = { USA = { exists = yes } } USA = { add_opinion_modifier = { target = ROOT modifier = embargo } } }
@@ -1684,38 +1816,47 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_establish_mongolian_military_government
         icon = GFX_goal_generic_major_alliance
         x = 10
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_black_soil_under_emperor }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_establish_mongolian_military_government_effect = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_twenty_one_demands
         icon = GFX_goal_generic_major_alliance
         x = 12
         y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_black_soil_under_emperor }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             if = { limit = { CHI = { exists = yes } } CHI = { country_event = { id = up_japan.43 days = 1 } } }
             UP_JAP_add_toseiha_prestige_small = yes
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_infiltrate_chinese_soviet_government
         icon = GFX_goal_generic_major_alliance
         x = 14
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_black_soil_under_emperor }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             add_ideas = UP_JAP_china_infiltration
             if = { limit = { CHI = { exists = yes } } CHI = { add_stability = -0.05 } }
@@ -1797,13 +1938,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_strategic_offensive
         icon = GFX_goal_generic_major_war
         x = 10
         y = 11
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_lugou_bridge_incident }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_strategic_offensive_effect = yes
         }
@@ -1823,13 +1967,16 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_march_into_tibet
         icon = GFX_goal_generic_major_war
         x = 8
         y = 13
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_reorganize_national_government }
+        ai_will_do = {
+            factor = 1
+        }
         completion_reward = {
             UP_JAP_march_into_tibet_effect = yes
         }
@@ -1882,12 +2029,12 @@ focus = {
         }
     }
 
-focus = {
+    focus = {
         id = UP_JAP_integrate_tibetan_occupied_zones
         icon = GFX_goal_generic_political_pressure
         x = 8
         y = 14
-        cost = 10
+        cost = 5
         prerequisite = { focus = UP_JAP_march_into_tibet }
         ai_will_do = {
             factor = 1

@@ -226,13 +226,12 @@ country_event = {
 		UP_JAP_add_toseiha_prestige_small = yes
 		UP_JAP_add_fiscal_pressure_small = yes
 		if = {
-			limit = {
-				XIC = {
-					exists = yes
-					NOT = { is_subject_of = ROOT }
-				}
-			}
-			create_wargoal = { type = annex_everything target = XIC }
+			limit = { XIC = { exists = yes } }
+			XIC = { country_event = { id = up_xic.10 days = 1 } }
+		}
+		else_if = {
+			limit = { NOT = { XIC = { exists = yes } } }
+			add_war_support = 0.03
 		}
 	}
 
@@ -251,7 +250,46 @@ country_event = {
 		add_ideas = UP_JAP_fengtian_intelligence_network
 		if = {
 			limit = { XIC = { exists = yes } }
-			XIC = { add_ideas = UP_XIC_japanese_infiltration }
+			XIC = {
+				add_ideas = UP_XIC_japanese_infiltration
+				add_to_variable = { UP_XIC_japanese_influence = 10 }
+				UP_XIC_clamp_fengtian_variables = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = up_japan.24
+	title = up_japan.24.t
+	desc = up_japan.24.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.24.a
+		UP_JAP_add_toseiha_prestige_medium = yes
+		add_war_support = 0.03
+		set_country_flag = UP_JAP_zhang_zuolin_assassinated
+	}
+}
+
+country_event = {
+	id = up_japan.25
+	title = up_japan.25.t
+	desc = up_japan.25.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_japan.25.a
+		UP_JAP_reduce_toseiha_prestige_small = yes
+		add_stability = -0.03
+		add_political_power = -50
+		set_country_flag = UP_JAP_zhang_zuolin_assassination_failed
+		if = {
+			limit = { XIC = { exists = yes } }
+			add_opinion_modifier = { target = XIC modifier = UP_XIC_independence_tension }
 		}
 	}
 }
@@ -266,21 +304,22 @@ country_event = {
 	option = {
 		name = up_japan.30.a
 		ai_chance = { factor = 35 }
-		add_ideas = UP_XIC_japanese_client_state
 		JAP = {
-			set_country_flag = UP_JAP_xic_accepted_918
-			puppet = ROOT
-			UP_JAP_add_toseiha_prestige_small = yes
-			UP_JAP_reduce_fiscal_pressure_small = yes
+			set_country_flag = UP_JAP_xic_refused_918
+			declare_war_on = { target = ROOT type = annex_everything }
 		}
 	}
 
 	option = {
 		name = up_japan.30.b
 		ai_chance = { factor = 65 }
+		add_ideas = UP_XIC_japanese_client_state
+		complete_national_focus = UP_XIC_focus_186
 		JAP = {
-			set_country_flag = UP_JAP_xic_refused_918
-			declare_war_on = { target = ROOT type = annex_everything }
+			set_country_flag = UP_JAP_xic_accepted_918
+			puppet = ROOT
+			UP_JAP_add_toseiha_prestige_small = yes
+			UP_JAP_reduce_fiscal_pressure_small = yes
 		}
 	}
 }
@@ -408,6 +447,10 @@ country_event = {
 			limit = { CHI = { exists = yes } }
 			create_wargoal = { type = annex_everything target = CHI }
 		}
+		if = {
+			limit = { XIC = { exists = yes } }
+			XIC = { country_event = { id = up_xic.17 days = 1 } }
+		}
 	}
 
 	option = {
@@ -418,6 +461,10 @@ country_event = {
 		if = {
 			limit = { CHI = { exists = yes } }
 			create_wargoal = { type = annex_everything target = CHI }
+		}
+		if = {
+			limit = { XIC = { exists = yes } }
+			XIC = { country_event = { id = up_xic.17 days = 1 } }
 		}
 	}
 }
