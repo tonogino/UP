@@ -1,0 +1,172 @@
+UP_setup_northeastern_army = {
+	if = {
+		limit = {
+			XIC = { exists = yes }
+		}
+		XIC = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Zhang Zuolin"
+				desc = "POLITICS_ZHANG_ZUOLIN_DESC"
+				picture = "GFX_Portrait_Asia_Generic_land_2"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+			set_country_flag = UP_XIC_fengtian_warlord_active
+			set_country_flag = UP_XIC_independence_recognized
+			UP_XIC_start_fengtian_mechanic = yes
+		}
+	}
+}
+
+UP_XIC_clamp_fengtian_variables = {
+	clamp_variable = {
+		var = UP_XIC_fengtian_rule
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = UP_XIC_japanese_influence
+		min = 0
+		max = 100
+	}
+}
+
+UP_XIC_start_fengtian_mechanic = {
+	set_country_flag = UP_XIC_fengtian_mechanic_active
+	if = {
+		limit = { NOT = { has_country_flag = UP_XIC_fengtian_mechanic_initialized } }
+		set_country_flag = UP_XIC_fengtian_mechanic_initialized
+		set_variable = { UP_XIC_fengtian_rule = 55 }
+		set_variable = { UP_XIC_japanese_influence = 25 }
+		add_ideas = {
+			UP_XIC_fengtian_warlord_system
+			UP_XIC_japanese_economic_penetration
+			UP_XIC_northeastern_arsenal_system
+			UP_XIC_beyond_the_pass_isolation
+			UP_XIC_old_marshal_balancing_act
+		}
+	}
+	UP_XIC_clamp_fengtian_variables = yes
+}
+
+UP_XIC_monthly_fengtian_mechanic_effect = {
+	if = {
+		limit = { has_idea = UP_XIC_japanese_economic_penetration }
+		add_to_variable = { UP_XIC_japanese_influence = 1 }
+	}
+	UP_XIC_clamp_fengtian_variables = yes
+}
+
+UP_XIC_spawn_cavalry_units = {
+	division_template = {
+		name = "Northeast Cavalry"
+		is_locked = no
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			cavalry = { x = 1 y = 2 }
+		}
+	}
+	if = {
+		limit = { controls_state = 715 }
+		715 = {
+			create_unit = {
+				division = "name = \"Northeast Cavalry\" division_template = \"Northeast Cavalry\" start_experience_factor = 0.35 start_equipment_factor = 0.75 start_manpower_factor = 1"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { controls_state = 715 } }
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			create_unit = {
+				division = "name = \"Northeast Cavalry\" division_template = \"Northeast Cavalry\" start_experience_factor = 0.35 start_equipment_factor = 0.75 start_manpower_factor = 1"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+}
+
+UP_XIC_spawn_collaboration_units = {
+	division_template = {
+		name = "Manchurian Collaboration Infantry"
+		is_locked = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+		}
+	}
+	if = {
+		limit = { controls_state = 715 }
+		715 = {
+			create_unit = {
+				division = "name = \"Collaboration Infantry\" division_template = \"Manchurian Collaboration Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.7 start_manpower_factor = 1"
+				owner = ROOT
+				count = 4
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { controls_state = 715 } }
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			create_unit = {
+				division = "name = \"Collaboration Infantry\" division_template = \"Manchurian Collaboration Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.7 start_manpower_factor = 1"
+				owner = ROOT
+				count = 4
+			}
+		}
+	}
+}
+
+UP_XIC_spawn_volunteer_units = {
+	division_template = {
+		name = "Northeast Volunteer Infantry"
+		is_locked = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+		}
+	}
+	if = {
+		limit = { controls_state = 715 }
+		715 = {
+			create_unit = {
+				division = "name = \"Northeast Volunteers\" division_template = \"Northeast Volunteer Infantry\" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 1"
+				owner = ROOT
+				count = 3
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { controls_state = 715 } }
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			create_unit = {
+				division = "name = \"Northeast Volunteers\" division_template = \"Northeast Volunteer Infantry\" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 1"
+				owner = ROOT
+				count = 3
+			}
+		}
+	}
+}

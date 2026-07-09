@@ -1,0 +1,5 @@
+UP_XIC_fengtian_mechanic_decisions = {
+	allowed = { OR = { original_tag = XIC tag = XIC } }
+	visible = { has_country_flag = UP_XIC_fengtian_mechanic_active }
+	priority = 30
+}

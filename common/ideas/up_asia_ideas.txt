@@ -1600,6 +1600,52 @@ ideas = {
 			}
 		}
 
+		UP_XIC_fengtian_warlord_system = {
+			picture = generic_political_discourse
+			allowed = { original_tag = XIC }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		UP_XIC_japanese_economic_penetration = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = XIC }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		UP_XIC_northeastern_arsenal_system = {
+			picture = generic_infantry_bonus
+			allowed = { original_tag = XIC }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.03
+			}
+		}
+
+		UP_XIC_beyond_the_pass_isolation = {
+			picture = generic_improve_relations
+			allowed = { original_tag = XIC }
+			modifier = {
+				improve_relations_maintain_cost_factor = 0.15
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		UP_XIC_old_marshal_balancing_act = {
+			picture = generic_national_unity
+			allowed = { original_tag = XIC }
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
 		UP_XIC_japanese_client_state = {
 			picture = generic_diplomacy
 			allowed = { original_tag = XIC }
@@ -2191,6 +2237,370 @@ ideas = {
 				consumer_goods_factor = 0.06
 			}
 		}
+
+		UP_gun_barrel_power = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_org_factor = 0.03
+				conscription_factor = 0.005
+				political_power_gain = -0.03
+				drift_defence_factor = 0.10
+			}
+		}
+
+		UP_grain_coupon_system = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.03
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = -0.03
+				production_speed_buildings_factor = -0.03
+			}
+		}
+
+		UP_food_supply_stabilized = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_local_autonomy_arrangements = {
+			picture = generic_improve_relations
+			allowed = { original_tag = CHI }
+			modifier = {
+				political_power_gain = 0.02
+				trade_opinion_factor = 0.05
+			}
+		}
+
+		UP_local_interests_compromise = {
+			picture = generic_improve_relations
+			allowed = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				compliance_gain = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_local_army_restrictions = {
+			picture = generic_army_reform
+			allowed = { always = yes }
+			modifier = {
+				conscription_factor = 0.003
+				training_time_factor = -0.03
+				stability_factor = -0.02
+			}
+		}
+
+		UP_tigers_in_the_sky_spirit = {
+			picture = generic_fighter_production_diverted
+			allowed = { original_tag = CHI }
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+				air_superiority_efficiency = 0.03
+				air_accidents_factor = -0.03
+			}
+		}
+
+		UP_whampoa_air_force_academy_spirit = {
+			picture = generic_air
+			allowed = { original_tag = CHI }
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+				air_attack_factor = 0.03
+				air_mission_efficiency = 0.03
+			}
+		}
+
+		UP_raise_air_standards_spirit = {
+			picture = generic_air
+			allowed = { original_tag = CHI }
+			modifier = {
+				air_attack_factor = 0.05
+				air_ace_generation_chance_factor = 0.15
+				air_accidents_factor = -0.05
+				air_mission_efficiency = -0.01
+			}
+		}
+
+		UP_lower_air_standards_spirit = {
+			picture = generic_air
+			allowed = { original_tag = CHI }
+			modifier = {
+				air_mission_efficiency = -0.03
+				air_accidents_factor = 0.05
+				air_training_xp_gain_factor = -0.05
+			}
+		}
+
+		UP_people_supervise_party_spirit = {
+			picture = generic_propaganda
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.03
+				resistance_growth = -0.03
+			}
+		}
+
+		UP_anti_dogmatism_spirit = {
+			picture = generic_research
+			allowed = { original_tag = CHI }
+			modifier = {
+				research_speed_factor = 0.02
+				land_doctrine_cost_factor = -0.05
+				political_power_gain = 0.02
+				fascism_drift = -0.01
+			}
+		}
+
+		UP_anti_empiricism_spirit = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				land_doctrine_cost_factor = -0.05
+				planning_speed = 0.03
+				experience_gain_army_unit_factor = -0.03
+			}
+		}
+
+		UP_rectified_peoples_army = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				conscription_factor = 0.003
+			}
+		}
+
+		UP_cultural_revolution_spark_idea = {
+			picture = GFX_UP_CHI_cultural_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				war_support_factor = 0.10
+				political_power_gain = 0.05
+				stability_factor = -0.10
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		UP_old_order_collapsing = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				drift_defence_factor = 0.20
+				compliance_gain = 0.05
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		UP_united_front_politics = {
+			picture = generic_improve_relations
+			allowed = { original_tag = CHI }
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.02
+				improve_relations_maintain_cost_factor = -0.10
+			}
+		}
+
+		UP_new_generation_talent = {
+			picture = generic_research
+			allowed = { original_tag = CHI }
+			modifier = {
+				research_speed_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.03
+				political_power_gain = 0.02
+			}
+		}
+
+		UP_cadre_reconciliation = {
+			picture = generic_political_discourse
+			allowed = { original_tag = CHI }
+			modifier = {
+				industrial_capacity_factory = 0.03
+				political_advisor_cost_factor = -0.10
+				army_chief_cost_factor = -0.10
+			}
+		}
+
+		UP_local_officer_talent_spirit = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				experience_gain_army_unit_factor = 0.05
+				stability_factor = -0.01
+			}
+		}
+
+		UP_state_above_localities_spirit = {
+			picture = generic_national_unity
+			allowed = { original_tag = CHI }
+			modifier = {
+				consumer_goods_factor = -0.03
+				non_core_manpower = 0.005
+				compliance_gain = 0.05
+			}
+		}
+
+		UP_peng_dehuai_offensive_school = {
+			picture = generic_army_reform
+			allowed = { original_tag = CHI }
+			modifier = {
+				army_infantry_attack_factor = 0.03
+				planning_speed = 0.05
+			}
+		}
+
+		UP_fighter_specialization = {
+			picture = generic_fighter_production_diverted
+			allowed = { original_tag = CHI }
+			modifier = {
+				air_superiority_efficiency = 0.05
+				air_attack_factor = 0.03
+			}
+		}
+
+		UP_support_plane_specialization = {
+			picture = generic_air
+			allowed = { original_tag = CHI }
+			modifier = {
+				ground_attack_factor = 0.05
+				air_mission_efficiency = 0.03
+			}
+		}
+
+		UP_air_supremacy_over_asia_spirit = {
+			picture = generic_air
+			allowed = { original_tag = CHI }
+			modifier = {
+				air_superiority_efficiency = 0.10
+				air_mission_efficiency = 0.05
+				air_attack_factor = 0.05
+				production_speed_air_base_factor = 0.15
+				air_doctrine_cost_factor = -0.10
+			}
+		}
+
+		UP_deep_countryside_work = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				conscription_factor = 0.005
+				compliance_gain = 0.05
+				production_speed_industrial_complex_factor = -0.03
+			}
+		}
+
+		UP_poor_peasant_support = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				conscription_factor = 0.005
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		UP_radical_land_reform_pressure = {
+			picture = generic_communist_revolution
+			allowed = { original_tag = CHI }
+			modifier = {
+				conscription_factor = 0.007
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = -0.03
+				resistance_growth = 0.05
+			}
+		}
+
+		UP_local_opportunism_liquidated = {
+			picture = generic_political_pressure
+			allowed = { original_tag = CHI }
+			modifier = {
+				resistance_growth = 0.03
+				drift_defence_factor = 0.05
+			}
+		}
+
+		UP_capitalist_running_dogs_liquidated = {
+			picture = generic_political_pressure
+			allowed = { original_tag = CHI }
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = -0.05
+				communism_drift = 0.03
+			}
+		}
+
+		UP_precision_petty_bourgeois_strike = {
+			picture = generic_political_pressure
+			allowed = { original_tag = CHI }
+			modifier = {
+				research_speed_factor = -0.03
+				consumer_goods_factor = -0.02
+				communism_drift = 0.02
+			}
+		}
+
+		UP_people_contradictions_handled = {
+			picture = generic_national_unity
+			allowed = { original_tag = CHI }
+			modifier = {
+				resistance_growth = -0.05
+				stability_factor = 0.03
+			}
+		}
+
+		# UP_XIC_NORTHEAST_WARLORD_EFFECT_IDEAS_START
+		UP_XIC_fengtian_fiscal_reform = { picture = generic_construct_civ_factory allowed = { original_tag = XIC } modifier = { consumer_goods_factor = -0.02 stability_factor = 0.05 production_speed_buildings_factor = 0.03 } }
+		UP_XIC_fengtian_arsenal_expansion = { picture = generic_infantry_bonus allowed = { original_tag = XIC } modifier = { industrial_capacity_factory = 0.03 production_speed_arms_factory_factor = 0.03 } }
+		UP_XIC_standardized_rifles = { picture = generic_infantry_bonus allowed = { original_tag = XIC } modifier = { production_factory_max_efficiency_factor = 0.05 industrial_capacity_factory = 0.02 } }
+		UP_XIC_anshan_heavy_industry = { picture = generic_construct_mil_factory allowed = { original_tag = XIC } modifier = { production_speed_buildings_factor = 0.03 industrial_capacity_factory = 0.02 } }
+		UP_XIC_fushun_power_grid = { picture = generic_construct_civ_factory allowed = { original_tag = XIC } modifier = { industrial_capacity_factory = 0.03 local_resources_factor = 0.05 } }
+		UP_XIC_northeast_railway_bureau = { picture = generic_construct_infrastructure allowed = { original_tag = XIC } modifier = { production_speed_rail_way_factor = 0.15 production_speed_supply_node_factor = 0.10 supply_consumption_factor = -0.03 } }
+		UP_XIC_harbin_machine_works = { picture = generic_construct_mil_factory allowed = { original_tag = XIC } modifier = { industrial_capacity_factory = 0.02 production_speed_arms_factory_factor = 0.02 } }
+		UP_XIC_black_soil_mobilization = { picture = generic_positive_trade_relations allowed = { original_tag = XIC } modifier = { stability_factor = 0.05 conscription_factor = 0.003 consumer_goods_factor = -0.02 supply_consumption_factor = -0.03 } }
+		UP_XIC_guanwai_military_industry = { picture = generic_construct_mil_factory allowed = { original_tag = XIC } modifier = { production_speed_arms_factory_factor = 0.08 industrial_capacity_factory = 0.05 production_factory_efficiency_gain_factor = 0.05 local_resources_factor = 0.05 } }
+		UP_XIC_special_autonomy_government = { picture = generic_diplomacy allowed = { original_tag = XIC } modifier = { stability_factor = 0.08 army_core_defence_factor = 0.05 industrial_capacity_factory = 0.03 autonomy_gain_global_factor = 0.30 political_power_gain = 0.03 } }
+		UP_XIC_fights_alone_spirit = { picture = generic_defence allowed = { original_tag = XIC } modifier = { army_core_defence_factor = 0.10 improve_relations_maintain_cost_factor = 0.20 } }
+		UP_XIC_self_reliance_spirit = { picture = generic_construct_civ_factory allowed = { original_tag = XIC } modifier = { consumer_goods_factor = -0.03 industrial_capacity_factory = 0.05 local_resources_factor = 0.10 research_speed_factor = 0.03 production_speed_buildings_factor = 0.05 trade_opinion_factor = -0.10 } }
+		UP_XIC_people_victory_spirit = { picture = generic_national_unity allowed = { original_tag = XIC } modifier = { stability_factor = 0.10 war_support_factor = 0.10 political_power_gain = 0.05 } }
+		UP_XIC_independent_state_spirit = { picture = generic_nationalism allowed = { original_tag = XIC } modifier = { stability_factor = 0.10 industrial_capacity_factory = 0.05 army_core_defence_factor = 0.10 } }
+		UP_XIC_regency_government_spirit = { picture = generic_political_discourse allowed = { original_tag = XIC } modifier = { stability_factor = 0.08 political_power_gain = 0.05 army_org_factor = 0.02 drift_defence_factor = 0.10 } }
+		UP_XIC_banner_symbols_spirit = { picture = generic_cavalry allowed = { original_tag = XIC } modifier = { conscription_factor = 0.003 stability_factor = 0.03 war_support_factor = 0.03 } }
+		UP_XIC_manchurian_new_policies_spirit = { picture = generic_research allowed = { original_tag = XIC } modifier = { research_speed_factor = 0.03 production_speed_buildings_factor = 0.05 consumer_goods_factor = -0.02 compliance_gain = 0.05 } }
+		UP_XIC_third_way_spirit = { picture = generic_nationalism allowed = { original_tag = XIC } modifier = { stability_factor = 0.10 industrial_capacity_factory = 0.05 army_org_factor = 0.05 army_core_defence_factor = 0.05 improve_relations_maintain_cost_factor = 0.20 } }
+		UP_XIC_tokyo_fengtian_agreement_spirit = { picture = generic_diplomacy allowed = { original_tag = XIC } modifier = { industrial_capacity_factory = 0.05 local_resources_factor = 0.10 land_doctrine_cost_factor = -0.05 political_power_gain = -0.05 } }
+		UP_XIC_collaboration_army_spirit = { picture = generic_training allowed = { original_tag = XIC } modifier = { training_time_army_factor = -0.10 army_org_factor = -0.03 stability_factor = 0.05 autonomy_manpower_share_from_subjects = 0.10 resistance_growth = -0.05 } }
+		UP_XIC_collaboration_army_expanded = { picture = generic_training allowed = { original_tag = XIC } modifier = { conscription_factor = 0.005 training_time_army_factor = -0.05 } }
+		UP_XIC_japan_fengtian_integration_spirit = { picture = generic_major_alliance allowed = { original_tag = XIC } modifier = { stability_factor = 0.10 industrial_capacity_factory = 0.05 subjects_autonomy_gain = -0.10 } }
+		UP_XIC_fengtian_counterattack_spirit = { picture = generic_attack_bonus allowed = { original_tag = XIC } modifier = { army_core_attack_factor = 0.10 army_core_defence_factor = 0.10 planning_speed = 0.10 war_support_factor = 0.15 } }
+		UP_XIC_counterattack_japan_hq_spirit = { picture = generic_attack_bonus allowed = { original_tag = XIC } modifier = { planning_speed = 0.10 army_sub_unit_cavalry_speed_factor = 1.00 army_attack_factor = 0.05 naval_invasion_prep_speed = 0.15 } }
+		UP_XIC_direct_to_tokyo_spirit = { picture = generic_national_unity allowed = { original_tag = XIC } modifier = { army_org_factor = 0.05 naval_invasion_prep_speed = 0.10 compliance_gain = 0.05 political_power_gain = 0.05 } }
+		UP_XIC_japanese_advisors_spirit = { picture = generic_army_doctrines allowed = { original_tag = XIC } modifier = { land_doctrine_cost_factor = -0.05 army_org_factor = 0.02 stability_factor = -0.02 } }
+		UP_XIC_no_retreat_spirit = { picture = generic_defence allowed = { original_tag = XIC } modifier = { war_support_factor = 0.10 stability_factor = 0.05 army_core_defence_factor = 0.10 army_org_factor = 0.05 } }
+		UP_XIC_no_retreat_timed = { picture = generic_defence allowed = { original_tag = XIC } modifier = { army_core_defence_factor = 0.10 army_morale_factor = 0.05 supply_consumption_factor = -0.05 } }
+		UP_XIC_defense_war_spirit = { picture = generic_defence allowed = { original_tag = XIC } modifier = { army_core_defence_factor = 0.15 army_org_factor = 0.05 conscription_factor = 0.005 supply_consumption_factor = -0.05 industrial_capacity_factory = -0.03 } }
+		UP_XIC_young_marshal_reform_spirit = { picture = generic_national_unity allowed = { original_tag = XIC } modifier = { stability_factor = 0.03 army_org_factor = 0.03 research_speed_factor = 0.02 political_power_gain = 0.02 } }
+		UP_XIC_old_marshal_death = { picture = generic_political_discourse allowed = { original_tag = XIC } modifier = { war_support_factor = 0.10 army_core_defence_factor = 0.10 stability_factor = -0.05 political_power_gain = -0.03 } }
+		UP_XIC_modernized_army_spirit = { picture = generic_army_reform allowed = { original_tag = XIC } modifier = { army_org_factor = 0.03 experience_gain_army_factor = 0.05 } }
+		UP_XIC_fengtian_arsenal_independent_expansion = { picture = generic_construct_mil_factory allowed = { original_tag = XIC } modifier = { production_speed_arms_factory_factor = 0.05 consumer_goods_factor = 0.02 } }
+		UP_XIC_defense_committee_timed = { picture = generic_defence allowed = { original_tag = XIC } modifier = { army_core_defence_factor = 0.05 } }
+		UP_XIC_railway_security_reclaimed = { picture = generic_construct_infrastructure allowed = { original_tag = XIC } modifier = { production_speed_rail_way_factor = 0.10 war_support_factor = 0.05 } }
+		UP_XIC_foreign_advisors_purged = { picture = generic_intelligence_exchange allowed = { original_tag = XIC } modifier = { enemy_operative_detection_chance_factor = 0.10 army_org_factor = 0.02 research_speed_factor = -0.02 } }
+		UP_XIC_mantetsu_resistance_cost = { picture = generic_political_pressure allowed = { original_tag = XIC } modifier = { consumer_goods_factor = 0.02 stability_factor = 0.03 } }
+		UP_JAP_manchurian_stable_supply = { picture = generic_positive_trade_relations allowed = { original_tag = JAP } modifier = { local_resources_factor = 0.05 consumer_goods_factor = -0.02 supply_consumption_factor = -0.02 } }
+		# UP_XIC_NORTHEAST_WARLORD_EFFECT_IDEAS_END
 
 	}
 }

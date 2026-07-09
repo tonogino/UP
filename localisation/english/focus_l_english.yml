@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  CHI_focus: "军队至上"
  UP_CHI_new_land_reformists: "发动新土地改革"
  UP_CHI_new_land_reformists_desc: "农业州获得人口增长，但地主部门的不满也是个问题"
@@ -216,3 +216,5 @@ l_english:
  up_asia.210.a: "Mao's faction: continue the revolution."
  up_asia.210.b: "Whampoa faction: national revival."
  up_asia.210.c: "Pan-Asianists: friendship with Japan."
+ UP_XIC_focus_151: "收回铁路警备权"
+ UP_XIC_focus_151_desc: "铁路是东北的血管。只要铁路警备仍由日本人主导，奉天政府的主权就是一句空话。张作霖下令东北军接管关键铁路节点，日本警备队必须撤出非租界区域。"

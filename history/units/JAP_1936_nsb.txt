@@ -1,0 +1,491 @@
+division_template = {
+	name = "Class A Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Class B Garrison Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Far Eastern Security Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Naval Landing Force Division"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Border Cavalry Brigade"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Class A Infantry Division 1"
+		location = 9998
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 2"
+		location = 1182
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 3"
+		location = 4000
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 4"
+		location = 4100
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 5"
+		location = 1051
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 6"
+		location = 1067
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 7"
+		location = 1133
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 8"
+		location = 7072
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 9"
+		location = 9950
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 10"
+		location = 1025
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 11"
+		location = 1158
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 12"
+		location = 4027
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 13"
+		location = 4069
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 14"
+		location = 4172
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 15"
+		location = 7087
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 16"
+		location = 7157
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 17"
+		location = 10100
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 18"
+		location = 12072
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 19"
+		location = 1123
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class A Infantry Division 20"
+		location = 7115
+		division_template = "Class A Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Class B Garrison Division 1"
+		location = 1100
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 2"
+		location = 7125
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 3"
+		location = 7221
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 4"
+		location = 10036
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 5"
+		location = 912
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 6"
+		location = 1003
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 7"
+		location = 3912
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 8"
+		location = 4052
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 9"
+		location = 4107
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 10"
+		location = 6963
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 11"
+		location = 7070
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 12"
+		location = 7155
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 13"
+		location = 1175
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 14"
+		location = 4096
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 15"
+		location = 7186
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 16"
+		location = 7214
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 17"
+		location = 9955
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 18"
+		location = 11914
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 19"
+		location = 9998
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 20"
+		location = 9950
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 21"
+		location = 1051
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Class B Garrison Division 22"
+		location = 4069
+		division_template = "Class B Garrison Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Far Eastern Security Division 1"
+		location = 1100
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 2"
+		location = 7125
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 3"
+		location = 912
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 4"
+		location = 1003
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 5"
+		location = 1175
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 6"
+		location = 4096
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 7"
+		location = 7186
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 8"
+		location = 9955
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 9"
+		location = 1123
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Far Eastern Security Division 10"
+		location = 7115
+		division_template = "Far Eastern Security Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Naval Landing Force Division 1"
+		location = 9998
+		division_template = "Naval Landing Force Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Naval Landing Force Division 2"
+		location = 9950
+		division_template = "Naval Landing Force Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Naval Landing Force Division 3"
+		location = 3900
+		division_template = "Naval Landing Force Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Border Cavalry Brigade 1"
+		location = 912
+		division_template = "Border Cavalry Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "Border Cavalry Brigade 2"
+		location = 3912
+		division_template = "Border Cavalry Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "Border Cavalry Brigade 3"
+		location = 4052
+		division_template = "Border Cavalry Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "Border Cavalry Brigade 4"
+		location = 1100
+		division_template = "Border Cavalry Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = {
+		name = "Border Cavalry Brigade 5"
+		location = 7125
+		division_template = "Border Cavalry Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+}

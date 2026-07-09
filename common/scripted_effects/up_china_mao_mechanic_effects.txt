@@ -310,6 +310,12 @@ UP_CHI_reduce_mao_suspicion_small = {
 	UP_CHI_update_mao_mechanic_gui = yes
 }
 
+UP_CHI_reduce_mao_suspicion_medium = {
+	custom_effect_tooltip = UP_CHI_mao_suspicion_minus_10_tt
+	add_to_variable = { UP_CHI_mao_suspicion = -10 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
 UP_CHI_add_mao_suspicion_medium = {
 	custom_effect_tooltip = UP_CHI_mao_suspicion_plus_10_tt
 	add_to_variable = { UP_CHI_mao_suspicion = 10 }

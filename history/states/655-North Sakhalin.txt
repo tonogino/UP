@@ -12,9 +12,9 @@ state = {
 	state_category = pastoral
 	history = {
 
-		owner = FEA
-	controller = FEA
-	add_core_of = FEA
+		owner = JAP
+	controller = JAP
+	add_core_of = JAP
 		add_core_of = SOV
 		add_core_of = FER
 		add_core_of = ANU

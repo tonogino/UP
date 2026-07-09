@@ -1,0 +1,17 @@
+air_wings = {
+	282 = {
+		small_plane_airframe_0 = { owner = "JAP" amount = 120 version_name = "Ki-10" }
+		small_plane_cas_airframe_0 = { owner = "JAP" amount = 60 version_name = "Ki-3" }
+		medium_plane_airframe_0 = { owner = "JAP" amount = 60 version_name = "Ki-1" }
+	}
+	524 = {
+		small_plane_airframe_0 = { owner = "JAP" amount = 80 version_name = "A5M" }
+		small_plane_cas_airframe_0 = { owner = "JAP" amount = 50 version_name = "Ki-2" }
+		small_plane_naval_bomber_airframe_0 = { owner = "JAP" amount = 90 version_name = "B4Y" }
+	}
+	528 = {
+		small_plane_airframe_0 = { owner = "JAP" amount = 90 version_name = "Ki-10" }
+		small_plane_naval_bomber_airframe_0 = { owner = "JAP" amount = 80 version_name = "B4Y" }
+		medium_plane_airframe_0 = { owner = "JAP" amount = 40 version_name = "Ki-1" }
+	}
+}

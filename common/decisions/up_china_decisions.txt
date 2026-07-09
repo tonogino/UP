@@ -482,3 +482,64 @@ UP_china_assassination_decisions = {
 		}
 	}
 }
+
+UP_china_local_autonomy_arrangement_decisions = {
+	UP_CHI_standardize_autonomous_tax_share = {
+		icon = generic_positive_trade_relations
+		cost = 35
+		days_remove = 45
+		fire_only_once = yes
+		available = {
+			has_country_flag = UP_CHI_local_autonomy_arrangements_unlocked
+			any_subject_country = { exists = yes }
+		}
+		visible = { has_country_flag = UP_CHI_local_autonomy_arrangements_unlocked }
+		complete_effect = {
+			add_political_power = 25
+			every_subject_country = {
+				add_opinion_modifier = { target = ROOT modifier = asian_reconciliation }
+				add_stability = 0.03
+			}
+		}
+	}
+
+	UP_CHI_guarantee_local_councils = {
+		icon = generic_improve_relations
+		cost = 35
+		days_remove = 45
+		fire_only_once = yes
+		available = {
+			has_country_flag = UP_CHI_local_autonomy_arrangements_unlocked
+			any_subject_country = { exists = yes }
+		}
+		visible = { has_country_flag = UP_CHI_local_autonomy_arrangements_unlocked }
+		complete_effect = {
+			add_stability = 0.02
+			every_subject_country = {
+				add_ideas = UP_local_interests_compromise
+				add_stability = 0.05
+			}
+		}
+	}
+}
+
+UP_china_mass_campaign_decisions = {
+	UP_CHI_launch_big_character_poster_campaign = {
+		icon = generic_propaganda
+		cost = 0
+		days_remove = 21
+		available = {
+			has_country_flag = UP_CHI_big_character_poster_decisions_unlocked
+			NOT = { has_country_flag = UP_CHI_big_character_poster_cooldown }
+		}
+		visible = { has_country_flag = UP_CHI_big_character_poster_decisions_unlocked }
+		complete_effect = {
+			add_political_power = 25
+			add_stability = -0.02
+			UP_CHI_add_mao_support_small = yes
+			UP_CHI_add_mao_suspicion_small = yes
+			set_country_flag = UP_CHI_big_character_poster_cooldown
+			country_event = { id = up_asia.395 days = 90 }
+		}
+	}
+}

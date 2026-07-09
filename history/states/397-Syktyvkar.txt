@@ -9,14 +9,14 @@ state = {
 		victory_points = {
 			108 1 
 		}
-		owner = SIB
-	controller = SIB
-	add_core_of = SIB
+		owner = SOV
+	controller = SOV
+	add_core_of = SOV
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = SOV
+		add_core_of = SIB
 		add_core_of = KOM
 	}
 

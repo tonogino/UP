@@ -14,4 +14,24 @@ opinion_modifiers = {
 	anti_western_imperialism = {
 		value = -50
 	}
+
+	UP_XIC_joint_anti_japanese_friendship = {
+		value = 100
+	}
+
+	UP_XIC_anti_japanese_alignment = {
+		value = -100
+	}
+
+	UP_XIC_tokyo_fengtian_friendship = {
+		value = 50
+	}
+
+	UP_XIC_independence_tension = {
+		value = -75
+	}
+
+	UP_XIC_third_way_distance = {
+		value = -50
+	}
 }

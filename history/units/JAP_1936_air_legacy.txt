@@ -1,0 +1,5 @@
+air_wings = {
+	282 = { fighter_equipment_0 = { owner = "JAP" amount = 120 version_name = "Ki-10" } CAS_equipment_1 = { owner = "JAP" amount = 60 version_name = "Ki-3" } tac_bomber_equipment_0 = { owner = "JAP" amount = 60 version_name = "Ki-1" } }
+	524 = { fighter_equipment_0 = { owner = "JAP" amount = 80 version_name = "A5M" } CAS_equipment_1 = { owner = "JAP" amount = 50 version_name = "Ki-2" } nav_bomber_equipment_1 = { owner = "JAP" amount = 90 version_name = "B4Y" } }
+	528 = { fighter_equipment_0 = { owner = "JAP" amount = 90 version_name = "Ki-10" } nav_bomber_equipment_1 = { owner = "JAP" amount = 80 version_name = "B4Y" } tac_bomber_equipment_0 = { owner = "JAP" amount = 40 version_name = "Ki-1" } }
+}

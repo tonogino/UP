@@ -24,12 +24,8 @@ create_country_leader = {
 	}
 }
 
-set_country_flag = UP_manchuria_unleashed_puppet
-set_country_flag = UP_manchuria_independence_recognized
-
-add_ideas = {
-	UP_unleashed_puppet
-}
+set_country_flag = UP_XIC_fengtian_warlord_active
+set_country_flag = UP_XIC_independence_recognized
 
 set_technology = {
 	infantry_weapons = 1

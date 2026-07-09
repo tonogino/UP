@@ -1,0 +1,27 @@
+units = {
+	 fleet = {
+		name = "Republican Navy"
+		naval_base = 7014
+		task_force = {
+			name = "ROCN Main Squadron"
+			location = 7014
+			ship = { name = "Ninghai" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "Ninghai Class" } } }
+			ship = { name = "Pinghai" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "Ninghai Class" } } }
+			ship = { name = "Yat Sen" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Yat Sen Class" } } }
+			ship = { name = "Jian Kang" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jiangfeng Class" } } }
+			ship = { name = "Yu Chang" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jiangfeng Class" } } }
+			ship = { name = "Tong An" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jiangfeng Class" } } }
+			ship = { name = "Hai Ning" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Coastal Destroyer" } } }
+			ship = { name = "Hai Chou" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Coastal Destroyer" } } }
+		}
+		task_force = {
+			name = "ROCN Patrol Squadron"
+			location = 7014
+			ship = { name = "Hai Lung" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "Hai Lung Class" } } }
+			ship = { name = "Hai Hu" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHI version_name = "Hai Lung Class" } } }
+			ship = { name = "Chu Tai" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Patrol Destroyer" } } }
+			ship = { name = "Chu Yu" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Patrol Destroyer" } } }
+			ship = { name = "Chu Tung" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Patrol Destroyer" } } }
+		}
+	}
+}

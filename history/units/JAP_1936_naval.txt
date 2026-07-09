@@ -1,0 +1,168 @@
+units = {
+	 fleet = {
+		name = "Combined Fleet"
+		naval_base = 9998
+		task_force = {
+			name = "First Carrier Force"
+			location = 9998
+			ship = { name = "Akagi" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Carrier Group" } } }
+			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Carrier Group" } } }
+			ship = { name = "Ryujo" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Carrier Group" } } }
+			ship = { name = "Hosho" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Carrier Group" } } }
+			ship = { name = "Soryu" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Carrier Group" } } }
+		}
+		task_force = {
+			name = "Battle Line"
+			location = 9998
+			ship = { name = "Nagato" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+			ship = { name = "Mutsu" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+			ship = { name = "Fuso" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+			ship = { name = "Yamashiro" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+			ship = { name = "Ise" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+			ship = { name = "Haruna" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Battle Line" } } }
+		}
+		task_force = {
+			name = "Cruiser Force"
+			location = 9998
+			ship = { name = "Takao" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Atago" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Maya" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Chokai" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Myoko" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Nachi" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Haguro" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Ashigara" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Aoba" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Kinugasa" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Furutaka" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Kako" definition = heavy_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = JAP version_name = "Heavy Cruiser Group" } } }
+			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Isuzu" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Yura" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Kinu" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Abukuma" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Kuma" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Tama" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Kitakami" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Ooi" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Tenryu" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Tatsuta" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Katori" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Kashima" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Yubari" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+			ship = { name = "Oyodo" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = JAP version_name = "Light Cruiser Group" } } }
+		}
+		task_force = {
+			name = "Destroyer Force"
+			location = 9998
+			ship = { name = "IJN Destroyer 1" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 2" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 3" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 4" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 5" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 6" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 7" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 8" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 9" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 10" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 11" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 12" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 13" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 14" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 15" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 16" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 17" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 18" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 19" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 20" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 21" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 22" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 23" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 24" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 25" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 26" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 27" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 28" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 29" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 30" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 31" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 32" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 33" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 34" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 35" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 36" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 37" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 38" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 39" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 40" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 41" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 42" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 43" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 44" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 45" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 46" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 47" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 48" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 49" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 50" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 51" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 52" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 53" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 54" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 55" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 56" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 57" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 58" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 59" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 60" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 61" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 62" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 63" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+			ship = { name = "IJN Destroyer 64" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = JAP version_name = "Imperial Destroyer" } } }
+		}
+		task_force = {
+			name = "Submarine Force"
+			location = 9998
+			ship = { name = "I-51" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-52" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-53" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-54" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-55" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-56" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-57" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-58" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-59" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-60" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-61" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-62" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-63" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-64" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-65" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-66" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-67" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-68" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-69" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-70" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-71" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-72" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-73" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-74" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-75" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-76" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-77" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-78" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-79" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-80" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-81" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-82" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-83" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-84" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-85" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+			ship = { name = "I-86" definition = submarine start_experience_factor = 0.35 equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "Kaidai Class" } } }
+		}
+	}
+}

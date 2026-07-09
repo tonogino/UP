@@ -1,0 +1,33 @@
+
+state={
+	id=609
+	name="STATE_609"
+	manpower = 2304229
+	
+	state_category = town
+
+	history = {
+
+		owner = CHI
+		controller = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+
+		}
+
+		victory_points = {
+			1052 5 # tangshan 
+		}
+
+	}
+
+	provinces={
+		11822 12043 900 1052 3830 3900 9905
+	}
+
+	local_supplies=0.0 
+}

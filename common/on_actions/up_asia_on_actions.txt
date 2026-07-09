@@ -105,6 +105,12 @@ on_actions = {
 					country_event = { id = up_japan.5 }
 				}
 			}
+			XIC = {
+				if = {
+					limit = { has_country_flag = UP_XIC_fengtian_mechanic_active }
+					UP_XIC_monthly_fengtian_mechanic_effect = yes
+				}
+			}
 		}
 	}
 }

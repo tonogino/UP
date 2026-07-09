@@ -224,6 +224,8 @@ add_ideas = UP_unfinished_revolution
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1

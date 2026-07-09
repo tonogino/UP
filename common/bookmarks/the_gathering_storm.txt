@@ -30,10 +30,10 @@ bookmarks = {
 		}
 
 		XIC = {
-			history = "UP_MAN_BOOKMARK_DESC"
+			history = "UP_XIC_BOOKMARK_DESC"
 			ideology = neutrality
 			focuses = {
-				UP_MAN_harbin_declaration
+				UP_XIC_focus_132
 			}
 		}
 

@@ -44,6 +44,20 @@ UP_china_mao_mechanic_decisions = {
 	priority = 35
 }
 
+UP_china_local_autonomy_arrangement_decisions = {
+	icon = generic_improve_relations
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_local_autonomy_arrangements_unlocked }
+	priority = 22
+}
+
+UP_china_mass_campaign_decisions = {
+	icon = generic_propaganda
+	allowed = { OR = { original_tag = CHI tag = CHI } }
+	visible = { has_country_flag = UP_CHI_big_character_poster_decisions_unlocked }
+	priority = 24
+}
+
 UP_japan_imperial_conference_decisions = {
 	icon = generic_political_discourse
 	allowed = { OR = { original_tag = JAP tag = JAP } }

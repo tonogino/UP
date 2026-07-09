@@ -1,0 +1,5 @@
+air_wings = {
+	1035 = { fighter_equipment_0 = { owner = "CHI" amount = 60 version_name = "Hawk III" } CAS_equipment_1 = { owner = "CHI" amount = 30 version_name = "V-11" } }
+	1036 = { fighter_equipment_0 = { owner = "CHI" amount = 45 version_name = "Hawk II" } tac_bomber_equipment_0 = { owner = "CHI" amount = 24 version_name = "B-10" } }
+	613 = { fighter_equipment_0 = { owner = "CHI" amount = 30 version_name = "P-26" } CAS_equipment_1 = { owner = "CHI" amount = 20 version_name = "A-12" } }
+}

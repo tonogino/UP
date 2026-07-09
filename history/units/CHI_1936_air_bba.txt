@@ -1,0 +1,14 @@
+air_wings = {
+	1035 = {
+		small_plane_airframe_0 = { owner = "CHI" amount = 60 version_name = "Hawk III" }
+		small_plane_cas_airframe_0 = { owner = "CHI" amount = 30 version_name = "V-11" }
+	}
+	1036 = {
+		small_plane_airframe_0 = { owner = "CHI" amount = 45 version_name = "Hawk II" }
+		medium_plane_airframe_0 = { owner = "CHI" amount = 24 version_name = "B-10" }
+	}
+	613 = {
+		small_plane_airframe_0 = { owner = "CHI" amount = 30 version_name = "P-26" }
+		small_plane_cas_airframe_0 = { owner = "CHI" amount = 20 version_name = "A-12" }
+	}
+}

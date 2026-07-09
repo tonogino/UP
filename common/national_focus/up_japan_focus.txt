@@ -5,9 +5,9 @@ focus_tree = {
         modifier = { add = 1000000 tag = JAP }
     }
     default = no
-    continuous_focus_position = { x = 0 y = 300 }
+    continuous_focus_position = { x = 0 y = 3000 }
 
-    focus = {
+focus = {
         id = UP_JAP_convene_imperial_conference
         icon = GFX_goal_generic_political_pressure
         x = 12
@@ -24,11 +24,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_southern_resource_survey
         icon = GFX_goal_generic_construct_civ_factory
         x = 51
-        y = 1
+        y = 0
         cost = 10
         ai_will_do = {
             factor = 1
@@ -42,11 +42,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_136
         icon = GFX_goal_generic_political_pressure
         x = 29
-        y = 1
+        y = 0
         cost = 10
         completion_reward = {
             add_to_variable = { UP_JAP_far_east_resistance = -10 }
@@ -55,11 +55,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_reassess_continental_strategy
         icon = GFX_goal_generic_political_pressure
         x = 39
-        y = 1
+        y = 0
         cost = 10
         completion_reward = {
             UP_JAP_add_toseiha_prestige_medium = yes
@@ -70,11 +70,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_199
         icon = GFX_goal_generic_construct_civ_factory
         x = 35
-        y = 3
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_reassess_continental_strategy }
         completion_reward = {
@@ -85,11 +85,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_209
         icon = GFX_goal_generic_political_pressure
         x = 39
-        y = 3
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_reassess_continental_strategy }
         completion_reward = {
@@ -98,11 +98,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_202
         icon = GFX_goal_generic_construct_civ_factory
-        x = 42
-        y = 3
+        x = 43
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_reassess_continental_strategy }
         completion_reward = {
@@ -111,11 +111,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_244
         icon = GFX_goal_generic_air_fighter
-        x = 48
-        y = 3
+        x = 49
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_southern_resource_survey }
         completion_reward = {
@@ -125,11 +125,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_245
         icon = GFX_goal_generic_navy_cruiser
         x = 54
-        y = 3
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_southern_resource_survey }
         completion_reward = {
@@ -138,11 +138,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_139
         icon = GFX_goal_generic_political_pressure
         x = 29
-        y = 3
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_focus_136 }
         completion_reward = {
@@ -152,11 +152,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_185
         icon = GFX_goal_generic_political_pressure
         x = 31
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_139 }
         completion_reward = {
@@ -165,11 +165,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_heirs_of_northern_victory
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 2
+        y = 1
         cost = 10
         prerequisite = { focus = UP_JAP_convene_imperial_conference }
         completion_reward = {
@@ -180,11 +180,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_249
         icon = GFX_goal_generic_air_fighter
-        x = 44
-        y = 6
+        x = 45
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_244 }
         completion_reward = {
@@ -195,13 +195,14 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_250
         icon = GFX_goal_generic_air_fighter
-        x = 46
-        y = 6
+        x = 47
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_244 }
+        mutually_exclusive = { focus = UP_JAP_focus_249 }
         completion_reward = {
             add_ideas = UP_JAP_modern_bomber_program
             add_tech_bonus = { bonus = 0.5 uses = 2 category = tactical_bomber }
@@ -210,11 +211,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_182
         icon = GFX_goal_generic_construct_civ_factory
         x = 30
-        y = 5
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_185 }
         completion_reward = {
@@ -223,11 +224,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_187
         icon = GFX_goal_generic_construct_civ_factory
         x = 32
-        y = 5
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_185 }
         completion_reward = {
@@ -236,11 +237,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_203
         icon = GFX_goal_generic_construct_civ_factory
         x = 34
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_199 }
         completion_reward = {
@@ -251,11 +252,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_207
         icon = GFX_goal_generic_construct_civ_factory
         x = 36
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_199 }
         completion_reward = {
@@ -267,11 +268,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_218
         icon = GFX_goal_generic_construct_civ_factory
-        x = 42
-        y = 5
+        x = 43
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_202 }
         completion_reward = {
@@ -280,11 +281,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_219
         icon = GFX_goal_generic_construct_civ_factory
-        x = 41
-        y = 4
+        x = 42
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_202 }
         completion_reward = {
@@ -293,11 +294,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_276
         icon = GFX_goal_generic_navy_cruiser
-        x = 52
-        y = 4
+        x = 53
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_245 }
         completion_reward = {
@@ -307,11 +308,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_277
         icon = GFX_goal_generic_political_pressure
-        x = 56
-        y = 4
+        x = 55
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_245 }
         completion_reward = {
@@ -320,11 +321,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_140
         icon = GFX_goal_generic_political_pressure
         x = 25
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_139 }
         completion_reward = {
@@ -333,11 +334,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_141
         icon = GFX_goal_generic_political_pressure
         x = 27
-        y = 6
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_139 }
         completion_reward = {
@@ -346,11 +347,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_226
         icon = GFX_goal_generic_political_pressure
         x = 38
-        y = 5
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_209 }
         completion_reward = {
@@ -360,11 +361,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_227
         icon = GFX_goal_generic_construct_civ_factory
         x = 40
-        y = 5
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_209 }
         completion_reward = {
@@ -375,11 +376,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_southern_lifeline
         icon = GFX_goal_generic_navy_cruiser
         x = 5
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_heirs_of_northern_victory }
         available = {
@@ -393,11 +394,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_total_war_state_system
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_heirs_of_northern_victory }
         ai_will_do = {
@@ -408,11 +409,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_222
         icon = GFX_goal_generic_political_pressure
-        x = 43
-        y = 4
+        x = 44
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_focus_202 }
         completion_reward = {
@@ -421,14 +422,13 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_253
         icon = GFX_goal_generic_air_fighter
-        x = 45
-        y = 8
+        x = 46
+        y = 4
         cost = 10
-        prerequisite = { focus = UP_JAP_focus_249 }
-        prerequisite = { focus = UP_JAP_focus_250 }
+        prerequisite = { focus = UP_JAP_focus_249 focus = UP_JAP_focus_250 }
         completion_reward = {
             add_ideas = UP_JAP_imported_flight_instructors
             air_experience = 20
@@ -436,11 +436,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_146
         icon = GFX_goal_generic_political_pressure
         x = 22
-        y = 5
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_140 }
         completion_reward = {
@@ -449,11 +449,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_147
         icon = GFX_goal_generic_political_pressure
         x = 28
-        y = 7
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_141 }
         completion_reward = {
@@ -462,11 +462,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_establish_northern_general_staff
         icon = GFX_goal_generic_political_pressure
         x = 18
-        y = 4
+        y = 2
         cost = 10
         prerequisite = { focus = UP_JAP_heirs_of_northern_victory }
         available = {
@@ -477,11 +477,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_200
         icon = GFX_goal_generic_construct_civ_factory
         x = 24
-        y = 5
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_140 }
         completion_reward = {
@@ -490,11 +490,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_145
         icon = GFX_goal_generic_political_pressure
         x = 25
-        y = 7
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_140 }
         prerequisite = { focus = UP_JAP_focus_141 }
@@ -504,11 +504,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_183
         icon = GFX_goal_generic_political_pressure
         x = 30
-        y = 6
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_182 }
         completion_reward = {
@@ -517,11 +517,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_188
         icon = GFX_goal_generic_construct_civ_factory
         x = 32
-        y = 6
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_187 }
         completion_reward = {
@@ -530,11 +530,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_206
         icon = GFX_goal_generic_construct_civ_factory
         x = 34
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_203 }
         completion_reward = {
@@ -543,11 +543,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_208
         icon = GFX_goal_generic_construct_civ_factory
         x = 36
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_207 }
         completion_reward = {
@@ -556,11 +556,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_230
         icon = GFX_goal_generic_construct_civ_factory
         x = 39
-        y = 7
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_226 }
         prerequisite = { focus = UP_JAP_focus_227 }
@@ -570,11 +570,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_278
         icon = GFX_goal_generic_navy_cruiser
         x = 52
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_276 }
         mutually_exclusive = { focus = UP_JAP_focus_279 }
@@ -585,11 +585,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_279
         icon = GFX_goal_generic_navy_cruiser
         x = 54
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_276 focus = UP_JAP_focus_277 }
         mutually_exclusive = { focus = UP_JAP_focus_280 }
@@ -599,11 +599,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_280
         icon = GFX_goal_generic_navy_cruiser
         x = 56
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_focus_277 }
         completion_reward = {
@@ -613,11 +613,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_combined_fleet_budget
         icon = GFX_goal_generic_navy_cruiser
         x = 5
-        y = 6
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_southern_lifeline }
         completion_reward = {
@@ -628,11 +628,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_deep_manchurian_underground
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 6
+        y = 3
         cost = 10
         completion_reward = {
             add_ideas = UP_JAP_fengtian_intelligence_network
@@ -641,11 +641,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_map_northeastern_reality
         icon = GFX_goal_generic_political_pressure
         x = 10
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_total_war_state_system }
         completion_reward = {
@@ -655,11 +655,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_contact_puyi
         icon = GFX_goal_generic_political_pressure
         x = 14
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_total_war_state_system }
         completion_reward = {
@@ -667,11 +667,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_223
         icon = GFX_goal_generic_political_pressure
-        x = 42
-        y = 7
+        x = 43
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_218 }
         completion_reward = {
@@ -680,11 +680,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_160
         icon = GFX_goal_generic_political_pressure
         x = 21
-        y = 6
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_146 }
         completion_reward = {
@@ -694,11 +694,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_161
         icon = GFX_goal_generic_political_pressure
         x = 23
-        y = 6
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_146 }
         completion_reward = {
@@ -709,11 +709,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_256
         icon = GFX_goal_generic_political_pressure
-        x = 44
-        y = 9
+        x = 45
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_253 }
         completion_reward = {
@@ -723,11 +723,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_257
         icon = GFX_goal_generic_political_pressure
-        x = 46
-        y = 9
+        x = 47
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_253 }
         mutually_exclusive = { focus = UP_JAP_focus_256 }
@@ -738,11 +738,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_289
         icon = GFX_goal_generic_navy_cruiser
         x = 51
-        y = 7
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_278 }
         ai_will_do = {
@@ -755,11 +755,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_291
         icon = GFX_goal_generic_navy_cruiser
         x = 57
-        y = 7
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_280 }
         completion_reward = {
@@ -769,11 +769,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_152
         icon = GFX_goal_generic_political_pressure
         x = 27
-        y = 8
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_147 }
         completion_reward = {
@@ -784,11 +784,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_153
         icon = GFX_goal_generic_navy_cruiser
         x = 29
-        y = 8
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_147 }
         mutually_exclusive = { focus = UP_JAP_focus_152 }
@@ -800,11 +800,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_192
         icon = GFX_goal_generic_construct_civ_factory
         x = 31
-        y = 8
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_183 }
         prerequisite = { focus = UP_JAP_focus_188 }
@@ -814,11 +814,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_purge_white_remnants
         icon = GFX_goal_generic_major_war
         x = 17
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_establish_northern_general_staff }
         completion_reward = {
@@ -826,11 +826,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_cossack_submission_act
         icon = GFX_goal_generic_political_pressure
         x = 19
-        y = 6
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_establish_northern_general_staff }
         completion_reward = {
@@ -838,11 +838,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_215
         icon = GFX_goal_generic_political_pressure
         x = 35
-        y = 8
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_206 }
         prerequisite = { focus = UP_JAP_focus_208 }
@@ -852,11 +852,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_233
         icon = GFX_goal_generic_construct_civ_factory
         x = 39
-        y = 8
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_focus_230 }
         ai_will_do = {
@@ -868,11 +868,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_297
         icon = GFX_goal_generic_navy_cruiser
         x = 54
-        y = 9
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_279 focus = UP_JAP_focus_278 focus = UP_JAP_focus_280 }
         completion_reward = {
@@ -883,11 +883,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_293
         icon = GFX_goal_generic_navy_cruiser
         x = 52
-        y = 9
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_279 focus = UP_JAP_focus_278 focus = UP_JAP_focus_280 }
         completion_reward = {
@@ -897,11 +897,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_294
         icon = GFX_goal_generic_navy_cruiser
         x = 56
-        y = 9
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_279 focus = UP_JAP_focus_278 focus = UP_JAP_focus_280 }
         ai_will_do = {
@@ -914,11 +914,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_435
         icon = GFX_goal_generic_navy_cruiser
-        x = 3
-        y = 8
+        x = 4
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_combined_fleet_budget }
         completion_reward = {
@@ -930,11 +930,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_436
         icon = GFX_goal_generic_navy_cruiser
         x = 5
-        y = 8
+        y = 3
         cost = 10
         prerequisite = { focus = UP_JAP_combined_fleet_budget }
         completion_reward = {
@@ -944,11 +944,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_437
         icon = GFX_goal_generic_construct_civ_factory
-        x = 7
-        y = 8
+        x = 6
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_combined_fleet_budget }
         completion_reward = {
@@ -959,11 +959,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_238
         icon = GFX_goal_generic_political_pressure
-        x = 37
-        y = 9
+        x = 38
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_233 }
         completion_reward = {
@@ -972,11 +972,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_plot_zhang_zuolin_assassination
         icon = GFX_goal_generic_major_war
         x = 12
-        y = 8
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_total_war_state_system }
         prerequisite = { focus = UP_JAP_deep_manchurian_underground }
@@ -989,11 +989,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_260
         icon = GFX_goal_generic_air_fighter
-        x = 45
-        y = 11
+        x = 46
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_253 }
         completion_reward = {
@@ -1004,11 +1004,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_164
         icon = GFX_goal_generic_political_pressure
         x = 22
-        y = 7
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_focus_160 }
         prerequisite = { focus = UP_JAP_focus_161 }
@@ -1019,11 +1019,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_156
         icon = GFX_goal_generic_political_pressure
         x = 28
-        y = 9
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_152 focus = UP_JAP_focus_153 }
         completion_reward = {
@@ -1032,11 +1032,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_enemy_of_my_enemy
         icon = GFX_goal_generic_major_alliance
-        x = 24
-        y = 9
+        x = 20
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_militarize_siberian_railway }
         completion_reward = {
@@ -1044,11 +1044,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_militarize_siberian_railway
         icon = GFX_goal_generic_construct_civ_factory
         x = 18
-        y = 8
+        y = 4
         cost = 10
         prerequisite = { focus = UP_JAP_purge_white_remnants }
         prerequisite = { focus = UP_JAP_cossack_submission_act }
@@ -1058,11 +1058,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_300
         icon = GFX_goal_generic_navy_cruiser
         x = 51
-        y = 10
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_293 }
         completion_reward = {
@@ -1072,11 +1072,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_301
         icon = GFX_goal_generic_navy_cruiser
         x = 53
-        y = 11
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_293 }
         ai_will_do = {
@@ -1089,11 +1089,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_302
         icon = GFX_goal_generic_navy_cruiser
         x = 55
-        y = 11
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_294 }
         completion_reward = {
@@ -1103,11 +1103,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_redraw_southern_maps
         icon = GFX_goal_generic_navy_cruiser
         x = 5
-        y = 10
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_435 }
         prerequisite = { focus = UP_JAP_focus_436 }
@@ -1118,11 +1118,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_northeast_tokyo_cooperation_government
         icon = GFX_goal_generic_major_alliance
         x = 39
-        y = 10
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_focus_233 }
         bypass = {
@@ -1135,11 +1135,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_second_918_incident
         icon = GFX_goal_generic_major_war
         x = 12
-        y = 9
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_plot_zhang_zuolin_assassination }
         completion_reward = {
@@ -1149,11 +1149,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_tokyo_berlin_treaty
         icon = GFX_goal_generic_major_alliance
-        x = 24
-        y = 10
+        x = 20
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_enemy_of_my_enemy }
         available = {
@@ -1166,11 +1166,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_second_northern_advance
         icon = GFX_goal_generic_major_war
         x = 18
-        y = 9
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_militarize_siberian_railway }
         completion_reward = {
@@ -1181,11 +1181,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_cooperate_with_manchurian_government
         icon = GFX_goal_generic_major_alliance
-        x = 22
-        y = 9
+        x = 16
+        y = 5
         cost = 10
         prerequisite = { focus = UP_JAP_militarize_siberian_railway }
         completion_reward = {
@@ -1193,11 +1193,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_167
         icon = GFX_goal_generic_political_pressure
         x = 25
-        y = 13
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_focus_145 }
         completion_reward = {
@@ -1206,11 +1206,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_263
         icon = GFX_goal_generic_air_fighter
         x = 44
-        y = 13
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_focus_260 }
         mutually_exclusive = { focus = UP_JAP_focus_264 }
@@ -1221,11 +1221,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_264
         icon = GFX_goal_generic_air_fighter
-        x = 46
-        y = 13
+        x = 47
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_focus_260 }
         completion_reward = {
@@ -1235,11 +1235,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_pressure_dutch_east_indies
         icon = GFX_goal_generic_major_war
         x = 3
-        y = 11
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_redraw_southern_maps }
         completion_reward = {
@@ -1248,11 +1248,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_panay_incident
         icon = GFX_goal_generic_political_pressure
         x = 8
-        y = 11
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_redraw_southern_maps }
         completion_reward = {
@@ -1261,11 +1261,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_309
         icon = GFX_goal_generic_navy_cruiser
         x = 54
-        y = 13
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_focus_301 }
         prerequisite = { focus = UP_JAP_focus_302 }
@@ -1275,11 +1275,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_enter_xinjing
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 10
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_second_918_incident }
         completion_reward = {
@@ -1288,11 +1288,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_274
         icon = GFX_goal_generic_navy_cruiser
-        x = 48
-        y = 12
+        x = 49
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_focus_244 }
         completion_reward = {
@@ -1301,11 +1301,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_308
         icon = GFX_goal_generic_navy_cruiser
-        x = 51
-        y = 12
+        x = 52
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_focus_300 }
         prerequisite = { focus = UP_JAP_focus_301 }
@@ -1317,11 +1317,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_march_toward_europe
         icon = GFX_goal_generic_major_war
-        x = 24
-        y = 11
+        x = 20
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_tokyo_berlin_treaty }
         completion_reward = {
@@ -1329,11 +1329,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_chita_operation
         icon = GFX_goal_generic_major_war
         x = 20
-        y = 11
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_second_northern_advance }
         completion_reward = {
@@ -1343,11 +1343,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_march_to_caucasus
         icon = GFX_goal_generic_major_war
         x = 16
-        y = 11
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_second_northern_advance }
         completion_reward = {
@@ -1355,11 +1355,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_irkutsk_campaign
         icon = GFX_goal_generic_major_war
         x = 18
-        y = 11
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_second_northern_advance }
         completion_reward = {
@@ -1369,11 +1369,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_from_vladivostok_to_caucasus
         icon = GFX_goal_generic_navy_cruiser
-        x = 22
-        y = 11
+        x = 16
+        y = 6
         cost = 10
         prerequisite = { focus = UP_JAP_cooperate_with_manchurian_government }
         completion_reward = {
@@ -1381,11 +1381,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_169
         icon = GFX_goal_generic_political_pressure
         x = 24
-        y = 14
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_focus_167 }
         completion_reward = {
@@ -1394,11 +1394,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_170
         icon = GFX_goal_generic_political_pressure
         x = 26
-        y = 14
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_focus_167 }
         mutually_exclusive = { focus = UP_JAP_focus_169 }
@@ -1408,11 +1408,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_443
         icon = GFX_goal_generic_political_pressure
-        x = 29
-        y = 14
+        x = 28
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_focus_167 }
         completion_reward = {
@@ -1421,11 +1421,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_266
         icon = GFX_goal_generic_political_pressure
         x = 34
-        y = 14
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_focus_167 }
         prerequisite = { focus = UP_JAP_focus_263 }
@@ -1435,11 +1435,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_demand_french_indochina
         icon = GFX_goal_generic_political_pressure
         x = 3
-        y = 12
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_pressure_dutch_east_indies }
         completion_reward = {
@@ -1448,11 +1448,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_support_northeast_infrastructure
         icon = GFX_goal_generic_construct_civ_factory
         x = 10
-        y = 12
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_enter_xinjing }
         completion_reward = {
@@ -1460,11 +1460,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_japan_manchuria_intermarriage_policy
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 12
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_enter_xinjing }
         completion_reward = {
@@ -1472,11 +1472,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_northeast_pacification_strategy
         icon = GFX_goal_generic_political_pressure
         x = 14
-        y = 12
+        y = 7
         cost = 10
         prerequisite = { focus = UP_JAP_enter_xinjing }
         completion_reward = {
@@ -1484,11 +1484,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_true_maritime_hegemony
         icon = GFX_goal_generic_navy_cruiser
         x = 50
-        y = 14
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_focus_274 }
         prerequisite = { focus = UP_JAP_focus_308 }
@@ -1498,11 +1498,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_ah_the_navy
         icon = GFX_goal_generic_navy_cruiser
         x = 54
-        y = 15
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_focus_309 }
         completion_reward = {
@@ -1511,11 +1511,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_northern_imperial_defense_line
         icon = GFX_goal_generic_political_pressure
         x = 17
-        y = 13
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_chita_operation focus = UP_JAP_march_to_caucasus }
         completion_reward = {
@@ -1526,11 +1526,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_emperors_frozen_frontier
         icon = GFX_goal_generic_political_pressure
         x = 19
-        y = 13
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_irkutsk_campaign focus = UP_JAP_march_to_caucasus }
         completion_reward = {
@@ -1538,11 +1538,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_malacca_strategy
         icon = GFX_goal_generic_navy_cruiser
         x = 3
-        y = 13
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_demand_french_indochina }
         completion_reward = {
@@ -1552,11 +1552,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_195
         icon = GFX_goal_generic_political_pressure
         x = 25
-        y = 16
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_focus_169 }
         prerequisite = { focus = UP_JAP_focus_170 }
@@ -1566,11 +1566,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_focus_269
         icon = GFX_goal_generic_political_pressure
         x = 34
-        y = 17
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_focus_266 }
         completion_reward = {
@@ -1582,8 +1582,8 @@ focus_tree = {
     focus = {
         id = UP_JAP_complete_sea_land_modernization
         icon = GFX_goal_generic_navy_cruiser
-        x = 46
-        y = 17
+        x = 47
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_focus_264 }
         prerequisite = { focus = UP_JAP_true_maritime_hegemony }
@@ -1596,11 +1596,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_black_soil_under_emperor
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 14
+        y = 8
         cost = 10
         prerequisite = { focus = UP_JAP_support_northeast_infrastructure focus = UP_JAP_northeast_pacification_strategy focus = UP_JAP_japan_manchuria_intermarriage_policy }
         available = {
@@ -1611,11 +1611,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_hakko_northern_frontier
         icon = GFX_goal_generic_political_pressure
         x = 18
-        y = 15
+        y = 11
         cost = 10
         prerequisite = { focus = UP_JAP_northern_imperial_defense_line focus = UP_JAP_emperors_frozen_frontier }
         available = {
@@ -1626,11 +1626,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_batavia_operation_draft
         icon = GFX_goal_generic_navy_cruiser
         x = 0
-        y = 14
+        y = 10
         cost = 9
         prerequisite = { focus = UP_JAP_malacca_strategy }
         ai_will_do = {
@@ -1643,11 +1643,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_malaya_rubber_blockade_plan
         icon = GFX_goal_generic_navy_cruiser
         x = 2
-        y = 14
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_malacca_strategy }
         completion_reward = {
@@ -1657,11 +1657,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_suppress_guam_and_wake
         icon = GFX_goal_generic_navy_cruiser
         x = 4
-        y = 14
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_malacca_strategy }
         completion_reward = {
@@ -1670,11 +1670,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_isolate_the_philippines
         icon = GFX_goal_generic_navy_cruiser
         x = 6
-        y = 14
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_malacca_strategy }
         completion_reward = {
@@ -1684,11 +1684,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_establish_mongolian_military_government
         icon = GFX_goal_generic_major_alliance
         x = 10
-        y = 15
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_black_soil_under_emperor }
         completion_reward = {
@@ -1696,11 +1696,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_twenty_one_demands
         icon = GFX_goal_generic_major_alliance
         x = 12
-        y = 15
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_black_soil_under_emperor }
         completion_reward = {
@@ -1709,11 +1709,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_infiltrate_chinese_soviet_government
         icon = GFX_goal_generic_major_alliance
         x = 14
-        y = 15
+        y = 9
         cost = 10
         prerequisite = { focus = UP_JAP_black_soil_under_emperor }
         completion_reward = {
@@ -1723,11 +1723,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_pearl_harbor_incident
         icon = GFX_goal_generic_navy_cruiser
         x = 8
-        y = 14
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_panay_incident }
         prerequisite = { focus = UP_JAP_malacca_strategy }
@@ -1740,11 +1740,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_lugou_bridge_incident
         icon = GFX_goal_generic_major_war
         x = 11
-        y = 17
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_establish_mongolian_military_government }
         prerequisite = { focus = UP_JAP_twenty_one_demands }
@@ -1754,11 +1754,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_joint_cleanup_remaining_forces
         icon = GFX_goal_generic_major_war
         x = 13
-        y = 17
+        y = 10
         cost = 10
         prerequisite = { focus = UP_JAP_establish_mongolian_military_government }
         prerequisite = { focus = UP_JAP_twenty_one_demands }
@@ -1770,11 +1770,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_develop_southern_resources
         icon = GFX_goal_generic_construct_civ_factory
         x = 3
-        y = 17
+        y = 12
         cost = 10
         prerequisite = { focus = UP_JAP_malacca_strategy }
         completion_reward = {
@@ -1782,11 +1782,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_first_imperial_strike
         icon = GFX_goal_generic_political_pressure
-        x = 5
-        y = 18
+        x = 6
+        y = 13
         cost = 10
         prerequisite = { focus = UP_JAP_malacca_strategy }
         prerequisite = { focus = UP_JAP_pearl_harbor_incident }
@@ -1797,11 +1797,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_strategic_offensive
         icon = GFX_goal_generic_major_war
         x = 10
-        y = 18
+        y = 11
         cost = 10
         prerequisite = { focus = UP_JAP_lugou_bridge_incident }
         completion_reward = {
@@ -1809,11 +1809,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_reorganize_national_government
         icon = GFX_goal_generic_major_alliance
         x = 11
-        y = 19
+        y = 12
         cost = 10
         prerequisite = { focus = UP_JAP_lugou_bridge_incident }
         completion_reward = {
@@ -1823,11 +1823,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_march_into_tibet
         icon = GFX_goal_generic_major_war
         x = 8
-        y = 20
+        y = 13
         cost = 10
         prerequisite = { focus = UP_JAP_reorganize_national_government }
         completion_reward = {
@@ -1835,11 +1835,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_unify_the_blue_seas
         icon = GFX_goal_generic_navy_cruiser
-        x = 5
-        y = 20
+        x = 6
+        y = 14
         cost = 10
         prerequisite = { focus = UP_JAP_first_imperial_strike }
         available = {
@@ -1858,11 +1858,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_purge_remaining_chinese_opposition
         icon = GFX_goal_generic_major_war
         x = 10
-        y = 20
+        y = 13
         cost = 10
         prerequisite = { focus = UP_JAP_reorganize_national_government }
         completion_reward = {
@@ -1870,11 +1870,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_develop_chinese_resources
         icon = GFX_goal_generic_construct_civ_factory
         x = 12
-        y = 20
+        y = 13
         cost = 10
         prerequisite = { focus = UP_JAP_reorganize_national_government }
         completion_reward = {
@@ -1882,11 +1882,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_integrate_tibetan_occupied_zones
         icon = GFX_goal_generic_political_pressure
         x = 8
-        y = 22
+        y = 14
         cost = 10
         prerequisite = { focus = UP_JAP_march_into_tibet }
         ai_will_do = {
@@ -1897,11 +1897,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_march_into_india
         icon = GFX_goal_generic_major_war
         x = 11
-        y = 22
+        y = 14
         cost = 10
         prerequisite = { focus = UP_JAP_purge_remaining_chinese_opposition }
         prerequisite = { focus = UP_JAP_develop_chinese_resources }
@@ -1914,11 +1914,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_tokyo_nanjing_axis
         icon = GFX_goal_generic_major_alliance
         x = 13
-        y = 22
+        y = 14
         cost = 10
         prerequisite = { focus = UP_JAP_joint_cleanup_remaining_forces }
         completion_reward = {
@@ -1927,11 +1927,11 @@ focus_tree = {
         }
     }
 
-    focus = {
+focus = {
         id = UP_JAP_unify_greater_east_asia
         icon = GFX_goal_generic_political_pressure
         x = 12
-        y = 24
+        y = 15
         cost = 10
         prerequisite = { focus = UP_JAP_march_into_india focus = UP_JAP_tokyo_nanjing_axis }
         available = {

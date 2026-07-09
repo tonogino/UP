@@ -1,0 +1,387 @@
+UP_CHI_focus_power_from_the_gun_effect = {
+	add_political_power = 75
+	add_war_support = 0.05
+	army_experience = 25
+	add_stability = -0.02
+	add_ideas = UP_gun_barrel_power
+}
+
+UP_CHI_focus_issue_grain_coupons_effect = {
+	add_stability = 0.05
+	add_political_power = -50
+	add_ideas = UP_grain_coupon_system
+}
+
+UP_CHI_focus_republic_solving_food_problem_effect = {
+	add_stability = 0.08
+	add_war_support = -0.02
+	remove_ideas = UP_grain_coupon_system
+	remove_ideas = UP_reconstruction_ruins
+	add_ideas = UP_food_supply_stabilized
+}
+
+UP_CHI_focus_local_officer_talent_effect = {
+	army_experience = 30
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+	add_stability = -0.01
+	add_ideas = UP_local_officer_talent_spirit
+}
+
+UP_CHI_focus_preserve_local_governments_effect = {
+	add_stability = 0.05
+	add_political_power = 50
+	add_to_variable = { UP_CHI_centralization_degree = -10 }
+	add_to_variable = { UP_CHI_local_autonomy_degree = 15 }
+	set_country_flag = UP_CHI_local_autonomy_arrangements_unlocked
+	add_ideas = UP_local_autonomy_arrangements
+	every_subject_country = {
+		add_stability = 0.10
+		add_ideas = UP_local_interests_compromise
+	}
+}
+
+UP_CHI_focus_compromise_local_interests_effect = {
+	add_stability = 0.07
+	add_political_power = 50
+	add_to_variable = { UP_CHI_local_autonomy_degree = 10 }
+	add_ideas = UP_local_interests_compromise
+	every_subject_country = {
+		add_opinion_modifier = { target = ROOT modifier = asian_reconciliation }
+		add_ideas = UP_local_interests_compromise
+	}
+}
+
+UP_CHI_focus_send_central_commissioners_effect = {
+	add_political_power = -50
+	add_stability = -0.02
+	add_to_variable = { UP_CHI_centralization_degree = 15 }
+	every_owned_state = {
+		add_compliance = 5
+		add_resistance = -5
+	}
+}
+
+UP_CHI_spawn_central_reorganized_divisions = {
+	division_template = {
+		name = "Central Reorganized Infantry"
+		is_locked = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+		}
+	}
+	if = {
+		limit = { controls_state = 608 }
+		608 = {
+			create_unit = {
+				division = "name = \"Central Reorganized Infantry\" division_template = \"Central Reorganized Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.75 start_manpower_factor = 1"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { controls_state = 608 } }
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			create_unit = {
+				division = "name = \"Central Reorganized Infantry\" division_template = \"Central Reorganized Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.75 start_manpower_factor = 1"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+}
+
+UP_CHI_focus_restrict_local_armies_effect = {
+	add_stability = -0.03
+	army_experience = 20
+	add_to_variable = { UP_CHI_centralization_degree = 15 }
+	add_to_variable = { UP_CHI_local_autonomy_degree = -10 }
+	UP_CHI_spawn_central_reorganized_divisions = yes
+	every_subject_country = { add_ideas = UP_local_army_restrictions }
+}
+
+UP_CHI_focus_state_above_localities_effect = {
+	add_to_variable = { UP_CHI_centralization_degree = 20 }
+	add_to_variable = { UP_CHI_local_autonomy_degree = -20 }
+	add_stability = 0.03
+	add_ideas = UP_state_above_localities_spirit
+	set_country_flag = UP_CHI_liberation_occupation_policy_unlocked
+}
+
+UP_CHI_unlock_liberated_order_effect = {
+	custom_effect_tooltip = UP_CHI_liberated_order_unlocked_tt
+	hidden_effect = {
+		set_country_flag = UP_CHI_liberated_order_unlocked
+		set_occupation_law_where_available = liberate_workers_occupation
+		every_subject_country = {
+			limit = {
+				NOT = { has_autonomy_state = UP_CHI_liberated_puppet }
+			}
+			add_ideas = UP_local_autonomy_subject_support
+			overlord = {
+				set_autonomy = {
+					target = PREV
+					autonomous_state = UP_CHI_liberated_puppet
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+		}
+	}
+}
+
+UP_CHI_focus_turn_peng_dehuai_effect = {
+	if = { limit = { has_character = UP_CHI_peng_dehuai } promote_character = UP_CHI_peng_dehuai }
+	set_country_flag = UP_CHI_peng_dehuai_army_chief_unlocked
+	army_experience = 25
+	add_ideas = UP_peng_dehuai_offensive_school
+}
+
+UP_CHI_focus_tigers_in_the_sky_effect = {
+	air_experience = 25
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = light_fighter }
+	add_ideas = UP_tigers_in_the_sky_spirit
+}
+
+UP_CHI_focus_fighters_among_tigers_effect = {
+	air_experience = 15
+	add_tech_bonus = { bonus = 0.5 uses = 2 category = light_fighter }
+	add_ideas = UP_fighter_specialization
+}
+
+UP_CHI_focus_support_planes_among_tigers_effect = {
+	air_experience = 15
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = cas_bomber }
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = tactical_bomber }
+	add_ideas = UP_support_plane_specialization
+}
+
+UP_CHI_focus_whampoa_air_force_academy_effect = {
+	air_experience = 30
+	add_ideas = UP_whampoa_air_force_academy_spirit
+}
+
+UP_CHI_add_aircraft_stockpile = {
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		add_equipment_to_stockpile = { type = small_plane_airframe_0 amount = 120 producer = ROOT }
+	}
+	if = {
+		limit = { NOT = { has_dlc = "By Blood Alone" } }
+		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 120 producer = ROOT }
+		add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 60 producer = ROOT }
+	}
+}
+
+UP_CHI_focus_establish_royal_air_force_effect = {
+	air_experience = 25
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine }
+	UP_CHI_add_aircraft_stockpile = yes
+}
+
+UP_CHI_focus_raise_air_standards_effect = {
+	add_ideas = UP_raise_air_standards_spirit
+}
+
+UP_CHI_focus_lower_air_standards_effect = {
+	add_ideas = UP_lower_air_standards_spirit
+}
+
+UP_CHI_focus_air_supremacy_over_asia_effect = {
+	air_experience = 50
+	add_ideas = UP_air_supremacy_over_asia_spirit
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine }
+}
+
+UP_CHI_focus_deepen_countryside_effect = {
+	add_stability = 0.03
+	add_manpower = 50000
+	add_ideas = UP_deep_countryside_work
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_support_poor_peasants_effect = {
+	add_stability = 0.05
+	add_manpower = 75000
+	add_war_support = 0.03
+	add_ideas = UP_poor_peasant_support
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_advance_land_reform_again_effect = {
+	add_stability = 0.05
+	add_manpower = 90000
+	add_ideas = UP_radical_land_reform_pressure
+	if = { limit = { has_completed_focus = UP_CHI_support_poor_peasants } add_war_support = 0.03 }
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+	country_event = { id = up_asia.390 days = 1 }
+}
+
+UP_CHI_focus_people_supervise_party_effect = {
+	add_stability = 0.05
+	add_political_power = 50
+	add_ideas = UP_people_supervise_party_spirit
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_reduce_mao_suspicion_small = yes
+	set_country_flag = UP_CHI_big_character_poster_decisions_unlocked
+}
+
+UP_CHI_focus_criticize_dogmatism_effect = {
+	add_political_power = 50
+	add_stability = 0.02
+	add_ideas = UP_anti_dogmatism_spirit
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_reduce_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_publicly_struggle_opposition_effect = {
+	add_popularity = { ideology = communism popularity = 0.08 }
+	add_popularity = { ideology = democratic popularity = -0.04 }
+	add_war_support = 0.05
+	add_stability = -0.05
+	add_political_power = 75
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+	country_event = { id = up_asia.391 days = 1 }
+}
+
+UP_CHI_focus_criticize_empiricism_effect = {
+	army_experience = -10
+	add_political_power = 50
+	add_popularity = { ideology = democratic popularity = -0.03 }
+	add_ideas = UP_anti_empiricism_spirit
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_party_self_criticism_effect = {
+	add_stability = 0.05
+	add_political_power = 50
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_reduce_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_rectify_peoples_army_effect = {
+	army_experience = 25
+	add_political_power = -25
+	add_ideas = UP_rectified_peoples_army
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_liquidate_local_opportunism_effect = {
+	add_stability = -0.05
+	add_political_power = 50
+	add_to_variable = { UP_CHI_local_autonomy_degree = -10 }
+	add_ideas = UP_local_opportunism_liquidated
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+}
+
+UP_CHI_focus_liquidate_capitalist_running_dogs_effect = {
+	add_war_support = 0.05
+	add_stability = -0.07
+	add_popularity = { ideology = communism popularity = 0.10 }
+	add_ideas = UP_capitalist_running_dogs_liquidated
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+	country_event = { id = up_asia.392 days = 1 }
+}
+
+UP_CHI_focus_precision_strike_petty_bourgeois_effect = {
+	add_popularity = { ideology = communism popularity = 0.08 }
+	add_war_support = 0.05
+	add_stability = -0.08
+	add_ideas = UP_precision_petty_bourgeois_strike
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+}
+
+UP_CHI_focus_cultural_revolution_spark_effect = {
+	country_event = { id = up_asia.393 days = 1 }
+	add_war_support = 0.10
+	add_stability = -0.10
+	add_political_power = 100
+	add_ideas = UP_cultural_revolution_spark_idea
+	UP_CHI_add_mao_support_small = yes
+	add_to_variable = { UP_CHI_mao_suspicion = 35 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_focus_smash_old_order_effect = {
+	remove_ideas = UP_local_revolutionary_committees
+	remove_ideas = UP_landlord_discontent
+	add_stability = -0.10
+	add_war_support = 0.08
+	add_popularity = { ideology = communism popularity = 0.10 }
+	add_to_variable = { UP_CHI_centralization_degree = 10 }
+	add_ideas = UP_old_order_collapsing
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+}
+
+UP_CHI_focus_big_character_posters_effect = {
+	add_political_power = 100
+	add_stability = -0.05
+	add_popularity = { ideology = communism popularity = 0.05 }
+	set_country_flag = UP_CHI_big_character_poster_decisions_unlocked
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_add_mao_suspicion_medium = yes
+}
+
+UP_CHI_focus_bombard_headquarters_effect = {
+	country_event = { id = up_asia.394 days = 1 }
+	add_stability = -0.15
+	add_war_support = 0.10
+	add_political_power = 150
+	UP_CHI_add_mao_support_small = yes
+	add_to_variable = { UP_CHI_mao_suspicion = 20 }
+	UP_CHI_update_mao_mechanic_gui = yes
+}
+
+UP_CHI_focus_unite_veteran_cadres_effect = {
+	add_stability = 0.08
+	add_political_power = 75
+	add_ideas = UP_cadre_reconciliation
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_reduce_mao_suspicion_medium = yes
+}
+
+UP_CHI_focus_correctly_handle_people_contradictions_effect = {
+	add_stability = 0.10
+	add_war_support = -0.02
+	add_political_power = 50
+	add_ideas = UP_people_contradictions_handled
+	UP_CHI_add_mao_support_small = yes
+	UP_CHI_reduce_mao_suspicion_medium = yes
+}
+
+UP_CHI_focus_unite_democratic_figures_effect = {
+	add_stability = 0.05
+	add_political_power = 75
+	add_ideas = UP_united_front_politics
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+	set_country_flag = UP_CHI_democratic_figures_advisors_unlocked
+	UP_CHI_reduce_mao_suspicion_small = yes
+}
+
+UP_CHI_focus_unite_new_generation_talent_effect = {
+	add_political_power = 50
+	add_ideas = UP_new_generation_talent
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+	add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+	UP_CHI_reduce_mao_suspicion_small = yes
+}

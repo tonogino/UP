@@ -1,0 +1,182 @@
+UP_XIC_fengtian_mechanic_decisions = {
+	UP_XIC_fengtian_rule_status = {
+		cost = 0
+		available = { always = no }
+		visible = { has_country_flag = UP_XIC_fengtian_mechanic_active }
+		complete_effect = { }
+	}
+
+	UP_XIC_japanese_influence_status = {
+		cost = 0
+		available = { always = no }
+		visible = { has_country_flag = UP_XIC_fengtian_mechanic_active }
+		complete_effect = { }
+	}
+
+	UP_XIC_asset_survey_fengtian_industry = {
+		icon = generic_construct_civ_factory
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_assets_survey_unlocked }
+		complete_effect = {
+			715 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 25
+		}
+	}
+
+	UP_XIC_asset_survey_anshan_mines = {
+		icon = generic_construct_mil_factory
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_assets_survey_unlocked }
+		complete_effect = {
+			716 = { add_resource = { type = steel amount = 8 } }
+			add_stability = 0.01
+		}
+	}
+
+	UP_XIC_repair_fengtian_harbin_railway = {
+		icon = generic_construct_infrastructure
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_railway_decisions_unlocked }
+		complete_effect = {
+			715 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			328 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			714 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_ideas = UP_XIC_northeast_railway_bureau
+		}
+	}
+
+	UP_XIC_strengthen_shanhaiguan_transport = {
+		icon = generic_construct_infrastructure
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_railway_decisions_unlocked }
+		complete_effect = {
+			716 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_timed_idea = { idea = UP_XIC_no_retreat_timed days = 120 }
+		}
+	}
+
+	UP_XIC_build_north_manchurian_military_branch = {
+		icon = generic_construct_infrastructure
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_railway_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_XIC_black_soil_mobilization days = 180 }
+		}
+	}
+
+	UP_XIC_build_liaohe_defense_line = {
+		icon = generic_defence
+		cost = 50
+		days_remove = 45
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_defense_plan_decisions_unlocked }
+		complete_effect = {
+			715 = { add_building_construction = { type = bunker level = 1 instant_build = yes } }
+			716 = { add_building_construction = { type = bunker level = 1 instant_build = yes } }
+			add_to_variable = { UP_XIC_fengtian_rule = 2 }
+			UP_XIC_clamp_fengtian_variables = yes
+		}
+	}
+
+	UP_XIC_strengthen_fengtian_air_defense = {
+		icon = generic_air
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_defense_plan_decisions_unlocked }
+		complete_effect = {
+			715 = { add_building_construction = { type = anti_air_building level = 1 instant_build = yes } }
+			air_experience = 10
+		}
+	}
+
+	UP_XIC_winter_exercises = {
+		icon = generic_training
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_defense_plan_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_XIC_modernized_army_spirit days = 120 }
+		}
+	}
+
+	UP_XIC_railway_mobilization_plan = {
+		icon = generic_construct_infrastructure
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_defense_plan_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_XIC_counterattack_japan_hq_spirit days = 120 }
+		}
+	}
+
+	UP_XIC_mobilize_railway_workers = {
+		icon = generic_construct_infrastructure
+		cost = 25
+		days_remove = 21
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_war_mobilization_decisions_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_XIC_northeast_railway_bureau days = 120 }
+		}
+	}
+
+	UP_XIC_raise_volunteer_units = {
+		icon = generic_manpower
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_war_mobilization_decisions_unlocked }
+		complete_effect = {
+			UP_XIC_spawn_volunteer_units = yes
+			add_stability = -0.01
+		}
+	}
+
+	UP_XIC_transfer_fengtian_equipment = {
+		icon = generic_construct_mil_factory
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_war_mobilization_decisions_unlocked }
+		available = { NOT = { controls_state = 715 } }
+		complete_effect = {
+			714 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	UP_XIC_stir_korean_uprising = {
+		icon = generic_intelligence_exchange
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_korean_operations_unlocked }
+		complete_effect = {
+			add_war_support = 0.02
+			add_named_threat = { threat = 1 name = UP_XIC_stir_korean_uprising }
+		}
+	}
+
+	UP_XIC_infiltrate_kwantung_rear = {
+		icon = generic_intelligence_exchange
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+		visible = { has_country_flag = UP_XIC_korean_operations_unlocked }
+		complete_effect = {
+			add_timed_idea = { idea = UP_XIC_counterattack_japan_hq_spirit days = 120 }
+		}
+	}
+}

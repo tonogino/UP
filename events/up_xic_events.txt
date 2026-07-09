@@ -1,0 +1,191 @@
+add_namespace = up_xic
+
+country_event = {
+	id = up_xic.1
+	title = up_xic.1.t
+	desc = up_xic.1.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.1.a
+		ai_chance = { factor = 80 }
+		add_opinion_modifier = { target = FROM modifier = asian_reconciliation }
+		FROM = {
+			add_opinion_modifier = { target = ROOT modifier = asian_reconciliation }
+			set_country_flag = UP_XIC_joint_anti_japanese_agreement
+			add_war_support = 0.03
+		}
+	}
+	option = {
+		name = up_xic.1.b
+		ai_chance = { factor = 20 }
+		FROM = {
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = {
+	id = up_xic.2
+	title = up_xic.2.t
+	desc = up_xic.2.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = up_xic.2.a
+		create_country_leader = {
+			name = "Zhang Xueliang"
+			desc = "POLITICS_ZHANG_XUELIANG_DESC"
+			picture = "GFX_Portrait_Asia_Generic_land_2"
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+		set_country_flag = UP_XIC_zhang_xueliang_in_power
+		add_stability = -0.12
+		add_war_support = 0.15
+		add_to_variable = { UP_XIC_japanese_influence = -30 }
+		add_to_variable = { UP_XIC_fengtian_rule = -10 }
+		UP_XIC_clamp_fengtian_variables = yes
+		add_timed_idea = { idea = UP_XIC_old_marshal_death days = 365 }
+		if = {
+			limit = { JAP = { exists = yes } }
+			JAP = { create_wargoal = { type = annex_everything target = ROOT } }
+		}
+	}
+}
+
+country_event = {
+	id = up_xic.3
+	title = up_xic.3.t
+	desc = up_xic.3.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.3.a
+		add_political_power = -30
+		set_country_flag = JAP_fengtian_railway_pressure
+	}
+}
+
+country_event = {
+	id = up_xic.4
+	title = up_xic.4.t
+	desc = up_xic.4.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.4.a
+		create_country_leader = {
+			name = "Puyi"
+			desc = "POLITICS_PUYI_DESC"
+			picture = "GFX_Portrait_Asia_Generic_land_2"
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+		set_country_flag = UP_XIC_puyi_restored
+		add_stability = -0.03
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = up_xic.5
+	title = up_xic.5.t
+	desc = up_xic.5.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.5.a
+		set_country_flag = FNG_refused_japanese_ultimatum
+		if = {
+			limit = { JAP = { exists = yes } }
+			JAP = {
+				set_country_flag = JAP_fengtian_refused
+				create_wargoal = { type = annex_everything target = ROOT }
+			}
+		}
+		add_timed_idea = { idea = UP_XIC_defense_war_spirit days = 365 }
+		country_event = { id = up_xic.2 days = 45 random_days = 45 }
+	}
+}
+
+country_event = {
+	id = up_xic.6
+	title = up_xic.6.t
+	desc = up_xic.6.d
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.6.a
+		ai_chance = { factor = 45 }
+		if = {
+			limit = { XIC = { exists = yes } }
+			XIC = {
+				add_ideas = UP_XIC_special_autonomy_government
+				add_stability = 0.05
+			}
+		}
+	}
+	option = {
+		name = up_xic.6.b
+		ai_chance = { factor = 35 }
+		if = {
+			limit = { XIC = { exists = yes } }
+			annex_country = { target = XIC transfer_troops = yes }
+			every_owned_state = {
+				limit = { is_core_of = XIC }
+				add_core_of = ROOT
+			}
+		}
+	}
+	option = {
+		name = up_xic.6.c
+		ai_chance = { factor = 20 }
+		add_opinion_modifier = { target = XIC modifier = asian_reconciliation }
+	}
+}
+
+country_event = {
+	id = up_xic.7
+	title = up_xic.7.t
+	desc = up_xic.7.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.7.a
+		if = {
+			limit = { JAP = { exists = yes } }
+			set_autonomy = { target = JAP autonomy_state = autonomy_puppet }
+		}
+	}
+	option = {
+		name = up_xic.7.b
+		if = {
+			limit = { controls_state = 527 }
+			527 = { add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = up_xic.8
+	title = up_xic.8.t
+	desc = up_xic.8.d
+	picture = GFX_report_event_japanese_troops
+	is_triggered_only = yes
+
+	option = {
+		name = up_xic.8.a
+		add_political_power = -30
+		set_country_flag = JAP_fengtian_resists_mantetsu
+	}
+}
