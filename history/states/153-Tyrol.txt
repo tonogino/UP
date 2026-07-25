@@ -3,7 +3,9 @@ state={
 	id=153
 	name="STATE_153"
 	history={
-		owner = DAN
+		owner = ILY
+		controller = ILY
+		add_core_of = ILY
 		victory_points = {
 			673 5 
 		}
@@ -11,13 +13,6 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
-		}
-		add_core_of = AUS
-		1938.3.12 = {
-			owner = DAN
-			controller = DAN
-	add_core_of = DAN
-			add_core_of = GER
 		}
 	}
 	provinces={

@@ -22,3 +22,18 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+# The failed Irish independence movement was settled by an all-Ireland
+# autonomous government subordinate to Westminster.
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = { target = IRE autonomous_state = autonomy_puppet }
+	else = {
+		puppet = IRE
+	}
+}

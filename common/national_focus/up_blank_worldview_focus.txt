@@ -5,15 +5,18 @@
 	continuous_focus_position = { x = 20 y = 900 }
 
 	focus = {
-		id = UP_GER_the_incomplete_victory
-		icon = GFX_goal_generic_political_pressure
-		x = 12
-		y = 0
-		cost = 10
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.03
-		}
+	    id = UP_GER_the_incomplete_victory
+	    icon = GFX_goal_generic_political_pressure
+	    x = 12
+	    y = 0
+	    cost = 10
+	    ai_will_do = {
+         factor = 1
+	    }
+	    completion_reward = {
+         add_political_power = 75
+         add_stability = 0.03
+	    }
 	}
 
 	focus = {

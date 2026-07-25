@@ -22,3 +22,29 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+# Berlin guarantees the post-war Habsburg settlement.
+give_guarantee = ILY
+
+# The eastern settlement created after the German victory.
+# Keep this setup here so vanilla diplomacy cannot reassert itself.
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = { target = POL autonomous_state = autonomy_puppet }
+	set_autonomy = { target = UKR autonomous_state = autonomy_puppet }
+	set_autonomy = { target = LIT autonomous_state = autonomy_puppet }
+	set_autonomy = { target = LAT autonomous_state = autonomy_puppet }
+	set_autonomy = { target = EST autonomous_state = autonomy_puppet }
+	else = {
+		puppet = POL
+		puppet = UKR
+		puppet = LIT
+		puppet = LAT
+		puppet = EST
+	}
+}

@@ -1,0 +1,316 @@
+ideas = {
+	country = {
+		UP_GER_eastern_victory = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = GER }
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.08
+				army_org_factor = 0.03
+			}
+		}
+		UP_GER_berlin_system = {
+			picture = generic_major_alliance
+			allowed = { original_tag = GER }
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.03
+				research_speed_factor = 0.02
+			}
+		}
+		UP_GER_general_staff_state = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = GER }
+			modifier = {
+				planning_speed = 0.10
+				max_planning = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_ENG_glorious_neutrality = {
+			picture = generic_diplomacy
+			allowed = { original_tag = ENG }
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+		UP_ENG_intact_empire = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = ENG }
+			modifier = {
+				local_resources_factor = 0.10
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		UP_ENG_continental_balance = {
+			picture = generic_major_alliance
+			allowed = { original_tag = ENG }
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.03
+				research_speed_factor = 0.01
+			}
+		}
+
+		UP_FRA_alone_in_the_trenches = {
+			picture = generic_defence
+			allowed = { original_tag = FRA }
+			modifier = {
+				recruitable_population_factor = -0.10
+				war_support_factor = -0.05
+				army_core_defence_factor = 0.10
+			}
+		}
+		UP_FRA_imperial_compensation = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = FRA }
+			modifier = {
+				local_resources_factor = 0.08
+				consumer_goods_factor = -0.02
+				stability_factor = -0.03
+			}
+		}
+		UP_FRA_unfinished_peace = {
+			picture = generic_nationalism
+			allowed = { original_tag = FRA }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.10
+				max_planning = 0.05
+			}
+		}
+
+		UP_ITA_neutrality_dividend = {
+			picture = generic_construct_civ_factory
+			allowed = { original_tag = ITA }
+			modifier = {
+				stability_factor = 0.08
+				consumer_goods_factor = -0.04
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		UP_ITA_unfinished_unification = {
+			picture = generic_demand_territory
+			allowed = { original_tag = ITA }
+			modifier = {
+				war_support_factor = 0.08
+				stability_factor = -0.03
+				political_power_gain = 0.03
+			}
+		}
+		UP_ITA_between_the_powers = {
+			picture = generic_diplomacy
+			allowed = { original_tag = ITA }
+			modifier = {
+				political_power_gain = 0.08
+				research_speed_factor = 0.02
+			}
+		}
+
+		UP_DAN_defeated_common_army = {
+			picture = generic_army_reform
+			allowed = { original_tag = DAN }
+			modifier = {
+				army_org_factor = -0.10
+				planning_speed = -0.10
+				army_core_defence_factor = 0.05
+			}
+		}
+		UP_DAN_vienna_crown_compromise = {
+			picture = generic_political_discourse
+			allowed = { original_tag = DAN }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = -0.10
+				recruitable_population_factor = 0.05
+			}
+		}
+		UP_DAN_german_military_supervision = {
+			picture = generic_army_doctrines
+			allowed = { original_tag = DAN }
+			modifier = {
+				research_speed_factor = 0.03
+				production_speed_arms_factory_factor = 0.10
+				consumer_goods_factor = 0.03
+			}
+		}
+		UP_DAN_three_diets_one_emperor = {
+			picture = generic_political_pressure
+			allowed = { original_tag = DAN }
+			modifier = {
+				stability_factor = -0.04
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		UP_ILY_zagreb_settlement = {
+			picture = generic_political_discourse
+			allowed = { original_tag = ILY }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+		UP_ILY_three_peoples_one_crown = {
+			picture = generic_national_unity
+			allowed = { original_tag = ILY }
+			modifier = {
+				recruitable_population_factor = -0.08
+				stability_factor = -0.05
+				army_core_defence_factor = 0.08
+			}
+		}
+		UP_ILY_belgrade_propaganda = {
+			picture = generic_propaganda
+			allowed = { original_tag = ILY }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		UP_ILY_adriatic_question = {
+			picture = generic_navy
+			allowed = { original_tag = ILY }
+			modifier = {
+				war_support_factor = 0.08
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+
+		UP_POL_eastern_barrier = {
+			picture = generic_defence
+			allowed = { original_tag = POL }
+			modifier = {
+				army_core_defence_factor = 0.10
+				army_org_factor = 0.03
+			}
+		}
+		UP_POL_galician_integration = {
+			picture = generic_political_pressure
+			allowed = { original_tag = POL }
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.03
+				recruitable_population_factor = -0.05
+			}
+		}
+		UP_POL_protected_independence = {
+			picture = generic_major_alliance
+			allowed = { original_tag = POL }
+			modifier = {
+				industrial_capacity_factory = 0.08
+				political_power_gain = -0.05
+				research_speed_factor = 0.02
+			}
+		}
+
+		UP_SER_defended_homeland = {
+			picture = generic_defence
+			allowed = { original_tag = SER }
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		UP_SER_lost_macedonia = {
+			picture = generic_demand_territory
+			allowed = { original_tag = SER }
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.03
+			}
+		}
+		UP_SER_bosnian_dream = {
+			picture = generic_nationalism
+			allowed = { original_tag = SER }
+			modifier = {
+				political_power_gain = 0.05
+				planning_speed = 0.05
+			}
+		}
+
+		UP_BUL_third_bulgarian_victory = {
+			picture = generic_attack_bonus
+			allowed = { original_tag = BUL }
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.10
+			}
+		}
+		UP_BUL_overextended_borders = {
+			picture = generic_political_pressure
+			allowed = { original_tag = BUL }
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.03
+				recruitable_population_factor = -0.05
+			}
+		}
+		UP_BUL_berlin_balkan_partner = {
+			picture = generic_major_alliance
+			allowed = { original_tag = BUL }
+			modifier = {
+				research_speed_factor = 0.03
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+
+		UP_ROM_bucharest_humiliation = {
+			picture = generic_dangerous_deal
+			allowed = { original_tag = ROM }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.10
+			}
+		}
+		UP_ROM_mutilated_kingdom = {
+			picture = generic_manpower
+			allowed = { original_tag = ROM }
+			modifier = {
+				recruitable_population_factor = -0.10
+				industrial_capacity_factory = -0.05
+			}
+		}
+		UP_ROM_german_enforced_peace = {
+			picture = generic_diplomacy
+			allowed = { original_tag = ROM }
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		UP_TUR_fragile_victor = {
+			picture = generic_army_reform
+			allowed = { original_tag = TUR }
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = -0.08
+				industrial_capacity_factory = -0.05
+			}
+		}
+		UP_TUR_german_concessions = {
+			picture = generic_positive_trade_relations
+			allowed = { original_tag = TUR }
+			modifier = {
+				research_speed_factor = 0.03
+				production_speed_arms_factory_factor = 0.10
+				consumer_goods_factor = 0.02
+			}
+		}
+		UP_TUR_arab_provinces = {
+			picture = generic_political_pressure
+			allowed = { original_tag = TUR }
+			modifier = {
+				recruitable_population_factor = 0.05
+				stability_factor = -0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+}

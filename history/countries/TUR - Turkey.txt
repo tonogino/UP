@@ -1,4 +1,4 @@
-capital = 49
+capital = 797
 
 set_politics = {
 	ruling_party = neutrality
@@ -15,10 +15,15 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Mustafa Kemal Ataturk"
-	picture = "GFX_Portrait_Europe_Generic_land_4"
+	name = "Abdulmejid II"
+	picture = "GFX_Portrait_Arabia_Generic_3"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 	}
 }
+
+# The Hashemite and Rashidi states are independent, but their survival is
+# guaranteed by Constantinople as part of the post-war Arabian settlement.
+give_guarantee = HJZ
+give_guarantee = JBS

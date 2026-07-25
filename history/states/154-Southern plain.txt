@@ -10,7 +10,6 @@ state = {
 		owner = DAN
 	controller = DAN
 	add_core_of = DAN
-		add_core_of = HUN
 
 		buildings = {
 			infrastructure = 3 #was: 6

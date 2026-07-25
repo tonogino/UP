@@ -10,19 +10,15 @@ state={
 	state_category = rural
 	
 	history={
-		owner = DAN
+		owner = POL
+		controller = POL
+		add_core_of = POL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = CZE
 		add_claim_by = SIL
 
-		1939.3.14 = {
-			owner = DAN
-			controller = DAN
-	add_core_of = DAN
-		}
 	}
 
 	provinces={

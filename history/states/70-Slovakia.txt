@@ -44,7 +44,6 @@ state = {
 			541 2 # Nitra
 		}
 
-		add_core_of = CZE
 		add_core_of = SLO
 
 		1939.3.14 = {

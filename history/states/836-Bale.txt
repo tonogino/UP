@@ -29,8 +29,8 @@ state = {
 			10775 1
 		}
 		
-		owner = CAU
-		add_core_of = CAU
+		owner = ETH
+		add_core_of = ETH
 		add_core_of = SOM
 		add_core_of = ORO
 	}

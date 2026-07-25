@@ -1,0 +1,63 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GER = {
+				add_ideas = UP_GER_eastern_victory
+				add_ideas = UP_GER_berlin_system
+				add_ideas = UP_GER_general_staff_state
+			}
+			ENG = {
+				add_ideas = UP_ENG_glorious_neutrality
+				add_ideas = UP_ENG_intact_empire
+				add_ideas = UP_ENG_continental_balance
+			}
+			FRA = {
+				add_ideas = UP_FRA_alone_in_the_trenches
+				add_ideas = UP_FRA_imperial_compensation
+				add_ideas = UP_FRA_unfinished_peace
+			}
+			ITA = {
+				add_ideas = UP_ITA_neutrality_dividend
+				add_ideas = UP_ITA_unfinished_unification
+				add_ideas = UP_ITA_between_the_powers
+			}
+			DAN = {
+				add_ideas = UP_DAN_defeated_common_army
+				add_ideas = UP_DAN_vienna_crown_compromise
+				add_ideas = UP_DAN_german_military_supervision
+				add_ideas = UP_DAN_three_diets_one_emperor
+			}
+			ILY = {
+				add_ideas = UP_ILY_zagreb_settlement
+				add_ideas = UP_ILY_three_peoples_one_crown
+				add_ideas = UP_ILY_belgrade_propaganda
+				add_ideas = UP_ILY_adriatic_question
+			}
+			POL = {
+				add_ideas = UP_POL_eastern_barrier
+				add_ideas = UP_POL_galician_integration
+				add_ideas = UP_POL_protected_independence
+			}
+			SER = {
+				add_ideas = UP_SER_defended_homeland
+				add_ideas = UP_SER_lost_macedonia
+				add_ideas = UP_SER_bosnian_dream
+			}
+			BUL = {
+				add_ideas = UP_BUL_third_bulgarian_victory
+				add_ideas = UP_BUL_overextended_borders
+				add_ideas = UP_BUL_berlin_balkan_partner
+			}
+			ROM = {
+				add_ideas = UP_ROM_bucharest_humiliation
+				add_ideas = UP_ROM_mutilated_kingdom
+				add_ideas = UP_ROM_german_enforced_peace
+			}
+			TUR = {
+				add_ideas = UP_TUR_fragile_victor
+				add_ideas = UP_TUR_german_concessions
+				add_ideas = UP_TUR_arab_provinces
+			}
+		}
+	}
+}

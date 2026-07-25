@@ -1,0 +1,20 @@
+state = {
+	id = 90
+	name = "STATE_90"
+	manpower = 1835700
+	resources = { steel = 8 }
+	state_category = town
+
+	history = {
+		owner = POL
+		controller = POL
+		add_core_of = POL
+		add_core_of = UKR
+		victory_points = { 11430 5 }
+		victory_points = { 3458 5 }
+		buildings = { infrastructure = 3 }
+	}
+
+	provinces = { 562 3458 3497 3586 6416 11430 11532 }
+	local_supplies = 0.0
+}

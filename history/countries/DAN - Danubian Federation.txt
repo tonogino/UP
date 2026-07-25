@@ -15,10 +15,14 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Otto von Habsburg"
-	picture = "Portrait_Europe_Generic_3.dds"
+	name = "Karl I von Habsburg"
+	picture = "GFX_Portrait_Europe_Generic_land_3"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 	}
 }
+
+# The Zagreb settlement made Illyria independent while preserving the
+# Habsburg dynastic and military connection.
+give_guarantee = ILY

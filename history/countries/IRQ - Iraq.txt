@@ -1,0 +1,3 @@
+# Iraq does not exist in 1936 in this timeline.
+# The Ottoman Empire retained Baghdad, Mosul, Anbar and Basrah after the war.
+# This intentionally empty history overrides the vanilla Iraqi startup.

@@ -343,16 +343,25 @@ set_grand_doctrine = new_operational_integrity
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1933.12.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 60
-	fascism = 18
-	communism = 2
-	neutrality = 20
+	democratic = 15
+	fascism = 10
+	communism = 5
+	neutrality = 70
+}
+
+create_country_leader = {
+	name = "Alexandru Marghiloman"
+	picture = "Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
 }
 
 1939.1.1 = {

@@ -14,7 +14,6 @@ state = {
 		owner = TUR
 	controller = TUR
 	add_core_of = TUR
-		add_core_of = IRQ
 		add_claim_by = KUR
 
 		victory_points = {

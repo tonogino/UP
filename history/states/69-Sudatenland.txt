@@ -28,7 +28,6 @@ state = {
 		}
 
 		owner = DAN
-		add_core_of = CZE
 
 		buildings = {
 
