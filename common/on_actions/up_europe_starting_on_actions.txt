@@ -2,9 +2,16 @@ on_actions = {
 	on_startup = {
 		effect = {
 			GER = {
-				add_ideas = UP_GER_eastern_victory
-				add_ideas = UP_GER_berlin_system
-				add_ideas = UP_GER_general_staff_state
+				add_ideas = UP_GER_hague_system_hegemon
+				add_ideas = UP_GER_eastern_protection_cost
+				add_ideas = UP_GER_old_kaisers_shadow
+				add_ideas = UP_GER_french_revisionism
+				add_ideas = UP_GER_british_naval_counterbalance
+				set_variable = { UP_GER_imperial_pressure = 0 }
+				every_subject_country = {
+					add_ideas = UP_GER_subject_system_obligations
+				}
+				UP_GER_update_imperial_pressure = yes
 			}
 			ENG = {
 				add_ideas = UP_ENG_glorious_neutrality
@@ -57,6 +64,21 @@ on_actions = {
 				add_ideas = UP_TUR_fragile_victor
 				add_ideas = UP_TUR_german_concessions
 				add_ideas = UP_TUR_arab_provinces
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			GER = {
+				if = {
+					limit = { has_idea = UP_GER_eastern_protection_cost }
+					add_to_variable = { UP_GER_imperial_pressure = 0.2 }
+				}
+				UP_GER_update_imperial_pressure = yes
+				every_subject_country = {
+					limit = { NOT = { has_idea = UP_GER_subject_system_obligations } }
+					add_ideas = UP_GER_subject_system_obligations
+				}
 			}
 		}
 	}

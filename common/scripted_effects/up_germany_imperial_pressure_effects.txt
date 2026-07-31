@@ -1,0 +1,73 @@
+UP_GER_update_imperial_pressure = {
+	hidden_effect = {
+		clamp_variable = {
+			var = UP_GER_imperial_pressure
+			min = 0
+			max = 100
+		}
+
+		remove_ideas = {
+			UP_GER_imperial_pressure_controlled
+			UP_GER_imperial_pressure_strained
+			UP_GER_imperial_pressure_overloaded
+			UP_GER_imperial_pressure_fracturing
+			UP_GER_imperial_pressure_systemic_crisis
+		}
+
+		if = {
+			limit = { check_variable = { UP_GER_imperial_pressure < 20 } }
+			add_ideas = UP_GER_imperial_pressure_controlled
+		}
+		else_if = {
+			limit = { check_variable = { UP_GER_imperial_pressure < 40 } }
+			add_ideas = UP_GER_imperial_pressure_strained
+		}
+		else_if = {
+			limit = { check_variable = { UP_GER_imperial_pressure < 60 } }
+			add_ideas = UP_GER_imperial_pressure_overloaded
+		}
+		else_if = {
+			limit = { check_variable = { UP_GER_imperial_pressure < 80 } }
+			add_ideas = UP_GER_imperial_pressure_fracturing
+		}
+		else = {
+			add_ideas = UP_GER_imperial_pressure_systemic_crisis
+		}
+	}
+}
+
+UP_GER_reduce_imperial_pressure_5 = {
+	custom_effect_tooltip = UP_GER_imperial_pressure_minus_5_tt
+	add_to_variable = { UP_GER_imperial_pressure = -5 }
+	UP_GER_update_imperial_pressure = yes
+}
+
+UP_GER_reduce_imperial_pressure_10 = {
+	custom_effect_tooltip = UP_GER_imperial_pressure_minus_10_tt
+	add_to_variable = { UP_GER_imperial_pressure = -10 }
+	UP_GER_update_imperial_pressure = yes
+}
+
+UP_GER_reduce_imperial_pressure_15 = {
+	custom_effect_tooltip = UP_GER_imperial_pressure_minus_15_tt
+	add_to_variable = { UP_GER_imperial_pressure = -15 }
+	UP_GER_update_imperial_pressure = yes
+}
+
+UP_GER_add_imperial_pressure_5 = {
+	custom_effect_tooltip = UP_GER_imperial_pressure_plus_5_tt
+	add_to_variable = { UP_GER_imperial_pressure = 5 }
+	UP_GER_update_imperial_pressure = yes
+}
+
+UP_GER_add_imperial_pressure_10 = {
+	custom_effect_tooltip = UP_GER_imperial_pressure_plus_10_tt
+	add_to_variable = { UP_GER_imperial_pressure = 10 }
+	UP_GER_update_imperial_pressure = yes
+}
+
+UP_GER_add_imperial_pressure_15 = {
+	custom_effect_tooltip = UP_GER_imperial_pressure_plus_15_tt
+	add_to_variable = { UP_GER_imperial_pressure = 15 }
+	UP_GER_update_imperial_pressure = yes
+}

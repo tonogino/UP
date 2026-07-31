@@ -1,385 +1,342 @@
-﻿focus_tree = {
-	id = UP_germany_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = GER } }
-	default = no
-	continuous_focus_position = { x = 20 y = 900 }
-
-	focus = {
-	    id = UP_GER_the_incomplete_victory
-	    icon = GFX_goal_generic_political_pressure
-	    x = 12
-	    y = 0
-	    cost = 10
-	    ai_will_do = {
-         factor = 1
-	    }
-	    completion_reward = {
-         add_political_power = 75
-         add_stability = 0.03
-	    }
-	}
-
-	focus = {
-		id = UP_GER_audit_the_eastern_order
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 8
-		y = 1
-		cost = 10
-		prerequisite = { focus = UP_GER_the_incomplete_victory }
-		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.02
-		}
-	}
-
-	focus = {
-		id = UP_GER_secure_the_rhine_frontier
-		icon = GFX_goal_generic_fortify_city
-		x = 16
-		y = 1
-		cost = 10
-		prerequisite = { focus = UP_GER_the_incomplete_victory }
-		completion_reward = {
-			add_stability = 0.02
-			add_command_power = 20
-		}
-	}
-
-	focus = {
-		id = UP_GER_imperial_conservative_reform
-		icon = GFX_goal_generic_demand_territory
-		x = 3
-		y = 3
-		cost = 10
-		prerequisite = { focus = UP_GER_audit_the_eastern_order }
-		mutually_exclusive = { focus = UP_GER_national_radical_agitation }
-		mutually_exclusive = { focus = UP_GER_workers_against_the_victory_peace }
-		mutually_exclusive = { focus = UP_GER_mitteleuropa_command }
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = UP_GER_constitutional_cabinet
-		icon = GFX_goal_generic_improve_relations
-		x = 2
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_imperial_conservative_reform }
-		completion_reward = {
-			add_stability = 0.04
-			add_political_power = 75
-		}
-	}
-
-	focus = {
-		id = UP_GER_autonomy_for_the_protectorates
-		icon = GFX_goal_generic_national_unity
-		x = 4
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_imperial_conservative_reform }
-		completion_reward = {
-			add_stability = 0.03
-			add_war_support = -0.02
-		}
-	}
-
-	focus = {
-		id = UP_GER_ordered_imperial_recovery
-		icon = GFX_goal_generic_production
-		x = 3
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_GER_constitutional_cabinet }
-		prerequisite = { focus = UP_GER_autonomy_for_the_protectorates }
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = UP_GER_national_radical_agitation
-		icon = GFX_goal_support_fascism
-		x = 9
-		y = 3
-		cost = 10
-		prerequisite = { focus = UP_GER_audit_the_eastern_order }
-		mutually_exclusive = { focus = UP_GER_imperial_conservative_reform }
-		mutually_exclusive = { focus = UP_GER_workers_against_the_victory_peace }
-		mutually_exclusive = { focus = UP_GER_mitteleuropa_command }
-		completion_reward = {
-			add_popularity = { ideology = fascism popularity = 0.08 }
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = UP_GER_break_the_old_court
-		icon = GFX_goal_generic_forceful_treaty
-		x = 8
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_national_radical_agitation }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.03
-		}
-	}
-
-	focus = {
-		id = UP_GER_totalize_the_eastern_question
-		icon = GFX_goal_generic_major_war
-		x = 10
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_national_radical_agitation }
-		completion_reward = {
-			add_war_support = 0.08
-			army_experience = 15
-		}
-	}
-
-	focus = {
-		id = UP_GER_the_unfinished_war
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 9
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_GER_break_the_old_court }
-		prerequisite = { focus = UP_GER_totalize_the_eastern_question }
-		completion_reward = {
-			add_war_support = 0.1
-			add_command_power = 30
-		}
-	}
-
-	focus = {
-		id = UP_GER_workers_against_the_victory_peace
-		icon = GFX_goal_support_communism
-		x = 15
-		y = 3
-		cost = 10
-		prerequisite = { focus = UP_GER_secure_the_rhine_frontier }
-		mutually_exclusive = { focus = UP_GER_imperial_conservative_reform }
-		mutually_exclusive = { focus = UP_GER_national_radical_agitation }
-		mutually_exclusive = { focus = UP_GER_mitteleuropa_command }
-		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.08 }
-			add_stability = -0.02
-		}
-	}
-
-	focus = {
-		id = UP_GER_factory_councils
-		icon = GFX_goal_generic_soviet_construction
-		x = 14
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_workers_against_the_victory_peace }
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = UP_GER_soldiers_and_railway_cells
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 16
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_workers_against_the_victory_peace }
-		completion_reward = {
-			add_war_support = 0.03
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = UP_GER_red_central_europe
-		icon = GFX_goal_generic_national_unity
-		x = 15
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_GER_factory_councils }
-		prerequisite = { focus = UP_GER_soldiers_and_railway_cells }
-		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.05 }
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = UP_GER_mitteleuropa_command
-		icon = GFX_goal_generic_position_armies
-		x = 21
-		y = 3
-		cost = 10
-		prerequisite = { focus = UP_GER_secure_the_rhine_frontier }
-		mutually_exclusive = { focus = UP_GER_imperial_conservative_reform }
-		mutually_exclusive = { focus = UP_GER_national_radical_agitation }
-		mutually_exclusive = { focus = UP_GER_workers_against_the_victory_peace }
-		completion_reward = {
-			add_war_support = 0.05
-			add_command_power = 25
-		}
-	}
-
-	focus = {
-		id = UP_GER_standardize_the_protectorate_railways
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 20
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_mitteleuropa_command }
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = UP_GER_eastern_security_treaties
-		icon = GFX_goal_generic_demand_territory
-		x = 22
-		y = 4
-		cost = 10
-		prerequisite = { focus = UP_GER_mitteleuropa_command }
-		completion_reward = {
-			add_war_support = 0.04
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = UP_GER_the_central_european_machine
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 21
-		y = 5
-		cost = 10
-		prerequisite = { focus = UP_GER_standardize_the_protectorate_railways }
-		prerequisite = { focus = UP_GER_eastern_security_treaties }
-		completion_reward = {
-			add_stability = 0.03
-			add_war_support = 0.03
-			add_political_power = 100
-		}
-	}
-}
-
 focus_tree = {
-	id = UP_blank_france_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = FRA } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    id = UP_germany_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000000
+            tag = GER
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 15 y = 900 }
 
-focus_tree = {
-	id = UP_blank_britain_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = ENG } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_the_incomplete_victory
+        icon = GFX_goal_generic_political_pressure
+        x = 15
+        y = 0
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_soviet_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = SOV } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_focus_Kaiserliches_Nachfolgeproblem
+        icon = GFX_goal_generic_national_unity
+        x = 15
+        y = 1
+        cost = 10
+        prerequisite = { focus = UP_GER_the_incomplete_victory }
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            country_event = { id = up_germany.1 hours = 1 }
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_ottoman_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = TUR } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_Eastern_Problem
+        icon = GFX_goal_generic_major_alliance
+        x = 0
+        y = 1
+        cost = 10
+        allow_branch = {
+            has_country_flag = UP_GER_succession_event_resolved
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_eastern_problem_opened
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_italy_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = ITA } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_Franch_Problem
+        icon = GFX_goal_generic_position_armies
+        x = 6
+        y = 1
+        cost = 10
+        allow_branch = {
+            has_country_flag = UP_GER_succession_event_resolved
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_french_problem_opened
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_poland_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = POL } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_Britanian_Problem
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 25
+        y = 1
+        cost = 10
+        allow_branch = {
+            has_country_flag = UP_GER_succession_event_resolved
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_british_problem_opened
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_ukraine_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = UKR } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_Russian_Problem
+        icon = GFX_goal_generic_demand_territory
+        x = 31
+        y = 1
+        cost = 10
+        allow_branch = {
+            has_country_flag = UP_GER_succession_event_resolved
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_russian_problem_opened
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_baltic_focus
-	country = {
-		factor = 0
-		modifier = { add = 1000000 tag = LIT }
-		modifier = { add = 1000000 tag = LAT }
-		modifier = { add = 1000000 tag = EST }
-	}
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_hohenzollern_legitimacy
+        icon = GFX_goal_generic_national_unity
+        x = 10
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = UP_GER_new_imperial_architecture focus = UP_GER_aesthetics_of_mass_mobilization focus = UP_GER_break_old_prussian_arrogance focus = UP_GER_imperial_works_directorate }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hohenzollern_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_hohenzollern_legitimacy_task_completed
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_danubian_focus
-	country = {
-		factor = 0
-		modifier = { add = 1000000 tag = DAN }
-		modifier = { add = 1000000 tag = AUS }
-		modifier = { add = 1000000 tag = HUN }
-		modifier = { add = 1000000 tag = CZE }
-	}
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_appease_prussian_officer_corps
+        icon = GFX_goal_generic_army_doctrines
+        x = 13
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = UP_GER_new_imperial_architecture focus = UP_GER_aesthetics_of_mass_mobilization focus = UP_GER_break_old_prussian_arrogance focus = UP_GER_imperial_works_directorate }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hohenzollern_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_prussian_officer_task_completed
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_balkans_focus
-	country = {
-		factor = 0
-		modifier = { add = 1000000 tag = YUG }
-		modifier = { add = 1000000 tag = ROM }
-		modifier = { add = 1000000 tag = BUL }
-		modifier = { add = 1000000 tag = GRE }
-	}
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_reichstag_compromise
+        icon = GFX_goal_generic_improve_relations
+        x = 16
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = UP_GER_new_imperial_architecture focus = UP_GER_aesthetics_of_mass_mobilization focus = UP_GER_break_old_prussian_arrogance focus = UP_GER_imperial_works_directorate }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hohenzollern_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_reichstag_compromise_task_completed
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_russian_successors_focus
-	country = {
-		factor = 0
-		modifier = { add = 1000000 tag = PET }
-		modifier = { add = 1000000 tag = SIB }
-		modifier = { add = 1000000 tag = CAU }
-	}
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_guardian_of_hague_system
+        icon = GFX_goal_generic_major_alliance
+        x = 19
+        y = 3
+        cost = 10
+        mutually_exclusive = { focus = UP_GER_new_imperial_architecture focus = UP_GER_aesthetics_of_mass_mobilization focus = UP_GER_break_old_prussian_arrogance focus = UP_GER_imperial_works_directorate }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hohenzollern_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_hague_guardian_task_completed
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_british_india_remnant_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = RAJ } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
-}
+    focus = {
+        id = UP_GER_kaisers_new_empire
+        icon = GFX_goal_generic_national_unity
+        x = 15
+        y = 5
+        cost = 10
+        prerequisite = { focus = UP_GER_hohenzollern_legitimacy }
+        prerequisite = { focus = UP_GER_appease_prussian_officer_corps }
+        prerequisite = { focus = UP_GER_reichstag_compromise }
+        prerequisite = { focus = UP_GER_guardian_of_hague_system }
+        mutually_exclusive = { focus = UP_GER_architect_of_new_order }
+        allow_branch = {
+            has_country_flag = UP_GER_hohenzollern_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_hohenzollern_mainline_completed
+        }
+    }
 
-focus_tree = {
-	id = UP_blank_chongqing_focus
-	country = { factor = 0 modifier = { add = 1000000 tag = CKG } }
-	default = no
-	continuous_focus_position = { x = 0 y = 0 }
+    focus = {
+        id = UP_GER_new_imperial_architecture
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 10
+        y = 3
+        cost = 10
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hitner_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_imperial_architecture_task_completed
+        }
+    }
+
+    focus = {
+        id = UP_GER_aesthetics_of_mass_mobilization
+        icon = GFX_goal_generic_propaganda
+        x = 13
+        y = 3
+        cost = 10
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hitner_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_mass_mobilization_task_completed
+        }
+    }
+
+    focus = {
+        id = UP_GER_break_old_prussian_arrogance
+        icon = GFX_goal_generic_political_pressure
+        x = 16
+        y = 3
+        cost = 10
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hitner_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_break_prussian_arrogance_task_completed
+        }
+    }
+
+    focus = {
+        id = UP_GER_imperial_works_directorate
+        icon = GFX_goal_generic_production
+        x = 19
+        y = 3
+        cost = 10
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UP_GER_task_condition_pending_tt
+                always = no
+            }
+        }
+        allow_branch = {
+            has_country_flag = UP_GER_hitner_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_imperial_works_task_completed
+        }
+    }
+
+    focus = {
+        id = UP_GER_architect_of_new_order
+        icon = GFX_goal_generic_political_pressure
+        x = 15
+        y = 5
+        cost = 10
+        prerequisite = { focus = UP_GER_new_imperial_architecture }
+        prerequisite = { focus = UP_GER_aesthetics_of_mass_mobilization }
+        prerequisite = { focus = UP_GER_break_old_prussian_arrogance }
+        prerequisite = { focus = UP_GER_imperial_works_directorate }
+        mutually_exclusive = { focus = UP_GER_kaisers_new_empire }
+        allow_branch = {
+            has_country_flag = UP_GER_hitner_successor
+        }
+        completion_reward = {
+            set_country_flag = UP_GER_hitner_mainline_completed
+        }
+    }
+
+    focus = {
+        id = GER_focus
+        icon = GFX_goal_unknown
+        x = -1
+        y = 2
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus GER_focus completed"
+        }
+    }
+
+    focus = {
+        id = GER_focus_1
+        icon = GFX_goal_unknown
+        x = 0
+        y = 2
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus GER_focus_1 completed"
+        }
+    }
+
+    focus = {
+        id = GER_focus_2
+        icon = GFX_goal_unknown
+        x = 2
+        y = 2
+        cost = 10
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName]: Focus GER_focus_2 completed"
+        }
+    }
+
 }

@@ -1,0 +1,27 @@
+add_namespace = up_germany
+
+country_event = {
+	id = up_germany.1
+	title = up_germany.1.t
+	desc = up_germany.1.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+
+	option = {
+		name = up_germany.1.a
+		ai_chance = { factor = 70 }
+		clr_country_flag = UP_GER_hitner_successor
+		set_country_flag = UP_GER_hohenzollern_successor
+		set_country_flag = UP_GER_succession_event_resolved
+		mark_focus_tree_layout_dirty = yes
+	}
+
+	option = {
+		name = up_germany.1.b
+		ai_chance = { factor = 30 }
+		clr_country_flag = UP_GER_hohenzollern_successor
+		set_country_flag = UP_GER_hitner_successor
+		set_country_flag = UP_GER_succession_event_resolved
+		mark_focus_tree_layout_dirty = yes
+	}
+}

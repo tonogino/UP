@@ -1,0 +1,57 @@
+UP_GER_imperial_pressure_decisions = {
+	UP_GER_imperial_pressure_status = {
+		icon = generic_political_pressure
+		cost = 0
+		visible = { always = yes }
+		available = { always = no }
+		complete_effect = { }
+	}
+
+	UP_GER_convene_hague_financial_council = {
+		icon = generic_improve_relations
+		cost = 50
+		days_re_enable = 120
+		available = {
+			check_variable = { UP_GER_imperial_pressure > 4.9 }
+		}
+		complete_effect = {
+			UP_GER_reduce_imperial_pressure_5 = yes
+		}
+	}
+
+	UP_GER_issue_eastern_consolidation_bonds = {
+		icon = generic_consumer_goods
+		cost = 25
+		days_re_enable = 180
+		available = {
+			check_variable = { UP_GER_imperial_pressure > 9.9 }
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = UP_GER_eastern_consolidation_bonds
+				days = 180
+			}
+			UP_GER_reduce_imperial_pressure_10 = yes
+		}
+	}
+
+	UP_GER_shift_burden_to_protectorates = {
+		icon = generic_major_alliance
+		cost = 60
+		days_re_enable = 240
+		available = {
+			check_variable = { UP_GER_imperial_pressure > 14.9 }
+			any_subject_country = { always = yes }
+		}
+		complete_effect = {
+			every_subject_country = {
+				add_autonomy_score = {
+					value = 50
+					localization = UP_GER_shifted_imperial_burden
+				}
+			}
+			add_stability = -0.01
+			UP_GER_reduce_imperial_pressure_15 = yes
+		}
+	}
+}

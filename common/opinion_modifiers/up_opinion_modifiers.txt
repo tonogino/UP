@@ -34,4 +34,5 @@ opinion_modifiers = {
 	UP_XIC_third_way_distance = {
 		value = -50
 	}
+
 }

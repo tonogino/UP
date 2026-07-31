@@ -42,8 +42,7 @@ bookmarks = {
 			ideology = neutrality
 			focuses = {
 				UP_GER_the_incomplete_victory
-				UP_GER_imperial_conservative_reform
-				UP_GER_national_radical_agitation
+				UP_GER_focus_Kaiserliches_Nachfolgeproblem
 			}
 		}
 

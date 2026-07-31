@@ -1,0 +1,6 @@
+UP_GER_imperial_pressure_decisions = {
+	icon = generic_political_pressure
+	allowed = { OR = { original_tag = GER tag = GER } }
+	visible = { has_idea = UP_GER_eastern_protection_cost }
+	priority = 40
+}

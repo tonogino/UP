@@ -8,20 +8,32 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers
 	is_triggered_only = yes
 
+	trigger = {
+		XIC = {
+			exists = yes
+			has_country_flag = UP_XIC_waiting_for_china_anti_japanese_reply
+			has_war_with = JAP
+			NOT = { has_completed_focus = UP_XIC_focus_143 }
+			NOT = { has_completed_focus = UP_XIC_focus_171 }
+			NOT = { has_completed_focus = UP_XIC_focus_186 }
+		}
+	}
+
 	option = {
 		name = up_xic.1.a
-		ai_chance = { factor = 80 }
-		add_opinion_modifier = { target = FROM modifier = asian_reconciliation }
-		FROM = {
-			add_opinion_modifier = { target = ROOT modifier = asian_reconciliation }
+		ai_chance = { factor = 70 }
+		XIC = {
+			clr_country_flag = UP_XIC_waiting_for_china_anti_japanese_reply
 			set_country_flag = UP_XIC_joint_anti_japanese_agreement
-			add_war_support = 0.03
+			complete_national_focus = UP_XIC_focus_143
 		}
 	}
 	option = {
 		name = up_xic.1.b
-		ai_chance = { factor = 20 }
-		FROM = {
+		ai_chance = { factor = 30 }
+		XIC = {
+			clr_country_flag = UP_XIC_waiting_for_china_anti_japanese_reply
+			complete_national_focus = UP_XIC_focus_171
 			add_stability = -0.02
 		}
 	}
@@ -247,6 +259,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_war_with = JAP
 		NOT = { has_country_flag = UP_XIC_route_choice_event_done }
 		NOT = { has_completed_focus = UP_XIC_focus_143 }
 		NOT = { has_completed_focus = UP_XIC_focus_171 }
@@ -255,24 +268,35 @@ country_event = {
 
 	option = {
 		name = up_xic.17.a
-		ai_chance = { factor = 45 }
+		trigger = {
+			CHI = { exists = yes }
+		}
+		ai_chance = { factor = 55 }
 		set_country_flag = UP_XIC_route_choice_event_done
-		complete_national_focus = UP_XIC_focus_143
+		set_country_flag = UP_XIC_waiting_for_china_anti_japanese_reply
+		CHI = {
+			country_event = { id = up_xic.1 days = 1 }
+		}
 	}
 	option = {
 		name = up_xic.17.b
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 30 }
 		set_country_flag = UP_XIC_route_choice_event_done
 		complete_national_focus = UP_XIC_focus_171
 	}
 	option = {
 		name = up_xic.17.c
-		trigger = {
-			JAP = { has_country_flag = UP_JAP_xic_accepted_918 }
-		}
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 15 }
 		set_country_flag = UP_XIC_route_choice_event_done
 		complete_national_focus = UP_XIC_focus_186
+		add_ideas = UP_XIC_japanese_client_state
+		white_peace = JAP
+		JAP = {
+			set_country_flag = UP_JAP_xic_accepted_918
+			puppet = ROOT
+			UP_JAP_add_toseiha_prestige_small = yes
+			UP_JAP_reduce_fiscal_pressure_small = yes
+		}
 	}
 }
 

@@ -1,30 +1,107 @@
 ideas = {
 	country = {
-		UP_GER_eastern_victory = {
-			picture = generic_attack_bonus
-			allowed = { original_tag = GER }
-			modifier = {
-				stability_factor = 0.05
-				war_support_factor = 0.08
-				army_org_factor = 0.03
-			}
-		}
-		UP_GER_berlin_system = {
+		UP_GER_hague_system_hegemon = {
 			picture = generic_major_alliance
 			allowed = { original_tag = GER }
 			modifier = {
-				political_power_gain = 0.10
-				consumer_goods_factor = -0.03
-				research_speed_factor = 0.02
+				political_power_gain = 0.05
+				improve_relations_maintain_cost_factor = 0.05
+				custom_modifier_tooltip = UP_GER_subject_factory_contribution_tt
+				custom_modifier_tooltip = UP_GER_diplomatic_improvement_penalty_tt
 			}
 		}
-		UP_GER_general_staff_state = {
-			picture = generic_army_doctrines
+		UP_GER_eastern_protection_cost = {
+			picture = generic_consumer_goods
 			allowed = { original_tag = GER }
 			modifier = {
-				planning_speed = 0.10
-				max_planning = 0.05
-				political_power_gain = -0.05
+				consumer_goods_factor = 0.05
+				custom_modifier_tooltip = UP_GER_subject_resource_trade_cost_tt
+				custom_modifier_tooltip = UP_GER_monthly_imperial_pressure_tt
+			}
+		}
+		UP_GER_old_kaisers_shadow = {
+			picture = generic_political_pressure
+			allowed = { original_tag = GER }
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = -0.03
+				economy_cost_factor = 0.10
+			}
+		}
+		UP_GER_french_revisionism = {
+			picture = generic_defence_bonus
+			allowed = { original_tag = GER }
+			modifier = {
+				war_support_factor = 0.03
+			}
+		}
+		UP_GER_british_naval_counterbalance = {
+			picture = generic_navy_bonus
+			allowed = { original_tag = GER }
+			modifier = {
+				industrial_capacity_dockyard = -0.05
+				trade_opinion_factor = -0.05
+			}
+		}
+
+		UP_GER_subject_system_obligations = {
+			picture = generic_major_alliance
+			allowed = { always = yes }
+			visible = { always = no }
+			modifier = {
+				cic_to_overlord_factor = 0.05
+				mic_to_overlord_factor = 0.05
+				overlord_trade_cost_factor = -0.10
+			}
+		}
+
+		UP_GER_imperial_pressure_controlled = {
+			picture = generic_political_reform
+			allowed = { original_tag = GER }
+			modifier = { }
+		}
+		UP_GER_imperial_pressure_strained = {
+			picture = generic_political_pressure
+			allowed = { original_tag = GER }
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.03
+			}
+		}
+		UP_GER_imperial_pressure_overloaded = {
+			picture = generic_consumer_goods
+			allowed = { original_tag = GER }
+			modifier = {
+				stability_factor = -0.04
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		UP_GER_imperial_pressure_fracturing = {
+			picture = generic_political_pressure
+			allowed = { original_tag = GER }
+			modifier = {
+				stability_factor = -0.07
+				political_power_factor = -0.08
+				consumer_goods_factor = 0.06
+				war_support_factor = -0.05
+			}
+		}
+		UP_GER_imperial_pressure_systemic_crisis = {
+			picture = generic_major_war
+			allowed = { original_tag = GER }
+			modifier = {
+				stability_factor = -0.12
+				political_power_factor = -0.12
+				consumer_goods_factor = 0.10
+				war_support_factor = -0.10
+			}
+		}
+		UP_GER_eastern_consolidation_bonds = {
+			picture = generic_consumer_goods
+			allowed = { original_tag = GER }
+			modifier = {
+				consumer_goods_factor = 0.03
 			}
 		}
 
